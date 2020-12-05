@@ -3,14 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 70vw;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,11 +22,223 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/1925aaa.png');
+  background-position: center;
+  background-size: cover;
+}
+.map {
+ transform: scale(1.3) 
+}
+
+.overlay {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s
+}
+
+.overlay:hover {
+  opacity: 0.6;
+  cursor: pointer
+}
+
+.place-icon {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/Twardowskiego.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 80%;
+  left: 30%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: transform 1s;
+  overflow: hidden;
+}
+
+.place-icon:hover {
+  transform: scale(1.5)
+}
+
+.place-icon-hospital {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/Szpital.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 85%;
+  left: 20%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-hospital:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-brewery {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/lubicz-out.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 25%;
+  left: 60%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-brewery:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-rogatka {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/rogatka.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 5%;
+  left: 30%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-rogatka:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-hawelka {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/hawelka-out.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 25%;
+  left: 42%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-hawelka:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-jama {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/jama.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 20%;
+  left: 50%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-jama:hover {
+  transform: scale(1.5);
+  z-index: 100
+}
+
+.place-icon-golebia {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/golebia.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 43%;
+  left: 43%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-golebia:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-bank {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/bank.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 10%;
+  left: 45%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-bank:hover {
+  transform: scale(1.5);
+  z-index: 100;
 }
