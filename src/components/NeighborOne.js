@@ -1,12 +1,11 @@
+import neighbor from '../assets/sasiad-3.png';
 import '../App.css';
 
 function NeighborOne() {
     return (
       <div className="neighbor-one-background">
-        <div className="place-icon">
-          <div className="overlay">
-              ul. Twardowskiego
-          </div>
+        <div className="wife">
+          <img src={neighbor} />
         </div>
       </div>
     );
