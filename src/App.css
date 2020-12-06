@@ -22,6 +22,135 @@
   color: #61dafb;
 }
 
+.bank-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/bank-in.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brewery-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/brewery-in.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.consulate-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/konsulat.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.hawelka-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/hawelka-in.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.home-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/home-in.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hospital-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/hospital-in.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.ikc-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/ikc-in.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.jama-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/jama-in.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.krowodrza-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/rogatka.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.neighbor-one-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/neighbor-one.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.neighbor-two-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/neighbor-two.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.neighbor-three-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/neighbor-three.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.thorn-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/thorna-in.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+
+.twardowskiego-background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/Twardowskiego.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 .map-container {
   width: 100vw;
   height: 100vh;
