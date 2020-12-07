@@ -1,3 +1,20 @@
+.location-overlay {
+  z-index: 200;
+  background-color: black;
+  height: calc(100% - 200px);
+  width: calc(100% - 200px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  padding: 100px;
+  animation: fadeoutlong 2s 3s forwards
+}
+
 .neighbor-three-background {
     width: 100vw;
     height: 100vh;
@@ -7,30 +24,43 @@
     background-size: cover;
   }
   
-  .neighbor3 {
+  .krogul {
     position: fixed;
     top: 25%;
     left: 40%;
-  }
-  
-  .neighbor-size3 {
     height: 800px
   }
 
-  .backdrop-opacity {
-    background-color: black;
-    opacity: 0.7;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1
+  .krogul-conversation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    height: 800px;
+    transform: scale(2.1);
+    animation: krogul 2s
+  }
+  
+  @keyframes krogul {
+    from { 
+      top: 25%;
+      left: 40%;
+      z-index: 2;
+      height: 800px;
+      transform: scale(1)
+    }
+    to { 
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      height: 800px;
+      transform: scale(2.1) 
+    }
   }
 
 
   .main {
-    animation: fadein 3s
+    animation: fadein 2s
   }
   
   @keyframes fadein {
@@ -39,10 +69,21 @@
   }
   
   .out {
-    animation: fadeout 3s
+    animation: fadeout 2s
   }
   
   @keyframes fadeout {
     from { opacity: 1; }
     to   { opacity: 0; }
+  }
+
+  @keyframes fadeoutlong {
+    from { 
+      opacity: 1;
+      z-index: 200;
+     }
+    to {
+      opacity: 0;
+      z-index: -1
+    }
   }

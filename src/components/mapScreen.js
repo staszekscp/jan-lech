@@ -15,7 +15,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setTwardowskiego(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               ul. Twardowskiego
@@ -28,7 +28,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setHospital(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Szpital w Kobierzynie
@@ -41,7 +41,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setBrewery(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Browar Lubicz
@@ -54,7 +54,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setKrowodrza(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Rogatka na Krowodrzy
@@ -67,7 +67,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setHawelka(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Restauracja Hawełka
@@ -80,7 +80,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setJama(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Jama Michalika
@@ -93,7 +93,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setConsulate(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Konsulat Czechosłowacji
@@ -106,7 +106,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setBank(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Bank Pekao
@@ -119,7 +119,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setIkc(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Pałac Prasy
@@ -132,7 +132,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 setTimeout(() => {
                   props.setThorn(true)
                   props.setMapScreen(false)
-                }, 3000)
+                }, 2000)
               }
             }>
               Restauracja Thorna

@@ -24,22 +24,8 @@
     left: 35%
   }
 
-  
-
-  .backdrop-opacity {
-    background-color: black;
-    opacity: 0.7;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1
-  }
-
-
   .main {
-    animation: fadein 3s
+    animation: fadein 2s
   }
   
   @keyframes fadein {
@@ -48,7 +34,7 @@
   }
   
   .out {
-    animation: fadeout 3s
+    animation: fadeout 2s
   }
   
   @keyframes fadeout {

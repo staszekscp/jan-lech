@@ -1,3 +1,7 @@
+* {
+  font-family: 'Special Elite', cursive;
+}
+
 .App {
   text-align: center;
 }
@@ -7,50 +11,92 @@
 }
 
 .backdrop-opacity {
-  background-color: black;
-  opacity: 0.7;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  position: absolute;
-  z-index: 1
+  position: fixed;
+  animation: fadeincolor 2s forwards;
+  z-index: 2;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes fadein07 {
+  from { opacity: 0; }
+  to   { opacity: 0.7; }
 }
 
 .option-container {
   height: 800px;
   width: 400px;
+  position: fixed;
   margin-left: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  z-index: 2
+  animation: getin 2s;
+  z-index: 50
 }
 
 .option {
-  background-color: #777;
+  background-color: rgba(255, 255, 255, 1);
   margin: 10px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 350px;
-  z-index: 2;
-  animation: fadein 2s
+  z-index: 50;
+  border: 2px black solid;
+  transition: all 1s;
+}
+
+.option:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  z-index: 100;
+  cursor: pointer
 }
 
 .message {
-  background-color: #555;
+  background-color: rgba(255, 255, 255, 1);
   margin: 10px;
   margin-bottom: 50px;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 15px;
+  border-radius: 10px;
   width: 350px;
-  z-index: 2
+  z-index: 2;
+  font-size: 30px;
+  border: 2px black solid;
 }
 
 .main {
-  animation: fadein 3s
+  animation: fadein 2s
 }
+
+@keyframes getin {
+  from { 
+    transform: translateX(-100%);
+    z-index: 100
+  }
+  to   {
+    transform: translateX(0);
+    z-index: 100
+  }
+}
+
+@keyframes fadeincolor {
+  from { background-color: rgba(0,0,0,0.0); }
+  to   { background-color: rgba(0,0,0,0.7); }
+}
+
+
 
 @keyframes fadein {
   from { opacity: 0; }
@@ -58,7 +104,7 @@
 }
 
 .out {
-  animation: fadeout 3s
+  animation: fadeout 2s
 }
 
 @keyframes fadeout {
@@ -95,6 +141,10 @@
   background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/Twardowskiego.jpg');
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 

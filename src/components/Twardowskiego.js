@@ -12,45 +12,62 @@ function Twardowskiego(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="twardowskiego-background">
+          <div className="backdrop-opacity flex-center">
             <div className="message">
                 {options[place][conversationNumber].message}
             </div>
             <div className="option" onClick={()=>{
+              setTimeout(() => {
                 props.current(false)
                 props.setHome(true)
+              }, 2000)
+              setFadeOut(true)
               }
             }>
                 {options[place][conversationNumber].first.content}
             </div>
             <div className="option" onClick={()=>{
+              setTimeout(() => {
                 props.current(false)
                 props.setNeighborOne(true)
+              }, 2000)
+              setFadeOut(true)
               }
             }>
                 {options[place][conversationNumber].second.content}
             </div>
             {options[place][conversationNumber].third && <div className="option" onClick={()=>{
+              setTimeout(() => {
                 props.current(false)
                 props.setNeighborTwo(true)
+              }, 2000)
+              setFadeOut(true)
               }
             }>
                 {options[place][conversationNumber].third.content}
             </div>}
             {options[place][conversationNumber].fourth && <div className="option" onClick={()=>{
+              setTimeout(() => {
                 props.current(false)
                 props.setNeighborThree(true)
+              }, 2000)
+              setFadeOut(true)
               }
             }>
                 {options[place][conversationNumber].fourth.content}
             </div>}
             <div className="option" 
                 onClick={()=>{
-                    props.current(false)
-                    props.back(true)
+                    setTimeout(() => {
+                      props.current(false)
+                      props.back(true)
+                    }, 2000)
+                    setFadeOut(true)
                     }
                 }>
                 {options[place].backMessage}
             </div>
+        </div>
         </div>
       </div>
     );

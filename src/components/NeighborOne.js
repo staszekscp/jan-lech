@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 import Conversation from './Conversation'
 import neighbor from '../assets/sasiad-3.png';
@@ -9,14 +9,27 @@ function NeighborOne(props) {
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
 
+  useEffect(() => {
+    setTimeout(() => {
+      setConversation(true)
+    }, 5000)
+  }, [])
+
     return (
-      <div className="main">
+      <div className={fadeOut?"out":"main"}>
         <div className="neighbor-one-background" >
-        {conversation && <Conversation place="home" current={props.current} back={props.back}/>}
-          <div className="wife" onClick={() => {setConversation(true)}}>
+        {conversation ? <Conversation place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          <div className="stelmach-conversation" onClick={() => {setConversation(true)}}>
             <img src={neighbor} />
           </div>
-          {conversation && <div className="backdrop-opacity"/>}
+          </Conversation> :
+          <div className="stelmach" onClick={() => {setConversation(true)}}>
+            <img src={neighbor} />
+          </div>}
+          
+          <div className="location-overlay">
+            Wchodzisz do mieszkania Stelmacha
+          </div>
         </div>
       </div>
     );

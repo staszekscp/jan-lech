@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 import Conversation from './Conversation'
 import neighbor from '../assets/sasiad-1.png';
@@ -9,14 +9,27 @@ function NeighborThree(props) {
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
 
+  useEffect(() => {
+    setTimeout(() => {
+      setConversation(true)
+    }, 5000)
+  }, [])
+
     return (
-      <div className="main">
+      <div className={fadeOut?"out":"main"}>
         <div className="neighbor-three-background" >
-          {conversation && <Conversation place="home" current={props.current} back={props.back}/>}
-          <div className="neighbor3" onClick={() => {setConversation(true)}}>
-            <img className="neighbor-size3" src={neighbor} />
+          {conversation ? <Conversation place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          <div onClick={() => {setConversation(true)}}>
+            <img className="krogul-conversation" src={neighbor} />
           </div>
-          {conversation && <div className="backdrop-opacity"/>}
+          </Conversation> :
+          <div onClick={() => {setConversation(true)}}>
+            <img className="krogul" src={neighbor} />
+          </div>}
+          
+          <div className="location-overlay">
+            Zbliżasz się do posesji Krogula
+          </div>
         </div>
       </div>
     );

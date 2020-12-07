@@ -19,7 +19,7 @@
   }
 
   .main {
-    animation: fadein 3s
+    animation: fadein 2s
   }
   
   @keyframes fadein {
@@ -28,7 +28,7 @@
   }
   
   .out {
-    animation: fadeout 3s
+    animation: fadeout 2s
   }
   
   @keyframes fadeout {
