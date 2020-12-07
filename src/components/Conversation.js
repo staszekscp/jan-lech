@@ -12,14 +12,28 @@ function Home(props) {
 
     return (
         <div className="option-container">
-            <div className="option" onClick={()=>{setConversationNumber(prev => +(prev.toString()+"1"))}}>
-                {options[place][conversationNumber].first}
+            <div className="message">
+                {options[place][conversationNumber].message}
             </div>
-            <div className="option" onClick={()=>{setConversationNumber(prev => +(prev.toString()+"2"))}}>
-                {options[place][conversationNumber].second}
+            <div className="option" onClick={()=>{setConversationNumber(options[place][conversationNumber].first.route)}}>
+                {options[place][conversationNumber].first.content}
             </div>
-            <div className="option" onClick={()=>{setConversationNumber(prev => +(prev.toString()+"3"))}}>
-                {options[place][conversationNumber].third}
+            <div className="option" onClick={()=>{setConversationNumber(options[place][conversationNumber].second.route)}}>
+                {options[place][conversationNumber].second.content}
+            </div>
+            {options[place][conversationNumber].third && <div className="option" onClick={()=>{setConversationNumber(options[place][conversationNumber].third.route)}}>
+                {options[place][conversationNumber].third.content}
+            </div>}
+            {options[place][conversationNumber].fourth && <div className="option" onClick={()=>{setConversationNumber(options[place][conversationNumber].third.route)}}>
+                {options[place][conversationNumber].fourth.content}
+            </div>}
+            <div className="option" 
+                onClick={()=>{
+                    props.current(false)
+                    props.back(true)
+                    }
+                }>
+                {options[place].backMessage}
             </div>
         </div>
     );

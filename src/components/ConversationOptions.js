@@ -1,57 +1,87 @@
 
 const options = {
     "home": {
+        backMessage: "Zakończ rozmowę i wyjdź z budynku.",
         1: {
-            first: "Srolem trolem",
-            second: "Forlem Norlem",
-            third: "Sraka wiatraka",
+            message: "Co tu Panie, spieprzaj Pan!",
+            first: {
+                content: "Srolem trolem",
+                route: 11
+            },
+            second: {
+                content: "Srolem trolem",
+                route: 12
+            },
+            third: {
+                content: "Srolem trolem",
+                route: 13
+            },
         },
         11: {
-            first: "11a",
-            second: "11b",
-            third: "11c"
+            first: {
+                content: "Terefere1",
+                route: 1
+            },
+            second: {
+                content: "Terefere1",
+                route: 1
+            },
+            third: {
+                content: "Terefere1",
+                route: 1
+            }
         },
         12: {
-            first: "Srolem trolem",
-            second: "Forlem Norlem",
-            third: "Sraka wiatraka",
+            first: {
+                content: "Terefere2",
+                route: 1
+            },
+            second: {
+                content: "Terefere2",
+                route: 1
+            },
+            third: {
+                content: "Terefere2",
+                route: 1
+            },
         },
         13: {
-            first: "Kasztany latajo",
-            second: "Chuje wiejo",
-            third: "Szuwary chujajo"
-        },
-        121: {
-            first: "Srolem trolem",
-            second: "Forlem Norlem",
-            third: "Sraka wiatraka",
-        },
-        122: {
-            first: "Kasztany latajo",
-            second: "Chuje wiejo",
-            third: "Szuwary chujajo"
-        },
-        123: {
-            first: "Srolem trolem",
-            second: "Forlem Norlem",
-            third: "Sraka wiatraka",
-        },
-        131: {
-            first: "Kasztany latajo",
-            second: "Chuje wiejo",
-            third: "Szuwary chujajo"
-        },
-        132: {
-            first: "Srolem trolem",
-            second: "Forlem Norlem",
-            third: "Sraka wiatraka",
-        },
-        133: {
-            first: "33a",
-            second: "33b",
-            third: "33c"
+            first: {
+                content: "Terefere3",
+                route: 1
+            },
+            second: {
+                content: "Terefere3",
+                route: 1
+            },
+            third: {
+                content: "Terefere3",
+                route: 1
+            }
         }
     },
+    "twardowskiego": {
+        backMessage: "Wróć do mapy Krakowa.",
+        1: {
+            message: "Znajdujesz się na ul. Twardowskiego. Dokąd chcesz się udać?",
+            first: {
+                content: "Mieszkanie Najchela",
+                route: 11
+            },
+            second: {
+                content: "Mieszkanie Stelmacha",
+                route: 12
+            },
+            third: {
+                content: "Gospodarstwo Maciejowskiego",
+                route: 13
+            },
+            fourth: {
+                content: "Posesja Krogula",
+                route: 13
+            }
+        }
+    }
 }
 
 export default options

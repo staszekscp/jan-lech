@@ -42,30 +42,44 @@ const [hospital, setHospital] = useState(false)
       <div className="main">
         <div className="main-overlay"/>
         {mapScreen && <MapScreen 
-        setMapScreen={setMapScreen}
-        setBank={setBank}
-        setBrewery={setBrewery}
-        setConsulate={setConsulate}
-        setHawelka={setHawelka}
-        setIkc={setIkc}
-        setJama={setJama}
-        setKrowodrza={setKrowodrza}
-        setThorn={setThorn}
-        setTwardowskiego={setTwardowskiego}
-        setHospital={setHospital}/>}
+          setMapScreen={setMapScreen}
+          setBank={setBank}
+          setBrewery={setBrewery}
+          setConsulate={setConsulate}
+          setHawelka={setHawelka}
+          setIkc={setIkc}
+          setJama={setJama}
+          setKrowodrza={setKrowodrza}
+          setThorn={setThorn}
+          setTwardowskiego={setTwardowskiego}
+          setHospital={setHospital}/>}
         {bank && <Bank />}
         {brewery && <Brewery />}
         {hawelka && <Hawelka />}
         {consulate && <Consulate />}
-        {home && <Home />}
+        {home && <Home 
+          current={setHome}
+          back={setTwardowskiego}/>}
         {ikc && <IKC />}
         {jama && <Jama />}
         {krowodrza && <Krowodrza />}
-        {neighborOne && <NeighborOne />}
-        {neighborTwo && <NeighborTwo />}
-        {neighborThree && <NeighborThree />}
+        {neighborOne && <NeighborOne 
+          current={setNeighborOne}
+          back={setTwardowskiego}/>}
+        {neighborTwo && <NeighborTwo 
+          current={setNeighborTwo}
+          back={setTwardowskiego}/>}
+        {neighborThree && <NeighborThree 
+          current={setNeighborThree}
+          back={setTwardowskiego}/>}
         {thorn && <Thorn />}
-        {twardowskiego && <Twardowskiego />}
+        {twardowskiego && <Twardowskiego 
+          setHome={setHome}
+          setNeighborOne={setNeighborOne}
+          setNeighborTwo={setNeighborTwo}
+          setNeighborThree={setNeighborThree}
+          current={setTwardowskiego}
+          back={setMapScreen}/>}
         {hospital && <Hospital />}
       </div>
     </div>
