@@ -1,50 +1,146 @@
-import map from '../assets/1925a.png';
+import {useState} from 'react'
 import '../App.css';
 
-function MapScreen() {
+function MapScreen(props) {
+
+const [fadeOut, setFadeOut] = useState(false)
+
   return (
-    <div className="map-container">
-      <div className="place-icon">
-        <div className="overlay">
-            ul. Twardowskiego
+    <div className={fadeOut?"out":"main"}>
+      <div className="map-container">
+        <div className="place-icon">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setTwardowskiego(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              ul. Twardowskiego
+          </div>
         </div>
-      </div>
-      <div className="place-icon-hospital">
-        <div className="overlay">
-            Szpital w Kobierzynie
+        <div className="place-icon-hospital">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setHospital(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Szpital w Kobierzynie
+          </div>
         </div>
-      </div>
-      <div className="place-icon-brewery">
-        <div className="overlay">
-            Browar Lubicz
+        <div className="place-icon-brewery">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setBrewery(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Browar Lubicz
+          </div>
         </div>
-      </div>
-      <div className="place-icon-rogatka">
-        <div className="overlay">
-            Rogatka na Krowodrzy
+        <div className="place-icon-rogatka">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setKrowodrza(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Rogatka na Krowodrzy
+          </div>
         </div>
-      </div>
-      <div className="place-icon-hawelka">
-        <div div className="overlay">
-            Restauracja Hawełka
+        <div className="place-icon-hawelka">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setHawelka(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Restauracja Hawełka
+          </div>
         </div>
-      </div>
-      <div className="place-icon-jama">
-        <div className="overlay">
-            Jama Michalika
+        <div className="place-icon-jama">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setJama(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Jama Michalika
+          </div>
         </div>
-      </div>
-      <div className="place-icon-golebia">
-        <div className="overlay">
-            Konsulat Czechosłowacji
+        <div className="place-icon-golebia">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setConsulate(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Konsulat Czechosłowacji
+          </div>
         </div>
-      </div>
-      <div className="place-icon-bank">
-        <div className="overlay">
-            Bank Pekao
+        <div className="place-icon-bank">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setBank(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Bank Pekao
+          </div>
+        </div>
+        <div className="place-icon-ikc">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setIkc(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Pałac Prasy
+          </div>
+        </div>
+        <div className="place-icon-thorna">
+          <div className="overlay" 
+              onClick={() => {
+                setFadeOut(true)
+                setTimeout(() => {
+                  props.setThorn(true)
+                  props.setMapScreen(false)
+                }, 3000)
+              }
+            }>
+              Restauracja Thorna
+          </div>
         </div>
       </div>
     </div>
+    
   );
 }
 

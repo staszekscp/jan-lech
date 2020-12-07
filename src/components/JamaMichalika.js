@@ -1,11 +1,16 @@
+import boy from '../assets/boy-zelenski.png';
+import mehoffer from '../assets/mehoffer.png';
 import '../App.css';
 
 function JamaMichalika() {
     return (
-      <div className="jama-background">
-        <div className="place-icon">
-          <div className="overlay">
-              ul. Twardowskiego
+      <div className="main">
+        <div className="jama-background">
+          <div className="boy-zelenski">
+            <img className="" src={boy} />
+          </div>
+          <div className="mehoffer">
+            <img className="mehoffer-size" src={mehoffer} />
           </div>
         </div>
       </div>

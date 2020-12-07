@@ -4,12 +4,14 @@ import '../App.css';
 
 function NeighborTwo() {
     return (
-      <div className="neighbor-two-background">
-        <div className="neighbor2">
-          <img className="neighbor-size2" src={neighborM} />
-        </div>
-        <div className="neighbor1">
-          <img className="neighbor-size1" src={neighborF} />
+      <div className="main">
+        <div className="neighbor-two-background">
+          <div className="neighbor2">
+            <img className="neighbor-size2" src={neighborM} />
+          </div>
+          <div className="neighbor1">
+            <img className="neighbor-size1" src={neighborF} />
+          </div>
         </div>
       </div>
     );

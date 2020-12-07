@@ -1,14 +1,20 @@
+import doctor from '../assets/szpital-lekarz.png';
+import nurse from '../assets/szpital-pielegniarka.png';
 import '../App.css';
 
 function Hospital() {
     return (
-      <div className="hospital-background">
-        <div className="place-icon">
-          <div className="overlay">
-              ul. Twardowskiego
+      <div className="main">
+        <div className="hospital-background">
+          <div className="nurse">
+            <img className="nurse-size" src={nurse} />
+          </div>
+          <div className="doctor">
+            <img className="" src={doctor} />
           </div>
         </div>
       </div>
+      
     );
   }
   

@@ -2,6 +2,58 @@
   text-align: center;
 }
 
+.backdrop {
+  background-color: black;
+}
+
+.backdrop-opacity {
+  background-color: black;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1
+}
+
+.option-container {
+  height: 800px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2
+}
+
+.option {
+  background-color: #777;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 350px;
+  z-index: 2
+}
+
+.main {
+  animation: fadein 3s
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.out {
+  animation: fadeout 3s
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
 .App-logo {
   width: 70vw;
   pointer-events: none;
@@ -41,6 +93,26 @@
   background-size: cover;
 }
 
+.brewery-boss {
+  position: fixed;
+  top: 15%;
+  left: 40%
+}
+
+.brewery-boss-size {
+  height: 500px;
+}
+
+.brewery-guard {
+  position: fixed;
+  top: 0%;
+  left: 0%
+}
+
+.brewery-guard-size {
+  height: 1000px;
+}
+
 .consulate-background {
   width: 100vw;
   height: 100vh;
@@ -50,6 +122,26 @@
   background-size: cover;
 }
 
+.worker-consulate {
+  position: fixed;
+  top: 15%;
+  left: 40%
+}
+
+.worker-consulate-size {
+  height: 600px;
+}
+
+.guard-consulate {
+  position: fixed;
+  top: 0%;
+  left: 0%
+}
+
+.guard-consulate-size {
+  height: 1000px;
+}
+
 .hawelka-background {
   width: 100vw;
   height: 100vh;
@@ -57,6 +149,36 @@
   background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/hawelka-in.jpg');
   background-position: bottom;
   background-size: cover;
+}
+
+.client {
+  position: fixed;
+  top: 20%;
+  left: 60%
+}
+
+.client-size {
+  height: 600px;
+}
+
+.waiter {
+  position: fixed;
+  top: 25%;
+  left: 30%
+}
+
+.waiter-size {
+  height: 400px
+}
+
+.boss-hawelka {
+  position: fixed;
+  top: 0%;
+  left: -12%
+}
+
+.boss-hawelka-size {
+  height: 1500px
 }
 
 .home-background {
@@ -71,7 +193,32 @@
 .wife {
   position: fixed;
   top: 10%;
-  left: 20%
+  left: 20%;
+  z-index: 2;
+}
+
+.wife-conversation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: scale(2);
+  animation: wife 2s
+}
+
+@keyframes wife {
+  from { 
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+    transform: scale(1)
+  }
+  to { 
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: scale(2) 
+  }
 }
 
 .hospital-background {
@@ -83,6 +230,22 @@
   background-size: cover;
 }
 
+.nurse {
+  position: fixed;
+  top: 15%;
+  left: 60%
+}
+
+.nurse-size {
+  height: 500px
+}
+
+.doctor {
+  position: fixed;
+  top: 10%;
+  left: 35%
+}
+
 .ikc-background {
   width: 100vw;
   height: 100vh;
@@ -90,6 +253,26 @@
   background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/ikc-in.jpg');
   background-position: center;
   background-size: cover;
+}
+
+.dabrowski {
+  position: fixed;
+  top: 45%;
+  left: 40%
+}
+
+.dabrowski-size {
+  height: 300px
+}
+
+.journalist {
+  position: fixed;
+  top: 40%;
+  left: 60%;
+}
+
+.journalist-size {
+  height: 500px
 }
 
 .jama-background {
@@ -101,6 +284,21 @@
   background-size: cover;
 }
 
+.mehoffer {
+  position: fixed;
+  top: 15%;
+  left: 0%;
+}
+
+.mehoffer-size {
+  height: 700px
+}
+
+.boy-zelenski {
+  position: fixed;
+  left: 60%;
+}
+
 .krowodrza-background {
   width: 100vw;
   height: 100vh;
@@ -108,6 +306,26 @@
   background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/rogatka.jpg');
   background-position: bottom;
   background-size: cover;
+}
+
+.krowodrza-boss {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+}
+
+.krowodrza-boss-size {
+  height: 800px
+}
+
+.krowodrza-coworker {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+}
+
+.krowodrza-coworker-size {
+  height: 600px
 }
 
 .neighbor-one-background {
@@ -404,6 +622,54 @@
 }
 
 .place-icon-bank:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-ikc {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/ikc.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  top: 40%;
+  left: 52%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-ikc:hover {
+  transform: scale(1.5);
+  z-index: 100;
+}
+
+.place-icon-thorna {
+  background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/thorna.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  border-radius: 45px;
+  bottom: 5%;
+  left: 50%;
+  border: 2px black solid;
+  z-index: 1;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.place-icon-thorna:hover {
   transform: scale(1.5);
   z-index: 100;
 }
