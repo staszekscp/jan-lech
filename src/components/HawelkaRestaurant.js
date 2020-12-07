@@ -1,7 +1,7 @@
 import client from '../assets/klient-hawelka.png';
 import waiter from '../assets/hawelka-kelner.png';
 import boss from '../assets/hawelka-wlasciciel.png';
-import '../App.css';
+import './Hawelka.css';
 
 function HawelkaRestaurant() {
     return (

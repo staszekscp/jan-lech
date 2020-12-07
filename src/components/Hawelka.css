@@ -1,0 +1,57 @@
+.hawelka-background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/hawelka-in.jpg');
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .client {
+    position: fixed;
+    top: 20%;
+    left: 60%
+  }
+  
+  .client-size {
+    height: 600px;
+  }
+  
+  .waiter {
+    position: fixed;
+    top: 25%;
+    left: 30%
+  }
+  
+  .waiter-size {
+    height: 400px
+  }
+  
+  .boss-hawelka {
+    position: fixed;
+    top: 0%;
+    left: -12%
+  }
+  
+  .boss-hawelka-size {
+    height: 1500px
+  }
+
+  .main {
+    animation: fadein 3s
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  .out {
+    animation: fadeout 3s
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  

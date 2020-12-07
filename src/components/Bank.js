@@ -1,12 +1,12 @@
 import director from '../assets/bank-dyrektor.png';
-import '../App.css';
+import './Bank.css';
 
 function Bank() {
   return (
     <div className="main">
       <div className="bank-background">
-        <div className="brewery-boss">
-            <img className="brewery-boss-size" src={director} />
+        <div className="bank-boss">
+            <img className="bank-boss-size" src={director} />
         </div>
       </div>
     </div>

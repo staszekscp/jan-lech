@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 import Conversation from './Conversation'
 import neighbor from '../assets/sasiad-1.png';
-import '../App.css';
+import './NeighborThree.css';
 
 function NeighborThree(props) {
 

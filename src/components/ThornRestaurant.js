@@ -1,5 +1,5 @@
 import thorn from '../assets/h-thorn.png';
-import '../App.css';
+import './Thorn.css';
 
 function ThornRestaurant() {
     return (

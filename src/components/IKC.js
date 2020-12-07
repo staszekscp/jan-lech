@@ -1,6 +1,6 @@
 import dabrowski from '../assets/dabrowski.png';
 import journalist from '../assets/palac-prasy-dziennikarz.png';
-import '../App.css';
+import './IKC.css';
 
 function IKC() {
     return (

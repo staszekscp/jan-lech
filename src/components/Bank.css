@@ -1,0 +1,37 @@
+.bank-background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/bank-in.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bank-boss {
+    position: fixed;
+    top: 15%;
+    left: 40%
+  }
+  
+  .bank-boss-size {
+    height: 500px;
+  }
+
+  .main {
+    animation: fadein 3s
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  .out {
+    animation: fadeout 3s
+  }
+  
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }

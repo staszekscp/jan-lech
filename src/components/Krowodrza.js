@@ -1,6 +1,6 @@
 import boss from '../assets/szef.png';
 import coworker from '../assets/krowodrza-pracownik.png';
-import '../App.css';
+import './Krowodrza.css';
 
 function Krowodrza() {
     return (

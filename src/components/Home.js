@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 import wife from '../assets/zona-lech.png';
 import Conversation from './Conversation'
-import '../App.css';
+import './Home.css';
 
 function Home(props) {
 

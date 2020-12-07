@@ -2,7 +2,7 @@ import {useState} from 'react'
 
 import worker from '../assets/konsulat-pracownica.png';
 import guard from '../assets/konsulat-wozny.png';
-import '../App.css';
+import './Consulate.css';
 
 function Consulate() {
 

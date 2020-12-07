@@ -1,6 +1,6 @@
 import doctor from '../assets/szpital-lekarz.png';
 import nurse from '../assets/szpital-pielegniarka.png';
-import '../App.css';
+import './Hospital.css';
 
 function Hospital() {
     return (

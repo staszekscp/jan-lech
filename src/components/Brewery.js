@@ -1,6 +1,6 @@
 import boss from '../assets/szef-browar.png';
 import guard from '../assets/straznik-browaru.png';
-import '../App.css';
+import './Brewery.css';
 
 function Brewery() {
     return (

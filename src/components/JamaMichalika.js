@@ -1,6 +1,6 @@
 import boy from '../assets/boy-zelenski.png';
 import mehoffer from '../assets/mehoffer.png';
-import '../App.css';
+import './Jama.css';
 
 function JamaMichalika() {
     return (
