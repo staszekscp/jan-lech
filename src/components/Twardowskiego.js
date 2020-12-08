@@ -12,7 +12,7 @@ function Twardowskiego(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="twardowskiego-background">
-          <div className="backdrop-opacity flex-center">
+          <div className="backdrop-opacity-twardowskiego">
             <div className="message">
                 {options[place][conversationNumber].message}
             </div>

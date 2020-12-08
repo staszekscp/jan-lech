@@ -7,6 +7,37 @@
     background-size: cover;
   }
 
+  .thorn {
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+  }
+  
+  .thorn-conversation {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    z-index: 3;
+    transform: scale(2);
+    animation: thorn 2s
+  }
+  
+  @keyframes thorn {
+    from { 
+      top: 10%;
+      left: 20%;
+      z-index: 2;
+      transform: scale(1)
+    }
+    to { 
+      top: 40%;
+      left: 50%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
   .main {
     animation: fadein 2s
   }

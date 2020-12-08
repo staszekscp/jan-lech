@@ -7,13 +7,13 @@ function Home(props) {
 
     const place = props.place
     const [conversationNumber, setConversationNumber] = useState(1)
-    let side = "left"
+    const right = props.right
     const [fadeOut, setFadeOut] = useState(false)
 
     return (
         <div>
             <div className="backdrop-opacity">
-                <div className="option-container">
+                <div className={right ? "option-container-right" : "option-container"}>
                     <div className="message">
                         {options[place][conversationNumber].message}
                     </div>

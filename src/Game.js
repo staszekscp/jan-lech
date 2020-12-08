@@ -53,16 +53,30 @@ const [hospital, setHospital] = useState(false)
           setThorn={setThorn}
           setTwardowskiego={setTwardowskiego}
           setHospital={setHospital}/>}
-        {bank && <Bank />}
-        {brewery && <Brewery />}
-        {hawelka && <Hawelka />}
-        {consulate && <Consulate />}
+        {bank && <Bank 
+          current={setBank}
+          back={setMapScreen}/>}
+        {brewery && <Brewery 
+          current={setBrewery}
+          back={setMapScreen}/>}
+        {hawelka && <Hawelka 
+          current={setHawelka}
+          back={setMapScreen}/>}
+        {consulate && <Consulate 
+          current={setConsulate}
+          back={setMapScreen}/>}
         {home && <Home 
           current={setHome}
           back={setTwardowskiego}/>}
-        {ikc && <IKC />}
-        {jama && <Jama />}
-        {krowodrza && <Krowodrza />}
+        {ikc && <IKC 
+          current={setIkc}
+          back={setMapScreen}/>}
+        {jama && <Jama 
+          current={setJama}
+          back={setMapScreen}/>}
+        {krowodrza && <Krowodrza 
+          current={setKrowodrza}
+          back={setMapScreen}/>}
         {neighborOne && <NeighborOne 
           current={setNeighborOne}
           back={setTwardowskiego}/>}
@@ -72,7 +86,9 @@ const [hospital, setHospital] = useState(false)
         {neighborThree && <NeighborThree 
           current={setNeighborThree}
           back={setTwardowskiego}/>}
-        {thorn && <Thorn />}
+        {thorn && <Thorn 
+          current={setThorn}
+          back={setMapScreen}/>}
         {twardowskiego && <Twardowskiego 
           setHome={setHome}
           setNeighborOne={setNeighborOne}
@@ -80,7 +96,9 @@ const [hospital, setHospital] = useState(false)
           setNeighborThree={setNeighborThree}
           current={setTwardowskiego}
           back={setMapScreen}/>}
-        {hospital && <Hospital />}
+        {hospital && <Hospital 
+          current={setHospital}
+          back={setMapScreen}/>}
       </div>
     </div>
   );

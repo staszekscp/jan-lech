@@ -10,23 +10,67 @@
   .dabrowski {
     position: fixed;
     top: 45%;
-    left: 40%
-  }
-  
-  .dabrowski-size {
+    left: 40%;
     height: 300px
   }
-  
+
   .journalist {
     position: fixed;
     top: 40%;
     left: 60%;
-  }
-  
-  .journalist-size {
     height: 500px
   }
+
+
+  .dabrowski-conversation {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    height: 300px;
+    z-index: 3;
+    transform: scale(3.5);
+    animation: dabrowski 2s
+  }
+
+  .journalist-conversation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    z-index: 3;
+    transform: scale(2);
+    animation: journalist 2s
+  }
+
+  @keyframes dabrowski {
+    from { 
+      top: 45%;
+      left: 40%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(3.5);
+    }
+  }
   
+  @keyframes journalist {
+    from { 
+      top: 40%;
+      left: 60%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
 
   .main {
     animation: fadein 2s

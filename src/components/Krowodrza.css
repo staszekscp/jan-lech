@@ -6,26 +6,71 @@
     background-position: bottom;
     background-size: cover;
   }
+
+  .krowodrza-coworker {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    height: 600px
+  }
   
   .krowodrza-boss {
     position: fixed;
     top: 10%;
     left: 10%;
-  }
-  
-  .krowodrza-boss-size {
     height: 800px
   }
-  
-  .krowodrza-coworker {
+
+  .krowodrza-coworker-conversation {
     position: fixed;
-    top: 10%;
-    left: 50%;
+    top: 55%;
+    left: 60%;
+    height: 600px;
+    z-index: 3;
+    transform: scale(2.5);
+    animation: krowodrza-coworker 2s
+  }
+
+  .krowodrza-boss-conversation {
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    height: 800px;
+    z-index: 3;
+    transform: scale(1.8);
+    animation: krowodrza-boss 2s
+  }
+
+  @keyframes krowodrza-coworker {
+    from { 
+      top: 10%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 55%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2.5);
+    }
   }
   
-  .krowodrza-coworker-size {
-    height: 600px
+  @keyframes krowodrza-boss {
+    from { 
+      top: 10%;
+      left: 10%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(1.8) 
+    }
   }
+
 
   .main {
     animation: fadein 2s

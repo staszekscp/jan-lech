@@ -18,7 +18,7 @@ function NeighborOne(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="neighbor-one-background" >
-        {conversation ? <Conversation place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+        {conversation ? <Conversation right={true} place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
           <div className="stelmach-conversation" onClick={() => {setConversation(true)}}>
             <img src={neighbor} />
           </div>

@@ -31,7 +31,7 @@ function NeighborTwo(props) {
               </div>
             </div>
             }
-            {conversation2 && <div><Conversation place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversation2 && <div><Conversation right={true} place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversation2(true)}}>
                 <img className="neighbor2-conversation" src={neighborM} />
               </div>
