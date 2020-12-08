@@ -10,34 +10,80 @@ function Home(props) {
     const right = props.right
     const [fadeOut, setFadeOut] = useState(false)
 
+    const act = () => {}
+    const stepBack = () => {
+        props.turnOff()
+    }
+
     return (
-        <div>
+        <div >
             <div className="backdrop-opacity">
+                <div className={fadeOut ? "fade" : null}>
                 <div className={right ? "option-container-right" : "option-container"}>
-                    <div className="message">
+                    <div className="message width-max">
                         {options[place][conversationNumber].message}
                     </div>
-                    <div className="option" onClick={()=>{
-                        setConversationNumber(options[place][conversationNumber].first.route)
+                    <div className="option width-max" onClick={()=>{
+                        setFadeOut(true)
+                        setTimeout(() => {
+                            setConversationNumber(options[place][conversationNumber].first.route)
+                            options[place][conversationNumber].first.action(act)
+                        }, 1000)
+                        setTimeout(() => {
+                            setFadeOut(false)
+                        }, 2000)
                         }}>
                         {options[place][conversationNumber].first.content}
                     </div>
-                    <div className="option" onClick={()=>{
-                        setConversationNumber(options[place][conversationNumber].second.route)
+                    <div className="option width-max" onClick={()=>{
+                        setFadeOut(true)
+                        setTimeout(() => {
+                            setConversationNumber(options[place][conversationNumber].second.route)
+                            options[place][conversationNumber].second.action()
+                        }, 1000)
+                        setTimeout(() => {
+                            setFadeOut(false)
+                        }, 2000)
                         }}>
                         {options[place][conversationNumber].second.content}
                     </div>
-                    {options[place][conversationNumber].third && <div className="option" onClick={()=>{
-                        setConversationNumber(options[place][conversationNumber].third.route)
+                    {options[place][conversationNumber].third && <div className="option width-max" onClick={()=>{
+                        setFadeOut(true)
+                        setTimeout(() => {
+                            setConversationNumber(options[place][conversationNumber].third.route)
+                            options[place][conversationNumber].third.action()
+                        }, 1000)
+                        setTimeout(() => {
+                            setFadeOut(false)
+                        }, 2000)
                         }}>
                         {options[place][conversationNumber].third.content}
                     </div>}
-                    {options[place][conversationNumber].fourth && <div className="option" onClick={()=>{
-                        setConversationNumber(options[place][conversationNumber].third.route)
+                    {options[place][conversationNumber].fourth && <div className="option width-max" onClick={()=>{
+                        setFadeOut(true)
+                        setTimeout(() => {
+                            setConversationNumber(options[place][conversationNumber].fourth.route)
+                            options[place][conversationNumber].fourth.action(stepBack)
+                        }, 1000)
+                        setTimeout(() => {
+                            setFadeOut(false)
+                        }, 2000)
                         }}>
                         {options[place][conversationNumber].fourth.content}
                     </div>}
-                    <div className="option" 
+                    {options[place][conversationNumber].fifth && <div className="option width-max" onClick={()=>{
+                        setFadeOut(true)
+                        setTimeout(() => {
+                            setConversationNumber(options[place][conversationNumber].fifth.route)
+                            options[place][conversationNumber].fifth.action(stepBack)
+                        }, 1000)
+                        setTimeout(() => {
+                            setFadeOut(false)
+                        }, 2000)
+                        }}>
+                        {options[place][conversationNumber].fifth.content}
+                    </div>}
+                    <div className="option width-max"
                         onClick={()=>{
                             setTimeout(() => {
                                 props.current(false)
@@ -49,9 +95,9 @@ function Home(props) {
                         {options[place].backMessage}
                     </div>
                 </div>
-                {props.children}
             </div>
-            
+            {props.children}
+            </div>
         </div>
     );
   }

@@ -55,23 +55,7 @@
   }
 
 
-  .main {
-    animation: fadein 2s
-  }
-  
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
 
-  .out {
-    animation: fadeout 2s
-  }
-  
-  @keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-  }
 
   @keyframes fadeoutlong {
     from { 

@@ -11,14 +11,22 @@
     position: fixed;
     top: 0%;
     left: -12%;
-    height: 1500px
+    height: 1500px;
+  }
+
+  .boss-hawelka-reverse {
+    animation: boss-hawelka 2s reverse
   }
 
   .waiter {
     position: fixed;
     top: 25%;
     left: 30%;
-    height: 400px
+    height: 400px;
+  }
+
+  .waiter-reverse {
+    animation: waiter 2s reverse
   }
 
   .client {
@@ -26,6 +34,10 @@
     top: 20%;
     left: 60%;
     height: 600px;
+  }
+
+  .client-reverse {
+    animation: client 2s reverse
   }
 
   .boss-hawelka-conversation {
@@ -104,27 +116,3 @@
   }
 
 
-
-
-
-
-
-
-  .main {
-    animation: fadein 2s
-  }
-  
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  
-  .out {
-    animation: fadeout 2s
-  }
-  
-  @keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-  }
-  

@@ -15,19 +15,21 @@ function Home(props) {
     }, 5000)
   }, [])
   
-
+  const turnOff = () => {
+    setConversation(false)
+  }
     return (
       <div>
         <div className={fadeOut?"out":"main"}>
           <div className="home-background">
-            {conversation ? <Conversation place="home" current={props.current} back={props.back} setFadeOut={setFadeOut}>
+            {conversation ? <Conversation place="home" turnOff={turnOff} current={props.current} back={props.back} setFadeOut={setFadeOut}>
               <div onClick={() => {setConversation(true)}}>
                   <img className="wife-conversation" src={wife} />
               </div>
             </Conversation> :
-            <div onClick={() => {setConversation(true)}}>
-              <img className="wife" src={wife} />
-            </div>}
+              <div onClick={() => {setConversation(true)}}>
+                <img className="wife" src={wife}/>
+              </div>}
             <div className="location-overlay">
               Wkraczasz do mieszkania Najchelów
             </div>
