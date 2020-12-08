@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 
 import '../App.css';
 import options from './ConversationOptions'
@@ -6,14 +6,23 @@ import options from './ConversationOptions'
 function Home(props) {
 
     const place = props.place
-    const [conversationNumber, setConversationNumber] = useState(1)
+    const [conversationNumber, setConversationNumber] = useState(props.number)
     const right = props.right
     const [fadeOut, setFadeOut] = useState(false)
 
-    const act = () => {}
     const stepBack = () => {
         props.turnOff()
     }
+
+    useEffect(() => {
+        if (conversationNumber === 50) {
+            props.actionOne()
+        }
+    }, [conversationNumber])
+    
+
+   
+
 
     return (
         <div >
@@ -23,19 +32,19 @@ function Home(props) {
                     <div className="message width-max">
                         {options[place][conversationNumber].message}
                     </div>
-                    <div className="option width-max" onClick={()=>{
+                    {options[place][conversationNumber].first && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].first.route)
-                            options[place][conversationNumber].first.action(act)
+                            options[place][conversationNumber].first.action()
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
                         }, 2000)
                         }}>
                         {options[place][conversationNumber].first.content}
-                    </div>
-                    <div className="option width-max" onClick={()=>{
+                    </div>}
+                    {options[place][conversationNumber].second && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].second.route)
@@ -46,7 +55,7 @@ function Home(props) {
                         }, 2000)
                         }}>
                         {options[place][conversationNumber].second.content}
-                    </div>
+                    </div>}
                     {options[place][conversationNumber].third && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
@@ -83,17 +92,18 @@ function Home(props) {
                         }}>
                         {options[place][conversationNumber].fifth.content}
                     </div>}
-                    <div className="option width-max"
+                    {options[place][conversationNumber].backMessage && <div className="option width-max"
                         onClick={()=>{
                             setTimeout(() => {
                                 props.current(false)
                                 props.back(true)
+                                options[place][conversationNumber].action()
                             }, 2000)
                             props.setFadeOut(true)
                             }
                         }>
-                        {options[place].backMessage}
-                    </div>
+                        {options[place][conversationNumber].backMessage}
+                    </div>}
                 </div>
             </div>
             {props.children}

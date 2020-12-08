@@ -20,6 +20,14 @@ import './App.css';
 
 function Game() {
 
+const [progress, setProgress] = useState({
+  basic: false,
+  hospital: false,
+  bombs: false,
+  job: false,
+  bank: false
+})
+
 const [mapScreen, setMapScreen] = useState(false)
 const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
@@ -67,7 +75,9 @@ const [hospital, setHospital] = useState(false)
           back={setMapScreen}/>}
         {home && <Home 
           current={setHome}
-          back={setTwardowskiego}/>}
+          back={setTwardowskiego}
+          progress={progress}
+          setProgress={setProgress}/>}
         {ikc && <IKC 
           current={setIkc}
           back={setMapScreen}/>}

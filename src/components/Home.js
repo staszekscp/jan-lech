@@ -8,21 +8,50 @@ function Home(props) {
 
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
+  const [number, setNumber] = useState(1)
 
   useEffect(() => {
     setTimeout(() => {
       setConversation(true)
     }, 5000)
   }, [])
-  
+
   const turnOff = () => {
     setConversation(false)
   }
+  
+  useEffect(() => {
+    console.log(props.progress)
+
+    const {basic} = props.progress
+    const {hospital} = props.progress
+    
+    if (basic && hospital) {
+      setNumber(27)
+    } else if (basic) {
+      setNumber(26)
+    }
+  }, [])
+  
+
+  const actionOne = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    basic: true
+  }))}
+
     return (
       <div>
         <div className={fadeOut?"out":"main"}>
           <div className="home-background">
-            {conversation ? <Conversation place="home" turnOff={turnOff} current={props.current} back={props.back} setFadeOut={setFadeOut}>
+            {conversation ? <Conversation 
+              actionOne={actionOne}
+              number={number} 
+              place="home" 
+              turnOff={turnOff} 
+              current={props.current} 
+              back={props.back} 
+              setFadeOut={setFadeOut}>
               <div onClick={() => {setConversation(true)}}>
                   <img className="wife-conversation" src={wife} />
               </div>
