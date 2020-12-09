@@ -51,7 +51,7 @@
   .neighbor2-conversation {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 20%;
     z-index: 2;
     height: 400px;
     transform: scale(3);
@@ -82,7 +82,7 @@
     }
     to { 
       top: 50%;
-      left: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(3) 
     }

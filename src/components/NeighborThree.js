@@ -8,6 +8,7 @@ function NeighborThree(props) {
 
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
+  const [number, setNumber] = useState(1)
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,10 +16,22 @@ function NeighborThree(props) {
     }, 5000)
   }, [])
 
+  const actionOne = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    krogul: true
+  }))}
+
+  useEffect(() => {
+    if (props.progress.krogul) {
+      setNumber(5)
+    } 
+  }, [])
+
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="neighbor-three-background" >
-          {conversation ? <Conversation place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          {conversation ? <Conversation actionOne={actionOne} number={number} place="krogul" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
           <div onClick={() => {setConversation(true)}}>
             <img className="krogul-conversation" src={neighbor} />
           </div>

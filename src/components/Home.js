@@ -21,14 +21,13 @@ function Home(props) {
   }
   
   useEffect(() => {
-    console.log(props.progress)
-
-    const {basic} = props.progress
-    const {hospital} = props.progress
-    
-    if (basic && hospital) {
+    if (props.progress.basic && props.progress.hospital && props.progress.fatGuy) {
+      setNumber(29)
+    } else if (props.progress.basic && props.progress.fatGuy) {
+      setNumber(28)
+    } else if (props.progress.basic && props.progress.hospital) {
       setNumber(27)
-    } else if (basic) {
+    } else if (props.progress.basic) {
       setNumber(26)
     }
   }, [])

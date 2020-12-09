@@ -33,7 +33,7 @@
   .stelmach-conversation {
     position: fixed;
     top: 60%;
-    left: 50%;
+    left: 20%;
     z-index: 3;
     transform: scale(2);
     animation: stelmach 2s
@@ -48,7 +48,7 @@
     }
     to { 
       top: 60%;
-      left: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(2) 
     }

@@ -8,6 +8,7 @@ function NeighborOne(props) {
 
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
+  const [number, setNumber] = useState(1)
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,10 +16,43 @@ function NeighborOne(props) {
     }, 5000)
   }, [])
 
+  const actionOne = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    hospital: true
+  }))}
+
+  const actionTwo = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    stelmach: true
+  }))}
+
+  const actionThree = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    football: true
+  }))}
+
+  useEffect(() => {
+    if (props.progress.stelmach) {
+      setNumber(20)
+    } 
+  }, [])
+
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="neighbor-one-background" >
-        {conversation ? <Conversation right={true} place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+        {conversation ? <Conversation
+          actionOne={actionOne}
+          actionTwo={actionTwo}
+          actionTwo={actionThree}
+          number={number}
+          right={true}
+          place="stelmach"
+          current={props.current}
+          back={props.back}
+          setFadeOut={setFadeOut}>
           <div className="stelmach-conversation" onClick={() => {setConversation(true)}}>
             <img src={neighbor} />
           </div>

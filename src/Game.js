@@ -23,6 +23,11 @@ function Game() {
 const [progress, setProgress] = useState({
   basic: false,
   hospital: false,
+  stelmach: false,
+  football: false,
+  maciejowscy: false,
+  fatGuy: false,
+  krogul: false,
   bombs: false,
   job: false,
   bank: false
@@ -89,13 +94,19 @@ const [hospital, setHospital] = useState(false)
           back={setMapScreen}/>}
         {neighborOne && <NeighborOne 
           current={setNeighborOne}
-          back={setTwardowskiego}/>}
+          back={setTwardowskiego}
+          progress={progress}
+          setProgress={setProgress}/>}
         {neighborTwo && <NeighborTwo 
           current={setNeighborTwo}
-          back={setTwardowskiego}/>}
+          back={setTwardowskiego}
+          progress={progress}
+          setProgress={setProgress}/>}
         {neighborThree && <NeighborThree 
           current={setNeighborThree}
-          back={setTwardowskiego}/>}
+          back={setTwardowskiego}
+          progress={progress}
+          setProgress={setProgress}/>}
         {thorn && <Thorn 
           current={setThorn}
           back={setMapScreen}/>}

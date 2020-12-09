@@ -15,14 +15,22 @@ function Home(props) {
     }
 
     useEffect(() => {
-        if (conversationNumber === 50) {
+        if (conversationNumber > 500 && conversationNumber < 600) {
             props.actionOne()
         }
+        if (conversationNumber > 600 && conversationNumber < 700) {
+            props.actionTwo()
+        }
+        if (conversationNumber > 700 && conversationNumber < 800) {
+            props.actionThree()
+        }
+        if (conversationNumber > 800 && conversationNumber < 900) {
+            props.actionFour()
+        }
+        if (conversationNumber > 900 && conversationNumber < 1000) {
+            props.actionFive()
+        }
     }, [conversationNumber])
-    
-
-   
-
 
     return (
         <div >
@@ -36,7 +44,6 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].first.route)
-                            options[place][conversationNumber].first.action()
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -48,7 +55,6 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].second.route)
-                            options[place][conversationNumber].second.action()
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -60,7 +66,6 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].third.route)
-                            options[place][conversationNumber].third.action()
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -72,7 +77,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].fourth.route)
-                            options[place][conversationNumber].fourth.action(stepBack)
+                            stepBack()
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -84,7 +89,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].fifth.route)
-                            options[place][conversationNumber].fifth.action(stepBack)
+                            stepBack()
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -97,7 +102,6 @@ function Home(props) {
                             setTimeout(() => {
                                 props.current(false)
                                 props.back(true)
-                                options[place][conversationNumber].action()
                             }, 2000)
                             props.setFadeOut(true)
                             }
