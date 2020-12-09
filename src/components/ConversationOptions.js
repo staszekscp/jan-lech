@@ -912,10 +912,383 @@ const options = {
         },
     },
     "lekarz": {
-
+        1: {
+            message: "Dzień dobry, jestem dr Piltz. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
+            first: {
+                content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
+                route: 61,
+                action: () => {}
+            },
+            second: {
+                content: "Dzień dobry Panie doktorze. Może pamięta Pan jednego z pacjentów, nazywał się Najchel.",
+                route: 61,
+                action: () => {}
+            },
+            third: {
+                content: "Dzień dobry. Potrzebuję informacji o jednym z pacjentów, Józefie Najchelu.",
+                route: 61, 
+                action: () => {}
+            }
+        },
+        2: {
+            message: "Dzień dobry, jestem dr Piltz. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
+            first: {
+                content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
+                route: 62,
+                action: () => {}
+            },
+            second: {
+                content: "Dzień dobry Panie doktorze. Może pamięta Pan jednego z pacjentów, nazywał się Najchel.",
+                route: 62,
+                action: () => {}
+            },
+            third: {
+                content: "Dzień dobry. Potrzebuję informacji o jednym z pacjentów, Józefie Najchelu.",
+                route: 62, 
+                action: () => {}
+            }
+        },
+        61: {
+            message: "Najchel... Najchel... Ach, tak! Racja, był tu, nawet niedawno. Leczyliśmy go na chorobę afektywną dwubiegunową...",
+            first: {
+                content: "W takim razie nie powinien być wciąż na oddziale?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "I co, tak po prostu wyzdrowiał?",
+                route: 4, 
+                action: () => {}
+            },
+        },
+        62: {
+            message: "Najchel... Najchel... Ach, tak! Racja, był tu, nawet niedawno. Leczyliśmy go na chorobę afektywną dwubiegunową...",
+            first: {
+                content: "W takim razie nie powinien być wciąż na oddziale?",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "I co, tak po prostu wyzdrowiał?",
+                route: 3, 
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Starałem się przekonać jego żonę, że powienien zostać na oddziale, bo coś może się wydarzyć. Ale nie chciała słuchać. Podpisała jedynie dokument, przysięgając, że otoczy go opieką. Nie możemy przetrzymywać pacjentów bez wyroku sądowego.",
+            first: {
+                content: "To pewnie nie zaskoczy Pana informacja, że Najchel zaginął i nie wiadomo co się z nim stało?",
+                route: 5,
+                action: () => {}
+            },
+            second: {
+                content: "Brawo. No to niech Pan wie, że Najchel teraz biega po mieście z rewolwerem za pazuchą. A my nie wiemy gdzie go szukać.",
+                route: 5, 
+                action: () => {}
+            },
+            second: {
+                content: "No to się świetnie zaopiekowała jak zeszłej nocy po awanturze wybiegł z rewolwerem w dłoni, krzycząc że kogoś zabije.",
+                route: 5, 
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Starałem się przekonać jego żonę, że powienien zostać w szpitalu, bo coś może się wydarzyć. Ale nie chciała słuchać. Podpisała jedynie dokument, przysięgając, że otoczy go opieką. Nie możemy przetrzymywać pacjentów bez wyroku sądowego.",
+            first: {
+                content: "To pewnie nie zaskoczy Pana informacja, że Najchel zaginął i nie wiadomo co się z nim stało?",
+                route: 5,
+                action: () => {}
+            },
+            second: {
+                content: "Brawo. No to niech Pan wie, że Najchel teraz biega po mieście z rewolwerem za pazuchą. A my nie wiemy gdzie go szukać.",
+                route: 5, 
+                action: () => {}
+            },
+        },
+        5: {
+            message: "Słucham?!",
+            first: {
+                content: "Niestety. Dlatego będę miał kilka pytań.",
+                route: 6,
+                action: () => {}
+            },
+        },
+        6: {
+            message: "Dobrze, proszę pytać. Postaram się pomóc",
+            first: {
+                content: "Do czego zdolny jest Najchel?",
+                route: 7,
+                action: () => {}
+            },
+            second: {
+                content: "Wie Pan coś, co pomogłoby w odnalezieniu Najchela?",
+                route: 8,
+                action: () => {}
+            },
+            third: {
+                content: "Jak wyglądał ostatni pobyt Najchela w szpitalu?",
+                route: 9,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "Prawdę mówiąc, do wszystkiego. Miewał halucynacje. Często rozmawiał z urojonym przyjacielem, którego przedstawiał jako 'człowieka o koźlich rogach'. Ten 'przyjaciel' często namawiał go do dziwnych rzeczy. Najchel mówił, że pewnego razu kazał mu zaatakować sąsiadkę. Ale proszę porozmawiać z siostrą Zuzanną. To ona bezpośrednio opiekowała się Najchelem.",
+            fourth: {
+                content: "W porządku, dziękuję za pomoc.",
+                route: 6,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "Szczerze, nie wiem. Najchel miał urojonego przyjaciela, którego przedstawiał jako 'człowieka o koźlich rogach'. Ten 'przyjaciel' często namawiał go do dziwnych rzeczy. Najchel mówił, że pewnego razu kazał mu zaatakować sąsiadkę. Ale proszę porozmawiać z siostrą Zuzanną. To ona bezpośrednio opiekowała się Najchelem i będzie wiedzieć więcej ode mnie.",
+            fourth: {
+                content: "W porządku, dziękuję za pomoc.",
+                route: 6,
+                action: () => {}
+            },
+        },
+        9: {
+            message: "Prawdę mówiąc, nie wyglądało to dobrze. Miewał halucynacje. Często rozmawiał z urojonym przyjacielem, którego przedstawiał jako 'człowieka o koźlich rogach'. Ten 'przyjaciel' często namawiał go do dziwnych rzeczy. Najchel mówił, że pewnego razu kazał mu zaatakować sąsiadkę. Ale proszę porozmawiać z siostrą Zuzanną. To ona bezpośrednio opiekowała się Najchelem.",
+            fourth: {
+                content: "W porządku, dziękuję za pomoc.",
+                route: 6,
+                action: () => {}
+            },
+        },
+        10: {
+            message: "Tak?",
+            first: {
+                content: "Najchela w trakcie pobytu w szpitalu odwiedził jakiś człowiek. Ponoć Pan z nim rozmawiał.",
+                route: 11,
+                action: () => {}
+            },
+        },
+        11: {
+            message: "*dłuższa pauza, przełyka ślinę* No dobrze... To prawda. Nie wiem jednak jak się nazywa, nie chciał się przedstawić. Poprosił mnie tylko o pewną przysługę...",
+            first: {
+                content: "No i co to za przysługa?",
+                route: 12,
+                action: () => {}
+            },
+            second: {
+                content: "I co, zapomniał Pan mi o tym powiedzieć?",
+                route: 13,
+                action: () => {}
+            },
+        },
+        12: {
+            message: "*bierze głęboki wdech* Chciał zobaczyć całą dokumentację medyczną Józefa Najchela.",
+            first: {
+                content: "I dał mu Pan do niej dostęp?",
+                route: 14,
+                action: () => {}
+            },
+            second: {
+                content: "Niech zgadnę. Zgodził się Pan.",
+                route: 14,
+                action: () => {}
+            },
+        },
+        13: {
+            message: "Nie wydawało mi się to istotne...",
+            first: {
+                content: "Bzdury, przemilczał Pan to specjalnie. Proszę powiedzieć, co to była za przysługa.",
+                route: 12,
+                action: () => {}
+            },
+        },
+        14: {
+            message: "Nie rozumie Pan! Potrzebowałem pieniędzy!",
+            first: {
+                content: "Nie obchodzi mnie to, że przyjął Pan łapówkę. Moim zadaniem jest odnaleźć Najchela. Gdzie mogę znaleźć tego człowieka?",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Oj tam, co się Pan przejmuje. To, że jestem z policji nie znaczy, że mam krystaliczne serce. 1000 złotych i o niczym nie wiem.",
+                route: 16,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Nie mogłem pokazać mu dokumentacji w szpitalu. Ktoś mógłby zobaczyć. Dlatego umówiliśmy się w restauracji przy browarze Lubicz. Ale nie wiem nic więcej.",
+            first: {
+                content: "Dziękuję za informacje. Ale zanim pójdę mam kilka pytań odnośnie służby zdrowia...",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Dziękuję. Jednak zanim pójdę to chciałbym zamienić słówko z siostrą Zuzanną... Mam kilka pytań dotyczących Kościoła...",
+                route: 16,
+                action: () => {}
+            },
+            backMessage: "No dobrze. Dziękuję za informacje. [Zakończ rozmowię i opuść szpital]"
+        },
+        16: {
+            message: "Dobrze, już dobrze... Nie potrzebuję więcej kłopotów... [Wręcza kopertę]",
+            first: {
+                content: "Wspaniale, akurat zbierałem na nowy samochód. Tymczasem proszę powiedzieć gdzie znajdę tego człowieka.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        17: {
+            message: "Słucham. Ma Pan jeszcze jakieś pytania?",
+            first: {
+                content: "Owszem. Mam kilka pytań odnośnie służby zdrowia...",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Chciałbym porozmawiać z siostrą Zuzanną",
+                route: 16,
+                action: () => {}
+            },
+            backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        18: {
+            message: "Witam ponownie. Słucham Pana.",
+            first: {
+                content: "Mam kilka pytań odnośnie służby zdrowia...",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Chciałbym porozmawiać z siostrą Zuzanną",
+                route: 16,
+                action: () => {}
+            },
+            backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
     },
     "pielegniarka": {
-        
+        1: {
+            message: "Niech będzie pochwalony. Widziałam, że rozmawiał Pan z doktorem Piltzem. W czym mogę pomóc?",
+            first: {
+                content: "Dzień dobry. Doktor mówi, że jednym z Pani podopiecznych był Józef Najchel...",
+                route: 2,
+                action: () => {}
+            },
+            second: {
+                content: "Dzień dobry. Co mi może Pani powiedzieć o Józefie Najchelu?",
+                route: 6,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Tak. Biedny człowiek... Opętany przez szatana. A przynajmniej tak wynikało z tego co mówił...",
+            first: {
+                content: "Chodzi to tego 'przyjaciela' z rogami, tak?",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Jak dla mnie to po prostu chory psychicznie człowiek, nie żaden szatan.",
+                route: 5, 
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Tak, ale nie dziwi mnie to... Ponoć do kościoła nigdy nie chodził...",
+            first: {
+                content: "Zgadzam się. Jednak obecnie sytuacja jest bardzo poważna, dlatego musi mi Pani pomóc.",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Ja też nie chodzę, a jakoś nie widuję żadnych diabłów.",
+                route: 5, 
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Słucham Pana.",
+            first: {
+                content:"Co mi może Pani powiedzieć na temat Józefa Najchela?",
+                route: 6,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "Proszę sobie nie robić kpin z cierpienia innego człowieka!",
+            first: {
+                content:"Przepraszam, zachowałem się nietaktownie. Muszę Panią o coś zapytać.",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Dobrze już, dobrze. Proszę się nie unosić. Czy mogę zadać jedno pytanie?",
+                route: 4, 
+                action: () => {}
+            },
+        },
+        6: {
+            message: "Był u nas kilka tygodni temu. Opiekowałam się nim niemal codziennie. Niewiele ze mną rozmawiał... Mówił głównie do siebie, a raczej do diabła co w nim siedzi. Biedaczek. Żona go nawet nie odwiedzała. W końcu zdecydowała się go przygarnąć, bo sąsiedzi zaczęli plotkować. Ale raz zjawił się u niego jakiś gość...",
+            first: {
+                content:"Gość? Kto to był?",
+                route: 501,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Jakiś mężczyzna. Nie przedstawił się. Chciał tylko zobaczyć się z Panem Józefem.",
+            first: {
+                content:"Jak wyglądał?",
+                route: 8,
+                action: () => {}
+            },
+            second: {
+                content: "O czym rozmawiali?",
+                route: 10,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "Wysoki... Przy kości. Elegancki.",
+            first: {
+                content:"A słyszała Pani o czym rozmawiali?",
+                route: 9,
+                action: () => {}
+            },
+        },
+        9: {
+            message: "Niestety, nie. Ale widziałam, że potem poszedł do gabinetu doktora Piltza. Może Pan jego spytać, czy czegoś nie wie.",
+            fourth: {
+                content: "Tak też zrobię. Dziękuję.",
+                route: 10, 
+                action: () => {}
+            },
+        },
+        10: {
+            message: "Niestety nie wiem.",
+            first: {
+                content: "A pamięta Pani jak wyglądał?",
+                route: 11, 
+                action: () => {}
+            },
+        },
+        11: {
+            message: "Tak, to był taki gruby, wysoki mężczyzna. Elegancki. Doktor Piltz może wiedzieć coś więcej na jego temat, bo widziałam jak rozmawiali. Proszę się do niego odezwać.",
+            fourth: {
+                content: "Tak też zrobię. Dziękuję.",
+                route: 11, 
+                action: () => {}
+            },
+        },
+        15: {
+            message: "Tak? Chciałby Pan ze mną porozmawiać?",
+            first: {
+                content:"Tak, chciałbym dowiedzieć się więcej o sytuacji kościoła. Mogę zadać kilka pytań?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Piltzem.",
+                route: 11, 
+                action: () => {}
+            },
+            backMessage: "Nie, tak naprawdę to już wychodzę. Do widzenia. [Zakończ rozmowię i opuść szpital.]"
+        }
     }
 }
 

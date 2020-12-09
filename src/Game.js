@@ -28,6 +28,8 @@ const [progress, setProgress] = useState({
   maciejowscy: false,
   fatGuy: false,
   krogul: false,
+  fatGuyInHospital: false,
+  brewery: false,
   bombs: false,
   job: false,
   bank: false
@@ -38,7 +40,7 @@ const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
-const [home, setHome] = useState(true)
+const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
@@ -47,7 +49,7 @@ const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(false)
+const [hospital, setHospital] = useState(true)
 
 
   return (
@@ -119,7 +121,9 @@ const [hospital, setHospital] = useState(false)
           back={setMapScreen}/>}
         {hospital && <Hospital 
           current={setHospital}
-          back={setMapScreen}/>}
+          back={setMapScreen}
+          progress={progress}
+          setProgress={setProgress}/>}
       </div>
     </div>
   );

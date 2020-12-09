@@ -34,7 +34,7 @@
   .doctor-conversation {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 20%;
     z-index: 3;
     transform: scale(2);
     animation: doctor 2s
@@ -64,7 +64,7 @@
     }
     to { 
       top: 50%;
-      left: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(2) 
     }
