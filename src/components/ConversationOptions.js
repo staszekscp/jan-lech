@@ -1,4 +1,3 @@
-
 const options = {
     "home": {
         1: {
@@ -1289,6 +1288,181 @@ const options = {
             },
             backMessage: "Nie, tak naprawdę to już wychodzę. Do widzenia. [Zakończ rozmowię i opuść szpital.]"
         }
+    },
+    "szef-krowodrza": {
+        1: {
+            message: "Dzień dobry. W czym mogę pomóc?",
+            first: {
+                content: "Dzień dobry. Czy to Pan jest zarządcą tej rogatki?",
+                route: 501,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Tak, a o co chodzi?",
+            first: {
+                content: "Kołodziejczyk, policja. Przychodzę w sprawie jednego z Pańskich podwładnych, Najchela?",
+                route: 2,
+                action: () => {}
+            },
+            second: {
+                content: "Jestem z policji. A chodzi o niejakiego Józefa Najchela. Ponoć tu pracuje.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "No cóż, w takim wypadku mam dla Pana ważną wiadomość. Otóż Najchel nie pracuje u mnie już od... lutego? ",
+            first: {
+                content: "To dlaczego jego żona twierdzi inaczej?",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Słucham? To co się w takim razie wydarzyło?",
+                route: 7, 
+                action: () => {}
+            },
+        },
+        3: {
+            message: "A tego to ja już nie wiem. Pewnie się nie przyznał. Ale ja nie będę płacił komuś, kto mnie wyzywa od najgorszych. Co to, to nie.",
+            first: {
+                content: "Zatem kiedy po raz ostatni widział Pan Najchela?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Czy potem utrzymywał Pan z nim jakiś kontakt?",
+                route: 5,
+                action: () => {}
+            },
+            third: {
+                content: "To jak Pana nazwał?",
+                route: 6,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Tamtego dnia po raz ostatni. Ale wiem, że jego następca miał wątpliwą przyjemność z nim porozmawiać. Tam stoi. Może powiedzieć nieco więcej.",
+            fourth: {
+                content: "Dziękuję. Zapytam.",
+                route: 4,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "*ironicznie* Pewnie, często chodzimy zjeść u Thorna jakiś czulent... Co Pan, na głowę upadł? Jak mnie ktoś od bolszewików wyzywa to nie chcę tego człowieka na oczy widzieć. Ale wiem, że jego następca z nim rozmawiał. Proszę z nim zamienić słówko, może się Pan czegoś dowie.",
+            fourth: {
+                content: "Dziękuję. Zapytam.",
+                route: 4,
+                action: () => {}
+            },
+        },
+        6: {
+            message: "Czy uważa to Pan za śmieszne? Bo mnie jakoś nie bawi. Jak chce Pan czegoś się dowiedzieć proszę porozmawiać z następcą Najchela. Tam stoi. On miał okazję się z nim widzieć. ",
+            fourth: {
+                content: "Dziękuję. Zapytam.",
+                route: 4,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "Odbierając wypłatę zaczął wyzywać mnie od najgorszych. Nie wiem co w niego wstąpiło. Ale uznałem, że nie będę płacił komuś, kto mnie obraża! Co to, to nie!",
+            first: {
+                content: "Zatem kiedy po raz ostatni widział Pan Najchela?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Czy potem utrzymywał Pan z nim jakiś kontakt?",
+                route: 5,
+                action: () => {}
+            },
+            third: {
+                content: "To jak Pana nazwał?",
+                route: 6,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "Ma Pan jeszcze jakieś pytania?",
+            first: {
+                content: "Chciałbym porozmawiać z Panem o polityce.",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Jednak jeszcze raz chciałbym pomówić z Pana podwładnym.",
+                route: 5,
+                action: () => {}
+            },
+            backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        9: {
+            message: "Witam Pana ponownie! Jakieś pytania?",
+            first: {
+                content: "Chciałbym porozmawiać z Panem o polityce.",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Chciałbym pomówić z Pana podwładnym.",
+                route: 5,
+                action: () => {}
+            },
+            backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+    },
+    "pracownik-krowodrza" : {
+        1: {
+            message: "Słucham?",
+            first: {
+                content: "Dzień dobry. Pana szef mówi, że widział się Pan z Józefem Najchelem, tym co tu pracował wcześniej.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "A co Panu naopowiadał? Pewnie, że ten cały Najchel go bolszewikiem nazwał i nie mógł ujmy na honorze znieść, nacjonalista cholerny.",
+            first: {
+                content: "Widzę, że nie pała Pan miłością do swojego szefa...",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Takiej odpowiedzi się nie spodziewałem, przyznaję.",
+                route: 3,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Przepraszam. Po prostu kwestie polityczne nas bardzo różnią, czasem zdarzy mi się unieść. No dobrze, ale pytał Pan o Najchela. No był tutaj, ale dosłownie przez chwilę, i to parę tygodni temu... Nawet nie zdążyłem się mu dobrze przyjrzeć. Chciał się widzieć z szefem, tyle. Więcej go nie widziałem.",
+            first: {
+                content: "Dziękuję za informacje. Chciałbym jednak zamienić z Panem słówko na tematy polityczne...",
+                route: 2,
+                action: () => {}
+            },
+            fourth: {
+                content: "No dobrze. Dziękuję za odpowiedź. Porozmawiam jeszcze z Pana przełożonym.",
+                route: 4,
+                action: () => {}
+            },
+            backMessage: "Dziękuję, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        4: {
+            message: "Tak?",
+            first: {
+                content: "Chciałbym zamienić z Panem słówko na tematy polityczne...",
+                route: 2,
+                action: () => {}
+            },
+            fourth: {
+                content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym.",
+                route: 3,
+                action: () => {}
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
     }
 }
 

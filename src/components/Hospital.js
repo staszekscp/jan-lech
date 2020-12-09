@@ -41,12 +41,6 @@ function Hospital(props) {
     }, 5000)
   }, [])
 
-  useEffect(() => {
-    if (props.progress.krogul) {
-      setNumberDoctor(2)
-    }
-  }, [])
-
   const actionOne = () => {
     props.setProgress(prev => ({
     ...prev,
@@ -62,6 +56,8 @@ function Hospital(props) {
   useEffect(() => {
     if (props.progress.brewery) {
       setNumberDoctor(18)
+    } else if (props.progress.krogul) {
+      setNumberDoctor(2)
     }
   })
 

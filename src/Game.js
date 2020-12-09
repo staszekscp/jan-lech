@@ -30,6 +30,8 @@ const [progress, setProgress] = useState({
   krogul: false,
   fatGuyInHospital: false,
   brewery: false,
+  unemployed: false,
+  workerConversation: false,
   bombs: false,
   job: false,
   bank: false
@@ -43,13 +45,13 @@ const [hawelka, setHawelka] = useState(false)
 const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
-const [krowodrza, setKrowodrza] = useState(false)
+const [krowodrza, setKrowodrza] = useState(true)
 const [neighborOne, setNeighborOne] = useState(false)
 const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(true)
+const [hospital, setHospital] = useState(false)
 
 
   return (
@@ -80,7 +82,7 @@ const [hospital, setHospital] = useState(true)
         {consulate && <Consulate 
           current={setConsulate}
           back={setMapScreen}/>}
-        {home && <Home 
+        {home && <Home                              //
           current={setHome}
           back={setTwardowskiego}
           progress={progress}
@@ -91,20 +93,22 @@ const [hospital, setHospital] = useState(true)
         {jama && <Jama 
           current={setJama}
           back={setMapScreen}/>}
-        {krowodrza && <Krowodrza 
+        {krowodrza && <Krowodrza                    //
           current={setKrowodrza}
-          back={setMapScreen}/>}
-        {neighborOne && <NeighborOne 
+          back={setMapScreen}
+          progress={progress}
+          setProgress={setProgress}/>}
+        {neighborOne && <NeighborOne                //
           current={setNeighborOne}
           back={setTwardowskiego}
           progress={progress}
           setProgress={setProgress}/>}
-        {neighborTwo && <NeighborTwo 
+        {neighborTwo && <NeighborTwo                //
           current={setNeighborTwo}
           back={setTwardowskiego}
           progress={progress}
           setProgress={setProgress}/>}
-        {neighborThree && <NeighborThree 
+        {neighborThree && <NeighborThree            //
           current={setNeighborThree}
           back={setTwardowskiego}
           progress={progress}
@@ -112,18 +116,18 @@ const [hospital, setHospital] = useState(true)
         {thorn && <Thorn 
           current={setThorn}
           back={setMapScreen}/>}
-        {twardowskiego && <Twardowskiego 
+        {twardowskiego && <Twardowskiego            //
           setHome={setHome}
           setNeighborOne={setNeighborOne}
           setNeighborTwo={setNeighborTwo}
           setNeighborThree={setNeighborThree}
           current={setTwardowskiego}
           back={setMapScreen}/>}
-        {hospital && <Hospital 
+        {hospital && <Hospital                       //
           current={setHospital}
           back={setMapScreen}
           progress={progress}
-          setProgress={setProgress}/>}
+          setProgress={setProgress}/>} 
       </div>
     </div>
   );

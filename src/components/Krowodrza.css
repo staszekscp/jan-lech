@@ -34,7 +34,7 @@
   .krowodrza-boss-conversation {
     position: fixed;
     top: 50%;
-    left: 60%;
+    left: 20%;
     height: 800px;
     z-index: 3;
     transform: scale(1.8);
@@ -65,7 +65,7 @@
     }
     to { 
       top: 50%;
-      left: 60%;
+      left: 20%;
       z-index: 3;
       transform: scale(1.8) 
     }
