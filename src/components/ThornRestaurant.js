@@ -8,6 +8,7 @@ import './Thorn.css';
 function ThornRestaurant(props) {
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
+  const [number, setNumber] = useState(1)
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,10 +16,22 @@ function ThornRestaurant(props) {
     }, 5000)
   }, [])
 
+  useEffect(() => {
+    if (props.progress.thorn) {
+      setNumber(8)
+    } 
+  }, [])
+
+  const actionOne = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    thorn: true
+  }))}
+
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="thorn-background">
-            {conversation ? <Conversation right={true} place="home" current={props.current} back={props.back} setFadeOut={setFadeOut}>
+            {conversation ? <Conversation actionOne={actionOne} number={number} right={true} place="thorn" current={props.current} back={props.back} setFadeOut={setFadeOut}>
             <div onClick={() => {setConversation(true)}}>
               <img className="thorn-conversation" src={thorn} />
             </div>

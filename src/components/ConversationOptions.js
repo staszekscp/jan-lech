@@ -1463,6 +1463,504 @@ const options = {
             },
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
+    },
+    "thorn": {
+        1: {
+            message: "Szolem alejchem! Dzień dobry! Hirsz Thorn, właściciel. Niestety jeszcze wcześnie rano, otwieramy później. Zapraszam po 10!",
+            first: {
+                content: "Dzień dobry. Dziękuję, ale nie przychodzę, aby się stołować. Potrzebuję informacji.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Dobry, dobry. Z tym, że przychodzę z do Pana pytaniem dotyczącym jednego z klientów.",
+                route: 501,
+                action: () => {}
+            },
+            third: {
+                content: "Co to za miejsce? Nigdy tu nie byłem.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Tak? Słucham zatem.",
+            first: {
+                content: "Kojarzy Pan Józefa Najchela?",
+                route: 3,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Ooo, Pan chyba nie z Krakowa. To moja restauracja. Założyłem ją w 5659 roku. Znaczy przepraszam, dla Was, chrześcijan, to będzie w... 1899 roku, wybaczy Pan. W każdym razie podajemy najlepsze dania żydowskie - czulent, faszerowane szczupaki, gęsie szyjki... Ale strudla też Pan dostanie! ",
+            first: {
+                content: "Kiedyś na pewno się zajrzę! Ale teraz potrzebuję informacji o jednym z klientów.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Dziękuję, ale wolę schabowego. W każdym razie przyszedłem w sprawie pewnego klienta.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Kojarzę... A co się stało?",
+            first: {
+                content: "Pan Najchel zaginął, staram się go odnaleźć. Wie Pan może gdzie może teraz przebywać?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Drogi Panie Thorn, Najchel zaginął. Widział go Pan ostatnio?",
+                route: 6,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Niestety. Nie miałem z nim bliższego kontaktu. Zresztą, moi synowie, którzy zazwyczaj obsługują gości też nie mieli okazji go poznać. Zawsze przychodził samemu na czulent.",
+            first: {
+                content: "A kiedy go Pan widział po raz ostatni?",
+                route: 5,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "Dawno, kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabat, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chcie zapłacić to musi wrócić kiedy indziej. W szabat nie mogę tykać pieniędzy. Niestety więcej Panu nie potrafię powiedzieć.",
+            first: {
+                content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        6: {
+            message: "Niestety, po raz ostatni kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabat, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chcie zapłacić to musi wrócić kiedy indziej. W szabat nie mogę tykać pieniędzy.",
+            first: {
+                content: "A może wie Pan gdzie może teraz przebywać?",
+                route: 7,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "Niestety. Nie miałem z nim bliższego kontaktu. Zresztą, moi synowie, którzy zazwyczaj obsługują gości też nie mieli okazji go poznać. Zawsze przychodził samemu na czulent. Niestety nie potrafię Panu więcej powiedzieć.",
+            first: {
+                content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        8: {
+            message: "Witam Pana ponownie! Jak mogę pomóc?",
+            first: {
+                content: "Chciałbym porozmawiać z Panem o życiu żydowskim w Krakowie.",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "W sumie to jednak nie mam czasu. Przepraszam, do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+    },
+    "straznik": {
+        1: {
+            message: "Hola, hola! To zamknięta impreza!",
+            first: {
+                content: "Kołodziejczyk, policja. Albo mnie Pan wpuści, albo wszytskich aresztuję. Pana wybór.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Zaraz Pan będzie na zamkniętej imprezie, tyle że w areszcie na Montelupich. Policja.",
+                route: 501,
+                action: () => {}
+            },
+            third: {
+                content: "Żeby człowiek nie mógł się spokojnie o 8 rano wódki napić? Skandal! Proszę mnie natychmiast wpuścić!",
+                route: 2,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Przepraszam, nie wiedziałem. Naprawdę, przepraszam!",
+            first: {
+                content: "No już dobrze. Szukam jednego z klientów. Gruby, wysoki facet, elegancko ubrany.",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Proszę jak od razu złagodniał. A taki chojrak przed chwilą. No dobrze. Szukam grubego, wysokiego i eleganckiego faceta. Widział go Pan?",
+                route: 4,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "*zbliża się* Jak Ci zaraz pokażę...",
+            first: {
+                content: "Koniec tych żartów. Kołodziejczyk, policja.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Jeszcze jeden krok i zawiozę Pana na Montelupich. Policja.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Proszę Pana, tak to wygląda połowa naszych klientów. Jak Pan chce, to może Pan porozmawiać z kierownikiem, on zna stałych bywalców. To ten, w okularach, może będzie w stanie bardziej pomóc.",
+            fourth: {
+                content: "Dziękuję. Tak też zrobię.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Proszę sobie nie kpić! Ja tylo wykonuję swoją pracę! A co do tego człowieka to właśnie opisał Pan połowę naszych klientów. Jak Pan chce może porozmawiać z kierownikiem, on zna stałych bywalców. To ten, w okularach, może będzie w stanie bardziej pomóc.",
+            fourth: {
+                content: "Dziękuję. Tak też zrobię.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "I dowiedział się Pan czegoś?",
+            first: {
+                content: "Tak, muszę iść do... jak to ujął...? 'Hawełek i Michalików'. Wie Pan co to znaczy?",
+                route: 6,
+                action: () => {}
+            },
+            second: {
+                content: "Właściwie to chciałem jeszcze porozmawiać z Panem... Co to za miejsce?",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Tak, wiem dokąd mam iść, w razie pytań wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
+        },
+        6: {
+            message: "Coś czuję, że jest Pan spoza Krakowa, skoro Pan tego nie wie... Chodzi oczywiście o restaurację Antoniego Hawełki na Rynku i Jamę Michalika na Floriańskiej.",
+            first: {
+                content: "Dziękuję. Jeszcze zanim pójdę pozwoli Pan, że zapytam: Co to jest za miejsce?",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Dziękuję, to by było na tyle, w razie pytań jeszcze wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
+        },
+        7: {
+            message: "Dzień dobry, Pan znowu do kierownika? Niestety, nie jest w stanie rozmawiać, zupełnie pijany...",
+            first: {
+                content: "Właściwie to chciałem porozmawiać z Panem... Co to za miejsce?",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Rozumiem. W takim razie do widzenia. [Zakończ rozmowę i wyjdź.]"
+        },
+    },
+    "szef-browar": {
+        1: {
+            message: "*lekko podpity* A tso Pan tu robi? Kto Pana wpuścił?",
+            first: {
+                content: "Pana strażnik był tak miły, że pozwolił mi wejść. Kołodziejczyk, policja.",
+                route: 2,
+                action: () => {}
+            },
+            second: {
+                content: "Dzień dobry. Proszę Pana, to ja będę zadawać pytania, jestem z policji.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Aaaa to szepraszam, panie władco.",
+            first: {
+                content: "Skup się Pan. Szukam jednego z klientów. Wysoki, gruby, elegancki. Kojarzy Pan?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Co za jełop.",
+                route: 3,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "E-e-e! Tylko nie jeop! Prosze tu mi się zachować!",
+            first: {
+                content: "Dobrze już, dobrze. Skup się Pan. Szukam jednego z klientów. Wysoki, gruby, elegancki. Kojarzy Pan?",
+                route: 4,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "A coś więcej?",
+            first: {
+                content: "Wiem, że jakiś czas temu umówił się tutaj z doktorem Piltzem.",
+                route: 5,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "Aaaaa, no jasne! Wiem, o którego ch... *czka* o którego chodzi. Proszę tylko *przykłada palec do ust* ciiiiiiiiii! Nikomu nie mówić, zwłaszcza policji! To Bogdan Majchrzak. Czasem tu przychodzi, nie wiem czym się zajmuje, ale wiem, że się szlaja po tych, no Hawełkach, Michalikach...",
+            first: {
+                content: "Co to jakiś cholerny duch, że nikt nie wie jak się nazywa?",
+                route: 6,
+                action: () => {}
+            },
+            second: {
+                content: "To zna Pan Piltza?",
+                route: 7,
+                action: () => {}
+            },
+            third: {
+                content: "Hawełkach i Michalikach?",
+                route: 8,
+                action: () => {}
+            },
+        },
+        6: {
+            message: "A bo ja wiem? Pytaj Pan u Hawełki, albo u Michalika może tam Pan go znajdziesz. A ja... *czka* muszę już iść, poczeba wzywa! [Odchodzi.]",
+            fourth: {
+                content: "[Podejdź do wyjścia]",
+                route: 5,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "Może znam, a może nie znam! Nie no, znam, znam, moja siostra do niego chodziła. Ale ja... *czka* muszę już iść, poczeba wzywa! [Odchodzi.]",
+            fourth: {
+                content: "[Podejdź do wyjścia]",
+                route: 5,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "Co Pan, z choinki sie urwał? Hawełkach i Michalikach! Ale *czka* tera to muszę iść, poczeba wzywa! [Odchodzi.]",
+            fourth: {
+                content: "[Podejdź do wyjścia]",
+                route: 5,
+                action: () => {}
+            },
+        },
+    },
+    "mehoffer": {
+        1: {
+            message: "Dzień dobry. Nie widziałem tu Pana wcześniej. Jestem Józef Mehoffer.",
+            first: {
+                content: "Dzień dobry! To zaszczyt Pana poznać! Przodownik Kołodziejczyk, policja.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Dobry. Nie dziwię się, bo nigdy tu nie byłem. Kołodziejczyk, policja.",
+                route: 601,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Policja? Słucham, w czym mogę pomóc.",
+            first: {
+                content: "Drogi Panie Mehoffer. Szukam pewnego człowieka, nazywa się Bogdan Majchrzak, ponoć zdarza mu się tutaj bywać. Z opisu wiem, że jest wysoki i ma nadwagę",
+                route: 2,
+                action: () => {}
+            },
+            second: {
+                content: "Czy zna Pan może człowieka o imieniu Bogdan Majchrzak? Podobno czasami tutaj przychodzi. Ponoć jest wysoki i swoje waży.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        601: {
+            message: "Jest Pan bardzo niekulturalny... Ale słucham, proszę pytać.",
+            first: {
+                content: "Szukam Bogdana Majchrzaka. Wysoki, gruby. Zna go Pan?",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Dostałem informację, że bywa tutaj Bogdan Majchrzak. Taki wysoki, przy kości. Kojarzy Pan takie nazwisko?",
+                route: 3,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Nie, nie kojarzę, przykro mi. Ale może Tadeusz będzie coś wiedział, proszę jego zapytać.",
+            first: {
+                content: "Dziękuję. Ale zanim pójdę... Był Pan rektorem Akademii Sztuk Pięknych... Co Pan myśli o systemie szkolnictwa?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Dziękuję za informację, tak też zrobię.",
+                route: 3,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Nie, nie kojarzę, przykro mi. Ale może Tadeusz będzie coś wiedział, proszę jego zapytać. Tylko więcej kultury!",
+            first: {
+                content: "Dobrze. Ale zanim pójdę... Był Pan rektorem Akademii Sztuk Pięknych... Co Pan myśli o systemie szkolnictwa?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Tak też zrobię.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        10: {
+            message: "Dzień dobry. Nie widziałem tu Pana wcześniej. Jestem Józef Mehoffer.",
+            first: {
+                content: "Dzień dobry! To dla mnie zaszczyt. Jestem Kołodziejczyk, z policji.",
+                route: 502,
+                action: () => {}
+            },
+            second: {
+                content: "No nie dziwię się, że mnie Pan nie widział, bo nie chodzę do jakichś 'jam'.",
+                route: 602,
+                action: () => {}
+            },
+        },
+        502: {
+            message: "O proszę, miło Pana poznać. Słucham, w czym mogę pomóc?",
+            first: {
+                content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                route: 2,
+                action: () => {}
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        602: {
+            message: "To nie jest jakaś tam 'jama'! To tutaj spotykali i spotykają się najwięksi artyści Krakowa! Jak Pan śmie!",
+            first: {
+                content: "Bardzo przepraszam, nie chciałem nikogo urazić... Proszę wybaczyć...",
+                route: 11,
+                action: () => {}
+            },
+            second: {
+                content: "Najwięksi artyści? Chyba Pan żartuje! Niby kto tutaj przychodził?",
+                route: 701,
+                action: () => {}
+            },
+        },
+        701: {
+            message: "Proszę natychmiast wyjść. Nie ma tu miejsca dla kogoś takiego, jak Pan.",
+            backMessage: "W porządku. Do widzenia. [Wyjdź]"
+        },
+        11: {
+            message: "Już dobrze, słucham. W czym mogę pomóc?",
+            first: {
+                content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                route: 2,
+                action: () => {}
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        12: {
+            message: "Tak?",
+            first: {
+                content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Jeśli Pan pozwoli to jednak wrócę do pana Tadeusza.",
+                route: 2,
+                action: () => {}
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        13: {
+            message: "Witam ponownie. Ma Pan do mnie jeszcze jakieś pytania?",
+            first: {
+                content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                route: 2,
+                action: () => {}
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+
+    },
+    "zelenski": {
+        801: {
+            message: "Dzień dobry, Tadeusz Boy-Żeleński. Jak dobrze słyszałem szuka Pan jakiegoś Bogdana Majchrzaka. Niestety nie znam takiego człowieka.",
+            first: {
+                content: "Rozumiem... Ale korzystając z okazji. Chyba zna Pan to miejsce od podszewki. Co mi może Pan na jego temat powiedzieć?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Szkoda. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem.",
+                route: 4,
+                action: () => {}
+            },
+            backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        802: {
+            message: "Dzień dobry, Tadeusz Boy-Żeleński. Jak dobrze słyszałem szuka Pan jakiegoś Bogdana Majchrzaka. Niestety nie znam takiego człowieka. I niestety słyszałem jak się Pan odnosił do profesora Mehoffera. Trochę ogłady!",
+            first: {
+                content: "Przepraszam za swoje zachowanie... Ale korzystając z okazji. Chyba zna Pan to miejsce od podszewki. Co mi może Pan na jego temat powiedzieć?",
+                route: 30,
+                action: () => {}
+            },
+            second: {
+                content: "Bez przesady. To mam się teraz wszystkim kłaniać?",
+                route: 701,
+                action: () => {}
+            },
+            fourth: {
+                content: "Proszę wybaczyć. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem.",
+                route: 4,
+                action: () => {}
+            },
+            backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        701: {
+            message: "Proszę natychmiast wyjść. Nie mam zamiaru rozmawiać z kimś takim, jak Pan. Nie ma tu dla Pana miejsca.",
+            backMessage: "W porządku. Do widzenia. [Wyjdź]"
+        },
+        803: {
+            message: "Dzień dobry, Tadeusz Boy-Żeleński. Ma Pan do mnie jakieś pytania?",
+            first: {
+                content: "Owszem. Chyba zna Pan Jamę Michalika od podszewki. Co mi może Pan na jego temat powiedzieć?",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem.",
+                route: 4,
+                action: () => {}
+            },
+            backMessage: "Po namyśle jednak nie mam. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        4: {
+            message: "O, to znowu Pan, miło mi. Słucham.",
+            first: {
+                content: "Proszę mi powiedzieć coś więcej na temat Jamy Michalika.",
+                route: 30,
+                action: () => {}
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem.",
+                route: 4,
+                action: () => {}
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
     }
 }
 

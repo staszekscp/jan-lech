@@ -17,7 +17,7 @@
   .thorn-conversation {
     position: fixed;
     top: 40%;
-    left: 50%;
+    left: 20%;
     z-index: 3;
     transform: scale(2);
     animation: thorn 2s
@@ -32,7 +32,7 @@
     }
     to { 
       top: 40%;
-      left: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(2) 
     }
