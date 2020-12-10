@@ -5,12 +5,10 @@ const options = {
             first: {
                 content: "Dzień dobry. Tak, przodownik Kołodziejczyk, miło mi. Jestem tu w sprawie zaginięcia Pani męża.",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Owszem, Pani Najchelowa. Przodownik Kołodziejczyk, miło mi. Proszę powiedzieć co się stało.",
                 route: 2,
-                action: () => {}
             },
         },
         2: {
@@ -18,17 +16,14 @@ const options = {
             first: {
                 content: "Skoro minęło dopiero kilka godzin, chyba nie ma powodów do niepokoju.",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Droga Pani Najchelowa, gdybym wiedział, że chodzi o zaginięcie starego pijaka to nie przyjeżdżałbym tak wcześnie.",
                 route: 4,
-                action: () => {}
             },
             third: {
                 content: "To dlaczego Pani zawiadamiała policję? Dostałem informację, że to poważna sprawa.",
                 route: 3,
-                action: () => {}
             }
         },
         3: {
@@ -36,12 +31,10 @@ const options = {
             first: {
                 content: "Zaraz, zaraz! Bez pozwolenia?",
                 route: 5,
-                action: () => {}
             },
             second: {
                 content: "No toście mi zepsuli poranek Pani Nejchelowa. Będę teraz musiał szukać Pani męża po całym mieście.",
                 route: 6,
-                action: () => {}
             },
         },
         4: {
@@ -49,17 +42,14 @@ const options = {
             first: {
                 content: "Zaraz, zaraz! Z rewolwerem? Bez pozwolenia? Proszę powiedzieć, co się stało. A w międzyczasie rozpoczniemy przeszukanie mieszkania.",
                 route: 7,
-                action: () => {}
             },
             second: {
                 content: "No toście mi zepsuli poranek Pani Nejchelowa... Proszę mówić. A nasi chłopcy zaczną przeszukiwać mieszkanie",
                 route: 7,
-                action: () => {}
             },
             third: {
                 content: "W porządku, przepraszam. Tymczasem proszę powiedzieć, co tu się w zasadzie wydarzyło.",
                 route: 8,
-                action: () => {}
             },
         },
         5: {
@@ -67,17 +57,10 @@ const options = {
             first: {
                 content: "Niestety będziemy musieli przeszukać Państwa mieszkanie. A tymczasem proszę powiedzieć co się dokładnie stało.",
                 route: 7,
-                action: () => {}
             },
             second: {
                 content: "No nic. Chłopaki! Zacznijcie przeszukiwać tę ruderę! A Pani - proszę powiedzieć co się w zasadzie wydarzyło",
                 route: 7,
-                action: () => {}
-            },
-            third: {
-                content: "W porządku. Tymczasem proszę powiedzieć co tu się wydarzyło.",
-                route: 9,
-                action: () => {}
             },
         },
         6: {
@@ -85,17 +68,14 @@ const options = {
             first: {
                 content: "Już dobrze, już dobrze. Proszę się uspokoić. I proszę opowiedzieć co się stało wczorajszej nocy. A w międzyczasie my rozpoczniemy przeszukiwać mieszkanie.",
                 route: 7,
-                action: () => {}
             },
             second: {
-                content: "Natomiast teraz Pani obowiązkiem będzie wyjaśnić co się wydarzyło poprzedniej nocy. Proszę.",
-                route: 9,
-                action: () => {}
+                content: "Natomiast teraz Pani obowiązkiem będzie wyjaśnić co się wydarzyło poprzedniej nocy. A my rozpoczniemy przeszukiwanie mieszkania.",
+                route: 7,
             },
             third: {
                 content: "Owszem. Niestety należy do nich również rozmowa z Panią i proszę uwierzyć, wolałbym już szukać Pani męża. Proszę powiedzieć co się wydarzyło, a my rozpoczniemy przeszukiwanie mieszkania.",
                 route: 7,
-                action: () => {}
             },
         },
         7: {
@@ -103,25 +83,17 @@ const options = {
             first: {
                 content: "Droga Pani, może Pani mówić co chce, ale to nasza praca. Jeśli będzie Pani stawiać opór to będziemy musieli Panią aresztować.",
                 route: 8,
-                action: () => {}
             },
             second: {
                 content: "Właśnie przyznała się Pani do nielegalnego posiadania broni. Chce Pani pogorszyć swoją sytuację?",
                 route: 8,
-                action: () => {}
-            },
-            third: {
-                content: "Niech będzie, zostawimy mieszkanie w spokoju. Proszę jednak powiedzieć co się stało poprzedniej nocy.",
-                route: 9,
-                action: () => {}
             },
         },
         8: {
             message: "Dobrze, dobrze. Róbta co chceta, byle tylko stary nie narobił rabanu.",
             first: {
-                content: "Znakomicie. W takim razie proszę powiedzieć co się stało poprzedniej nocy, a my rozpoczniemy przeszukanie. [każ rozpocząć przeszukanie]",
+                content: "Znakomicie. W takim razie proszę powiedzieć co się stało poprzedniej nocy, a my rozpoczniemy przeszukanie. [Każ rozpocząć przeszukanie]",
                 route: 9,
-                action: () => {}
             },
         },
         9: {
@@ -129,7 +101,6 @@ const options = {
             first: {
                 content: "Jasne. Jeśli Pani pozwoli będę miał kilka pytań.",
                 route: 501,
-                action: () => {}
             },
         },
         501: {
@@ -137,17 +108,14 @@ const options = {
             first: {
                 content: "W co mąż był ubrany?",
                 route: 11,
-                action: () => {}
             },
             second: {
                 content: "Gdzie mąż pracuje?",
                 route: 16,
-                action: () => {}
             },
             third: {
                 content: "Dokąd mąż zwykł chodzić?",
                 route: 21,
-                action: () => {}
             },
         },
         11: {
@@ -155,12 +123,10 @@ const options = {
             first: {
                 content: "Dziękuję. A gdzie mąż pracuje?",
                 route: 12,
-                action: () => {}
             },
             second: {
                 content: "W porządku. Może jeszcze Pani powiedzieć dokąd mąż zwykł chodzić?",
                 route: 13,
-                action: () => {}
             },
         },
         12: {
@@ -168,7 +134,6 @@ const options = {
             first: {
                 content: "Dziękuję. Mam jeszcze jedno pytanie. Proszę powiedzieć, dokąd mąż zwykł chodzić?",
                 route: 14,
-                action: () => {}
             },
         },
         13: {
@@ -176,30 +141,25 @@ const options = {
             first: {
                 content: "Dziękuję. W takim razie mam ostatnie pytanie. Gdzie mąż pracuje?",
                 route: 15,
-                action: () => {}
             },
         },
         14: {
             message: "A bo ja wiem, gdzie on łazi. Myśli Pan, że co, że mi się spowiada? Jedyne co wiem, to że czasem na Kazimierz chodzi do tego Żyda, Thorna, do restauracji. A poza tym? Nie wiem, nawet do kościoła nie chodzi. A spróbuj Panie mu to wypomnieć! O Jezu! Wtedy dopiero awanturę robi!",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]",
-            action: () => {}
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
         },
         15: {
             message: "Oo Panie, na Krowodrzy, tam taka rogatka jest, podobna co tu niedaleko u nas, na Twardowskiego. Józek tam robi jako dozorca.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]",
-            action: () => {}
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
         },
         16: {
             message: "Oo Panie, na Krowodrzy, tam taka rogatka jest, podobna co tu niedaleko u nas, na Twardowskiego. Józek tam robi jako dozorca.",
             first: {
                 content: "Dziękuję. A w co mąż był ubrany?",
                 route: 17,
-                action: () => {}
             },
             second: {
                 content: "W porządku. Może jeszcze Pani powiedzieć dokąd mąż zwykł chodzić?",
                 route: 18,
-                action: () => {}
             },
         },
         17: {
@@ -207,7 +167,6 @@ const options = {
             first: {
                 content: "Dziękuję. Mam jeszcze jedno pytanie. Proszę powiedzieć, dokąd mąż zwykł chodzić?",
                 route: 19,
-                action: () => {}
             },
         },
         18: {
@@ -215,30 +174,25 @@ const options = {
             first: {
                 content: "Dziękuję. W takim razie mam ostatnie pytanie. W co mąż był ubrany?",
                 route: 20,
-                action: () => {}
             },
         },
         19: {
             message: "A bo ja wiem, gdzie on łazi. Myśli Pan, że co, że mi się spowiada? Jedyne co wiem, to że czasem na Kazimierz chodzi do tego Żyda, Thorna, do restauracji. A poza tym? Nie wiem, nawet do kościoła nie chodzi. A spróbuj Panie mu to wypomnieć! O Jezu! Wtedy dopiero awanturę robi!",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]",
-            action: () => {}
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
         },
         20: {
             message: "Jak zwykle, wzioł swoją zieloną marynarkę, taaaką, zwykłą.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]",
-            action: () => {}
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
         },
         21: {
             message: "A bo ja wiem, gdzie on łazi. Myśli Pan, że co, że mi się spowiada? Jedyne co wiem, to że czasem na Kazimierz chodzi do tego Żyda, Thorna, do restauracji. A poza tym? Nie wiem, nawet do kościoła nie chodzi. A spróbuj Panie mu to wypomnieć! O Jezu! Wtedy dopiero awanturę robi!",
             first: {
                 content: "Dziękuję. A w co mąż był ubrany?",
                 route: 22,
-                action: () => {}
             },
             second: {
                 content: "W porządku, dziękuję. Proszę jeszcze powiedzieć, gdzie mąż pracuje?",
                 route: 23,
-                action: () => {}
             },
         },
         22: {
@@ -246,7 +200,6 @@ const options = {
             first: {
                 content: "Dziękuję. Mam jeszcze jedno pytanie. Gdzie mąż pracuje?",
                 route: 24,
-                action: () => {}
             },
         },
         23: {
@@ -254,53 +207,295 @@ const options = {
             first: {
                 content: "Dziękuję. W takim razie mam ostatnie pytanie. W co mąż był ubrany?",
                 route: 25,
-                action: () => {}
             },
         },
         24: {
             message: "Oo Panie, na Krowodrzy, tam taka rogatka jest, podobna co tu niedaleko u nas, na Twardowskiego. Józek tam robi jako dozorca.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]",
-            action: () => {}
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
         },
         25: {
             message: "Jak zwykle, wzioł swoją zieloną marynarkę, taaaką, zwykłą.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]",
-            action: () => {}
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
         },
         26: {
             message: "I co, ma Pan jakieś informacje?",
-            backMessage: "Jeszcze nic konkretnego. Wrócimy jak się czegoś dowiemy. [Zakończ rozmowę i wyjdź z budynku]",
+            backMessage: "Nic konkretnego. Wrócimy jak się czegoś dowiemy. [Zakończ rozmowę i wyjdź z budynku]",
             
         },
         27: {
             message: "I co, ma Pan jakieś informacje?",
             first: {
                 content: "Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
-                route: 25,
-                action: () => {}
-            },            
+                route: 50,
+            },
         },
         28: {
-            message: "I co, dowiedział się Pan czegoś?",
+            message: "I co, wi Pan już coś?",
             first: {
                 content: "Owszem. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
-                route: 25,
-                action: () => {}
-            },            
+                route: 701,
+            },
         },
-        29: {
+        29: { 
+            message: "Ma Pan jakieś informacje?",
+            first: {
+                content: "Mam, droga Pani. Otóż Pani mąż nie pracuje na Krowodrzy od lutego.",
+                route: 801,
+            },
+        },
+        30: { 
             message: "Panie, ma Pan jakieś nowe informacje?",
             first: {
                 content: "Owszem. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
-                route: 25,
-                action: () => {}
+                route: 702,
             },
             second: {
                 content: "Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
-                route: 25,
-                action: () => {}
+                route: 51,
             }, 
-        }
+        },
+        31: { 
+            message: "Panie, ma Pan jakieś nowe informacje?",
+            first: {
+                content: "Owszem. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
+                route: 703,
+            },
+            second: {
+                content: "Mam, droga Pani. Otóż Pani mąż nie pracuje na Krowodrzy od lutego.",
+                route: 802,
+            }, 
+        },
+        32: {
+            message: "I co, wie dowiedział się Pan czegoś?",
+            first: {
+                content: "Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
+                route: 52,
+            },
+            second: {
+                content: "Mam, droga Pani. Otóż Pani mąż nie pracuje na Krowodrzy od lutego.",
+                route: 803,
+            }, 
+        },
+        33: {
+            message: "I co, dowiedział się Pan czegoś?",
+            first: {
+                content: "Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
+                route: 53,
+            },
+            second: { 
+                content: "Mam, droga Pani. Otóż Pani mąż nie pracuje na Krowodrzy od lutego.",
+                route: 804,
+            }, 
+            third: { 
+                content: "Owszem. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
+                route: 704,
+            },
+        },
+        50: {
+            message: "Brednie! Kto Panu takich głupot naopowiadał?!",
+            first: {
+                content: "Mam swoje źródła. Myśli Pani, że miesięczna nieobecność pana Józefa pozostanie niezauważona?",
+                route: 601,
+            },
+            second: {
+                content: "Dość już tych kłamstw. Chce Pani odnaleźć męża, czy nie?",
+                route: 601,
+            },
+            third: {
+                content: "Proszę odpowiedzieć!",
+                route: 601,
+            },
+        },
+        51: {
+            message: "Brednie! Kto Panu takich głupot naopowiadał?!",
+            first: {
+                content: "Mam swoje źródła. Myśli Pani, że miesięczna nieobecność pana Józefa pozostanie niezauważona?",
+                route: 602,
+            },
+            second: {
+                content: "Dość już tych kłamstw. Chce Pani odnaleźć męża, czy nie?",
+                route: 602,
+            },
+            third: {
+                content: "Proszę odpowiedzieć!",
+                route: 602,
+            },
+        },
+        52: {
+            message: "Brednie! Kto Panu takich głupot naopowiadał?!",
+            first: {
+                content: "Mam swoje źródła. Myśli Pani, że miesięczna nieobecność pana Józefa pozostanie niezauważona?",
+                route: 603,
+            },
+            second: {
+                content: "Dość już tych kłamstw. Chce Pani odnaleźć męża, czy nie?",
+                route: 603,
+            },
+            third: {
+                content: "Proszę odpowiedzieć!",
+                route: 603,
+            },
+        },
+        53: {
+            message: "Brednie! Kto Panu takich głupot naopowiadał?!",
+            first: {
+                content: "Mam swoje źródła. Myśli Pani, że miesięczna nieobecność pana Józefa pozostanie niezauważona?",
+                route: 604,
+            },
+            second: {
+                content: "Dość już tych kłamstw. Chce Pani odnaleźć męża, czy nie?",
+                route: 604,
+            },
+            third: {
+                content: "Proszę odpowiedzieć!",
+                route: 604,
+            },
+        },
+        601: {
+            message: "Dobrze, już dobrze... Co się tak unosi? No był Józek w Kobierzynie, ja go stamtond zabrała, nie bedą mi mojego Józka do prondu podłonczać! A nie mówiłam głośno, bo co by ludzie godoli, że Józek to wariat. Po co mi to, Paaanie, dej Pan spokój...",
+            backMessage: "Sprawdzę to. Wrócę do Pani jak będę miał jeszcze jakieś pytania. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        602: {
+            message: "Dobrze, już dobrze... Co się tak unosi? No był Józek w Kobierzynie, ja go stamtond zabrała, nie bedą mi mojego Józka do prondu podłonczać! A nie mówiłam głośno, bo co by ludzie godoli, że Józek to wariat. Po co mi to, Paaanie, dej Pan spokój...",
+            first: {
+                content: "Sprawdzę to. A teraz ostatnia kwestia. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
+                route: 701,
+            },
+        },
+        603: {
+            message: "Dobrze, już dobrze... Co się tak unosi? No był Józek w Kobierzynie, ja go stamtond zabrała, nie bedą mi mojego Józka do prondu podłonczać! A nie mówiłam głośno, bo co by ludzie godoli, że Józek to wariat. Po co mi to, Paaanie, dej Pan spokój...",
+            first: {
+                content: "Sprawdzę to. A teraz ostatnia kwestia. Dowiedziałem się, że Pani mąż od lutego nie pracuje na Krowodrzy.",
+                route: 801,
+            },
+        },
+        604: {
+            message: "Dobrze, już dobrze... Co się tak unosi? No był Józek w Kobierzynie, ja go stamtond zabrała, nie bedą mi mojego Józka do prondu podłonczać! A nie mówiłam głośno, bo co by ludzie godoli, że Józek to wariat. Po co mi to, Paaanie, dej Pan spokój...",
+            first: {
+                content: "Sprawdzę to. Ale przejdźmy do kolejnego tematu. Dowiedziałem się, że Pani mąż od lutego nie pracuje na Krowodrzy.",
+                route: 802,
+            },
+            second: {
+                content: "Zobaczymy co mi w szpitalu powiedzą. Ale teraz kolejna sprawa. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
+                route: 703,
+            },
+        },
+        701: { 
+            message: "Aaa to prawda, krenci sie tu taki jedyn. Nie wiem co to za człowiek. Ale co mnie to, Paanie. Do nas nigdy nie wchodził.",
+            backMessage: "W porządku, załóżmy, że Pani wierzę. W razie pytań jeszcze się odezwę. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        702: { 
+            message: "Aaa to prawda, krenci sie tu taki jedyn. Nie wiem co to za człowiek. Ale co mnie to, Paanie. Do nas nigdy nie wchodził.",
+            first: {
+                content: "W porządku... A teraz ostatnia kwestia. Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
+                route: 50,
+            },
+        },
+        703: { 
+            message: "Aaa to prawda, krenci sie tu taki jedyn. Nie wiem co to za człowiek. Ale co mnie to, Paanie. Do nas nigdy nie wchodził.",
+            first: {
+                content: "W porządku... A teraz ostatnia kwestia. Dowiedziałem się, że Pani mąż od lutego nie pracuje na Krowodrzy.",
+                route: 801,
+            },
+        },
+        704: {
+            message: "Aaa to prawda, krenci sie tu taki jedyn. Nie wiem co to za człowiek. Ale co mnie to, Paanie. Do nas nigdy nie wchodził.",
+            first: {
+                content: "Proszę się uspokoić. Ale przejdźmy do kolejnego tematu. Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
+                route: 52,
+            },
+            second: {
+                content: "Proszę się tak nie denerwować. Ale teraz kolejna sprawa. Dowiedziałem się, że Pani mąż od lutego nie pracuje na Krowodrzy.",
+                route: 803,
+            },
+        },
+        801: { 
+            message: "No co za dziod! A codziennie wyłaził z domu i mówił, że do roboty idzie! Pewnie chlał pod jakimś sklepem! Ale go przez łeb zdzielę jak wróci!",
+            backMessage: "Proszę się tak nie denerwować. Jedynie przekazuję informacje. Jeśli coś się pojawi, wrócę do Pani. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        802: {
+            message: "No co za dziod! A codziennie wyłaził z domu i mówił, że do roboty idzie! Pewnie chlał pod jakimś sklepem! Ale go przez łeb zdzielę jak wróci!",
+            first: {
+                content: "Proszę się tak nie denerwować. Jeszcze jedna sprawa. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
+                route: 701,
+            },
+        },
+        803: {
+            message: "No co za dziod! A codziennie wyłaził z domu i mówił, że do roboty idzie! Pewnie chlał pod jakimś sklepem! Ale go przez łeb zdzielę jak wróci!",
+            first: {
+                content: "Proszę się tak nie denerwować. Jeszcze jedna sprawa. Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
+                route: 50,
+            },
+        },
+        804: {
+            message: "No co za dziod! A codziennie wyłaził z domu i mówił, że do roboty idzie! Pewnie chlał pod jakimś sklepem! Ale go przez łeb zdzielę jak wróci!",
+            first: {
+                content: "Proszę się uspokoić. Ale przejdźmy do kolejnego tematu. Dowiedziałem się, że Pani mąż niedawno wrócił ze szpitala psychiatrycznego.",
+                route: 51,
+            },
+            second: {
+                content: "Proszę się tak nie denerwować. Ale teraz kolejna sprawa. Ponoć ostatnio kręcił się u Państwa jakiś grubawy mężczyzna.",
+                route: 703,
+            },
+        },
+        100: {
+            message: "Szefie, właśnie mieliśmy się z Panem kontaktować! Dopiero co skończyliśmy przeszukiwanie mieszkania!",
+            first: {
+                content: "Gdzie jest Najchelowa? Muszę z nią porozmawiać.",
+                route: 105, //
+            },
+            second: {
+                content: "I co? Znaleźliście coś?",
+                route: 101,
+            },
+        },
+        101: {
+            message: "Proszę Pana, jest bardzo źle. Znaleźliśmy w mieszkaniu skrytkę, w której Najchel trzymał materiały wybuchowe!",
+            first: {
+                content: "Co?!",
+                route: 102,
+            },
+        },
+        102: {
+            message: "Nam też ciężko w to uwierzyć. Wygląda na to, że robił je sam. Zdecydowaliśmy się aresztować Najchelową, nie wiadomo jaki jest jej związek, a jest mało wiarygodną osobą...",
+            first: {
+                content: "Cholera... A znaleźliście coś jeszcze?",
+                route: 103,
+            },
+            second: {
+                content: "Mogę z nią porozmawiać? To pilne.",
+                route: 104, 
+            },
+        },
+        901: {
+            message: "Jakiś bagnet, i coś, co wygląda na minę... Ponadto mnóstwo kwitków z Powiatowej Kasy Oszczędnościowej, tej na Pijarskiej. Chyba tam składał oszczędności... Choć wygląda na to, że ostatnio głównie je wypłacał...",
+            backMessage: "Doskonale, tej informacji potrzebowałem. Dziękuję za pomoc, dobra robota! [Wyjdź z budynku]"
+        },
+        104: {
+            message: "Obawiam się, że nie w tym momencie... Właśnie zabrano ją do aresztu... Nie mieliśmy wyboru po tym, co tu znaleźliśmy...",
+            first: {
+                content: "A znaleźliście coś jeszcze?",
+                route: 901, 
+            },
+        },
+        105: {
+            message: "Obawiam się, że nie porozmawia z nią Pan w tym momencie... Musieliśmy ją aresztować...",
+            first: {
+                content: "Słucham?!",
+                route: 106,
+            },
+        },
+        106: {
+            message: "Szefie, nie mieliśmy wyboru. Znaleźliśmy w mieszkaniu skrytkę, w której Najchel trzymał materiały wybuchowe! Wygląda na to, że robił je sam...",
+            first: {
+                content: "Cholera... A znaleźliście tam coś jeszcze?",
+                route: 901,
+            },
+        },
+        107: {
+            message: "Szefie, nic tu po Panu! Niech Pan nie traci czasu, Najchel może być wszędzie!",
+            backMessage: "Jasne, już idę! [Wyjdź z budynku]"
+        },
     },
     "twardowskiego": {
         backMessage: "Wróć do mapy Krakowa.",
@@ -330,12 +525,10 @@ const options = {
             first: {
                 content: "Dzień dobry. Przodownik Kołodziejczyk z Policji. Ja w sprawie pana Józefa Najchela",
                 route: 601,
-                action: () => {}
             },
             second: {
                 content: "Dobry. Kołodziejczyk, Policja. Chodzi o Pana sąsiada, Józefa Najchela.",
                 route: 601,
-                action: () => {}
             },
         },
         601: {
@@ -343,12 +536,10 @@ const options = {
             first: {
                 content: "Co Pan wie o Najchelach?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Wczoraj, około 22, za ścianą Pana mieszkania ponoć wybuchła awantura. Słyszał Pan coś?",
                 route: 10, 
-                action: () => {}
             },
         },
         3: {
@@ -356,7 +547,6 @@ const options = {
             first: {
                 content: "Co ma Pan na myśli?", 
                 route: 501,
-                action: () => {}
             }
         },
         501: { //
@@ -364,12 +554,10 @@ const options = {
             first: {
                 content: "To kiedy stamtąd wrócił?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Widział diabła? Co to za brednie?",
                 route: 5, 
-                action: () => {}
             },
         },
         4: {
@@ -377,12 +565,10 @@ const options = {
             first: {
                 content: "Dziękuję za informację. Wczoraj, około 22, za ścianą Pana mieszkania ponoć wybuchła awantura. Słyszał Pan coś?", 
                 route: 6,
-                action: () => {}
             },
             second: {
                 content: "Rozumiem. Najchel zaginął. Wie Pan dokąd mógł się udać?",
                 route: 8, 
-                action: () => {}
             },
             },
         5: {
@@ -390,12 +576,10 @@ const options = {
             first: {
                 content: "Dziękuję za informację. Wczoraj, około 22, za ścianą Pana mieszkania ponoć wybuchła awantura. Słyszał Pan coś?", 
                 route: 6,
-                action: () => {}
             },
             second: {
                 content: "Rozumiem. Pan Najchel zaginął. Wie Pan dokąd mógł się udać?",
                 route: 8,
-                action: () => {}
             },
                     },
         6: {
@@ -403,7 +587,6 @@ const options = {
             first: {
                 content: "Rozumiem. Pytam, ponieważ Najchel zaginął. Wie Pan dokąd mógł się udać?",
                 route: 7, 
-                action: () => {}
             },
         },
         7: { 
@@ -411,7 +594,6 @@ const options = {
             first: {
                 content: "No dobrze. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, //
-                action: () => {}
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -420,7 +602,6 @@ const options = {
             first: {
                 content: "No dobrze. Wczoraj, około 22, za ścianą Pana mieszkania ponoć wybuchła awantura. Słyszał Pan coś?", 
                 route: 9,
-                action: () => {}
             },
         },
         9: {
@@ -428,7 +609,6 @@ const options = {
             first: {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, //
-                action: () => {}
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -437,12 +617,10 @@ const options = {
             first: {
                 content: "Często był Pan świadkiem podobnych kłótni?", 
                 route: 11, 
-                action: () => {}
             },
             second: {
                 content: "Pan Najchel zaginął. Wie Pan dokąd mógł się udać?",
                 route: 14, 
-                action: () => {}
             },
         },
         11: {
@@ -450,7 +628,6 @@ const options = {
             first: {
                 content: "Co ma Pan na myśli?", 
                 route: 502,
-                action: () => {}
             }
         },
         502: { //
@@ -458,12 +635,10 @@ const options = {
             first: {
                 content: "To kiedy stamtąd wrócił?",
                 route: 12,
-                action: () => {}
             },
             second: {
                 content: "Widział diabła? Co to za brednie?",
                 route: 13, 
-                action: () => {}
             },
         },
         12: {
@@ -471,7 +646,6 @@ const options = {
             first: {
                 content: "Rozumiem. Najchel zaginął. Wie Pan dokąd mógł się udać?",
                 route: 8, 
-                action: () => {}
             },
         },
         13: {
@@ -479,7 +653,6 @@ const options = {
             first: {
                 content: "Rozumiem. Pan Najchel zaginął. Wie Pan dokąd mógł się udać?",
                 route: 8,
-                action: () => {}
             },
         },
         14: {
@@ -487,7 +660,6 @@ const options = {
             first: {
                 content: "Co ma Pan na myśli?", 
                 route: 503, 
-                action: () => {}
             },
         },
         503: { //
@@ -495,12 +667,10 @@ const options = {
             first: {
                 content: "To kiedy stamtąd wrócił?",
                 route: 15,
-                action: () => {}
             },
             second: {
                 content: "Widział diabła? Co to za brednie?",
                 route: 16, 
-                action: () => {}
             },
         },
         15: {
@@ -508,7 +678,6 @@ const options = {
             first: {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, //
-                action: () => {}
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -517,7 +686,6 @@ const options = {
             first: {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, //
-                action: () => {}
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -526,7 +694,6 @@ const options = {
             first: {
                 content: "W sumie to tak. Śledzi Pan może rozgrywki piłkarskie?",
                 route: 701, //
-                action: () => {}
             },
             backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -535,7 +702,6 @@ const options = {
             first: {
                 content: "Świetnie! W takim razie miałbym kilka pytań...",
                 route: 22, // O PIŁCE NOŻNEJ!
-                action: () => {}
             },
             backMessage: "Dobrze wiedzieć. Jak znajdę chwilę to porozmawiamy, ale muszę już iść. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
 
@@ -545,7 +711,6 @@ const options = {
             first: {
                 content: "Chciałbym jeszcze raz pogadać o piłce.",
                 route: 22, //
-                action: () => {}
             },
             backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -554,7 +719,6 @@ const options = {
             first: {
                 content: "ggg",
                 route: 701, //
-                action: () => {}
             },
             backMessage: "W sumie, zmieniłem zdanie. Jeszcze się odezwę, ale tymczasem, do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -565,7 +729,6 @@ const options = {
             first: {
                 content: "Kołodziejczyk, policja. Mam kilka pytań odnośnie Najchelów.",
                 route: 501,
-                action: () => {}
             },
         },
         501: {
@@ -573,17 +736,14 @@ const options = {
             first: {
                 content: "Proszę mi powiedzieć, co Pan wie o Najchelach?",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Kiedy po raz ostatni widział Pan Józefa Najchela?",
                 route: 6,
-                action: () => {}
             },
             third: {
                 content: "Widział Pan coś podejrzanego ostatniej nocy?",
                 route: 7,
-                action: () => {}
             },
         },
         2: {
@@ -591,12 +751,10 @@ const options = {
             first: {
                 content: "Miał Pan z nimi jakieś kłopoty?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Co ma Pan na myśli?",
                 route: 4,
-                action: () => {}
             },
         },
         3: {
@@ -604,7 +762,6 @@ const options = {
             first: {
                 content: "Co się wydarzyło?",
                 route: 5,
-                action: () => {}
             },
         },
         4: {
@@ -612,7 +769,6 @@ const options = {
             first: {
                 content: "Co się wydarzyło?",
                 route: 5,
-                action: () => {}
             },
         },
         5: {
@@ -620,12 +776,10 @@ const options = {
             first: {
                 content: "Powie coś Pan więcej o tym, co się wtedy działo w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "W takim razie jeśli Pan pozwoli porozmawiam z Pana żoną.",
                 route: 3,
-                action: () => {}
             },
             backMessage: "Dziękuję za informacje. Wrócę jeśli będę mieć jakieś pytania. [Zakończ rozmowę i odejdź.]"
         },
@@ -634,7 +788,6 @@ const options = {
             first: {
                 content: "Co się wydarzyło?",
                 route: 5,
-                action: () => {}
             },
         },
         7: {
@@ -642,7 +795,6 @@ const options = {
             first: {
                 content: "Chodzi o Pana sąsiada, Józefa Najchela. Zaginął wczorajszej nocy.",
                 route: 8,
-                action: () => {}
             },
         },
         8: {
@@ -650,7 +802,6 @@ const options = {
             first: {
                 content: "Co się wydarzyło?",
                 route: 5,
-                action: () => {}
             },
         },
         9: {
@@ -658,12 +809,10 @@ const options = {
             first: {
                 content: "Chciałbym porozmawiać o tym, jak wyglądał Kraków po Wielkiej Wojnie.",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Jeśli Pan pozwoli to porozmawiam z Pana żoną.",
                 route: 3,
-                action: () => {}
             },
             backMessage: "Przepraszam za kłopot. Muszę iść. Do widzenia. [Zakończ rozmowę i odejdź.]"
         },
@@ -672,12 +821,10 @@ const options = {
             first: {
                 content: "Chciałbym porozmawiać o tym, jak wyglądał Kraków po Wielkiej Wojnie.",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Przepraszam za zamieszanie. Muszę jeszcze raz zamienić słówko z Pana żoną.",
                 route: 3,
-                action: () => {}
             },
             backMessage: "Chciałem się tylko pożegnać. Do widzenia. [Zakończ rozmowę i odejdź.]"
         },
@@ -686,7 +833,6 @@ const options = {
             first: {
                 content: "Co się wydarzyło?",
                 route: 5,
-                action: () => {}
             },
             
         },
@@ -697,7 +843,6 @@ const options = {
             first: {
                 content: "Pani mąż wspomniał, że kilka lat temu zaatakował Panią Józef Najchel.",
                 route: 6,
-                action: () => {}
             },
         },
         6: {
@@ -705,17 +850,14 @@ const options = {
             first: {
                 content: "Mam rozumieć, że nie została Pani pobita?",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Czyli ma Pani jakiś kontakt z Najchelami?",
                 route: 7,
-                action: () => {}
             },
             third: {
                 content: "Czy widziała Pani coś podejrzanego ostatniej nocy?",
                 route: 8, 
-                action: () => {}
             },
         },
         2: {
@@ -723,12 +865,10 @@ const options = {
             first: {
                 content: "To dlaczego Pani nią nie jest?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Przychodzę właśnie w sprawie Pana Józefa. Zaginął wczorajszej nocy. Wie Pani gdzie może się teraz znajdować? A może widziała Pani może coś podejrzanego?",
                 route: 501, 
-                action: () => {}
             },
         },
         3: {
@@ -736,17 +876,14 @@ const options = {
             first: {
                 content: "Proszę wybaczyć mój nietakt. Ale wracając. Pan Józef zaginął wczorajszej nocy. Wie Pani gdzie może się teraz znajdować? A może widziała Pani może coś podejrzanego?",
                 route: 501, 
-                action: () => {}
             },
             second: {
                 content: "Praca Cygarfabryce chyba nie należała do najprostszych?",
                 route: 4,
-                action: () => {}
             },
             third: {
                 content: "A co Pani teraz robi?",
                 route: 5,
-                action: () => {}
             }
         },
         4: {
@@ -754,12 +891,10 @@ const options = {
             first: {
                 content: "A czym się Pani obecnie zajmuje?",
                 route: 5,
-                action: () => {}
             },
             second: {
                 content: "Ale wracając. Przychodzę w sprawie Pana Józefa. Zaginął wczorajszej nocy. Wie Pani gdzie może się teraz znajdować? A może widziała Pani może coś podejrzanego?",
                 route: 501, 
-                action: () => {}
             },
         },
         5: {
@@ -767,7 +902,6 @@ const options = {
             first: {
                 content: "Rozumiem. Jednak przychodzę do Państwa w sprawie Pana Józefa. Zaginął wczorajszej nocy. Wie Pani gdzie może się teraz znajdować? A może widziała Pani może coś podejrzanego?",
                 route: 501, 
-                action: () => {}
             },
         },
         7: {
@@ -775,12 +909,10 @@ const options = {
             first: {
                 content: "To dlaczego Pani nią nie jest?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Przychodzę właśnie w sprawie Pana Józefa. Zaginął wczorajszej nocy. Wie Pani gdzie może się teraz znajdować? A może widziała Pani może coś podejrzanego?",
                 route: 501, 
-                action: () => {}
             },
         },
         8: {
@@ -788,7 +920,6 @@ const options = {
             first: {
                 content: "Przychodzę w sprawie Pana Józefa. Zaginął wczorajszej nocy. Wie Pani gdzie może się teraz znajdować?",
                 route: 501, 
-                action: () => {}
             },
         },
         9: {
@@ -796,12 +927,10 @@ const options = {
             first: {
                 content: "Może w takim razie wie Pani gdzie może się teraz znajdować?",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Zdaje się, że wie Pani sporo o Najchelach. Może Józek miał jakichś bliższych znajomych?",
                 route: 501, 
-                action: () => {}
             },
         },
         501: {
@@ -809,12 +938,10 @@ const options = {
             first: {
                 content: "W porządku, dziękuję za informacje. Skoro wspomniała Pani o pracy w fabryce to chciałbym o coś zapytać...",
                 route: 10,
-                action: () => {}
             },
             fourth: {
                 content: "Dziękuję za informacje. Pozwoli Pani, że zanim pójdę porozmawiam jeszcze z Pani mężem?",
                 route: 10, 
-                action: () => {}
             },
             backMessage: "Dziękuję za informacje. Jeśli będę miał jakieś pytania zwrócę się do Państwa. [Zakończ rozmowę i odejdź]"
         },
@@ -823,12 +950,10 @@ const options = {
             first: { // PYTANIA O PRZEMYSŁ, PRACĘ
                 content: "W porządku, dziękuję za informacje. Skoro wspomniała Pani o pracy w fabryce to chciałbym o coś zapytać...",
                 route: 601,
-                action: () => {}
             },
             fourth: {
                 content: "W sumie, to jeszcze porozmawiałbym z Pani mężem, przepraszam za kłopot.",
                 route: 10, 
-                action: () => {}
             },
             backMessage: "W sumie to zapytam kiedy indziej. Dziękuję za informacje i do widzenia. [Zakończ rozmowę i odejdź]"
         },
@@ -837,12 +962,10 @@ const options = {
             first: { 
                 content: "Wspomniała Pani o pracy w fabryce. Chciałbym dowiedzieć się nieco więcej...",
                 route: 10,
-                action: () => {}
             },
             fourth: {
                 content: "Przepraszam, jednak chcę porozmawiać z Pani mężem.",
                 route: 10, 
-                action: () => {}
             },
             backMessage: "W sumie to zapytam kiedy indziej. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
@@ -853,17 +976,14 @@ const options = {
             first: {
                 content: "Przodownik Kołodziejczyk, jestem z policji. Chciałbym zadać kilka pytań o Najchelów.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Ale czemu tak niekulturalnie...?",
                 route: 501,
-                action: () => {}
             },
             third: {
                 content: "Panie, trochę grzeczniej, bo będzie Pan miał kłopoty.",
                 route: 501, 
-                action: () => {}
             }
         },
         501: {
@@ -871,12 +991,10 @@ const options = {
             first: {
                 content: "A skąd Pan wie o co chciałem zapytać?",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Uważaj Pan z tym językiem, bo się źle to skończy.",
                 route: 2, 
-                action: () => {}
             },
         },
         2: {
@@ -884,12 +1002,10 @@ const options = {
             first: {
                 content: "Haloooo?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Co to, zabawa w króla ciszy?",
                 route: 3,
-                action: () => {}
             },
         },
         3: {
@@ -897,7 +1013,6 @@ const options = {
             first: {
                 content: "Jak Pan nie odpowie na moje pytania to każę Pana aresztować!",
                 route: 4,
-                action: () => {}
             },
             backMessage: "Aaa szkoda czasu... [Odejdź]"
         },
@@ -914,12 +1029,10 @@ const options = {
             first: {
                 content: "Dzień dobry, dzień dobry! Ja w sprawie Majchrzaka. Zna Pan to nazwisko, prawda? ",
                 route: 8,
-                action: () => {}
             },
             second: {
                 content: "Do Majchrzaka to pewnie się Pan grzeczniej odzywał.",
                 route: 8,
-                action: () => {}
             },
         },
         7: {
@@ -927,12 +1040,10 @@ const options = {
             first: {
                 content: "Dzień dobry, dzień dobry! Ja w sprawie Majchrzaka. Zna Pan to nazwisko, prawda? ",
                 route: 8,
-                action: () => {}
             },
             second: {
                 content: "Do Majchrzaka to pewnie się Pan grzeczniej odzywał!",
                 route: 8,
-                action: () => {}
             },
         },
         8: {
@@ -940,7 +1051,6 @@ const options = {
             first: {
                 content: "Dobra, koniec tych żartów. Proszę mi powiedzieć, gdzie może być teraz Najchel.",
                 route: 601,
-                action: () => {}
             },
         },
         601: {
@@ -948,12 +1058,11 @@ const options = {
             first: {
                 content: "Proszę kontynuować.",
                 route: 10,
-                action: () => {}
             },
         },
         10: {
             message: "Z tego powodu musiał znaleźć sobie jakąś robotę i tak zatrudnił się na Krowodrzy jako dozorca. A jak go stamtąd wyrzucono to zupełnie stracił rozum. Najpierw wysłano go do Kobierzyna, a kiedy stamtąd wrócił to udawał przed żoną, że wciąż ma pracę... Myślę, że z braku pieniędzy może chcieć napaść na jakiś bank, może sklep. Więcej nie wiem, naprawdę.",
-            backMessage: "Dziękuję za informacje. W takim razie czas na rozmowę z Najchelową. [Zakończ rozmowę i odejdź.]"
+            backMessage: "Nie można było tak od razu? W takim razie czas na rozmowę z Najchelową. [Zakończ rozmowę i odejdź.]"
         },
         11: {
             message: "Nie mam już nic do dodania. Proszę sobie iść. [Odchodzi]",
@@ -967,17 +1076,14 @@ const options = {
             first: {
                 content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
                 route: 61,
-                action: () => {}
             },
             second: {
                 content: "Dzień dobry Panie doktorze. Może pamięta Pan jednego z pacjentów, nazywał się Najchel.",
                 route: 61,
-                action: () => {}
             },
             third: {
                 content: "Dzień dobry. Potrzebuję informacji o jednym z pacjentów, Józefie Najchelu.",
                 route: 61, 
-                action: () => {}
             }
         },
         2: {
@@ -985,17 +1091,14 @@ const options = {
             first: {
                 content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
                 route: 62,
-                action: () => {}
             },
             second: {
                 content: "Dzień dobry Panie doktorze. Może pamięta Pan jednego z pacjentów, nazywał się Najchel.",
                 route: 62,
-                action: () => {}
             },
             third: {
                 content: "Dzień dobry. Potrzebuję informacji o jednym z pacjentów, Józefie Najchelu.",
                 route: 62, 
-                action: () => {}
             }
         },
         61: {
@@ -1003,12 +1106,10 @@ const options = {
             first: {
                 content: "W takim razie nie powinien być wciąż na oddziale?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "I co, tak po prostu wyzdrowiał?",
                 route: 4, 
-                action: () => {}
             },
         },
         62: {
@@ -1016,12 +1117,10 @@ const options = {
             first: {
                 content: "W takim razie nie powinien być wciąż na oddziale?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "I co, tak po prostu wyzdrowiał?",
                 route: 3, 
-                action: () => {}
             },
         },
         3: {
@@ -1029,17 +1128,14 @@ const options = {
             first: {
                 content: "To pewnie nie zaskoczy Pana informacja, że Najchel zaginął i nie wiadomo co się z nim stało?",
                 route: 5,
-                action: () => {}
             },
             second: {
                 content: "Brawo. No to niech Pan wie, że Najchel teraz biega po mieście z rewolwerem za pazuchą. A my nie wiemy gdzie go szukać.",
                 route: 5, 
-                action: () => {}
             },
             second: {
                 content: "No to się świetnie zaopiekowała jak zeszłej nocy po awanturze wybiegł z rewolwerem w dłoni, krzycząc że kogoś zabije.",
                 route: 5, 
-                action: () => {}
             },
         },
         4: {
@@ -1047,12 +1143,10 @@ const options = {
             first: {
                 content: "To pewnie nie zaskoczy Pana informacja, że Najchel zaginął i nie wiadomo co się z nim stało?",
                 route: 5,
-                action: () => {}
             },
             second: {
                 content: "Brawo. No to niech Pan wie, że Najchel teraz biega po mieście z rewolwerem za pazuchą. A my nie wiemy gdzie go szukać.",
                 route: 5, 
-                action: () => {}
             },
         },
         5: {
@@ -1060,7 +1154,6 @@ const options = {
             first: {
                 content: "Niestety. Dlatego będę miał kilka pytań.",
                 route: 6,
-                action: () => {}
             },
         },
         6: {
@@ -1068,17 +1161,14 @@ const options = {
             first: {
                 content: "Do czego zdolny jest Najchel?",
                 route: 7,
-                action: () => {}
             },
             second: {
                 content: "Wie Pan coś, co pomogłoby w odnalezieniu Najchela?",
                 route: 8,
-                action: () => {}
             },
             third: {
                 content: "Jak wyglądał ostatni pobyt Najchela w szpitalu?",
                 route: 9,
-                action: () => {}
             },
         },
         7: {
@@ -1086,7 +1176,6 @@ const options = {
             fourth: {
                 content: "W porządku, dziękuję za pomoc.",
                 route: 6,
-                action: () => {}
             },
         },
         8: {
@@ -1094,7 +1183,6 @@ const options = {
             fourth: {
                 content: "W porządku, dziękuję za pomoc.",
                 route: 6,
-                action: () => {}
             },
         },
         9: {
@@ -1102,7 +1190,6 @@ const options = {
             fourth: {
                 content: "W porządku, dziękuję za pomoc.",
                 route: 6,
-                action: () => {}
             },
         },
         10: {
@@ -1110,7 +1197,6 @@ const options = {
             first: {
                 content: "Najchela w trakcie pobytu w szpitalu odwiedził jakiś człowiek. Ponoć Pan z nim rozmawiał.",
                 route: 11,
-                action: () => {}
             },
         },
         11: {
@@ -1118,12 +1204,10 @@ const options = {
             first: {
                 content: "No i co to za przysługa?",
                 route: 12,
-                action: () => {}
             },
             second: {
                 content: "I co, zapomniał Pan mi o tym powiedzieć?",
                 route: 13,
-                action: () => {}
             },
         },
         12: {
@@ -1131,12 +1215,10 @@ const options = {
             first: {
                 content: "I dał mu Pan do niej dostęp?",
                 route: 14,
-                action: () => {}
             },
             second: {
                 content: "Niech zgadnę. Zgodził się Pan.",
                 route: 14,
-                action: () => {}
             },
         },
         13: {
@@ -1144,7 +1226,6 @@ const options = {
             first: {
                 content: "Bzdury, przemilczał Pan to specjalnie. Proszę powiedzieć, co to była za przysługa.",
                 route: 12,
-                action: () => {}
             },
         },
         14: {
@@ -1152,12 +1233,10 @@ const options = {
             first: {
                 content: "Nie obchodzi mnie to, że przyjął Pan łapówkę. Moim zadaniem jest odnaleźć Najchela. Gdzie mogę znaleźć tego człowieka?",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Oj tam, co się Pan przejmuje. To, że jestem z policji nie znaczy, że mam krystaliczne serce. 1000 złotych i o niczym nie wiem.",
                 route: 16,
-                action: () => {}
             },
         },
         501: {
@@ -1165,12 +1244,10 @@ const options = {
             first: {
                 content: "Dziękuję za informacje. Ale zanim pójdę mam kilka pytań odnośnie służby zdrowia...",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Dziękuję. Jednak zanim pójdę to chciałbym zamienić słówko z siostrą Zuzanną... Mam kilka pytań dotyczących Kościoła...",
                 route: 16,
-                action: () => {}
             },
             backMessage: "No dobrze. Dziękuję za informacje. [Zakończ rozmowię i opuść szpital]"
         },
@@ -1179,7 +1256,6 @@ const options = {
             first: {
                 content: "Wspaniale, akurat zbierałem na nowy samochód. Tymczasem proszę powiedzieć gdzie znajdę tego człowieka.",
                 route: 501,
-                action: () => {}
             },
         },
         17: {
@@ -1187,12 +1263,10 @@ const options = {
             first: {
                 content: "Owszem. Mam kilka pytań odnośnie służby zdrowia...",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Chciałbym porozmawiać z siostrą Zuzanną",
                 route: 16,
-                action: () => {}
             },
             backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
@@ -1201,12 +1275,10 @@ const options = {
             first: {
                 content: "Mam kilka pytań odnośnie służby zdrowia...",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Chciałbym porozmawiać z siostrą Zuzanną",
                 route: 16,
-                action: () => {}
             },
             backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
@@ -1217,12 +1289,10 @@ const options = {
             first: {
                 content: "Dzień dobry. Doktor mówi, że jednym z Pani podopiecznych był Józef Najchel...",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Dzień dobry. Co mi może Pani powiedzieć o Józefie Najchelu?",
                 route: 6,
-                action: () => {}
             },
         },
         2: {
@@ -1230,12 +1300,10 @@ const options = {
             first: {
                 content: "Chodzi to tego 'przyjaciela' z rogami, tak?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Jak dla mnie to po prostu chory psychicznie człowiek, nie żaden szatan.",
                 route: 5, 
-                action: () => {}
             },
         },
         3: {
@@ -1243,12 +1311,10 @@ const options = {
             first: {
                 content: "Zgadzam się. Jednak obecnie sytuacja jest bardzo poważna, dlatego musi mi Pani pomóc.",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Ja też nie chodzę, a jakoś nie widuję żadnych diabłów.",
                 route: 5, 
-                action: () => {}
             },
         },
         4: {
@@ -1256,7 +1322,6 @@ const options = {
             first: {
                 content:"Co mi może Pani powiedzieć na temat Józefa Najchela?",
                 route: 6,
-                action: () => {}
             },
         },
         5: {
@@ -1264,12 +1329,10 @@ const options = {
             first: {
                 content:"Przepraszam, zachowałem się nietaktownie. Muszę Panią o coś zapytać.",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Dobrze już, dobrze. Proszę się nie unosić. Czy mogę zadać jedno pytanie?",
                 route: 4, 
-                action: () => {}
             },
         },
         6: {
@@ -1277,7 +1340,6 @@ const options = {
             first: {
                 content:"Gość? Kto to był?",
                 route: 501,
-                action: () => {}
             },
         },
         501: {
@@ -1285,12 +1347,10 @@ const options = {
             first: {
                 content:"Jak wyglądał?",
                 route: 8,
-                action: () => {}
             },
             second: {
                 content: "O czym rozmawiali?",
                 route: 10,
-                action: () => {}
             },
         },
         8: {
@@ -1298,7 +1358,6 @@ const options = {
             first: {
                 content:"A słyszała Pani o czym rozmawiali?",
                 route: 9,
-                action: () => {}
             },
         },
         9: {
@@ -1306,7 +1365,6 @@ const options = {
             fourth: {
                 content: "Tak też zrobię. Dziękuję.",
                 route: 10, 
-                action: () => {}
             },
         },
         10: {
@@ -1314,7 +1372,6 @@ const options = {
             first: {
                 content: "A pamięta Pani jak wyglądał?",
                 route: 11, 
-                action: () => {}
             },
         },
         11: {
@@ -1322,7 +1379,6 @@ const options = {
             fourth: {
                 content: "Tak też zrobię. Dziękuję.",
                 route: 11, 
-                action: () => {}
             },
         },
         15: {
@@ -1330,12 +1386,10 @@ const options = {
             first: {
                 content:"Tak, chciałbym dowiedzieć się więcej o sytuacji kościoła. Mogę zadać kilka pytań?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Piltzem.",
                 route: 11, 
-                action: () => {}
             },
             backMessage: "Nie, tak naprawdę to już wychodzę. Do widzenia. [Zakończ rozmowię i opuść szpital.]"
         }
@@ -1346,7 +1400,6 @@ const options = {
             first: {
                 content: "Dzień dobry. Czy to Pan jest zarządcą tej rogatki?",
                 route: 501,
-                action: () => {}
             },
         },
         501: {
@@ -1354,12 +1407,10 @@ const options = {
             first: {
                 content: "Kołodziejczyk, policja. Przychodzę w sprawie jednego z Pańskich podwładnych, Najchela?",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Jestem z policji. A chodzi o niejakiego Józefa Najchela. Ponoć tu pracuje.",
                 route: 2,
-                action: () => {}
             },
         },
         2: {
@@ -1367,12 +1418,10 @@ const options = {
             first: {
                 content: "To dlaczego jego żona twierdzi inaczej?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Słucham? To co się w takim razie wydarzyło?",
                 route: 7, 
-                action: () => {}
             },
         },
         3: {
@@ -1380,17 +1429,14 @@ const options = {
             first: {
                 content: "Zatem kiedy po raz ostatni widział Pan Najchela?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Czy potem utrzymywał Pan z nim jakiś kontakt?",
                 route: 5,
-                action: () => {}
             },
             third: {
                 content: "To jak Pana nazwał?",
                 route: 6,
-                action: () => {}
             },
         },
         4: {
@@ -1398,7 +1444,6 @@ const options = {
             fourth: {
                 content: "Dziękuję. Zapytam.",
                 route: 4,
-                action: () => {}
             },
         },
         5: {
@@ -1406,7 +1451,6 @@ const options = {
             fourth: {
                 content: "Dziękuję. Zapytam.",
                 route: 4,
-                action: () => {}
             },
         },
         6: {
@@ -1414,7 +1458,6 @@ const options = {
             fourth: {
                 content: "Dziękuję. Zapytam.",
                 route: 4,
-                action: () => {}
             },
         },
         7: {
@@ -1422,17 +1465,14 @@ const options = {
             first: {
                 content: "Zatem kiedy po raz ostatni widział Pan Najchela?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Czy potem utrzymywał Pan z nim jakiś kontakt?",
                 route: 5,
-                action: () => {}
             },
             third: {
                 content: "To jak Pana nazwał?",
                 route: 6,
-                action: () => {}
             },
         },
         8: {
@@ -1440,12 +1480,10 @@ const options = {
             first: {
                 content: "Chciałbym porozmawiać z Panem o polityce.",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Jednak jeszcze raz chciałbym pomówić z Pana podwładnym.",
                 route: 5,
-                action: () => {}
             },
             backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
@@ -1454,12 +1492,10 @@ const options = {
             first: {
                 content: "Chciałbym porozmawiać z Panem o polityce.",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Chciałbym pomówić z Pana podwładnym.",
                 route: 5,
-                action: () => {}
             },
             backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
@@ -1470,7 +1506,6 @@ const options = {
             first: {
                 content: "Dzień dobry. Pana szef mówi, że widział się Pan z Józefem Najchelem, tym co tu pracował wcześniej.",
                 route: 501,
-                action: () => {}
             },
         },
         501: {
@@ -1478,12 +1513,10 @@ const options = {
             first: {
                 content: "Widzę, że nie pała Pan miłością do swojego szefa...",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Takiej odpowiedzi się nie spodziewałem, przyznaję.",
                 route: 3,
-                action: () => {}
             },
         },
         3: {
@@ -1491,12 +1524,10 @@ const options = {
             first: {
                 content: "Dziękuję za informacje. Chciałbym jednak zamienić z Panem słówko na tematy polityczne...",
                 route: 2,
-                action: () => {}
             },
             fourth: {
                 content: "No dobrze. Dziękuję za odpowiedź. Porozmawiam jeszcze z Pana przełożonym.",
                 route: 4,
-                action: () => {}
             },
             backMessage: "Dziękuję, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
@@ -1505,12 +1536,10 @@ const options = {
             first: {
                 content: "Chciałbym zamienić z Panem słówko na tematy polityczne...",
                 route: 2,
-                action: () => {}
             },
             fourth: {
                 content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym.",
                 route: 3,
-                action: () => {}
             },
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
@@ -1521,17 +1550,14 @@ const options = {
             first: {
                 content: "Dzień dobry. Dziękuję, ale nie przychodzę, aby się stołować. Potrzebuję informacji.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Dobry, dobry. Z tym, że przychodzę z do Pana pytaniem dotyczącym jednego z klientów.",
                 route: 501,
-                action: () => {}
             },
             third: {
                 content: "Co to za miejsce? Nigdy tu nie byłem.",
                 route: 2,
-                action: () => {}
             },
         },
         501: {
@@ -1539,7 +1565,6 @@ const options = {
             first: {
                 content: "Kojarzy Pan Józefa Najchela?",
                 route: 3,
-                action: () => {}
             },
         },
         2: {
@@ -1547,12 +1572,10 @@ const options = {
             first: {
                 content: "Kiedyś na pewno się zajrzę! Ale teraz potrzebuję informacji o jednym z klientów.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Dziękuję, ale wolę schabowego. W każdym razie przyszedłem w sprawie pewnego klienta.",
                 route: 501,
-                action: () => {}
             },
         },
         3: {
@@ -1560,12 +1583,10 @@ const options = {
             first: {
                 content: "Pan Najchel zaginął, staram się go odnaleźć. Wie Pan może gdzie może teraz przebywać?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Drogi Panie Thorn, Najchel zaginął. Widział go Pan ostatnio?",
                 route: 6,
-                action: () => {}
             },
         },
         4: {
@@ -1573,7 +1594,6 @@ const options = {
             first: {
                 content: "A kiedy go Pan widział po raz ostatni?",
                 route: 5,
-                action: () => {}
             },
         },
         5: {
@@ -1581,7 +1601,6 @@ const options = {
             first: {
                 content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -1590,7 +1609,6 @@ const options = {
             first: {
                 content: "A może wie Pan gdzie może teraz przebywać?",
                 route: 7,
-                action: () => {}
             },
         },
         7: {
@@ -1598,7 +1616,6 @@ const options = {
             first: {
                 content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -1607,7 +1624,6 @@ const options = {
             first: {
                 content: "Chciałbym porozmawiać z Panem o życiu żydowskim w Krakowie.",
                 route: 30,
-                action: () => {}
             },
             backMessage: "W sumie to jednak nie mam czasu. Przepraszam, do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -1618,17 +1634,14 @@ const options = {
             first: {
                 content: "Kołodziejczyk, policja. Albo mnie Pan wpuści, albo wszytskich aresztuję. Pana wybór.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Zaraz Pan będzie na zamkniętej imprezie, tyle że w areszcie na Montelupich. Policja.",
                 route: 501,
-                action: () => {}
             },
             third: {
                 content: "Żeby człowiek nie mógł się spokojnie o 8 rano wódki napić? Skandal! Proszę mnie natychmiast wpuścić!",
                 route: 2,
-                action: () => {}
             },
         },
         501: {
@@ -1636,12 +1649,10 @@ const options = {
             first: {
                 content: "No już dobrze. Szukam jednego z klientów. Gruby, wysoki facet, elegancko ubrany.",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Proszę jak od razu złagodniał. A taki chojrak przed chwilą. No dobrze. Szukam grubego, wysokiego i eleganckiego faceta. Widział go Pan?",
                 route: 4,
-                action: () => {}
             },
         },
         2: {
@@ -1649,12 +1660,10 @@ const options = {
             first: {
                 content: "Koniec tych żartów. Kołodziejczyk, policja.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Jeszcze jeden krok i zawiozę Pana na Montelupich. Policja.",
                 route: 501,
-                action: () => {}
             },
         },
         3: {
@@ -1662,7 +1671,6 @@ const options = {
             fourth: {
                 content: "Dziękuję. Tak też zrobię.",
                 route: 2,
-                action: () => {}
             },
         },
         4: {
@@ -1670,7 +1678,6 @@ const options = {
             fourth: {
                 content: "Dziękuję. Tak też zrobię.",
                 route: 2,
-                action: () => {}
             },
         },
         5: {
@@ -1678,12 +1685,10 @@ const options = {
             first: {
                 content: "Tak, muszę iść do... jak to ujął...? 'Hawełek i Michalików'. Wie Pan co to znaczy?",
                 route: 6,
-                action: () => {}
             },
             second: {
                 content: "Właściwie to chciałem jeszcze porozmawiać z Panem... Co to za miejsce?",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Tak, wiem dokąd mam iść, w razie pytań wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
@@ -1692,7 +1697,6 @@ const options = {
             first: {
                 content: "Dziękuję. Jeszcze zanim pójdę pozwoli Pan, że zapytam: Co to jest za miejsce?",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Dziękuję, to by było na tyle, w razie pytań jeszcze wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
@@ -1701,7 +1705,6 @@ const options = {
             first: {
                 content: "Właściwie to chciałem porozmawiać z Panem... Co to za miejsce?",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Rozumiem. W takim razie do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
@@ -1712,12 +1715,10 @@ const options = {
             first: {
                 content: "Pana strażnik był tak miły, że pozwolił mi wejść. Kołodziejczyk, policja.",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Dzień dobry. Proszę Pana, to ja będę zadawać pytania, jestem z policji.",
                 route: 2,
-                action: () => {}
             },
         },
         2: {
@@ -1725,12 +1726,10 @@ const options = {
             first: {
                 content: "Skup się Pan. Szukam jednego z klientów. Wysoki, gruby, elegancki. Kojarzy Pan?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Co za jełop.",
                 route: 3,
-                action: () => {}
             },
         },
         3: {
@@ -1738,7 +1737,6 @@ const options = {
             first: {
                 content: "Dobrze już, dobrze. Skup się Pan. Szukam jednego z klientów. Wysoki, gruby, elegancki. Kojarzy Pan?",
                 route: 4,
-                action: () => {}
             },
         },
         4: {
@@ -1746,7 +1744,6 @@ const options = {
             first: {
                 content: "Wiem, że jakiś czas temu umówił się tutaj z doktorem Piltzem.",
                 route: 5,
-                action: () => {}
             },
         },
         5: {
@@ -1754,17 +1751,14 @@ const options = {
             first: {
                 content: "Co to jakiś cholerny duch, że nikt nie wie jak się nazywa?",
                 route: 6,
-                action: () => {}
             },
             second: {
                 content: "To zna Pan Piltza?",
                 route: 7,
-                action: () => {}
             },
             third: {
                 content: "Hawełkach i Michalikach?",
                 route: 8,
-                action: () => {}
             },
         },
         6: {
@@ -1772,7 +1766,6 @@ const options = {
             fourth: {
                 content: "[Podejdź do wyjścia]",
                 route: 5,
-                action: () => {}
             },
         },
         7: {
@@ -1780,7 +1773,6 @@ const options = {
             fourth: {
                 content: "[Podejdź do wyjścia]",
                 route: 5,
-                action: () => {}
             },
         },
         8: {
@@ -1788,7 +1780,6 @@ const options = {
             fourth: {
                 content: "[Podejdź do wyjścia]",
                 route: 5,
-                action: () => {}
             },
         },
     },
@@ -1798,12 +1789,10 @@ const options = {
             first: {
                 content: "Dzień dobry! To zaszczyt Pana poznać! Przodownik Kołodziejczyk, policja.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Dobry. Nie dziwię się, bo nigdy tu nie byłem. Kołodziejczyk, policja.",
                 route: 601,
-                action: () => {}
             },
         },
         501: {
@@ -1811,12 +1800,10 @@ const options = {
             first: {
                 content: "Drogi Panie Mehoffer. Szukam pewnego człowieka, nazywa się Bogdan Majchrzak, ponoć zdarza mu się tutaj bywać. Z opisu wiem, że jest wysoki i ma nadwagę",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Czy zna Pan może człowieka o imieniu Bogdan Majchrzak? Podobno czasami tutaj przychodzi. Ponoć jest wysoki i swoje waży.",
                 route: 2,
-                action: () => {}
             },
         },
         601: {
@@ -1824,12 +1811,10 @@ const options = {
             first: {
                 content: "Szukam Bogdana Majchrzaka. Wysoki, gruby. Zna go Pan?",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Dostałem informację, że bywa tutaj Bogdan Majchrzak. Taki wysoki, przy kości. Kojarzy Pan takie nazwisko?",
                 route: 3,
-                action: () => {}
             },
         },
         2: {
@@ -1837,12 +1822,10 @@ const options = {
             first: {
                 content: "Dziękuję. Ale zanim pójdę... Był Pan rektorem Akademii Sztuk Pięknych... Co Pan myśli o systemie szkolnictwa?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Dziękuję za informację, tak też zrobię.",
                 route: 3,
-                action: () => {}
             },
         },
         3: {
@@ -1850,12 +1833,10 @@ const options = {
             first: {
                 content: "Dobrze. Ale zanim pójdę... Był Pan rektorem Akademii Sztuk Pięknych... Co Pan myśli o systemie szkolnictwa?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Tak też zrobię.",
                 route: 2,
-                action: () => {}
             },
         },
         10: {
@@ -1863,12 +1844,10 @@ const options = {
             first: {
                 content: "Dzień dobry! To dla mnie zaszczyt. Jestem Kołodziejczyk, z policji.",
                 route: 502,
-                action: () => {}
             },
             second: {
                 content: "No nie dziwię się, że mnie Pan nie widział, bo nie chodzę do jakichś 'jam'.",
                 route: 602,
-                action: () => {}
             },
         },
         502: {
@@ -1876,12 +1855,10 @@ const options = {
             first: {
                 content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
                 route: 2,
-                action: () => {}
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
         },
@@ -1890,12 +1867,10 @@ const options = {
             first: {
                 content: "Bardzo przepraszam, nie chciałem nikogo urazić... Proszę wybaczyć...",
                 route: 11,
-                action: () => {}
             },
             second: {
                 content: "Najwięksi artyści? Chyba Pan żartuje! Niby kto tutaj przychodził?",
                 route: 701,
-                action: () => {}
             },
         },
         701: {
@@ -1907,12 +1882,10 @@ const options = {
             first: {
                 content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
                 route: 2,
-                action: () => {}
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
         },
@@ -1921,12 +1894,10 @@ const options = {
             first: {
                 content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Jeśli Pan pozwoli to jednak wrócę do pana Tadeusza.",
                 route: 2,
-                action: () => {}
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
         },
@@ -1935,12 +1906,10 @@ const options = {
             first: {
                 content: "Drogi Panie Mehoffer. Był Pan rektorem Akademii Sztuk Pięknych, co może Pan powiedzieć na temat szkolnictwa w Krakowie?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
                 route: 2,
-                action: () => {}
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
         },
@@ -1952,12 +1921,10 @@ const options = {
             first: {
                 content: "Rozumiem... Ale korzystając z okazji. Chyba zna Pan to miejsce od podszewki. Co mi może Pan na jego temat powiedzieć?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Szkoda. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem.",
                 route: 4,
-                action: () => {}
             },
             backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -1966,17 +1933,14 @@ const options = {
             first: {
                 content: "Przepraszam za swoje zachowanie... Ale korzystając z okazji. Chyba zna Pan to miejsce od podszewki. Co mi może Pan na jego temat powiedzieć?",
                 route: 30,
-                action: () => {}
             },
             second: {
                 content: "Bez przesady. To mam się teraz wszystkim kłaniać?",
                 route: 701,
-                action: () => {}
             },
             fourth: {
                 content: "Proszę wybaczyć. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem.",
                 route: 4,
-                action: () => {}
             },
             backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -1989,12 +1953,10 @@ const options = {
             first: {
                 content: "Owszem. Chyba zna Pan Jamę Michalika od podszewki. Co mi może Pan na jego temat powiedzieć?",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem.",
                 route: 4,
-                action: () => {}
             },
             backMessage: "Po namyśle jednak nie mam. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -2003,12 +1965,10 @@ const options = {
             first: {
                 content: "Proszę mi powiedzieć coś więcej na temat Jamy Michalika.",
                 route: 30,
-                action: () => {}
             },
             fourth: {
                 content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem.",
                 route: 4,
-                action: () => {}
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
@@ -2019,17 +1979,14 @@ const options = {
             first: {
                 content: "Dzień dobry! Przodownik Kołodziejczyk, z policji. Przychodzę w sprawie jednego z klientów restauracji. Mowa o Bogdanie Majchrzaku.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Kołodziejczyk, policja. Miło mi. Szukam informacji na temat Bogdana Majchrzaka.",
                 route: 501,
-                action: () => {}
             },
             third: {
                 content: "Dzień dobry! Przodownik Kołodziejczyk, policja. Pan jest tu szefem?",
                 route: 2,
-                action: () => {}
             },
         },
         501: {
@@ -2037,7 +1994,6 @@ const options = {
             fourth: {
                 content: "Świetnie, w takim razie już się do niego zwracam.",
                 route: 1,
-                action: () => {}
             },
         },
         2: {
@@ -2045,12 +2001,10 @@ const options = {
             first: {
                 content: "W takim razie chyba może mi Pan pomóc. Potrzebuję informacji na temat niejakiego Bogdana Majchrzaka.",
                 route: 501,
-                action: () => {}
             },
             second: {
                 content: "Rozumiem. Zatem proszę o pomoc. Otóż szukam jednego z Państwa klientów, Bogdana Majchrzaka.",
                 route: 501,
-                action: () => {}
             },
         },
         3: {
@@ -2058,7 +2012,6 @@ const options = {
             first: {
                 content: "Tak, wiem już wszystko. Ale przed wyjściem chciałbym Pana zapytać o to miejsce.",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Tak, dlatego muszę już iść! Do widzenia! [Zakończ rozmowę i wyjdź]"
         },
@@ -2067,7 +2020,6 @@ const options = {
             first: {
                 content: "Tak. Chciałbym Pana zapytać o to miejsce.",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Nie, jednak to by było na tyle. Przepraszam za kłopot. Do widzenia! [Zakończ rozmowę i wyjdź]"
         },
@@ -2078,17 +2030,14 @@ const options = {
             first: {
                 content: "Dzień dobry! Dziękuję, ale nie będę jadł. Potrzebuję za to informacji.",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "A co Pan, stolarz, że mi stół oferuje? Hehe.",
                 route: 2,
-                action: () => {}
             },
             third: {
                 content: "Nie, dla piętnastu... Co Pan, ślepy? Przecież samemu przyszedłem.",
                 route: 2,
-                action: () => {}
             },
         },
         2: {
@@ -2096,12 +2045,10 @@ const options = {
             first: {
                 content: "Ja się uśmiałem. Ale teraz na poważnie. Potrzebuję informacji.",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Przepraszam, w sumie zachowałem się nietaktownie. Jestem tutaj z w sprawie jednego z klientów.",
                 route: 3,
-                action: () => {}
             },
         },
         3: {
@@ -2109,7 +2056,6 @@ const options = {
             first: {
                 content: "Czy kojarzy Pan niejakiego Bogdana Majchrzaka?",
                 route: 4,
-                action: () => {}
             },
         },
         4: {
@@ -2117,17 +2063,14 @@ const options = {
             first: {
                 content: "W końcu jakiś konkret! Czy widział go Pan w towarzystwie starszego mężczyzny?",
                 route: 5,
-                action: () => {}
             },
             second: {
                 content: "Nareszcie, ktoś coś wie! Wie Pan o nim coś więcej?",
                 route: 10, 
-                action: () => {}
             },
             third: {
                 content: "Już myślałem, że nie znajdę nikogo, kto by coś wiedział! Proszę powiedzieć, gdzie mogę go znaleźć?",
                 route: 14, 
-                action: () => {}
             },
         },
         5: {
@@ -2135,12 +2078,10 @@ const options = {
             first: {
                 content: "Czy może mi Pan powiedzieć o nim coś więcej?",
                 route: 6,
-                action: () => {}
             },
             second: {
                 content: "Wie Pan gdzie mogę go znaleźć?",
                 route: 8, 
-                action: () => {}
             },
         },
         6: {
@@ -2148,7 +2089,6 @@ const options = {
             first: {
                 content: "Wie Pan gdzie mogę go znaleźć?",
                 route: 7,
-                action: () => {}
             },
         },
         7: {
@@ -2156,7 +2096,6 @@ const options = {
             fourth: {
                 content: "Wspaniale, dziękuję za informacje! [Podejdź do drzwi.]",
                 route: 6,
-                action: () => {}
             },
         },
         8: {
@@ -2164,7 +2103,6 @@ const options = {
             first: {
                 content: "Wie Pan o nim coś więcej?",
                 route: 7,
-                action: () => {}
             },
         },
         9: {
@@ -2172,7 +2110,6 @@ const options = {
             fourth: {
                 content: "Wspaniale, dziękuję za informacje! [Podejdź do drzwi.]",
                 route: 6,
-                action: () => {}
             },
         },
         10: {
@@ -2180,12 +2117,10 @@ const options = {
             first: {
                 content: "Czy widział go Pan w towarzystwie starszego mężczyzny?",
                 route: 11,
-                action: () => {}
             },
             second: {
                 content: "Wie Pan gdzie mogę go znaleźć?",
                 route: 12, 
-                action: () => {}
             },
         },
         11: {
@@ -2193,7 +2128,6 @@ const options = {
             first: {
                 content: "A wie Pan gdzie mogę go znaleźć?",
                 route: 7, 
-                action: () => {}
             },
         },
         12: {
@@ -2201,7 +2135,6 @@ const options = {
             first: {
                 content: "Widział go Pan może kiedyś w towarzystwie starszego mężczyzny?",
                 route: 13, 
-                action: () => {}
             },
         },
         13: {
@@ -2209,7 +2142,6 @@ const options = {
             fourth: {
                 content: "Wspaniale, dziękuję za informacje! [Podejdź do drzwi.]",
                 route: 6,
-                action: () => {}
             },
         },
         14: {
@@ -2217,12 +2149,10 @@ const options = {
             first: {
                 content: "Czy widział go Pan w towarzystwie starszego mężczyzny?",
                 route: 15,
-                action: () => {}
             },
             second: {
                 content: "Wie Pan o nim coś więcej?",
                 route: 16, 
-                action: () => {}
             },
         },
         15: {
@@ -2230,7 +2160,6 @@ const options = {
             first: {
                 content: "Czy wie Pan może o nim coś więcej?",
                 route: 9, 
-                action: () => {}
             },
         },
         16: {
@@ -2238,7 +2167,6 @@ const options = {
             first: {
                 content: "A czy widział go Pan w towarszystwie starszego mężczyzny?",
                 route: 13, 
-                action: () => {}
             },
         },
 
@@ -2249,17 +2177,14 @@ const options = {
             first: {
                 content: "Dzień dobry, policja. Szukam jednego z Pana pracowsników, Bogdana Majchrzaka.",
                 route: 501, 
-                action: () => {}
             },
             second: {
                 content: "Wow, niezły hol.",
                 route: 2, 
-                action: () => {}
             },
             third: {
                 content: "Dzień dobry. Pan jest redaktorem naczelnym Kuryera, prawda?.",
                 route: 4, 
-                action: () => {}
             },
         },
         2: {
@@ -2267,17 +2192,14 @@ const options = {
             first: {
                 content: "Pan jest redaktorem naczelnym, czy się nie mylę?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Co to za budynek?",
                 route: 3,
-                action: () => {}
             },
             third: {
                 content: "Imponujące. Ale nie przyszedłem podziwiać architektury. Szukam Bogdana Majchrzaka.",
                 route: 501,
-                action: () => {}
             },
         },
         3: {
@@ -2285,12 +2207,10 @@ const options = {
             first: {
                 content: "Pan jest redaktorem naczelnym Kuryera, prawda?",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Kawał architektury, nie powiem. Ale ja w innej sprawie. Szukam Bogdana Majchrzaka.",
                 route: 501,
-                action: () => {}
             },
         },
         4: {
@@ -2298,7 +2218,6 @@ const options = {
             first: {
                 content: "Rozumiem. Ale na rozmowy przyjdzie jeszcze czas. Teraz chciałbym porozmawiać z Bogdanem Majchrzakiem.",
                 route: 501,
-                action: () => {}
             },
         },
         501: {
@@ -2306,7 +2225,6 @@ const options = {
             fourth: {
                 content: "Dziękuję za informacje. A teraz jeśli Pan pozwoli, porozmawiam z panem Majchrzakiem.",
                 route: 4,
-                action: () => {}
             },
         },
         5: {
@@ -2314,7 +2232,6 @@ const options = {
             first: {
                 content: "Przepraszam najmocniej. Zanim pójdę chciałbym jednak o coś zapytać o bieżące wydarzenia...",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Przepraszam, ale muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
@@ -2323,7 +2240,6 @@ const options = {
             first: {
                 content: "Chciałbym porozmawiać z Panem o bieżących wydarzeniach...",
                 route: 30,
-                action: () => {}
             },
             backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
@@ -2334,12 +2250,10 @@ const options = {
             first: {
                 content: "Trochę się Pana naszukałem. Kołodziejczyk, policja.",
                 route: 2,
-                action: () => {}
             },
             second: {
                 content: "Miło w końcu Pana zobaczyć. Trochę się o panu nasłuchałem zanim przyszło nam się poznać. Jestem przodownik Kołodziejczyk z policji.",
                 route: 2,
-                action: () => {}
             },
         },
         2: {
@@ -2347,17 +2261,14 @@ const options = {
             first: {
                 content: "Przychodzę w sprawie Józefa Najchela.",
                 route: 3,
-                action: () => {}
             },
             second: {
                 content: "Kiedy po raz ostatni widział się Pan z Józefem Najchelem?",
                 route: 3,
-                action: () => {}
             },
             third: {
                 content: "Gdzie jest Józef Najchel?",
                 route: 3,
-                action: () => {}
             },
         },
         3: {
@@ -2365,17 +2276,14 @@ const options = {
             first: {
                 content: "Nie mam czasu na jakieś gierki. Proszę odpowiedzieć.",
                 route: 4,
-                action: () => {}
             },
             second: {
                 content: "Jak Pana aresztuję za utrudnianie śledztwa to się Panu odechce kłamać.",
                 route: 5,
-                action: () => {}
             },
             third: {
                 content: "To ja zadaję pytania. Po prostu wiem.",
                 route: 4,
-                action: () => {}
             },
         },
         4: {
@@ -2383,12 +2291,10 @@ const options = {
             first: {
                 content: "Kręcił się Pan koło jego domu, zaglądał w jego dokumentację medyczną, odwiedził w szpitalu w Kobierzynie. Naprawdę, myśli Pan, że się wywinie od odpowiedzi?",
                 route: 5,
-                action: () => {}
             },
             second: {
                 content: "Kłamie Pan. Jak nie uzyskam odpowiedzi to nie będzie już tak miło, bo następnym razem porozmawiamy na komisariacie.",
                 route: 5,
-                action: () => {}
             },
         },
         5: {
@@ -2396,12 +2302,10 @@ const options = {
             first: {
                 content: "Chyba 'człowieka o koźlich rogach'.",
                 route: 6,
-                action: () => {}
             },
             second: {
                 content: "W takim razie muszę zadać kilka pytań.",
                 route: 7,
-                action: () => {}
             },
         },
         6: {
@@ -2409,7 +2313,6 @@ const options = {
             first: {
                 content: "No dobrze. Ale będę musiał zadać kilka pytań.",
                 route: 7,
-                action: () => {}
             },
         },
         7: {
@@ -2417,17 +2320,14 @@ const options = {
             first: {
                 content: "Jak dobrze zna Pan Józefa Najchela?",
                 route: 8,
-                action: () => {}
             },
             second: {
                 content: "Kiedy po raz ostatni widział Pan Najchela?",
                 route: 9,
-                action: () => {}
             },
             third: {
                 content: "Czy Najchel miał jakichś przyjaciół lub wrogów?",
                 route: 10,
-                action: () => {}
             },
         },
         8: {
@@ -2435,7 +2335,6 @@ const options = {
             first: {
                 content: "Najchel zaginął wczorajszej nocy. Próbuję go odnaleźć zanim zrobi sobie lub komuś krzywdę.",
                 route: 12,
-                action: () => {}
             },
         },
         9: {
@@ -2443,7 +2342,6 @@ const options = {
             first: {
                 content: "Co ma Pan na myśli mówiąc, że 'widział' go Pan tydzień temu?",
                 route: 11,
-                action: () => {}
             },
         },
         10: {
@@ -2451,7 +2349,6 @@ const options = {
             first: {
                 content: "Najchel zaginął wczorajszej nocy. Próbuję go odnaleźć zanim zrobi sobie lub komuś krzywdę.",
                 route: 12,
-                action: () => {}
             },
         },
         11: {
@@ -2459,7 +2356,6 @@ const options = {
             first: {
                 content: "Najchel zaginął wczorajszej nocy. Próbuję go odnaleźć zanim zrobi sobie lub komuś krzywdę.",
                 route: 12,
-                action: () => {}
             },
         },
         12: {
@@ -2467,17 +2363,14 @@ const options = {
             first: {
                 content: "Krogul? To ten co mieszka obok?",
                 route: 13,
-                action: () => {}
             },
             second: {
                 content: "A co, Pan niby nie wie? Przecież pisze Pan o nim reportaż!",
                 route: 15,
-                action: () => {}
             },
             fourth: {
                 content: "Tak zrobię. [Odejdź w stronę wyjścia.]",
                 route: 12,
-                action: () => {}
             }
         },
         13: {
@@ -2485,12 +2378,10 @@ const options = {
             first: {
                 content: "I co, tak po prostu zgodził się na współpracę?",
                 route: 14,
-                action: () => {}
             },
             second: {
                 content: "I zgodził się bez problemu?",
                 route: 14,
-                action: () => {}
             },
         },
         14: {
@@ -2498,7 +2389,6 @@ const options = {
             fourth: {
                 content: "W takim razie muszę porozmawiać z tym całym Krogulem. Do widzenia. [Odejdź w stronę wyjścia.]",
                 route: 12,
-                action: () => {}
             }
         },
         15: {
@@ -2506,7 +2396,6 @@ const options = {
             fourth: {
                 content: "Dobrze, ale będę miał Pana na oku... Do widzenia. [Odejdź w stronę wyjścia.]",
                 route: 12,
-                action: () => {}
             }
         },
     },
@@ -2516,7 +2405,6 @@ const options = {
             first: {
                 content: "Dzień dobry, Kołodziejczyk, policja. Potrzebuję informacji o jednym z Państwa klientów.",
                 route: 501, 
-                action: () => {}
             },
         },
         501: {
@@ -2524,7 +2412,6 @@ const options = {
             first: {
                 content: "Józef Najchel.",
                 route: 2, 
-                action: () => {}
             },
         },
         2: {
@@ -2532,12 +2419,10 @@ const options = {
             first: {
                 content: "Przepraszam, ale trochę mi się spieszy.",
                 route: 3, 
-                action: () => {}
             },
             second: {
                 content: "*poczekaj*",
                 route: 3, 
-                action: () => {}
             },
         },
         3: {
@@ -2545,12 +2430,10 @@ const options = {
             first: {
                 content: "Wie Pan z jakiego powodu przestano mu je wypłacać?",
                 route: 4, 
-                action: () => {}
             },
             second: {
                 content: "Czy coś jeszcze jest Pan w stanie stamtąd wyczytać?",
                 route: 5, 
-                action: () => {}
             },
         },
         4: {
@@ -2558,7 +2441,6 @@ const options = {
             first: {
                 content: "Dziękuję. Jeszcze jedna sprawa... Ma Pan chwilę, aby porozmawiać o sytuacji ekonomicznej?",
                 route: 30, 
-                action: () => {}
             },
             backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },
@@ -2567,7 +2449,6 @@ const options = {
             first: {
                 content: "Dziękuję. Jeszcze jedna sprawa... Ma Pan chwilę, aby porozmawiać o sytuacji ekonomicznej?",
                 route: 30, 
-                action: () => {}
             },
             backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },
@@ -2576,7 +2457,6 @@ const options = {
             first: {
                 content: "Owszem. Chciałbym z Panem pomówić o sytuacji ekonomicznej...",
                 route: 30, 
-                action: () => {}
             },
             backMessage: "Nie, jednak nie mam. Przepraszam za zamieszanie. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },

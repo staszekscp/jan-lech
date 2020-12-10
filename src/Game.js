@@ -23,14 +23,17 @@ function Game() {
 const [progress, setProgress] = useState({
   basic: false,
   hospital: false,
+  hospitalResponse: false,
   stelmach: false,
   football: false,
   maciejowscy: false,
   fatGuy: false,
+  fatGuyResponse: false,
   krogul: false,
   fatGuyInHospital: false,
   brewery: false,
   unemployed: false,
+  unemployedResponse: false,
   workerConversation: false,
   thorn: false,
   visitBrewery: false,
@@ -39,19 +42,18 @@ const [progress, setProgress] = useState({
   zelenski: false,
   hawelka: false,
   visitIkc: false,
-  moneyProblems: false,
+  moneyProblems: true,
+  bankInfo: false,
   bank: false,
   bombs: false,
-  job: false,
-  bank: false
 })
 
 const [mapScreen, setMapScreen] = useState(false)
-const [bank, setBank] = useState(true)
+const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
-const [home, setHome] = useState(false)
+const [home, setHome] = useState(true)
 const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
