@@ -8,6 +8,7 @@ import './Bank.css';
 function Bank(props) {
   const [fadeOut, setFadeOut] = useState(false)
   const [conversation, setConversation] = useState(false)
+  const [number, setNumber] = useState(1)
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,10 +16,23 @@ function Bank(props) {
     }, 5000)
   }, [])
 
+  useEffect(() => {
+    if (props.progress.bank) {
+      setNumber(6)
+    } 
+  }, [])
+
+  const actionOne = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    bank: true
+  }))}
+
+
   return (
     <div className={fadeOut?"out":"main"}>
       <div className="bank-background">
-        {conversation ? <Conversation place="home" current={props.current} back={props.back} setFadeOut={setFadeOut}>
+        {conversation ? <Conversation actionOne={actionOne} number={number} place="bank" current={props.current} back={props.back} setFadeOut={setFadeOut}>
           <div onClick={() => {setConversation(true)}}>
             <img className="bank-boss-conversation" src={director} />
           </div>
@@ -27,7 +41,7 @@ function Bank(props) {
             <img className="bank-boss" src={director} />
           </div>}
           <div className="location-overlay">
-              Wkraczasz do banku Pekao przy Pijarskiej 1
+              Wkraczasz do budynku Powiatowej Kasy Oszczędności przy ul. Pijarskiej
           </div>
       </div>
     </div>

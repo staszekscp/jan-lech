@@ -38,16 +38,19 @@ const [progress, setProgress] = useState({
   jamaImpolite: false,
   zelenski: false,
   hawelka: false,
+  visitIkc: false,
+  moneyProblems: false,
+  bank: false,
   bombs: false,
   job: false,
   bank: false
 })
 
 const [mapScreen, setMapScreen] = useState(false)
-const [bank, setBank] = useState(false)
+const [bank, setBank] = useState(true)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
-const [hawelka, setHawelka] = useState(true)
+const [hawelka, setHawelka] = useState(false)
 const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
@@ -76,9 +79,11 @@ const [hospital, setHospital] = useState(false)
           setThorn={setThorn}
           setTwardowskiego={setTwardowskiego}
           setHospital={setHospital}/>}
-        {bank && <Bank // dyrektor banku (info o stanie konta)
+        {bank && <Bank                            //
           current={setBank}
-          back={setMapScreen}/>}
+          back={setMapScreen}
+          progress={progress}
+          setProgress={setProgress}/>}
         {brewery && <Brewery                       //
           current={setBrewery}
           back={setMapScreen}
@@ -97,9 +102,11 @@ const [hospital, setHospital] = useState(false)
           back={setTwardowskiego}
           progress={progress}
           setProgress={setProgress}/>}
-        {ikc && <IKC // dabrowski i typ - daje dane do krogula, mówi, że był jego wtyką i ten mowi o problemach finansowych
+        {ikc && <IKC                                //
           current={setIkc}
-          back={setMapScreen}/>}
+          back={setMapScreen}
+          progress={progress}
+          setProgress={setProgress}/>}
         {jama && <Jama                              //
           current={setJama}
           back={setMapScreen}

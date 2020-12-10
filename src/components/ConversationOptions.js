@@ -909,6 +909,57 @@ const options = {
             message: "Przecież mówiłem, żeby nie przeszkadzać! Nie wiem co się stało z tym ochlejmordą!",
             backMessage: "Dobrze, w porządku. Do widzenia. [Odejdź]"
         },
+        6: {
+            message: "Czego? Wynocha mi z mojej posiadłości!",
+            first: {
+                content: "Dzień dobry, dzień dobry! Ja w sprawie Majchrzaka. Zna Pan to nazwisko, prawda? ",
+                route: 8,
+                action: () => {}
+            },
+            second: {
+                content: "Do Majchrzaka to pewnie się Pan grzeczniej odzywał.",
+                route: 8,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "No przecież mówiłem wynocha! Nie rozumie?!",
+            first: {
+                content: "Dzień dobry, dzień dobry! Ja w sprawie Majchrzaka. Zna Pan to nazwisko, prawda? ",
+                route: 8,
+                action: () => {}
+            },
+            second: {
+                content: "Do Majchrzaka to pewnie się Pan grzeczniej odzywał!",
+                route: 8,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "*milczy*",
+            first: {
+                content: "Dobra, koniec tych żartów. Proszę mi powiedzieć, gdzie może być teraz Najchel.",
+                route: 601,
+                action: () => {}
+            },
+        },
+        601: {
+            message: "Niech będzie. Powiem Panu coś co może się przydać. Najchel ma kłopoty z pieniędzmi. Latami dostawał jakiś zasiłek. Skąd? Nie mam pojęcia, trzeba żony dopytać. Wydaje mi się, że jakoś rok temu przestali mu go wypłacać...",
+            first: {
+                content: "Proszę kontynuować.",
+                route: 10,
+                action: () => {}
+            },
+        },
+        10: {
+            message: "Z tego powodu musiał znaleźć sobie jakąś robotę i tak zatrudnił się na Krowodrzy jako dozorca. A jak go stamtąd wyrzucono to zupełnie stracił rozum. Najpierw wysłano go do Kobierzyna, a kiedy stamtąd wrócił to udawał przed żoną, że wciąż ma pracę... Myślę, że z braku pieniędzy może chcieć napaść na jakiś bank, może sklep. Więcej nie wiem, naprawdę.",
+            backMessage: "Dziękuję za informacje. W takim razie czas na rozmowę z Najchelową. [Zakończ rozmowę i odejdź.]"
+        },
+        11: {
+            message: "Nie mam już nic do dodania. Proszę sobie iść. [Odchodzi]",
+            backMessage: "Chwileczkę...!"
+        }
+
     },
     "lekarz": {
         1: {
@@ -2025,7 +2076,7 @@ const options = {
         1: {
             message: "Witam w restauracji Hawełka! Stolik dla jednej osoby?",
             first: {
-                content: "Dzień dobry! Dziękuję, ale nie będę jadł. Potrzebuję informacji.",
+                content: "Dzień dobry! Dziękuję, ale nie będę jadł. Potrzebuję za to informacji.",
                 route: 3,
                 action: () => {}
             },
@@ -2191,6 +2242,344 @@ const options = {
             },
         },
 
+    },
+    "dabrowski": {
+        1: {
+            message: "Dzień dobry, Marian Dąbrowski. W czym mogę Panu służyć?",
+            first: {
+                content: "Dzień dobry, policja. Szukam jednego z Pana pracowsników, Bogdana Majchrzaka.",
+                route: 501, 
+                action: () => {}
+            },
+            second: {
+                content: "Wow, niezły hol.",
+                route: 2, 
+                action: () => {}
+            },
+            third: {
+                content: "Dzień dobry. Pan jest redaktorem naczelnym Kuryera, prawda?.",
+                route: 4, 
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Prawda? Bardzo się cieszę, że udało się tutaj przenieść redakcję mojego Kuryera. Jesteśmy świeżo po przeprowadzce.",
+            first: {
+                content: "Pan jest redaktorem naczelnym, czy się nie mylę?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Co to za budynek?",
+                route: 3,
+                action: () => {}
+            },
+            third: {
+                content: "Imponujące. Ale nie przyszedłem podziwiać architektury. Szukam Bogdana Majchrzaka.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Projekt Stryjeński, Mączyński, rok 1921. Jedni nazywają go Bazarem Polskim - bo pierwotnie chciano tu urządzić dom handlowy. Niektórym przypomina statek, to przezywają go 'Krążownikiem Wielopole'. Ale mi najbardziej podoba się Pałac Prasy.",
+            first: {
+                content: "Pan jest redaktorem naczelnym Kuryera, prawda?",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Kawał architektury, nie powiem. Ale ja w innej sprawie. Szukam Bogdana Majchrzaka.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Nawet nie redaktorem, a jego założycielem! Już od 1910 roku informujemy obywateli o tym, co się dzieje w kraju i poza nim!",
+            first: {
+                content: "Rozumiem. Ale na rozmowy przyjdzie jeszcze czas. Teraz chciałbym porozmawiać z Bogdanem Majchrzakiem.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Ahh, co ten Bogdan nabroił? Mam nadzieję, że nic poważnego... W każdym razie tam jest, widzę, że dopiero co przyszedł, jeszcze w płaszczu stoi.",
+            fourth: {
+                content: "Dziękuję za informacje. A teraz jeśli Pan pozwoli, porozmawiam z panem Majchrzakiem.",
+                route: 4,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "Dość głośno się Panowie zachowywali...",
+            first: {
+                content: "Przepraszam najmocniej. Zanim pójdę chciałbym jednak o coś zapytać o bieżące wydarzenia...",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Przepraszam, ale muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        6: {
+            message: "Witam ponownie! W czym mogę pomóc",
+            first: {
+                content: "Chciałbym porozmawiać z Panem o bieżących wydarzeniach...",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+    },
+    "majchrzak": {
+        1: {
+            message: "Słucham.",
+            first: {
+                content: "Trochę się Pana naszukałem. Kołodziejczyk, policja.",
+                route: 2,
+                action: () => {}
+            },
+            second: {
+                content: "Miło w końcu Pana zobaczyć. Trochę się o panu nasłuchałem zanim przyszło nam się poznać. Jestem przodownik Kołodziejczyk z policji.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Majchrzak. A o co chodzi?",
+            first: {
+                content: "Przychodzę w sprawie Józefa Najchela.",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Kiedy po raz ostatni widział się Pan z Józefem Najchelem?",
+                route: 3,
+                action: () => {}
+            },
+            third: {
+                content: "Gdzie jest Józef Najchel?",
+                route: 3,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Zaraz, zaraz! A skąd Pan wie, że znam jakiegoś Najchela? Pierwsze słyszę!",
+            first: {
+                content: "Nie mam czasu na jakieś gierki. Proszę odpowiedzieć.",
+                route: 4,
+                action: () => {}
+            },
+            second: {
+                content: "Jak Pana aresztuję za utrudnianie śledztwa to się Panu odechce kłamać.",
+                route: 5,
+                action: () => {}
+            },
+            third: {
+                content: "To ja zadaję pytania. Po prostu wiem.",
+                route: 4,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Nie znam żadnego Najchela, proszę dać mi spokój!",
+            first: {
+                content: "Kręcił się Pan koło jego domu, zaglądał w jego dokumentację medyczną, odwiedził w szpitalu w Kobierzynie. Naprawdę, myśli Pan, że się wywinie od odpowiedzi?",
+                route: 5,
+                action: () => {}
+            },
+            second: {
+                content: "Kłamie Pan. Jak nie uzyskam odpowiedzi to nie będzie już tak miło, bo następnym razem porozmawiamy na komisariacie.",
+                route: 5,
+                action: () => {}
+            },
+        },
+        5: {
+            message: "Dobrze, już dobrze! Piszę reportaż o chorobach psychicznych. Przyglądałem się Najchelowi, aby poznać jego zaburzenie nieco bliżej... Wie Pan jak by się sprzedawał materiał o kimś, kto widzi kozy z głową człowieka?",
+            first: {
+                content: "Chyba 'człowieka o koźlich rogach'.",
+                route: 6,
+                action: () => {}
+            },
+            second: {
+                content: "W takim razie muszę zadać kilka pytań.",
+                route: 7,
+                action: () => {}
+            },
+        },
+        6: {
+            message: "Tak, tak, jedno i to samo.",
+            first: {
+                content: "No dobrze. Ale będę musiał zadać kilka pytań.",
+                route: 7,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "Pytaj Pan.",
+            first: {
+                content: "Jak dobrze zna Pan Józefa Najchela?",
+                route: 8,
+                action: () => {}
+            },
+            second: {
+                content: "Kiedy po raz ostatni widział Pan Najchela?",
+                route: 9,
+                action: () => {}
+            },
+            third: {
+                content: "Czy Najchel miał jakichś przyjaciół lub wrogów?",
+                route: 10,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "Niezbyt dobrze, z tym człowiekiem nie da się rozmawiać. Straszny choleryk. A czemu Pan pyta?",
+            first: {
+                content: "Najchel zaginął wczorajszej nocy. Próbuję go odnaleźć zanim zrobi sobie lub komuś krzywdę.",
+                route: 12,
+                action: () => {}
+            },
+        },
+        9: {
+            message: "Widziałem jakoś tydzień temu, rozmawiałem ze przed dwoma miesiącami jak jeszcze był w szpitalu.",
+            first: {
+                content: "Co ma Pan na myśli mówiąc, że 'widział' go Pan tydzień temu?",
+                route: 11,
+                action: () => {}
+            },
+        },
+        10: {
+            message: "Przyjaciół? Dobre sobie. To nie jest typ, który mógłby mieć przyjaciół. Wrogów już prędzej, ale to wiadomo, nie był to jakiś spokojniaszek. A czemu Pan pyta?",
+            first: {
+                content: "Najchel zaginął wczorajszej nocy. Próbuję go odnaleźć zanim zrobi sobie lub komuś krzywdę.",
+                route: 12,
+                action: () => {}
+            },
+        },
+        11: {
+            message: "Byłem na Twardowskiego. A czemu Pan pyta?",
+            first: {
+                content: "Najchel zaginął wczorajszej nocy. Próbuję go odnaleźć zanim zrobi sobie lub komuś krzywdę.",
+                route: 12,
+                action: () => {}
+            },
+        },
+        12: {
+            message: "Słucham? I co, nie wiecie gdzie jest? To szajbus! Ja jak chciałem się czegoś o nim dowiedzieć to próbowałem z nim rozmawiać, ale z tym człowiekiem nie da się zamienić słowa. Dlatego zacząłem wypytywać jego sąsiada, Krogula, o to, co się u Najchelów w domu działo. Niech Pan z nim porozmawia, on może coś wiedzieć.",
+            first: {
+                content: "Krogul? To ten co mieszka obok?",
+                route: 13,
+                action: () => {}
+            },
+            second: {
+                content: "A co, Pan niby nie wie? Przecież pisze Pan o nim reportaż!",
+                route: 15,
+                action: () => {}
+            },
+            fourth: {
+                content: "Tak zrobię. [Odejdź w stronę wyjścia.]",
+                route: 12,
+                action: () => {}
+            }
+        },
+        13: {
+            message: "Co Pan, nie rozumie znaczenia słowa sąsiad? Tak, to ten co mieszka obok.",
+            first: {
+                content: "I co, tak po prostu zgodził się na współpracę?",
+                route: 14,
+                action: () => {}
+            },
+            second: {
+                content: "I zgodził się bez problemu?",
+                route: 14,
+                action: () => {}
+            },
+        },
+        14: {
+            message: "Panie, każdy ma swoją cenę. A Krogul to chętnie w łapę brał, oj brał...",
+            fourth: {
+                content: "W takim razie muszę porozmawiać z tym całym Krogulem. Do widzenia. [Odejdź w stronę wyjścia.]",
+                route: 12,
+                action: () => {}
+            }
+        },
+        15: {
+            message: "Niech Pan porozmawia z Krogulem. Ja nie mam pojęcia gdzie Najchel może teraz być.",
+            fourth: {
+                content: "Dobrze, ale będę miał Pana na oku... Do widzenia. [Odejdź w stronę wyjścia.]",
+                route: 12,
+                action: () => {}
+            }
+        },
+    },
+    "bank": {
+        1: {
+            message: "Dzień dobry, Marian Ostaszewski, jestem dyrektorem tej placówki. W czym mogę pomóc?",
+            first: {
+                content: "Dzień dobry, Kołodziejczyk, policja. Potrzebuję informacji o jednym z Państwa klientów.",
+                route: 501, 
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Poproszę o godność rzeczonego klienta.",
+            first: {
+                content: "Józef Najchel.",
+                route: 2, 
+                action: () => {}
+            },
+        },
+        2: {
+            message: "*wyszukuje informacji* Najchel... Najchel...",
+            first: {
+                content: "Przepraszam, ale trochę mi się spieszy.",
+                route: 3, 
+                action: () => {}
+            },
+            second: {
+                content: "*poczekaj*",
+                route: 3, 
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Najchel, jest. Z dokumentów wynika, że do zeszłego roku pobierał regularne świadczenia przekazywane przez konsulat Czechosłowacji w Krakowie. Była to renta pobierana z uwagi na wypadek, który Pan Najchel przeżył jak pracował w odlewni żelaza w Witkowicach, niedaleko Ostrawy. Dziwne... Powinno być to dożywotnie świadczenie...",
+            first: {
+                content: "Wie Pan z jakiego powodu przestano mu je wypłacać?",
+                route: 4, 
+                action: () => {}
+            },
+            second: {
+                content: "Czy coś jeszcze jest Pan w stanie stamtąd wyczytać?",
+                route: 5, 
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Nie wiem. Możliwe, że pan Najchel po prostu otworzył rachunek w innej placówce. Ale osobiście pytałbym u źródła. Konsulat, który wysyłał pieniądze znajduje się przy Gołębiej.",
+            first: {
+                content: "Dziękuję. Jeszcze jedna sprawa... Ma Pan chwilę, aby porozmawiać o sytuacji ekonomicznej?",
+                route: 30, 
+                action: () => {}
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        5: {
+            message: "Niestety, nic szczególnego. Na Pana miejscu pytałbym o te nieścisłości u źródła. Konsulat, który wysyłał pieniądze znajduje się przy Gołębiej.",
+            first: {
+                content: "Dziękuję. Jeszcze jedna sprawa... Ma Pan chwilę, aby porozmawiać o sytuacji ekonomicznej?",
+                route: 30, 
+                action: () => {}
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        6: {
+            message: "Witam ponownie! Ma Pan jeszcze jakieś pytania?",
+            first: {
+                content: "Owszem. Chciałbym z Panem pomówić o sytuacji ekonomicznej...",
+                route: 30, 
+                action: () => {}
+            },
+            backMessage: "Nie, jednak nie mam. Przepraszam za zamieszanie. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
     }
 }
 

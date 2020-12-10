@@ -109,7 +109,7 @@ const [fadeOut, setFadeOut] = useState(false)
                 }, 2000)
               }
             }>
-              Bank Pekao
+              Powiatowa Kasa Oszczędności
           </div>
         </div>
         <div className="place-icon-ikc">
