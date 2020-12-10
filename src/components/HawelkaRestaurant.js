@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 
-import client from '../assets/klient-hawelka.png';
 import waiter from '../assets/hawelka-kelner.png';
 import boss from '../assets/hawelka-wlasciciel.png';
 
@@ -11,7 +10,7 @@ function HawelkaRestaurant(props) {
   const [fadeOut, setFadeOut] = useState(false)
   const [conversationBoss, setConversationBoss] = useState(false)
   const [conversationWaiter, setConversationWaiter] = useState(false)
-  const [conversationClient, setConversationClient] = useState(false)
+  const [numberBoss, setNumberBoss] = useState(1)
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,70 +18,57 @@ function HawelkaRestaurant(props) {
     }, 5000)
   }, [])
 
+  useEffect(() => {
+    if(props.progress.hawelka) {
+      setNumberBoss(4)
+    }
+  }, [])
+
   const switchWaiter = () => {
     setConversationBoss(false)
     setConversationWaiter(true)
-    setConversationClient(false)
   }
 
   const switchBoss = () => {
-    setConversationBoss(true)
     setConversationWaiter(false)
-    setConversationClient(false)
+    setNumberBoss(3)
+    setTimeout(() => {
+      setConversationBoss(true)
+    }, 1)
   }
+  
+  const actionOne = () => {
+    props.setProgress(prev => ({
+    ...prev,
+    hawelka: true
+  }))}
 
-  const switchClient = () => {
-    setConversationBoss(false)
-    setConversationWaiter(false)
-    setConversationClient(true)
-  }
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="hawelka-background">
-          {conversationBoss && <div><Conversation turnOff={switchWaiter} right={true} place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          {conversationBoss && <div><Conversation actionOne={actionOne} number={numberBoss} turnOff={switchWaiter} right={true} place="macharski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {
                   setConversationBoss(true)
                 }}>
                 <img className="boss-hawelka-conversation" src={boss} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationClient(true)}}>
-                <img className="client" src={client} />
-              </div>
               <div onClick={() => {setConversationWaiter(true)}}>
                 <img className="waiter" src={waiter} />
               </div>
             </div>
             }
-            {conversationWaiter && <div><Conversation turnOff={switchClient} place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationWaiter && <div><Conversation number={1} turnOff={switchBoss} place="kelner" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationWaiter(true)}}>
                 <img className="waiter-conversation" src={waiter} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationClient(true)}}>
-                <img className="client" src={client} />
-              </div>
               <div onClick={() => {setConversationBoss(true)}}>
                 <img className="boss-hawelka" src={boss} />
               </div>
             </div>
             }
-            {conversationClient && <div><Conversation turnOff={switchBoss} place="home" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationClient(true)}}>
-                <img className="client-conversation" src={client} />
-              </div>
-            </Conversation>
-              <div onClick={() => {setConversationWaiter(true)}}>
-                <img className="waiter" src={waiter} />
-              </div>
-              <div onClick={() => {setConversationBoss(true)}}>
-                <img className="boss-hawelka" src={boss} />
-              </div>
-            </div>
-            }
-            {(!conversationBoss && !conversationWaiter && !conversationClient) && <div><div onClick={() => {setConversationClient(true)}}>
-                <img className="client" src={client} />
-              </div>
+            {(!conversationBoss && !conversationWaiter) && <div>
               <div onClick={() => {setConversationWaiter(true)}}>
                 <img className="waiter" src={waiter} />
               </div>

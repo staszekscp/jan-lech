@@ -1961,6 +1961,236 @@ const options = {
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
+    },
+    "macharski": {
+        1: {
+            message: "Dzień dobry. Leopold Macharski. Jak mogę pomóc?",
+            first: {
+                content: "Dzień dobry! Przodownik Kołodziejczyk, z policji. Przychodzę w sprawie jednego z klientów restauracji. Mowa o Bogdanie Majchrzaku.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Kołodziejczyk, policja. Miło mi. Szukam informacji na temat Bogdana Majchrzaka.",
+                route: 501,
+                action: () => {}
+            },
+            third: {
+                content: "Dzień dobry! Przodownik Kołodziejczyk, policja. Pan jest tu szefem?",
+                route: 2,
+                action: () => {}
+            },
+        },
+        501: {
+            message: "Hmmm... Coś mi mówi to nazwisko... Ale może niech Pan lepiej zapyta Wadowskiego, to jeden z naszych kelnerów. On ma lepszą pamięć do twarzy.",
+            fourth: {
+                content: "Świetnie, w takim razie już się do niego zwracam.",
+                route: 1,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Nie do końca. Właścicielem jest mój stryj, Franciszek Aleksander Macharski. Jednak ze względu na jego wiek teraz to ja zajmuję się tutejszą restauracją i delikatesmi.",
+            first: {
+                content: "W takim razie chyba może mi Pan pomóc. Potrzebuję informacji na temat niejakiego Bogdana Majchrzaka.",
+                route: 501,
+                action: () => {}
+            },
+            second: {
+                content: "Rozumiem. Zatem proszę o pomoc. Otóż szukam jednego z Państwa klientów, Bogdana Majchrzaka.",
+                route: 501,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Dowiedział się Pan czegoś?",
+            first: {
+                content: "Tak, wiem już wszystko. Ale przed wyjściem chciałbym Pana zapytać o to miejsce.",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Tak, dlatego muszę już iść! Do widzenia! [Zakończ rozmowę i wyjdź]"
+        },
+        4: {
+            message: "Witam ponownie! Ma Pan jakieś pytania?",
+            first: {
+                content: "Tak. Chciałbym Pana zapytać o to miejsce.",
+                route: 30,
+                action: () => {}
+            },
+            backMessage: "Nie, jednak to by było na tyle. Przepraszam za kłopot. Do widzenia! [Zakończ rozmowę i wyjdź]"
+        },
+    },
+    "kelner": {
+        1: {
+            message: "Witam w restauracji Hawełka! Stolik dla jednej osoby?",
+            first: {
+                content: "Dzień dobry! Dziękuję, ale nie będę jadł. Potrzebuję informacji.",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "A co Pan, stolarz, że mi stół oferuje? Hehe.",
+                route: 2,
+                action: () => {}
+            },
+            third: {
+                content: "Nie, dla piętnastu... Co Pan, ślepy? Przecież samemu przyszedłem.",
+                route: 2,
+                action: () => {}
+            },
+        },
+        2: {
+            message: "Doprawdy zabawne...",
+            first: {
+                content: "Ja się uśmiałem. Ale teraz na poważnie. Potrzebuję informacji.",
+                route: 3,
+                action: () => {}
+            },
+            second: {
+                content: "Przepraszam, w sumie zachowałem się nietaktownie. Jestem tutaj z w sprawie jednego z klientów.",
+                route: 3,
+                action: () => {}
+            },
+        },
+        3: {
+            message: "Słucham, cóż chciałby Pan wiedzieć?",
+            first: {
+                content: "Czy kojarzy Pan niejakiego Bogdana Majchrzaka?",
+                route: 4,
+                action: () => {}
+            },
+        },
+        4: {
+            message: "Oczywiście, bywa tutaj dość często.",
+            first: {
+                content: "W końcu jakiś konkret! Czy widział go Pan w towarzystwie starszego mężczyzny?",
+                route: 5,
+                action: () => {}
+            },
+            second: {
+                content: "Nareszcie, ktoś coś wie! Wie Pan o nim coś więcej?",
+                route: 10, 
+                action: () => {}
+            },
+            third: {
+                content: "Już myślałem, że nie znajdę nikogo, kto by coś wiedział! Proszę powiedzieć, gdzie mogę go znaleźć?",
+                route: 14, 
+                action: () => {}
+            },
+        },
+        5: {
+            message: "To zależy, kogo uznać za starszego... Ale nie, raczej nie. Najczęściej przychodzi z kobietami.",
+            first: {
+                content: "Czy może mi Pan powiedzieć o nim coś więcej?",
+                route: 6,
+                action: () => {}
+            },
+            second: {
+                content: "Wie Pan gdzie mogę go znaleźć?",
+                route: 8, 
+                action: () => {}
+            },
+        },
+        6: {
+            message: "Niewiele, raczej nie rozmawiamy ze sobą. Wiem tyle, że jest dziennikarzem i pracuje dla Ilustrowanego Kuriera Codziennego.",
+            first: {
+                content: "Wie Pan gdzie mogę go znaleźć?",
+                route: 7,
+                action: () => {}
+            },
+        },
+        7: {
+            message: "O tej godzinie na pewno znajdzie go Pan w redakcji Kuriera w Pałacu Prasy na Wielopolu.",
+            fourth: {
+                content: "Wspaniale, dziękuję za informacje! [Podejdź do drzwi.]",
+                route: 6,
+                action: () => {}
+            },
+        },
+        8: {
+            message: "Z tego co wiem to pracuje w redakcji Ilustrowanego Kuriera Codziennego, w Pałacu Prasy na Wielopolu. O tej godzinie powinien tam być. ",
+            first: {
+                content: "Wie Pan o nim coś więcej?",
+                route: 7,
+                action: () => {}
+            },
+        },
+        9: {
+            message: "Nie, nie rozmawiamy ze sobą... Poza tym to dość gburowaty typ.",
+            fourth: {
+                content: "Wspaniale, dziękuję za informacje! [Podejdź do drzwi.]",
+                route: 6,
+                action: () => {}
+            },
+        },
+        10: {
+            message: "Niezbyt wiele... To dość gburowaty typ, aż się odechciewa rozmowy. Wiem tyle, że pracuje dla Ilustrowanego Kuriera Codziennego, jest tam dziennikarzem.",
+            first: {
+                content: "Czy widział go Pan w towarzystwie starszego mężczyzny?",
+                route: 11,
+                action: () => {}
+            },
+            second: {
+                content: "Wie Pan gdzie mogę go znaleźć?",
+                route: 12, 
+                action: () => {}
+            },
+        },
+        11: {
+            message: "To zależy, kogo uznać za starszego... Ale nie, raczej nie. Najczęściej przychodzi z kobietami.",
+            first: {
+                content: "A wie Pan gdzie mogę go znaleźć?",
+                route: 7, 
+                action: () => {}
+            },
+        },
+        12: {
+            message: "O tej godzinie na pewno znajdzie go Pan w redakcji Kuriera w Pałacu Prasy na Wielopolu.",
+            first: {
+                content: "Widział go Pan może kiedyś w towarzystwie starszego mężczyzny?",
+                route: 13, 
+                action: () => {}
+            },
+        },
+        13: {
+            message: "To zależy, kogo uznać za starszego... Ale nie, raczej nie. Najczęściej przychodzi z kobietami.",
+            fourth: {
+                content: "Wspaniale, dziękuję za informacje! [Podejdź do drzwi.]",
+                route: 6,
+                action: () => {}
+            },
+        },
+        14: {
+            message: "Z tego co wiem to pracuje w redakcji Ilustrowanego Kuriera Codziennego, w Pałacu Prasy na Wielopolu. O tej godzinie powinien tam być.",
+            first: {
+                content: "Czy widział go Pan w towarzystwie starszego mężczyzny?",
+                route: 15,
+                action: () => {}
+            },
+            second: {
+                content: "Wie Pan o nim coś więcej?",
+                route: 16, 
+                action: () => {}
+            },
+        },
+        15: {
+            message: "To zależy, kogo uznać za starszego... Ale nie, raczej nie. Najczęściej przychodzi z kobietami.",
+            first: {
+                content: "Czy wie Pan może o nim coś więcej?",
+                route: 9, 
+                action: () => {}
+            },
+        },
+        16: {
+            message: "Nie, nie rozmawiamy ze sobą... Poza tym to dość gburowaty typ.",
+            first: {
+                content: "A czy widział go Pan w towarszystwie starszego mężczyzny?",
+                route: 13, 
+                action: () => {}
+            },
+        },
+
     }
 }
 

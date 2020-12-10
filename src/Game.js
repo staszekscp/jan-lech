@@ -47,10 +47,10 @@ const [mapScreen, setMapScreen] = useState(false)
 const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
-const [hawelka, setHawelka] = useState(false)
+const [hawelka, setHawelka] = useState(true)
 const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
-const [jama, setJama] = useState(true)
+const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
 const [neighborTwo, setNeighborTwo] = useState(false)
@@ -84,9 +84,11 @@ const [hospital, setHospital] = useState(false)
           back={setMapScreen}
           progress={progress}
           setProgress={setProgress}/>}
-        {hawelka && <Hawelka // usun klienta, kelner (mówi, że wie kim jest i że pracuje w IKCu)
+        {hawelka && <Hawelka                       //
           current={setHawelka}
-          back={setMapScreen}/>}
+          back={setMapScreen}
+          progress={progress}
+          setProgress={setProgress}/>}
         {consulate && <Consulate //wozny i konsulka - nic specjalnego, konczy sie gra
           current={setConsulate}
           back={setMapScreen}/>}
@@ -95,7 +97,7 @@ const [hospital, setHospital] = useState(false)
           back={setTwardowskiego}
           progress={progress}
           setProgress={setProgress}/>}
-        {ikc && <IKC // dabrowski i typ - daje dane do krogula, mówi, że jest jego bratem i ten mowi o bombach
+        {ikc && <IKC // dabrowski i typ - daje dane do krogula, mówi, że był jego wtyką i ten mowi o problemach finansowych
           current={setIkc}
           back={setMapScreen}/>}
         {jama && <Jama                              //
