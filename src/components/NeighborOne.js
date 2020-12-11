@@ -35,7 +35,9 @@ function NeighborOne(props) {
   }))}
 
   useEffect(() => {
-    if (props.progress.stelmach) {
+    if (props.progress.football) {
+      setNumber(21)
+    } else if (props.progress.stelmach) {
       setNumber(20)
     } 
   }, [])
@@ -46,7 +48,7 @@ function NeighborOne(props) {
         {conversation ? <Conversation
           actionOne={actionOne}
           actionTwo={actionTwo}
-          actionTwo={actionThree}
+          actionThree={actionThree}
           number={number}
           right={true}
           place="stelmach"

@@ -42,7 +42,7 @@ const [progress, setProgress] = useState({
   zelenski: false,
   hawelka: false,
   visitIkc: false,
-  moneyProblems: true,
+  moneyProblems: false,
   bankInfo: false,
   bank: false,
   bombs: false,
@@ -53,12 +53,12 @@ const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
-const [home, setHome] = useState(true)
+const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
-const [neighborTwo, setNeighborTwo] = useState(false)
+const [neighborTwo, setNeighborTwo] = useState(true)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)

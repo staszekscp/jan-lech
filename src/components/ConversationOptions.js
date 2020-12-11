@@ -608,7 +608,7 @@ const options = {
             message: "Trochę. Jakieś krzyki. Trwało to może z 10 minut, a potem ucichło. Ale nie wiem co dokładnie mówili.",
             first: {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
-                route: 701, //
+                route: 701, 
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -630,7 +630,7 @@ const options = {
                 route: 502,
             }
         },
-        502: { //
+        502: { 
             message: "Czyli pewnie Najchelowa się nie przyznała... Jakoś mnie to nie dziwi. Proszę Pana, Najchela wysłali gdzieś do psychiartyka, nie wiem którego, takie burdy robił. Ludzie mówią, że diabła widział. Ja tam nie wiem, ale czasami mam wrażenie jakby go diabeł opętał. W każdym razie jak wrócił to był gorszy niż przedtem.",
             first: {
                 content: "To kiedy stamtąd wrócił?",
@@ -662,7 +662,7 @@ const options = {
                 route: 503, 
             },
         },
-        503: { //
+        503: { 
             message: "Czyli pewnie Najchelowa się nie przyznała... Jakoś mnie to nie dziwi. Proszę Pana, Najchela wysłali gdzieś do psychiartyka, nie wiem którego, takie burdy robił. Ludzie mówią, że diabła widział. Ja tam nie wiem, ale czasami mam wrażenie jakby go diabeł opętał. W każdym razie jak wrócił to był gorszy niż przedtem.",
             first: {
                 content: "To kiedy stamtąd wrócił?",
@@ -685,7 +685,7 @@ const options = {
             message: "Proszę Pana, ja tylko przekazuję co ludzie mówią. Osobiście dziwię się, że go nie zostawili w tym psychiatryku, bo jeszcze komuś może zrobić krzywdę. Nie było go z miesiąc, a odkąd parę tygodni temu wrócił do domu jest jeszcze gorzej.",
             first: {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
-                route: 701, //
+                route: 701, 
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -693,7 +693,7 @@ const options = {
             message: "Witam ponownie, Panie przodowniku. Ma Pan do mnie jeszcze jakieś pytania?",
             first: {
                 content: "W sumie to tak. Śledzi Pan może rozgrywki piłkarskie?",
-                route: 701, //
+                route: 701, 
             },
             backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -843,7 +843,7 @@ const options = {
             backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
         },
         51: { 
-            message: "Ależ oczywiście! Zwłaszcza liczą się dwa kluby żydowskie - Jutrzenka i Makkabi. Jutrzenka powstała w 1910 roku i ma swój stadion przy Błoniach. Tam wcześniej, jeszcze za Austriaków, był tor do wyścigów konnych... Swoją drogą to w Jutrzence gra Józek Klotz, ten co strzelił pierwszego gola dla Polaków w historii...",
+            message: "Ależ oczywiście! Liczą się zwłaszcza dwa kluby żydowskie - Jutrzenka i Makkabi. Jutrzenka powstała w 1910 roku i ma swój stadion przy Błoniach. Tam wcześniej, jeszcze za Austriaków, był tor do wyścigów konnych... Swoją drogą to w Jutrzence gra Józek Klotz, ten co strzelił pierwszego gola dla Polaków w historii...",
             first: {
                 content: "A co z Makkabi?",
                 route: 52,
@@ -938,15 +938,10 @@ const options = {
         },
         5: {
             message: "Tuż po tym co nas Matka Boska od bolszewików wybawiła to pamięta Pan, nie było co do gara włożyć, od tej Hiszpanki całej ludzie umirali. Sam brata straciłem. A jak kiedyś żona od piekarza wracała to ten Najchel się na nią zaczaił tu, o, za drzewem i rzucił z pięściami. Ale Panie, jak chce Pan wiedzieć więcej o tych Najchelach to żonę pytać. Mnie tam nie obchodzi co oni robią.",
-            first: {
-                content: "Powie coś Pan więcej o tym, co się wtedy działo w Krakowie?",
-                route: 30,
-            },
             fourth: {
                 content: "W takim razie jeśli Pan pozwoli porozmawiam z Pana żoną.",
                 route: 3,
             },
-            backMessage: "Dziękuję za informacje. Wrócę jeśli będę mieć jakieś pytania. [Zakończ rozmowę i odejdź.]"
         },
         6: {
             message: "Paaanie, ja się do nich nie zbliżam. Odkąd mi żonę poturbował parę lat temu, to nie chcę mieć z nimi do czynienia.",
@@ -993,13 +988,121 @@ const options = {
             },
             backMessage: "Chciałem się tylko pożegnać. Do widzenia. [Zakończ rozmowę i odejdź.]"
         },
-        30: { // KRAKÓW PO I WOJNIE ŚWIATOWEJ
+        30: { 
             message: "Słucham, co chce Pan wiedzieć?",
             first: {
-                content: "Co się wydarzyło?",
-                route: 5,
+                content: "Pamięta Pan jak ogłoszono w Krakowie niepodległość?",
+                route: 40,
+            },
+            second: {
+                content: "Jak wyglądały pierwsze tygodnie niepodległości?",
+                route: 50,
+            },
+            third: {
+                content: "Jak krakowianie przeżywali toczące się wtedy wojny?",
+                route: 60,
+            },
+            fourth: {
+                content: "Przepraszam, jednak jeśli Pan pozwoli to porozmawiam z Pana żoną.",
+                route: 3,
             },
             
+        },
+        40: {
+            message: "Panie, to jedna wielka euforia była. Pewnie Pan pamięta, w październiku '18 roku to już wiadomo było co się świnci. Jakieś rozmowy zaczęli i Austriacy, i Niemcy, żeby ta wojna w końcu się skończyła. Coś tam zaczęli mówić o niepodległości Polski... A bo ja wiem, Panie, co oni tak naprawdę chcieli ugrać? Może mięsa armatniego potrzebowali, ale nie z nami takie numery!.",
+            first: {
+                content: "Proszę kontynuować.",
+                route: 41,
+            },
+            second: {
+                content: "Mogę zapytać o coś innego?",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        41: {
+            message: "Bo ludzie wyczuli, że tera, albo nigdy. Plotki chodziły, że to Chorwaty, to Czechy, to Madziary coś kombinujo i że chcą niepodległość mieć. No to my mieli być gorsi? W końcu października zaczęły się jakieś rozmowy z Austriakami... Ale będąc grzecznym to niczego się nie wywalczy! Ludzie zaczęli wypowiadać posłuszeństwo cesarzowi! A w końcu Antek Stawarz zorganizował spisek.",
+            first: {
+                content: "Na czym polegał?",
+                route: 42,
+            },
+            second: {
+                content: "Mogę zapytać o coś innego?",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        42: {
+            message: "Jak usłyszał o przerocie co Czechy u siebie zorganizowały uznał, że też czeba działać. Kazał pani Wisłockiej, u której pomieszkiwał na Placu Lasoty, narobić kokardek biało-czerwonych. Następnego dnia rano, a to był 31 październik, ludzie Stawarza, zbuntowali się w koszarach na Wielickiej i Kalwaryjskiej, przypięli te kokardki od Wisłockiej i ruszyli w stronę Rynku Podgórskiego robiąc hałasu, żeby ludzi pobudzić.",
+            first: {
+                content: "Co się działo potem?",
+                route: 43,
+            },
+            second: {
+                content: "Mogę zapytać o coś innego?",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        43: {
+            message: "Jakoś przed 8 rano poszli w stronę Rynku Głównego zrywając po drodze te czarne, habsburskie orły. Pamiętam Panie dobrze ten dzień, zimno było, mżawka. Ludzie zaczęli się schodzić na Rynku. W końcu, jakoś pół do dwunasty żeśmy odwach wieży ratuszowej zajęli. Tam zawsze jakiś strażnik austriacki stał. A teraz stanął tam nasz chłopak! Byłem tam Panie, na tym Rynku. Jak normalnie nie płaczę to wtedy nie mogłem się ze szczęścia powstrzymać...",
+            second: {
+                content: "Dziękuję. Jeśli Pan pozwoli to zapytam o coś innego...",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        50: {
+            message: "Panie, jak żeśmy się nacieszyli odzyskaniem niepodległości to trzeba było do roboty się wziąć. Nie było łatwo! W sejmie się kłócili, czy orzeł nasz ma mić koronę, czy nie, a nam kartki na jedzenie rozdawali, bo nie było niczego w sklepach. Potem ta epidemia hiszpanki się zaczęła, co mówiłem wcześniej. To głównie w Podgórzu i na Kazimierzu się roznosiła.",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 51,
+            },
+            second: {
+                content: "Mogę zapytać o coś innego?",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        51: {
+            message: "Do tego dochodził jeszcze bandytyzm, bezrobocie... Nawet jakaś Straż Obywatelska powstała, żeby bronić magazynów i porządek w miarę trzymać. Bo niektórzy to głowy potracili. Federowicz, prezydent Krakowa, próbował coś tam działać, ale łatwo to nie miał... ",
+            second: {
+                content: "Dziękuję, chciałbym jeszcze o coś zapytać.",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        60: {
+            message: "Paaanie, teraz to już mi się te wszystkie wojny mieszajo. Bo jak odzyskali my niepodległość to od razu zaczęli wysyłać ludzi na wschód, żeby z Ukraińcami o Lwów się bili. Potem zaś, na początku 1919 roku, o Cieszyn z Czechami zaczął się spór. Jak zajęli nam Bogumin to w Krakowie wszystkich Czechów internowali, wyobraź sobie Pan! Wszystkich! A jeszcze w 1918 jak brat z bratem przeciwko Austriakom się żeśmy wspólnie buntowali...",
+            first: {
+                content: "A co się działo później?",
+                route: 61,
+            },
+            second: {
+                content: "Dziękuję, chciałbym jeszcze o coś zapytać.",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        61: {
+            message: "A późni, to zaś z Niemcami o Śląsk trzeba było walczyć. W Krakowie zbiórki dla powstańców robiono, wiece poparcia jakieś organizowano... broszury rozdawano... Nawet ludzi wysyłali z Krakowa, żeby w tym całym plebiscycie głosowali! A jak walki się zaczęły to chyba koło tysiąca młodych z Krakowa poszło się bić o Śląsk. Tak to było dla nas ważne!",
+            first: {
+                content: "A wojna z bolszewikami?",
+                route: 62,
+            },
+            second: {
+                content: "Dziękuję, chciałbym jeszcze o coś zapytać.",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        62: {
+            message: "O Panie, w prasie sie rozpisywali na ten temat, ale my na szczęście daleko od frontu byli. Tylko jakoś w lipcu '20 roku, przed bitwą warszawską na Rajskiej w koszarach werbowali ludzi, co by marszałkowi pomóc mogli. Na szczęście my wygrali i bolszewiki teraz nam na głowę nie wchodzo.",
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś jeszcze...",
+                route: 30,
+            },
+            backMessage: "Dziękuję, to już wszystko co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź.]"
         },
     },
     "maciejowska": {
@@ -1102,7 +1205,7 @@ const options = {
             message: "Przykro mi, nie wiem. Jedynie kojarzę, że ostatnio kręcił się koło nich jakiś przygrubawy mężczyzna, dobrze ubrany. Ale kim jest? Trzeba pytać Najchelowej.",
             first: {
                 content: "W porządku, dziękuję za informacje. Skoro wspomniała Pani o pracy w fabryce to chciałbym o coś zapytać...",
-                route: 10,
+                route: 30,
             },
             fourth: {
                 content: "Dziękuję za informacje. Pozwoli Pani, że zanim pójdę porozmawiam jeszcze z Pani mężem?",
@@ -1112,9 +1215,9 @@ const options = {
         },
         10: {
             message: "Słucham, co chciałby Pan wiedzieć?",
-            first: { // PYTANIA O PRZEMYSŁ, PRACĘ
+            first: { 
                 content: "W porządku, dziękuję za informacje. Skoro wspomniała Pani o pracy w fabryce to chciałbym o coś zapytać...",
-                route: 601,
+                route: 30,
             },
             fourth: {
                 content: "W sumie, to jeszcze porozmawiałbym z Pani mężem, przepraszam za kłopot.",
@@ -1126,7 +1229,7 @@ const options = {
             message: "O, to znowu Pan. Słucham, mogę jakoś pomóc?",
             first: { 
                 content: "Wspomniała Pani o pracy w fabryce. Chciałbym dowiedzieć się nieco więcej...",
-                route: 10,
+                route: 30,
             },
             fourth: {
                 content: "Przepraszam, jednak chcę porozmawiać z Pani mężem.",
@@ -1134,7 +1237,122 @@ const options = {
             },
             backMessage: "W sumie to zapytam kiedy indziej. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
-    },
+        30: {
+            message: "Proszę pytać.",
+            first: { 
+                content: "Gdzie znajdują się fabryki na obszarze Krakowa?",
+                route: 40,
+            },
+            second: {
+                content: "Czemu chciała Pani zostać nauczycielką?", 
+                route: 50, 
+            },
+            thire: {
+                content: "Czy zdarzyło się Pani strajkować?", 
+                route: 60, 
+            },
+            fourth: {
+                content: "Przepraszam, jednak chcę porozmawiać z Pani mężem.",
+                route: 10, 
+            },
+        },
+        40: {
+            message: "Głównie na Grzegórzkach, na Dąbiu... Za dzielnice przemysłowe można uznać też Zabłocie, Płaszów, Bonarkę...",
+            first: { 
+                content: "A jakie są największe zakłady w Krakowie?",
+                route: 41,
+            },
+            second: {
+                content: "Przepraszam, jednak chcę zapytać o coś innego.",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        41: {
+            message: "Przede wszystkim fabryka Zieleniewskiego. Początkowo mieściła się na Starym Mieście i tam, przy św. Marka, zamontowano pierwszą maszynę parową w mieście. Wiedział Pan o tym? Tam też Zieleniewski robił armaty dla powstańców styczniowych. Potem zakład przenieśli na Krowoderską, a od prawie 20 lat pracują na Grzegórzkach. Robią tam kotły, wagony dla kolei...",
+            first: { 
+                content: "Może mi Pani powiedzieć coś o innych zakładach?",
+                route: 42,
+            },
+            second: {
+                content: "Przepraszam, jednak chcę zapytać o coś innego.",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        42: {
+            message: "Na Borku Fałęckim w Fabryce Solvaya robią sodę, to bodajże jedyna tego typu fabryka w Polsce. Nawet mają specjalną kolejkę co tu do nas, na Zakrzówek do kamieniołomu podjeżdża. Ponadto Górecki na Zabłociu robi jakieś okucia, meble, siatki... Ale znany jest z tego, że Krzyż w Zakopanem postawił na Giewoncie. Ten cały Górecki ma willę przy Romanowicza, mieszka tuż przy swoim zakładzie. Nie zanudzam?",
+            first: { 
+                content: "Nie, nie, proszę mówić dalej!",
+                route: 42,
+            },
+            second: {
+                content: "Nie, nie... ale jednak chcę zapytać o coś innego.",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        43: {
+            message: "Po wojnie w sumie powstało trochę nowych zakładów... Armatur w Łagiewnikach... Optima w Podgórzu produkująca czekoladę, Herbewo na końcu Długiej... długo by wymieniać! Ale to i tak mało! Wie Pan, wśród robotników to co czwarty nie ma roboty! A jak ma, to i tak zarabia tyle co nic. Wyzysk!",
+            second: {
+                content: "Dziękuję, jednak chcę zapytać o coś innego.",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        50: {
+            message: "Proszę Pana, to nie dlatego, że jakoś bardzo ciągnęło mnie do nauki... Pochodzę z biednej, robotniczej rodziny. Moja ciocia pracowała jako pomoc domowa u jednej z bogatych rodzin w Krakowie. Czasami zabierała mnie ze sobą. Tamtejsza Pani była piękną kobietą, pochodziła z dobrego domu... I była właśnie nauczycielką. To właśnie było zajęcie dla kobiet z wyższych sfer... Pani ta sama nie mogła mieć dzieci, więc jak do nich przychodziłam to traktowała mnie jak swoją... Ona nauczyła mnie wszystkiego, co do tej pory umiem.",
+            first: { 
+                content: "A jak wygląda życie kobiet pochodzących z biedniejzych rodzin?",
+                route: 51,
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        51: {
+            message: "Drogi Panie... W najgorszej sytuacji są chłopki... Całe życie zajmują się gospodarstwem, a grosza dzięki temu nie zarobią. A jak chłopa zabraknie... Sama teraz muszę za męża pracować, bo już sił mu brakuje... Wiele biednych kobiet zatrudnia się jako służba domowa, ale najczęściej po tym jak wyjdą za mąż to muszą rzucić tę pracę i zająć się własnym domem. No i są jeszcze robotnice. Fabrykanci chętnie je zatrudniają, bo kobietom płacą dwa razy mniej niż mężczyznom. Najczęściej pracują w zakładach włókienniczych, ale to też się zmienia...",
+            second: {
+                content: "Dziękuję za odpowiedź... chciałbym jeszcze zapytać o coś innego.",
+                route: 10, 
+            },
+            backMessage: "Rozumiem... No cóż, to wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        60: {
+            message: "Ja nie, ale mój mąż strajkował... Proszę Pana... Co tu się działo dwa lata temu... Pamięta Pan? W '23 roku wybuchł kryzys, ceny rosły jak oszalałe, podatki zresztą też. W sklepach niczego nie było, ani chleba, ani mięsa... W końcu, na początku listopada rozpoczął się strajk powszechny.",
+            first: { 
+                content: "Proszę mówić dalej.",
+                route: 61,
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        61: {
+            message: "Dzień przed zaplanowanym strajkiem przyszła z Warszawy decyzja o zakazie zgromadzeń w, jak to ujęli...? W lokalach zamkniętych. Ale mój mąż i tak chciał protestować i dlatego poszedł pod Dom Robotniczy na Dunajewskiego, tam, przy Plantach. Szedł z innymi robotnikami, a z naprzeciwka nadciągała policja i wojsko...",
+            first: { 
+                content: "Co się działo dalej?",
+                route: 62,
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 10, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        62: {
+            message: "Proszę Pana, strasznie się bałam! Mój Janek przyszedł cały zakrwawiony do domu! Mówił, że bili się z wojskiem, że zaczęli strzelać! Że 30 osób zginęło, po obu stronach! Jak można było do tego dopuścić?! Jaki rząd strzela do własnych obywateli?! Tylko proszę o tym nie rozmawiać z moim mężem... Ma chore serce, nie chcę, żeby dodatkowo się denerwował...",
+            first: {
+                content: "Oczywiście, nie będę o tym wspominać. Ale chciałbym zapytać o coś jeszcze...",
+                route: 10, 
+            },
+            backMessage: "Rozumiem, nie wspomnę o tym. Zresztą i tak muszę już iść. Dziękuję za informacje i do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+    }, 
     "krogul": {
         1: {
             message: "Czego?",
@@ -1237,7 +1455,7 @@ const options = {
     },
     "lekarz": {
         1: {
-            message: "Dzień dobry, jestem dr Piltz. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
+            message: "Dzień dobry, jestem dr Peltzer. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
             first: {
                 content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
                 route: 61,
@@ -1252,7 +1470,7 @@ const options = {
             }
         },
         2: {
-            message: "Dzień dobry, jestem dr Piltz. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
+            message: "Dzień dobry, jestem dr Peltzer. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
             first: {
                 content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
                 route: 62,
@@ -1447,16 +1665,95 @@ const options = {
             },
             backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
-    },
+        30: {
+            message: "Tak...?",
+            first: {
+                content: "Jak Pan ocenia stan sanitarny miasta?",
+                route: 40,
+            },
+            second: {
+                content: "Proszę powiedzieć jaki jest stan służby zdrowia w Krakowie?",
+                route: 50,
+            },
+            third: {
+                content: "Co może Pan powiedzieć o tej placówce?",
+                route: 60,
+            },
+            fourth: {
+                content: "Jednak chciałbym porozmawiać z siostrą Zuzanną...",
+                route: 16,
+            },
+        },
+        40: {
+            message: "*wzdycha* No cóż... Pomimo, że jest zdecydowanie lepiej niż kilka lat temu to jest jeszcze wiele do zrobienia... Najgorzej na Kazimierzu i w Podgórzu. Straszna bieda. Widziałem raport, w którym stwierdzono, że jest tam sporo dołów kloacznych, a na przykład przy ul. Estery w mieszkaniu średnio mieszka bodajże 8 osób... Nie dziwię się, że to właśnie tam epidemia Hiszpanki zebrała największe żniwo... Tyfus plamisty też nie jest tam niczym dziwnym...",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 41
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        41: {
+            message: "We wspomnianym raporcie lekarze miejscy dodali, że zaledwie 22% mieszkań odpowiada warunkom higienicznym, a 37% nie nadaje się do zamieszkania. To chyba wiele mówi, prawda? W ogóle to Kraków jest w czołówce miast polskich jeśli chodzi o śmiertelność na nowotwory, gruźlicę, choroby serca, dur brzuszny... 10% niemowląt nie dożywa pierwszych urodzin... Mam nadzieję, że sytuacja ulegnie poprawie bo czarno to widzę...",
+            first: {
+                content: "Dziękuję za odpowiedź, rzeczywiście jest niewesoło... Pozwoli Pan, że zapytam o coś innego...",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        50: {
+            message: "O czystość miasta, zaopatrzenie w wodę, czy dozór nad żywnością w Krakowie dba miejski Urząd Zdrowia. Jeśli chodzi o budynki szpitalne, to znajdują się głównie przy ulicy Kopernika. Choć własną placówkę prowadzą chociażby bonifratrzy, a szpital żydowski znajduje się przy Skawińskiej. Jeszcze podczas wojny na Prądniku otwarto Miejskie Zakłady Sanitarne z sanatorium gruźliczym. Generalnie nie jest aż tak źle...",
+            first: {
+                content: "A jak w mieście działa pogotowie?",
+                route: 51
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        51: {
+            message: "W ogóle to nie wiem, czy Pan wie, ale nasze, krakowskie, pogotowie jest drugim najstarszym w Europie, zaraz po tym we Wiedniu. Założono je w 1891 roku i początkowo miało siedzibę w budynku straży pożarnej, tym przy Plantach... Rocznie przeprowadza kilka tysięcy interwencji i obecnie władze myślą o kupnie dodatkowych samochodów, bo póki co ambulansy konne wciąż nie poszły w odstawkę...",
+            second: {
+                content: "Pozwoli Pan, że zapytam o coś innego...",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        60: {
+            message: "Do początku XX wieku jedynym szpitalem dla umysłowo chorych w Galicji był przepełniony zakład w Kulparkowie pod Lwowem... Było jasne, że trzeba założyć jakiś nowy ośrodek. W końcu, jeszcze kilka lat przed wojną, podjęto decyzję o budowie tego kompleksu, ale pierwszych pacjentów przyjęto dopiero w 1917 roku. Mamy tu wszystko, czego potrzeba. Ogród, kaplicę, piekarnię, pralnię... Łącznie 15 pawilonów i budynki administracyjne.",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 61
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        61: {
+            message: "Mamy tutaj wystarczająco miejsca dla 800 chorych. Prowadzone są także prace, aby powstał pawilon dla pacjentów pracujących. Będziemy w ten sposób chceli pomóc im w powrocie do normalnego życia.",
+            second: {
+                content: "Dziękuję za informacje. Chciałbym zapytać o coś jeszcze.",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+    }, 
     "pielegniarka": {
         1: {
-            message: "Niech będzie pochwalony. Widziałam, że rozmawiał Pan z doktorem Piltzem. W czym mogę pomóc?",
+            message: "Niech będzie pochwalony. Widziałam, że rozmawiał Pan z doktorem Peltzerem. W czym mogę pomóc?",
             first: {
-                content: "Dzień dobry. Doktor mówi, że jednym z Pani podopiecznych był Józef Najchel...",
+                content: "Dzień dobry. Doktor mówi, że jednym z siostra podopiecznych był Józef Najchel...",
                 route: 2,
             },
             second: {
-                content: "Dzień dobry. Co mi może Pani powiedzieć o Józefie Najchelu?",
+                content: "Dzień dobry. Co mi może siostra powiedzieć o Józefie Najchelu?",
                 route: 6,
             },
         },
@@ -1472,9 +1769,9 @@ const options = {
             },
         },
         3: {
-            message: "Tak, ale nie dziwi mnie to... Ponoć do kościoła nigdy nie chodził...",
+            message: "Tak, ale nie dziwi mnie to... Pan Józef oddalił się od Chrystusa, zupełnie zarzucił wiarę...",
             first: {
-                content: "Zgadzam się. Jednak obecnie sytuacja jest bardzo poważna, dlatego musi mi Pani pomóc.",
+                content: "Zgadzam się. Jednak obecnie sytuacja jest bardzo poważna, dlatego musi mi siostra pomóc.",
                 route: 4,
             },
             second: {
@@ -1485,14 +1782,14 @@ const options = {
         4: {
             message: "Słucham Pana.",
             first: {
-                content:"Co mi może Pani powiedzieć na temat Józefa Najchela?",
+                content:"Co mi może siostra powiedzieć na temat Józefa Najchela?",
                 route: 6,
             },
         },
         5: {
             message: "Proszę sobie nie robić kpin z cierpienia innego człowieka!",
             first: {
-                content:"Przepraszam, zachowałem się nietaktownie. Muszę Panią o coś zapytać.",
+                content:"Przepraszam, zachowałem się nietaktownie. Muszę siostrę o coś zapytać.",
                 route: 4,
             },
             second: {
@@ -1521,12 +1818,12 @@ const options = {
         8: {
             message: "Wysoki... Przy kości. Elegancki.",
             first: {
-                content:"A słyszała Pani o czym rozmawiali?",
+                content:"A słyszała siostra o czym rozmawiali?",
                 route: 9,
             },
         },
         9: {
-            message: "Niestety, nie. Ale widziałam, że potem poszedł do gabinetu doktora Piltza. Może Pan jego spytać, czy czegoś nie wie.",
+            message: "Niestety, nie. Ale widziałam, że potem poszedł do gabinetu doktora Peltzera. Może Pan jego spytać, czy czegoś nie wie.",
             fourth: {
                 content: "Tak też zrobię. Dziękuję.",
                 route: 10, 
@@ -1535,12 +1832,12 @@ const options = {
         10: {
             message: "Niestety nie wiem.",
             first: {
-                content: "A pamięta Pani jak wyglądał?",
+                content: "A pamięta siostra jak wyglądał?",
                 route: 11, 
             },
         },
         11: {
-            message: "Tak, to był taki gruby, wysoki mężczyzna. Elegancki. Doktor Piltz może wiedzieć coś więcej na jego temat, bo widziałam jak rozmawiali. Proszę się do niego odezwać.",
+            message: "Tak, to był taki gruby, wysoki mężczyzna. Elegancki. Doktor Peltzer może wiedzieć coś więcej na jego temat, bo widziałam jak rozmawiali. Proszę się do niego odezwać.",
             fourth: {
                 content: "Tak też zrobię. Dziękuję.",
                 route: 11, 
@@ -1553,12 +1850,139 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Piltzem.",
+                content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Peltzerem.",
                 route: 11, 
             },
             backMessage: "Nie, tak naprawdę to już wychodzę. Do widzenia. [Zakończ rozmowię i opuść szpital.]"
-        }
-    },
+        },
+        30: {
+            message: "Słucham Pana.",
+            first: {
+                content: "Proszę powiedzieć coś więcej o obecnym życiu Kościoła w Krakowie.",
+                route: 40,
+            },
+            second: {
+                content: "Czy może siostra powiedzieć więcej o zakonach w mieście?",
+                route: 50, 
+            },
+            third: {
+                content: "Chciałbym dowiedzieć się czegoś więcej o krakowskich placówkach charytatywnych.",
+                route: 60, 
+            },
+            fourth: {
+                content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Peltzerem.",
+                route: 11, 
+            },
+        },
+        40: {
+            message: "Drogi Panie, najważniejszą dla nas, katolików, informacją jest to, że pod koniec tego Roku Pańskiego powstanie archidiecezja krakowska. Będzie to wielkie wyróżnienie dla naszego miasta. Dodatkowo władze naszego kraju dosłownie 3 miesiące temu zawarły konkordat ze Stolicą Apostolską. To wspaniała informacja!",
+            first: {
+                content: "Co oznacza podpisanie konkordatu?",
+                route: 41,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        41: {
+            message: "Po pierwsze, zapewniono niezależność naszemu Kościołowi oraz jego duchownym w wykonywaniu swojej boskiej misji. Po drugie, wprowadza obowiązek nauczania religii w szkołach. Po trzecie, Kościół ma zostać zwolniony ze wszelkich opłat i podatków, aby nie ograniczać jego świętej misji duszpasterskiej. Nasze państwo będzie również wypłacać emerytury księżom po ich posłudze.",
+            first: {
+                content: "A co w takim razie zyskała Polska na podpisaniu tej umowy?",
+                route: 42,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        42: {
+            message: "Ojciec Święty zaakceptował nowe granice Polski i dopasował do nich granice diecezji. Stolica Apostolska nie będzie również obsadzać cudzoziemcami stanowisk przełożonych zakonów bez zgody polskich władz, a biskupi mają składać przysięgę na wierność Prezydentowi.",
+            first: {
+                content: "Rozumiem. Mógłbym jednak zapytać o coś innego?",
+                route: 30,
+            },
+            second: {
+                content: "Coś mi się wydaje, że Watykan wyszedł na tym nieco lepiej... Mogę zapytać o coś innego?",
+                route: 30,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        50: {
+            message: "W Krakowie mieści się ponad 40 zakonów, głównie w centrum miasta. Szkolą kleryków, zajmują się sierotami, organizują szkoły, szpitale... Opiekują się również chorymi i ubogimi. Sama jestem jedną ze służebniczek dębickich. Nasze zgromadzenie opiekuje się chorymi tutaj, w Kobierzynie.",
+            first: {
+                content: "Powie siostra więcej o zgromadzeniu, do którego należy?",
+                route: 51,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        51: {
+            message: "Zgromadzenie służebniczek powstało w Wielkopolsce w połowie XIX wieku. Stamtąd siostry trafiły do Dębicy, gdzie założyły ochronkę dla ubogich dziewcząt. Uczyliśmy je czytania, pisania, szycia... Podczas wojny zaczęłyśmy podejmować posługę w szpitalach wojskowych i epidemicznych jako pielęgniarki. A po odzyskaniu niepodległości zdecydowałyśmy się podejować pracę w szpitalach i klinikach psychiatrycznych. W ten sposób trafiłyśmy do Kobierzyna.",
+            second: {
+                content: "Dziękuję za odpowiedź. Chciałbym zapytać o coś jeszcze.",
+                route: 30, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        60: {
+            message: "Stowarzyszenie Pań Miłosierdzia przy Warszawskiej prowadzi schronisko dla ubogich oraz kuchnię, w której wydają bezpłatne posiłki. ponadto przy Krowoderskiej Róża Łubieńska prowadzi stowarzyszenie wychowujące podrzutki. Zapewne pamięta Pan brata Alberta, co zrobił wiele dobrego w służbie bezdomnym... Sam brat już odszedł do Pana, ale założone przez niego schronisko wciąż funkcjonuje przy Krakowskiej. Nie można też zapomnieć o biskupie Sapiesze.",
+            first: {
+                content: "Jaka jest jego rola?",
+                route: 63,
+            },
+            second: {
+                content: "A czy on w 1914 roku nie sprzeciwiał się Piłsudskiemu zarzucając, że ten chce stworzyć Polskę 'socjalistyczną i żydowską'?",
+                route: 61,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        61: {
+            message: "Biskup jest po prostu wielkim patriotą i na sercu leżą mu sprawy polskie.",
+            first: {
+                content: "Rozumiem. A jaka jest jego rola jeśli mowa o działalności charytatywnej?",
+                route: 63,
+            },
+            second: {
+                content: "Słyszałem również, że sprzeciwiał się podpisaniu konkordatu przez Polskę, bo chciał pełnej niezależności Kościoła od władzy świeckiej. Dlatego raczej na kapelusz kardynalski od papieża liczyć nie może... A na dodatek jako jedyny sprzeciwiał się utworzeniu arcybiskupstwa w Krakowie...",
+                route: 62,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        62: {
+            message: "A wie Pan ile dobrego uczynił dla zwykłych ludzi?",
+            first: {
+                content: "Proszę powiedzieć.",
+                route: 63,
+            },
+            second: {
+                content: "Jednak wolałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Nie interesuje mnie to, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+        63: {
+            message: "Ksiądz biskup już w trakcie wojny założył Komitet Pomocy dla tych, których dotknęły cierpienia związane z działaniami wojennymi. Budowano ochronki, szczepiono ludzi... Rok temu, podczas kryzysu, utworzył kolejny Komitet dający zasiłki ubogim. A w tym roku ponownie zaangażował się w tego typu działania i zaczął wydawać posiłki bezdomnym.",
+            second: {
+                content: "Rozumiem. Chciałbym jednak zapytać o coś jeszcze.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za odpowiedź. To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
+        },
+    }, 
     "szef-krowodrza": {
         1: {
             message: "Dzień dobry. W czym mogę pomóc?",
@@ -1664,7 +2088,7 @@ const options = {
             },
             backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
-    },
+    }, ////
     "pracownik-krowodrza" : {
         1: {
             message: "Słucham?",
@@ -1708,7 +2132,7 @@ const options = {
             },
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
-    },
+    }, ////
     "thorn": {
         1: {
             message: "Szolem alejchem! Dzień dobry! Hirsz Thorn, właściciel. Niestety jeszcze wcześnie rano, otwieramy później. Zapraszam po 10!",
@@ -1792,7 +2216,7 @@ const options = {
             },
             backMessage: "W sumie to jednak nie mam czasu. Przepraszam, do widzenia. [Zakończ rozmowę i wyjdź]"
         },
-    },
+    }, ////
     "straznik": {
         1: {
             message: "Hola, hola! To zamknięta impreza!",
@@ -1873,7 +2297,19 @@ const options = {
             },
             backMessage: "Rozumiem. W takim razie do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
-    },
+        30: {
+            message: "Restauracja najlepszego browaru w Krakowie! Piwo zaczęto tu warzyć już hoho! W 1840 roku! Browar założył szwajcarski piwowar, Rudolf Jenny. Już za czasów austriackich produkowano tu najlepsze piwo w całej Galicji. Swoją drogą jak cesarz, Franciszek Józef, odwiedzał Kraków to był pod wrażeniem tego, jak ustrojono nasz browar. Ponoć zapalono nawet ognie bengalskie! To dopiero musiało być widowisko!",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 31,
+            },
+            backMessage: "Dziękuję za informacje. Muszę już iść do widzenia. [Zakończ rozmowę i wyjdź.]"
+        },
+        31: {
+            message: "Pod koniec XIX wieku dla oświetlenia budynku browarnego, warzelni, administracji i naszego placu uruchomiono elektrownię, jedną z pierwszych w Krakowie. Ostatecznie kompleks kupił pan Jan Götz, to ten sam, co założył słynny browar w Okocimiu. I tak pozostało do dziś...",
+            backMessage: "Dziękuję za informacje! Niestety muszę już iść, do widzenia. [Zakończ rozmowę i wyjdź.]"
+        },
+    }, 
     "szef-browar": {
         1: {
             message: "*lekko podpity* A tso Pan tu robi? Kto Pana wpuścił?",
@@ -1907,7 +2343,7 @@ const options = {
         4: {
             message: "A coś więcej?",
             first: {
-                content: "Wiem, że jakiś czas temu umówił się tutaj z doktorem Piltzem.",
+                content: "Wiem, że jakiś czas temu umówił się tutaj z doktorem Peltzerem.",
                 route: 5,
             },
         },
@@ -1918,7 +2354,7 @@ const options = {
                 route: 6,
             },
             second: {
-                content: "To zna Pan Piltza?",
+                content: "To zna Pan Peltzera?",
                 route: 7,
             },
             third: {
@@ -2079,7 +2515,7 @@ const options = {
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
         },
 
-    },
+    }, ////
     "zelenski": {
         801: {
             message: "Dzień dobry, Tadeusz Boy-Żeleński. Jak dobrze słyszałem szuka Pan jakiegoś Bogdana Majchrzaka. Niestety nie znam takiego człowieka.",
@@ -2137,7 +2573,63 @@ const options = {
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
-    },
+        30: {
+            message: "Ahhh, pamiętam doskonale pana Jana Michalika. Parę lat temu przeprowadził się do Poznania, gdzie założył wykwintny pensjonat... A pochodzi ze Lwowa, gdzie poznał bliżej zawód cukiernika. Ponoć ojciec posłał go na nauki jako karę za złe stopnie w szkole... Pewnie się zdziwił, że kara tak mocno wpłynęła na historię Krakowa, do którego Michalik przybył... Jak dobrze pamiętam w 1895 roku. Wynajął lokal przy Floriańskiej i tak zaczęła się historia tego miejsca... Początkowo Jama funkcjonowała jako Cukiernia Lwowska. A potem pojawiliśmy się my... ",
+            first: {
+                content: "Co ma Pan na myśli?",
+                route: 31,
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                route: 4,
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        31: {
+            message: "Wcześniej artyści spotykali się u Turlińskiego, na Szpitalnej. Ale po upadku tamtego miejsca studenci Akademii Sztuk Pięknych musieli znaleźć sobie nowe miejsce spotkań... I tak trafili do Michalika. To zabawne, że Michalik zakładając to miejsce liczył, że to jego wyroby przyciągną do niego klientów. Silił się na różne sztuczki, reklamy... Ale krakowianie nie tolerują reklam, drażnią ich. Z czasem Jama Michalika przestawała być cukiernią, a stawała się kawiarnią, w której przesiadywali ludzie sztuki. Nie powiem, chyba Michalik nie był z tego powodu zachwycony!",
+            first: {
+                content: "Proszę powiedzieć coś więcej o Panu Michaliku.",
+                route: 32,
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                route: 4,
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        32: {
+            message: "Jest to bardzo zasadniczy człowiek, chyba ostatni, który chciałby mieć do czynienia z artystami! Poważny, spokojny, skromny, nie lubił hałasu, brzydził się pijaństwem. I dbał o swoje interesy, oj dbał! Pewnego razu powysyłał swoim stałym klientom, tym, którzy zostawili u niego majątek weswania płatnicze za nieuregulowane rachunki. Przez adwokata! Później zaczął zatrudniać kelnerów, którzy mieli dbać o to, aby klienci zawsze płacili na czas. Ale trzeba mu przyznać, że nikt wcześniej nie odważyłby się powierzyć organizacji wystroju swojej kawiarni własnym klientom. Prowadził 'Jamę' przez łącznie 20 lat... W końcu, podczas wojny postanowił sprzedać to miejsce i wyprowadził się do Poznania. To już nie to samo miejsce co kiedyś...",
+            first: {
+                content: "Dlaczego Pan tak uważa?",
+                route: 33,
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                route: 4,
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        33: {
+            message: "Jednak klimat tego miejsca kojarzy się przede wszystkim z naszą młodością... 20 lat temu mój brat z przyjaciółmi założyli kabaret Zielony Balonik. Ja dołączyłem do niego rok później. Dbaliśmy, aby tylko osoby z zaproszeniem mogły zobaczyć owoce naszej pracy. Obśmiewaliśmy, komentowaliśmy, wystawialiśmy nawet własne szopki... Ale wszystko ma swój koniec, prawda? Ostatni raz wystąpiliśmy 10 lat temu.",
+            first: {
+                content: "Kto był stałym gościem tego miejsca?",
+                route: 34,
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                route: 4,
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        34: {
+            message: "Chyba każdy ze środowiska artystycznego Krakowa... Swego czasu własny stolik miał tutaj Wyspiański... Przychodził tutaj marszałek Piłsudski z małżonką... Zobaczymy, może w przyszłości 'Jama' powróci do swoich korzeni... Kto wie?",
+            fourth: {
+                content: "Dziękuję za informacje, chciałbym jeszcze porozmawiać z panem Mehofferem.",
+                route: 4,
+            },
+            backMessage: "Muszę już iść. Dziękuję za informacje i do widzenia. [Zakończ rozmowę i wyjdź]"
+        }
+    }, 
     "macharski": {
         1: {
             message: "Dzień dobry. Leopold Macharski. Jak mogę pomóc?",
@@ -2175,7 +2667,7 @@ const options = {
         3: {
             message: "Dowiedział się Pan czegoś?",
             first: {
-                content: "Tak, wiem już wszystko. Ale przed wyjściem chciałbym Pana zapytać o to miejsce.",
+                content: "Tak, wiem już wszystko. Ale przed wyjściem chciałbym Pana zapytać co to za miejsce?",
                 route: 30,
             },
             backMessage: "Tak, dlatego muszę już iść! Do widzenia! [Zakończ rozmowę i wyjdź]"
@@ -2183,12 +2675,24 @@ const options = {
         4: {
             message: "Witam ponownie! Ma Pan jakieś pytania?",
             first: {
-                content: "Tak. Chciałbym Pana zapytać o to miejsce.",
+                content: "Tak. Chciałbym Pana zapytać co to za miejsce?",
                 route: 30,
             },
             backMessage: "Nie, jednak to by było na tyle. Przepraszam za kłopot. Do widzenia! [Zakończ rozmowę i wyjdź]"
         },
-    },
+        30: {
+            message: "Historia tego miejsca zaczęła się niemalże 50 lat temu... W 1876 roku Antoni Hawełka postanowił założyć sklep z artykułami kolonialnymi w jednej z kamienic rynkowych. Po pięciu latach przeniósł się do kamiennicy 'Pod Krzysztofory' otwierając jednocześnie restaurację. Stała się ona znana przede wszystkim jako bar śniadaniowy, w którym serwowano słynne piętrowe kanapki, którymi zachwycał się sam Sienkiewicz...",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 31,
+            },
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź]"
+        },
+        31: {
+            message: "Pan Antoni zmarł bezpotomnie w 1894 roku, a po nim miejsce to przejął jego zaufany pracownik, a mój stryj - Franciszek Macharski. To on tuż przed wojną przeniósł restaurację w obecne miejsce, do Pałacu Spiskiego. Nasz lokal często odwiedzają wybitni profesorowie, artyści, literaci, dziennikarze... Mam nadzieję, że uda się i mi kontynuować tę tradycję. Kto wie, może jeśli doczekam się syna to dam mu na imię Franciszek, po stryju... A kiedyś przejmie po mnie to miejsce?",
+            backMessage: "Dziękuję, to wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź]"
+        },
+    }, 
     "kelner": {
         1: {
             message: "Witam w restauracji Hawełka! Stolik dla jednej osoby?",
@@ -2408,7 +2912,7 @@ const options = {
             },
             backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
-    },
+    }, ////
     "majchrzak": {
         1: {
             message: "Słucham.",
@@ -2625,7 +3129,7 @@ const options = {
             },
             backMessage: "Nie, jednak nie mam. Przepraszam za zamieszanie. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },
-    }
+    } ////
 }
 
 export default options
