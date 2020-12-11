@@ -677,7 +677,7 @@ const options = {
             message: "Parę tygodni temu. Łącznie go miesiąc nie było.",
             first: {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
-                route: 701, //
+                route: 701, 
             },
             backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
@@ -701,7 +701,7 @@ const options = {
             message: "Proszę Pana! Największy fan!",
             first: {
                 content: "Świetnie! W takim razie miałbym kilka pytań...",
-                route: 22, // O PIŁCE NOŻNEJ!
+                route: 22, 
             },
             backMessage: "Dobrze wiedzieć. Jak znajdę chwilę to porozmawiamy, ale muszę już iść. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
 
@@ -710,18 +710,183 @@ const options = {
             message: "Witam Pana ponownie! Ma Pan do mnie jakieś pytania?",
             first: {
                 content: "Chciałbym jeszcze raz pogadać o piłce.",
-                route: 22, //
+                route: 22, 
             },
             backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
         22: {
-            message: "A zatem o czym chciałby Pan pogadać?",
+            message: "Jasne, proszę pytać!",
             first: {
-                content: "ggg",
-                route: 701, //
+                content: "Opowie mi Pan o reprezentacji Polski?",
+                route: 30, 
+            },
+            second: {
+                content: "Co słychać w rozgrywkach krajowych?",
+                route: 40, 
+            },
+            third: {
+                content: "Jakie kluby macie w Krakowie?",
+                route: 50, 
             },
             backMessage: "W sumie, zmieniłem zdanie. Jeszcze się odezwę, ale tymczasem, do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
         },
+        30: {
+            message: "Jasne! Pewnie Pan pamięta, mieliśmy w 1920 roku grać na Igrzyskach. No ale jak podczas wojny z bolszewikami można było w ogóle o sporcie myśleć? To dlatego dopiero rok później zagraliśmy pierwszy mecz, z Węgrami...",
+            first: {
+                content: "Proszę kontynuować.",
+                route: 31, 
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        31: {
+            message: "Graliśmy w Budapeszcie i przegraliśmy 0:1. Choć w sumie... Mogło być lepiej. Bo widzi Pan, tuż po stracie bramki Wacek Kuchar mógł strzelić dla nas gola... Miał przed sobą pustą bramkę, ale ponieważ chwilę wcześniej przypadkiem trącił bramkarza, to zostawił piłkę i postanowił pomóc mu wstać. I bardzo dobrze! Honorowo się zachował, przecież o to w sporcie chodzi!",
+            first: {
+                content: "I jak szło Polakom później?.",
+                route: 32, 
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        32: {
+            message: "Potem jeszcze raz zagraliśmy z Węgrami, tym razem u nas, na stadionie Cracovii, w maju 1922... I znowu przegraliśmy. 0:3. No ale w końcu przyszła pora na zwycięstwo! Wygraliśmy w Sztokholmie ze Szwedami 2:1. W ogóle to pierwszego gola strzelił Józek Klotz, stąd, z Krakowa. Zizi na niego mówią. Zna go Pan?",
+            first: {
+                content: "Nie.",
+                route: 33, 
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        33: {
+            message: "Chłopak pochodzi z żydowskiej rodziny, ojciec jest szewcem. W ogóle bystry z niego gagatek, studiował nawet medycynę, ale przerwał naukę, bo w 1918 roku zgłosił się na ochotnika do Wojska Polskiego. Nawet z bolszewikami się bił. A potem wrócił do Krakowa i teraz gra w tutejszej Jutrzence...",
+            first: {
+                content: "A jak szło Polakom w kolejnych meczach?",
+                route: 34, 
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        34: {
+            message: "Potem już szło różnie. Łącznie do Igrzysk w '24 przegraliśmy 3 mecze, wygraliśmy 2. Jeszcze 3 remisy doszły. Ale Igrzyska w Paryżu to był niestety blamaż... Nasz związek nawet postanowił zmienić terminarz ligii, żeby tylko można było się do nich w spokoju przygotować, żeby wstydu nie było! A my odpadliśmy już po pierwszym meczu... 0:5. Znowu przeciwko Węgrom... No nic, może uda się na następnych Igrzyskach w Amsterdamie...",
+            first: {
+                content: "Pozwoli Pan, że zapytam o coś innego?",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        40: { 
+            message: "Ehhh, szkoda mówić, takie zamieszanie narobili w tym związku. W ogóle to Polski Związek Piłki Nożnej powstał w 1919 roku i wymyślił sobie jak będą wyglądać te ich 'Mistrzostwa Polski'. Miało być 5 okręgów złożonych z kilku lokalnych zespołów, w których każdy miał grać z każdym po 2 razy. A potem zwycięzcy okręgów mieli się spotkać na turnieju finałowym. No ale wiadomo, z powodu bolszewików cały plan upadł, a turniej finałowy odwołano. Tylko w naszym, krakowskim okręgu udało się zorganizować wszystkie zaplanowane spotkania, a najlepsza okazała się Cracovia...",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 41,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        41: { 
+            message: "Kolejną edycję, w 1921 roku już, na szczęście, udało się rozegrać. Zasady były te same jak w poprzednim roku. W naszym okręgu Cracovia zdmuchnęła wszystkich, proszę Paaana... Nie mieli sobie równych! Wszystkie mecze wygrali! A na turnieju finałowym to samo! No dobra, z 8 meczy zdarzył im się jeden remis, z Wartą Poznań, ale resztę wygrali. Najwięcej goli tam nastrzelał Józek Kałuża, aż 9! W ogóle nie wiem czy Pan słyszał... Józek rok później miał kłopoty ze zdrowiem, z pieniędzmi... Nawet miał Wisłę zacząć trenować i kończyć karierę jako piłkarz... Na szczęście udało mu się wrócić do gry!",
+            first: {
+                content: "Proszę powiedzieć coś jeszcze.",
+                route: 42,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        42: { 
+            message: "W 1922 roku u nas znowu najlepsza okazała się Cracovia, ale w turnieju finałowym już nie poszło im tak dobrze... Zajęli trzecie miejsce, a mistrzem został Pogoń Lwów. Ale w '23 po raz pierwszy Cracovia nie uzyskała awansu do turnieju finałowego, bo to Wisła okazała się lepsza! Nie powiem, byłem zaskoczony! Ale pięknie grali, zasłużyli. Na turnieju głównym szło im nawet nieźle, dostali się nawet do finału! No ale przegrali tam z Pogonią Lwów, która obroniła tytuł.",
+            first: {
+                content: "A co z zeszłym rokiem?",
+                route: 43,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        43: { 
+            message: "Aaa, proszę Pana, proszę mnie nie denerwować! No PZPN poprzenosił wszystkie mecze w '24 roku, bo uznali, że kadra narodowa ma się do Igrzysk przygotować. Tyle z tego było, że przegraliśmy w pierwszym meczu z Węgrami 0:5 i odpadliśmy z turnieju. A krajowe rozgrywki zaczęły się dopiero jesienią. U nas znowu wygrała Wisła. Teraz trwa turniej finałowy, coś czuję, że może im dobrze pójść... Zwaszcza, że Heniek Reyman jest w niezłej formie...",
+            second: {
+                content: "Dziękuję za odpowiedź. Zapytam o coś jeszcze...",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        50: { 
+            message: "No przede wszystkim Wisła z Cracovią. Oba mają już... 19 lat... Tak... Bo założone w 1906 roku. Cracovia już ma tytuł mistrza Polski, ale coś czuję, że Wiśle też się to w końcu uda...",
+            first: {
+                content: "A czy istnieją inne kluby w Krakowie?",
+                route: 51,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        51: { 
+            message: "Ależ oczywiście! Zwłaszcza liczą się dwa kluby żydowskie - Jutrzenka i Makkabi. Jutrzenka powstała w 1910 roku i ma swój stadion przy Błoniach. Tam wcześniej, jeszcze za Austriaków, był tor do wyścigów konnych... Swoją drogą to w Jutrzence gra Józek Klotz, ten co strzelił pierwszego gola dla Polaków w historii...",
+            first: {
+                content: "A co z Makkabi?",
+                route: 52,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        52: { 
+            message: "Makkabi powstało w 1909 roku... Mają stadion między ulicą Dietlowską i Koletek. W ogóle to ostatnio na spotkania Cracovii z Wisłą zaczęto mówić 'święta wojna'... Ja do tej pory nie mogę się przyzwyczaić, bo od zawsze tak mówiono na mecze Jutrzenki z Makkabi... Bo wie Pan, Jutrzenka związana jest z Bundem, czyli żydowskimi socjalistami, a Makkabi, jako klub związany z syjonistami, stoi po drugiej stronie sceny politycznej... Oj nie lubią się, nie lubią...",
+            first: {
+                content: "To dlaczego na mecze Cracovii z Wisłą zaczęto nazywać mianem 'świętej wojny'?",
+                route: 53,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        53: { 
+            message: "Jakoś rok temu zawodnik Cracovii, Ludwik Gintel, przed meczem z Wisłą powiedział do kolegów w szatni: 'No to chodźmy panowie na tę świętą wojnę'. To w ogóle dość zabawne, bo Gintel wcześniej grał w Jutrzence, więc stamtąd znał to określenie.",
+            first: {
+                content: "No dobrze, a istnieją jeszcze jakieś inne kluby w Krakowie?",
+                route: 54,
+            },
+            second: {
+                content: "Proszę wybaczyć, jednak zapytam o coś innego.",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        54: { 
+            message: "Hoho! I to jeszcze ile! Z tym, że większość powstała po wojnie... Z przedwojennych mamy Juvenię na Błoniach, Podgórze... i jeszcze TS Krowodrzę-Modrzejówkę. A potem to tego się namnożyło, proszę Pana! Lauda... znaczy dzisiaj już Garbarnia... Wawel, Dąbski, Korona, Nadwiślan, Prądniczanka, Prokocim, Zwierzyniecki... A i tak nie wiem, czy wymieniłem wszystkie... Choć sam wiele o tych klubach to nie wiem...",
+            first: {
+                content: "Dziękuję za informacje, chciałbym zapytać o coś jeszcze...",
+                route: 22, 
+            },
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+        },
+        
     },
     "maciejowski": {
         1: {
