@@ -779,7 +779,7 @@ const options = {
             backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
         },
         34: {
-            message: "Potem już szło różnie. Łącznie do Igrzysk w '24 przegraliśmy 3 mecze, wygraliśmy 2. Jeszcze 3 remisy doszły. Ale Igrzyska w Paryżu to był niestety blamaż... Nasz związek nawet postanowił zmienić terminarz ligii, żeby tylko można było się do nich w spokoju przygotować, żeby wstydu nie było! A my odpadliśmy już po pierwszym meczu... 0:5. Znowu przeciwko Węgrom... No nic, może uda się na następnych Igrzyskach w Amsterdamie...",
+            message: "Potem już szło różnie. Łącznie do Igrzysk w '24 przegraliśmy 3 mecze, wygraliśmy 2. Jeszcze 3 remisy doszły. Ale Igrzyska w Paryżu to był niestety blamaż... Nasz związek nawet postanowił zmienić terminarz Mistrzowstw Polski, aby tylko można było się do nich w spokoju przygotować, żeby wstydu nie było! A my odpadliśmy już po pierwszym meczu... 0:5. Znowu przeciwko Węgrom... No nic, może uda się na następnych Igrzyskach w Amsterdamie...",
             first: {
                 content: "Pozwoli Pan, że zapytam o coś innego?",
                 route: 22, 
@@ -831,7 +831,7 @@ const options = {
             backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
         },
         50: { 
-            message: "No przede wszystkim Wisła z Cracovią. Oba mają już... 19 lat... Tak... Bo założone w 1906 roku. Cracovia już ma tytuł mistrza Polski, ale coś czuję, że Wiśle też się to w końcu uda...",
+            message: "No przede wszystkim Wisła z Cracovią. Oba mają już... jak dobrze liczę 19 lat... Założono je w 1906 roku. Cracovia zdobyła już tytuł mistrza Polski, ale coś czuję, że Wiśle też się to w końcu uda...",
             first: {
                 content: "A czy istnieją inne kluby w Krakowie?",
                 route: 51,
@@ -843,7 +843,7 @@ const options = {
             backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
         },
         51: { 
-            message: "Ależ oczywiście! Liczą się zwłaszcza dwa kluby żydowskie - Jutrzenka i Makkabi. Jutrzenka powstała w 1910 roku i ma swój stadion przy Błoniach. Tam wcześniej, jeszcze za Austriaków, był tor do wyścigów konnych... Swoją drogą to w Jutrzence gra Józek Klotz, ten co strzelił pierwszego gola dla Polaków w historii...",
+            message: "Ależ oczywiście! Liczą się także dwa kluby żydowskie - Jutrzenka i Makkabi. Jutrzenka powstała w 1910 roku i ma swój stadion przy Błoniach. Tam wcześniej, jeszcze za Austriaków, był tor do wyścigów konnych... Swoją drogą to w Jutrzence gra Józek Klotz, ten co strzelił pierwszego gola dla Polaków w historii...",
             first: {
                 content: "A co z Makkabi?",
                 route: 52,
@@ -855,7 +855,7 @@ const options = {
             backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
         },
         52: { 
-            message: "Makkabi powstało w 1909 roku... Mają stadion między ulicą Dietlowską i Koletek. W ogóle to ostatnio na spotkania Cracovii z Wisłą zaczęto mówić 'święta wojna'... Ja do tej pory nie mogę się przyzwyczaić, bo od zawsze tak mówiono na mecze Jutrzenki z Makkabi... Bo wie Pan, Jutrzenka związana jest z Bundem, czyli żydowskimi socjalistami, a Makkabi, jako klub związany z syjonistami, stoi po drugiej stronie sceny politycznej... Oj nie lubią się, nie lubią...",
+            message: "Makkabi powstało w 1909 roku... Mają stadion między ulicą Dietlowską i Koletek. W ogóle to ostatnio na spotkania Cracovii z Wisłą zaczęto mówić 'święta wojna'... Ja do tej pory nie mogę się przyzwyczaić, bo od zawsze tak nazywano mecze Jutrzenki z Makkabi... Bo wie Pan, Jutrzenka związana jest z Bundem, czyli żydowskimi socjalistami, a Makkabi, jako klub syjonistyczny, stoi po drugiej stronie sceny politycznej... Oj nie lubią się, nie lubią...",
             first: {
                 content: "To dlaczego na mecze Cracovii z Wisłą zaczęto nazywać mianem 'świętej wojny'?",
                 route: 53,
@@ -867,7 +867,7 @@ const options = {
             backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
         },
         53: { 
-            message: "Jakoś rok temu zawodnik Cracovii, Ludwik Gintel, przed meczem z Wisłą powiedział do kolegów w szatni: 'No to chodźmy panowie na tę świętą wojnę'. To w ogóle dość zabawne, bo Gintel wcześniej grał w Jutrzence, więc stamtąd znał to określenie.",
+            message: "Jakoś rok temu zawodnik Cracovii, Ludwik Gintel, przed meczem z Wisłą powiedział do kolegów w szatni: 'No to chodźmy panowie na tę świętą wojnę'. I tak się przyjęło. To w ogóle dość zabawne, bo Gintel wcześniej grał w Jutrzence, więc stamtąd znał to określenie.",
             first: {
                 content: "No dobrze, a istnieją jeszcze jakieś inne kluby w Krakowie?",
                 route: 54,
@@ -1458,33 +1458,33 @@ const options = {
             message: "Dzień dobry, jestem dr Peltzer. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
             first: {
                 content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
-                route: 61,
+                route: 91,
             },
             second: {
                 content: "Dzień dobry Panie doktorze. Może pamięta Pan jednego z pacjentów, nazywał się Najchel.",
-                route: 61,
+                route: 91,
             },
             third: {
                 content: "Dzień dobry. Potrzebuję informacji o jednym z pacjentów, Józefie Najchelu.",
-                route: 61, 
+                route: 91, 
             }
         },
         2: {
             message: "Dzień dobry, jestem dr Peltzer. Z jakiegoż to powodu policja postanowiła odwiedzić nasz szpital?",
             first: {
                 content: "Dzień dobry. Chodzi o jednego z pacjentów. Mówi Panu coś nazwisko Najchel?",
-                route: 62,
+                route: 92,
             },
             second: {
                 content: "Dzień dobry Panie doktorze. Może pamięta Pan jednego z pacjentów, nazywał się Najchel.",
-                route: 62,
+                route: 92,
             },
             third: {
                 content: "Dzień dobry. Potrzebuję informacji o jednym z pacjentów, Józefie Najchelu.",
-                route: 62, 
+                route: 92, 
             }
         },
-        61: {
+        91: {
             message: "Najchel... Najchel... Ach, tak! Racja, był tu, nawet niedawno. Leczyliśmy go na chorobę afektywną dwubiegunową...",
             first: {
                 content: "W takim razie nie powinien być wciąż na oddziale?",
@@ -1495,7 +1495,7 @@ const options = {
                 route: 4, 
             },
         },
-        62: {
+        92: {
             message: "Najchel... Najchel... Ach, tak! Racja, był tu, nawet niedawno. Leczyliśmy go na chorobę afektywną dwubiegunową...",
             first: {
                 content: "W takim razie nie powinien być wciąż na oddziale?",
@@ -1697,7 +1697,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
         41: {
-            message: "We wspomnianym raporcie lekarze miejscy dodali, że zaledwie 22% mieszkań odpowiada warunkom higienicznym, a 37% nie nadaje się do zamieszkania. To chyba wiele mówi, prawda? W ogóle to Kraków jest w czołówce miast polskich jeśli chodzi o śmiertelność na nowotwory, gruźlicę, choroby serca, dur brzuszny... 10% niemowląt nie dożywa pierwszych urodzin... Mam nadzieję, że sytuacja ulegnie poprawie bo czarno to widzę...",
+            message: "We wspomnianym raporcie lekarze miejscy dodali, że zaledwie 22% mieszkań odpowiada warunkom higienicznym, a 37% nie nadaje się do zamieszkania. To chyba wiele mówi, prawda? W ogóle to Kraków jest w czołówce miast polskich jeśli chodzi o śmiertelność na nowotwory, gruźlicę, choroby serca, dur brzuszny... 10% niemowląt nie dożywa pierwszych urodzin... Mam nadzieję, że sytuacja ulegnie poprawie, bo czarno to widzę...",
             first: {
                 content: "Dziękuję za odpowiedź, rzeczywiście jest niewesoło... Pozwoli Pan, że zapytam o coś innego...",
                 route: 30,
@@ -1717,7 +1717,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
         51: {
-            message: "W ogóle to nie wiem, czy Pan wie, ale nasze, krakowskie, pogotowie jest drugim najstarszym w Europie, zaraz po tym we Wiedniu. Założono je w 1891 roku i początkowo miało siedzibę w budynku straży pożarnej, tym przy Plantach... Rocznie przeprowadza kilka tysięcy interwencji i obecnie władze myślą o kupnie dodatkowych samochodów, bo póki co ambulansy konne wciąż nie poszły w odstawkę...",
+            message: "W ogóle to nie wiem, czy jest Pan świadom, ale nasze, krakowskie, pogotowie jest drugim najstarszym w Europie, zaraz po tym we Wiedniu. Założono je w 1891 roku i początkowo miało siedzibę w budynku straży pożarnej, tym przy Plantach... Rocznie przeprowadza kilka tysięcy interwencji i obecnie władze myślą o kupnie dodatkowych samochodów, bo póki co ambulansy konne nie poszły w odstawkę...",
             second: {
                 content: "Pozwoli Pan, że zapytam o coś innego...",
                 route: 30,
@@ -1749,7 +1749,7 @@ const options = {
         1: {
             message: "Niech będzie pochwalony. Widziałam, że rozmawiał Pan z doktorem Peltzerem. W czym mogę pomóc?",
             first: {
-                content: "Dzień dobry. Doktor mówi, że jednym z siostra podopiecznych był Józef Najchel...",
+                content: "Dzień dobry. Doktor mówi, że jednym z siostry podopiecznych był Józef Najchel...",
                 route: 2,
             },
             second: {
@@ -1775,7 +1775,7 @@ const options = {
                 route: 4,
             },
             second: {
-                content: "Ja też nie chodzę, a jakoś nie widuję żadnych diabłów.",
+                content: "Ja też, a jakoś nie widuję żadnych diabłów.",
                 route: 5, 
             },
         },
@@ -1887,7 +1887,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
         41: {
-            message: "Po pierwsze, zapewniono niezależność naszemu Kościołowi oraz jego duchownym w wykonywaniu swojej boskiej misji. Po drugie, wprowadza obowiązek nauczania religii w szkołach. Po trzecie, Kościół ma zostać zwolniony ze wszelkich opłat i podatków, aby nie ograniczać jego świętej misji duszpasterskiej. Nasze państwo będzie również wypłacać emerytury księżom po ich posłudze.",
+            message: "Po pierwsze, zapewniono niezależność naszemu Kościołowi oraz jego duchownym w wykonywaniu swojej posługi. Po drugie, wprowadza obowiązek nauczania religii w szkołach. Po trzecie, Kościół ma zostać zwolniony ze wszelkich opłat i podatków, aby nie ograniczać jego świętej misji duszpasterskiej. Nasze państwo będzie również wypłacać emerytury księżom po ich posłudze.",
             first: {
                 content: "A co w takim razie zyskała Polska na podpisaniu tej umowy?",
                 route: 42,
@@ -1923,7 +1923,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
         51: {
-            message: "Zgromadzenie służebniczek powstało w Wielkopolsce w połowie XIX wieku. Stamtąd siostry trafiły do Dębicy, gdzie założyły ochronkę dla ubogich dziewcząt. Uczyliśmy je czytania, pisania, szycia... Podczas wojny zaczęłyśmy podejmować posługę w szpitalach wojskowych i epidemicznych jako pielęgniarki. A po odzyskaniu niepodległości zdecydowałyśmy się podejować pracę w szpitalach i klinikach psychiatrycznych. W ten sposób trafiłyśmy do Kobierzyna.",
+            message: "Zgromadzenie służebniczek powstało w Wielkopolsce w połowie XIX wieku. Stamtąd pierwsze siostry trafiły do Dębicy, gdzie założyły ochronkę dla ubogich dziewcząt. Uczyły je czytania, pisania, szycia... Podczas wojny jako pielęgniarki zaczęłyśmy opiekować się pacjentami w szpitalach wojskowych i epidemicznych. A po odzyskaniu niepodległości zdecydowałyśmy się podejować pracę w szpitalach i klinikach psychiatrycznych. W ten sposób trafiłyśmy do Kobierzyna.",
             second: {
                 content: "Dziękuję za odpowiedź. Chciałbym zapytać o coś jeszcze.",
                 route: 30, 
@@ -1931,7 +1931,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
         60: {
-            message: "Stowarzyszenie Pań Miłosierdzia przy Warszawskiej prowadzi schronisko dla ubogich oraz kuchnię, w której wydają bezpłatne posiłki. ponadto przy Krowoderskiej Róża Łubieńska prowadzi stowarzyszenie wychowujące podrzutki. Zapewne pamięta Pan brata Alberta, co zrobił wiele dobrego w służbie bezdomnym... Sam brat już odszedł do Pana, ale założone przez niego schronisko wciąż funkcjonuje przy Krakowskiej. Nie można też zapomnieć o biskupie Sapiesze.",
+            message: "Stowarzyszenie Pań Miłosierdzia przy ulicy Warszawskiej prowadzi schronisko dla ubogich oraz kuchnię, w której wydawane są bezpłatne posiłki. Ponadto przy ulicy Krowoderskiej Róża Łubieńska zarządza stowarzyszeniem wychowującym niechciane dzieci. Zapewne pamięta Pan brata Alberta, co zrobił wiele dobrego w służbie bezdomnym... Sam brat już odszedł do Pana, ale założone przez niego schronisko wciąż funkcjonuje przy Krakowskiej. Nie można też zapomnieć o biskupie Sapiesze.",
             first: {
                 content: "Jaka jest jego rola?",
                 route: 63,
@@ -1940,23 +1940,23 @@ const options = {
                 content: "A czy on w 1914 roku nie sprzeciwiał się Piłsudskiemu zarzucając, że ten chce stworzyć Polskę 'socjalistyczną i żydowską'?",
                 route: 61,
             },
-            second: {
+            third: {
                 content: "Chciałbym zapytać o coś innego.",
                 route: 30, 
             },
             backMessage: "To wszystko, co chciałem wiedzieć, do widzenia. [Zakończ rozmowię i opuść szpital]"
         },
         61: {
-            message: "Biskup jest po prostu wielkim patriotą i na sercu leżą mu sprawy polskie.",
+            message: "Ksiądz biskup jest po prostu wielkim patriotą i na sercu leżą mu sprawy polskie.",
             first: {
                 content: "Rozumiem. A jaka jest jego rola jeśli mowa o działalności charytatywnej?",
                 route: 63,
             },
             second: {
-                content: "Słyszałem również, że sprzeciwiał się podpisaniu konkordatu przez Polskę, bo chciał pełnej niezależności Kościoła od władzy świeckiej. Dlatego raczej na kapelusz kardynalski od papieża liczyć nie może... A na dodatek jako jedyny sprzeciwiał się utworzeniu arcybiskupstwa w Krakowie...",
+                content: "Słyszałem również, że sprzeciwiał się podpisaniu konkordatu przez Polskę, bo chciał pełnej niezależności Kościoła od władzy świeckiej. Dlatego raczej na kapelusz kardynalski od papieża liczyć nie może... A na dodatek jako jedyny przedstawiciel episkopatu polskiego sprzeciwiał się utworzeniu arcybiskupstwa w Krakowie...",
                 route: 62,
             },
-            second: {
+            third: {
                 content: "Chciałbym zapytać o coś innego.",
                 route: 30, 
             },
@@ -2036,7 +2036,7 @@ const options = {
             },
         },
         5: {
-            message: "*ironicznie* Pewnie, często chodzimy zjeść u Thorna jakiś czulent... Co Pan, na głowę upadł? Jak mnie ktoś od bolszewików wyzywa to nie chcę tego człowieka na oczy widzieć. Ale wiem, że jego następca z nim rozmawiał. Proszę z nim zamienić słówko, może się Pan czegoś dowie.",
+            message: "*ironicznie* Pewnie, często zachodzimy na pogaduchy do Thorna, by przy okazji zjeść jakiś czulent... Co Pan, na głowę upadł? Jak mnie ktoś od bolszewików wyzywa to nie chcę tego człowieka na oczy widzieć. Ale wiem, że jego następca z nim rozmawiał. Proszę z nim zamienić słówko, może się Pan czegoś dowie.",
             fourth: {
                 content: "Dziękuję. Zapytam.",
                 route: 4,
@@ -2067,7 +2067,7 @@ const options = {
         8: {
             message: "Ma Pan jeszcze jakieś pytania?",
             first: {
-                content: "Chciałbym porozmawiać z Panem o polityce.",
+                content: "Chciałbym porozmawiać z Panem o społeczeństwie Krakowa.",
                 route: 30,
             },
             fourth: {
@@ -2079,7 +2079,7 @@ const options = {
         9: {
             message: "Witam Pana ponownie! Jakieś pytania?",
             first: {
-                content: "Chciałbym porozmawiać z Panem o polityce.",
+                content: "Chciałbym porozmawiać z Panem o społeczeństwie Krakowa.",
                 route: 30,
             },
             fourth: {
@@ -2088,7 +2088,123 @@ const options = {
             },
             backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
-    }, ////
+        30: {
+            message: "Proszę pytać.",
+            first: {
+                content: "Jak wygląda różnorodność religijna i narodowościowa?",
+                route: 40,
+            },
+            second: {
+                content: "Co Pan powie o nastrojach politycznych?",
+                route: 50,
+            },
+            third: {
+                content: "Jak kształtują się ceny w mieście?",
+                route: 60,
+            },
+            fourth: {
+                content: "Chciałbym pomówić z Pana podwładnym.",
+                route: 5,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        40: {
+            message: "W Krakowie żyje dziś niemal 200 tysięcy osób. Powiem tak: według spisu z '21 roku 3/4 mieszkańców stanowią katolicy, resztę wyznawcy judaizmu. Z tym, że warto zaznaczyć, iż tylko na Kazimierzu mieszka połowa krakowskich Żydów. Ponadto w Krakowie mamy jeszcze około 1500 grekokatolików i 1000 protestanów. ",
+            first: {
+                content: "A jak wygląda struktura zawodowa?",
+                route: 41,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        41: {
+            message: "Połowa mieszkańców jest aktywna zawodowo. Z nich 20% zaliczyć można do inteligencji, 30% pracuje w przemyśle, 20% w handlu... Tutaj prym wiodą Żydzi, choć ich sklepiki najczęściej są małe i przynoszą niewielki dochód. No i na koniec dodam, że aż 16% czynnych zawodowo osób pracuje jako służba domowa.",
+            second: {
+                content: "Dziękuję za odpowiedź. Chciałbym zapytać o coś jeszcze.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        50: {
+            message: "No to żeś Pan mi pytanie zadał, nie ma co... Powiem tak: socjaliści nienawidzą narodowców, narodowcy socjalistów i Żydów, z kolei Żydzi głosują na swoich, a wszystkich łączy to, że nienawidzą komunistów. Proste?",
+            first: {
+                content: "Nie do końca...",
+                route: 51,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        51: {
+            message: "No też właśnie. Do tej pory wybory odbyły się dwukrownie - w 1919 i 1922 roku. W obu wypadkach frekwencja wyniosła 67% i wyniki były bardzo podobne. Ogólnie rzecz umując wśród polskich katolików głosy rozkładały się pomiędzy socjalistami, a narodowcami i konserwatystami. W obu wypadkach wygrywała prawica zdobywając koło 40% głosów. Za nimi plasowali się socjaliści z 30-procentowym poparciem. A do tego dołączali żydowscy syjoniści z 20% głosów. ",
+            first: {
+                content: "A kto głosował na kogo?",
+                route: 52,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        52: {
+            message: "Socjaliści mogli liczyć na poparcie rodzin robotniczych, których tu nie brakuje. Konserwatyści zyskiwali natomiast głosy rodzin mieszkających od dekad w Krakowie. Można powiedzieć, że nowe dzielnice miasta są lewicujące, a dawne, historyczne głosują na prawicę. Natomiast jeśli chodzi o Żydów to głosują głównie syjoniści - marzący jednocześnie o utworzeniu państwa w Palestynie. Ortodoksyjni wyznawcy judaizmu raczej nie interesują się polityką krajową, a skupiają się na własnych sprawach...",
+            first: {
+                content: "Jakie żydowskie partie polityczne działają w mieście?",
+                route: 53,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        53: {
+            message: "Mamy wspomnianych syjonistów skupionych wokół Ozjasza Thona... Dalej partię Mizrachi, która łączy syjonistów z kręgu Żydów ortodoksyjnych. To by była prawica. Nastomiast jeśli chodzi o lewicę to prym wiedzie Bund, czyli Żydowska Partia Socjaldemokratyczna. A między nimi lawiruje jeszcze Hitachdut, czyli uważaj Pan teraz: Syjonistyczna Partia Pracy. Czyli coś, jak połączenie narodowców żydowskich z socjalistami. Nie mam pojęcia jak oni się tam ze sobą dogadują...",
+            first: {
+                content: "A co z komunistami?",
+                route: 54,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        54: {
+            message: "Oni stanowią jakiś śladowy odsetek wyborców. W '22 roku otrzymali ledwo pół procenta głosów...",
+            second: {
+                content: "Dziękuję za informacje. Chciałbym jednak zapytać o coś jeszcze.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        60: {
+            message: "Lepszym pytaniem byłoby: 'O ile wzrosły ceny w ciągu ostatnich 6 miesięcy?'. A odpowiedź brzmi: 'O 22%'. Okropna drożyzna. Robotnik zarabia jakieś 110-140 złotych, urzędnik niewiele więcej, a jak z tego rodzinę utrzymać? Od tego jeszcze 10% musi odtrącić na ubezpieczenia emerytalne, podatki... A od 30 do 60 złotych przeznaczyć na czynsz...",
+            first: {
+                content: "Wciąż nie odpowiedział Pan na moje pytanie.",
+                route: 61,
+            },
+            second: {
+                content: "Chciałbym zapytać o coś innego.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        61: {
+            message: "Przecież odpowiadam, proszę dać mi skończyć! No dobrze. Chleb - 50 groszy. Mleko - 45 groszy za litr. Za jajko musi Pan dać 10 groszy. Kilogram kawy to 6,60 złotego, herbata 15 złotych, kilogram masła 6,50. Oszaleli! Za kiełbasę 3 złote, mięso wołowe 1,80, ser 1,30...",
+            second: {
+                content: "Dziękuję za odpowiedź, chciałbym zapytać o coś jeszcze.",
+                route: 30,
+            },
+            backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+    }, 
     "pracownik-krowodrza" : {
         1: {
             message: "Słucham?",
@@ -2098,7 +2214,7 @@ const options = {
             },
         },
         501: {
-            message: "A co Panu naopowiadał? Pewnie, że ten cały Najchel go bolszewikiem nazwał i nie mógł ujmy na honorze znieść, nacjonalista cholerny.",
+            message: "A co Panu naopowiadał? Pewnie, że ten cały Najchel go bolszewikiem nazwał i nie mógł ujmy na honorze znieść, szefunio wielki.",
             first: {
                 content: "Widzę, że nie pała Pan miłością do swojego szefa...",
                 route: 3,
@@ -2109,10 +2225,10 @@ const options = {
             },
         },
         3: {
-            message: "Przepraszam. Po prostu kwestie polityczne nas bardzo różnią, czasem zdarzy mi się unieść. No dobrze, ale pytał Pan o Najchela. No był tutaj, ale dosłownie przez chwilę, i to parę tygodni temu... Nawet nie zdążyłem się mu dobrze przyjrzeć. Chciał się widzieć z szefem, tyle. Więcej go nie widziałem.",
+            message: "Przepraszam... Po prostu nie mogę pogodzić się z tym, że wylądowałem tym miejscu... Zdawałem na architekturę i co? Skończyłem jako jakiś dozorca w rogatce na końcu świata... No dobrze, ale pytał Pan o Najchela. No był tutaj, ale dosłownie przez chwilę, i to parę tygodni temu... Nawet nie zdążyłem się mu dobrze przyjrzeć. Chciał się widzieć z szefem, tyle. Więcej go nie widziałem.",
             first: {
-                content: "Dziękuję za informacje. Chciałbym jednak zamienić z Panem słówko na tematy polityczne...",
-                route: 2,
+                content: "Dziękuję za informacje. Chciałbym jednak zamienić w takim razie z Panem słówko o architekturze...",
+                route: 30,
             },
             fourth: {
                 content: "No dobrze. Dziękuję za odpowiedź. Porozmawiam jeszcze z Pana przełożonym.",
@@ -2123,8 +2239,8 @@ const options = {
         4: {
             message: "Tak?",
             first: {
-                content: "Chciałbym zamienić z Panem słówko na tematy polityczne...",
-                route: 2,
+                content: "Chciałbym zamienić z Panem słówko o architekturze...",
+                route: 30,
             },
             fourth: {
                 content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym.",
@@ -2132,7 +2248,87 @@ const options = {
             },
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
-    }, ////
+        30: {
+            message: "Tak?",
+            first: {
+                content: "Jakie są główne inwestycje prowadzone w mieście?",
+                route: 40,
+            },
+            second: {
+                content: "W jakim kierunku ewoluuje architektura krakowska?",
+                route: 50,
+            },
+            fourth: {
+                content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym.",
+                route: 3,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        40: {
+            message: "Po pierwsze, władze postanowiły zlikwidować twierdzę Kraków, która ograniczała rozwój przestrzenny miasta. Otworzyły się przed nami nowe możliwości. Tuż przed wojną wytyczono Aleje Trzech Wieszczów, gdzie obecnie prowadzone są intensywne prace budowlane... Aleje powstały w miejscu, gdzie biegł nasyp kolei obwodowej. Tam też kończył się kiedyś Kraków, bo dalej, za nasypemm, mieściły się już tylko forty Twierdzy Kraków, jak chociażby te na Kleparzu.",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 41,
+            },
+            second: {
+                content: "Chciałbym jednak porozmawiać o czymś innym.",
+                route: 30,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        41: {
+            message: "Aleje zainspirowane zostały wiedeńskimi Ringami i będzie to reprezentacyjna część miasta. Właśnie budowany jest olbrzymi gmach Akademii Górniczo-Hutniczej. Wykupiono też parcelę na Muzeum Narodowe. W nadchodzących latach to pewnie tam powstaną najnowocześniejsze gmachy użyteczności publicznej Krakowa... Zresztą, zobaczymy jak będzie. ",
+            first: {
+                content: "A co się dzieje w innych częściach miasta?",
+                route: 42,
+            },
+            second: {
+                content: "Chciałbym jednak porozmawiać o czymś innym.",
+                route: 30,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        42: {
+            message: "Niedawno na Wielopolu były prowadzone intensywne prace. Od strony Plant wzniesiono Pałac Prasy, od Dietlowskiej gmach Banku PKO. Jak już mowa o bankach to właśnie ukończono budynek Banku Polskiego przy Basztowej i giełdy przy Mikołajskiej. Zbudowano też Izbę Skarbową na Skarbowej, Kasę Chorych na Batorego... A przy Kopernika powstała szkoła pielęgniarek. Generalnie dość sporo się dzieje...",
+            first: {
+                content: "Chciałbym jednak porozmawiać o czymś innym.",
+                route: 30,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        50: {
+            message: "Tuż po wojnie trzymano się jeszcze historyzmu, ale ta epoka odchodzi już do lamusa. Historyzm już się krakowianom przejadł, secesja również... Można zauważyć uspokojenie form architektonicznych. Proszę porównać Teatr Słowackiego z nowo wybudowanym Teatrem Bagatela. Ogromna różnica. A oba budynki dzieli zaledwie 35 lat... W ogóle Bagatelę założył Marian Dąbrowski, redaktor naczelny Ilustrowanego Kuryera Codziennego, może będzie miał Pan okazję go spotkać...",
+            first: {
+                content: "Proszę kontynuować.",
+                route: 51,
+            },
+            second: {
+                content: "Chciałbym jednak porozmawiać o czymś innym.",
+                route: 30,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        51: {
+            message: "W każdym razie, obecnie wyróżniłbym trzy nurty stylistyczne dominujące w mieście. Pierwszym jest styl, powiedzmy, dworkowy inspirowany tradycją szlachecką. Przykłady może Pan znaleźć pod numerem 31 przy Krupniczej, przy Placu Axentowicza oraz na budowanym na Olszy osiedlu Oficerskim w okolicach ulicy Mogilskiej. Kolejny nurt to monumentalne budowle mające pokazać siłę naszego kraju, takie jak banki, czy Izba Skarbowa. Osobiście mnie to śmieszy, bo ludzie nie mają co jeść, inflacja galopuje, a władze stawiają gmachy wielkości stadionu...",
+            first: {
+                content: "A trzeci nurt?",
+                route: 52,
+            },
+            second: {
+                content: "Chciałbym jednak porozmawiać o czymś innym.",
+                route: 30,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        52: {
+            message: "To polska odmiana art deco. Przykładem może być budynek Banku Przemysłowego przy Rynku, czy Dom Profesorów UJ na granicy Parku Krakowskiego. Coś zupełnie innego, nieco kontrowersyjnego. Bo jak prostą formą przekonać tych, co piękno widzą jedynie w przepychu...?",
+            second: {
+                content: "Chciałbym porozmawiać jeszcze o czymś innym.",
+                route: 30,
+            },
+            backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+    },
     "thorn": {
         1: {
             message: "Szolem alejchem! Dzień dobry! Hirsz Thorn, właściciel. Niestety jeszcze wcześnie rano, otwieramy później. Zapraszam po 10!",
@@ -2214,9 +2410,202 @@ const options = {
                 content: "Chciałbym porozmawiać z Panem o życiu żydowskim w Krakowie.",
                 route: 30,
             },
-            backMessage: "W sumie to jednak nie mam czasu. Przepraszam, do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
         },
-    }, ////
+        30: {
+            message: "Witam Pana ponownie! Jak mogę pomóc?",
+            first: {
+                content: "Jak się kształtują stosunki między Żydami a chrześcijanami?",
+                route: 40,
+            },
+            second: {
+                content: "Proszę powiedzieć coś więcej o społeczeństwie krakowskich Żydów.",
+                route: 50,
+            },
+            third: {
+                content: "Jakie są najważniejsze potacie ze środowiska krakowskich Żydów?",
+                route: 60,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        40: {
+            message: "Różnie bywa, drogi Panie. Mi żaden szajgec nigdy krwi nie napsuł. Do mnie do restauracji często przychodzą chrześcijanie, a jak nie mogę przyjąć od nich zapłaty z powodu szabasu to zawsze wracają, aby uregulować rachunek. Zawsze! Ale to nie znaczy, że wszystko jest git. ",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 41,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        41: {
+            message: "Drogi Panie, jeszcze przed wojną nasłuchałem się okropności. Szanowny Panie, ja to się już nawet śmiałem, że ja to nie lubię gazet żydowskich czytać, bo tam to tylko o tym, że tu pogrom na Żydach, tam pobili Żyda, tam zaś szykanowali... A w innych to czytam, że Żydzi nad światem panują, że same z nas bogacze są! Drogi Panie, od razu człowiek lepiej się czuje jak się dowiaduje, że światem rządzi!",
+            first: {
+                content: "W takim razie to nieprawda?",
+                route: 42,
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        42: {
+            message: "Niech no się Pan rozejrzy. Tu, w Kroke, znaczy w Krakowie, co czwarty to Żyd. A żyjemy głównie na Kazimierzu, gdzie straszna bieda panuje. Straszna. Ja mam tyle szczęścia, że jeszcze do czegoś dojść się udało. Ale inni? Nawet w raportach lekarze mówią, że w dzielnicy żydowskiej, w sztetlu naszym, bieda w oczy kłuje. Mówią ludzie, że światem rządzimy. A dla pobożnego Żyda najważniejsze to Torę studiować. Ostatnio też zaczęto nas wyzywać, że za bolszewikami jesteśmy. A przecież niejeden Żyd za Polin, za Polskę walczył! I życie stracił!",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 43,
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        43: {
+            message: "Szanowny Panie, ja w życiu mnóstwo porządnych Polaków spotkałem. Znam też mnóstwo Żydów co za pełnoprawnych Polaków się uważa. Ale pewne grupy, zwłaszcza endeckie, podburzyć jest łatwo... Na przykład ostatnio, jakoś dwa lata temu była dyskusja, czy Żydzi powinni mieć taki sam dostęp na uniwersytety co chrześcijanie. Jak rektor Uniwersyettu Jagiellońskiego, Natanson - Żyd swoją drogą - się temu sprzeciwił to mu bombę pod dom podłożyli, słyszał Pan? A potem tu, na Krakowskiej, tyle że pod numerem 23, w hotelu Kellera, kolejny wybuch! Nie wie Pan jak strasznie się wtedy wszyscy baliśmy, że i na nas trafi. W końcu trzecia, i póki co ostatnia, wybuchła na Orzeszkowej, pod redakcją żydowskiej gazety, Nowego Dziennika... Od tego czasu jest raczej spokój...",
+            second: {
+                content: "Pozwoli Pan, że zapytam o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        50: {
+            message: "Szanowny Panie, długo by opowiadać! Czasem myślę, że Kazimierz to jak inny kraj jest. Teraz z Panem po polsku mówię, a wystarczy, że przejdę się na drugą stronę ulicy i tylko jidysz usłyszeć mogę. Niektórzy nawet polskiego dobrze nie znają, bo całe życie tylko z innymi Żydami się trzymali. Ale czemu się dziwić? W domu jidysz, w sklepie jidysz, w chederze jidysz... Jak ktoś jest pobożny i chce zgodnie z Torą żyć, to nawet nie musi poza Kazimierz głowy wychylać. Ale tutaj mowa jest tylko o mitnagedim, chasidim... ortodoksyjnych Żydach można powiedzieć. To ci co pejsy noszą, brody, chałaty. Ale Kroke jest też domem dla żydowskich liberałów, którym powoli bliżej do Polaków, niż do Żydów.",
+            first: {
+                content: "Co ma Pan na myśli?",
+                route: 51,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        51: {
+            message: "Po żydowsku już nie mówią, nawet szynkę zdarza im się zjeść... Nie wszyscy, oczywiście, ale jednak... No i w to wszystko jeszcze wplątali się syjoniści, którym marzy się utworzenie państwa żydowskiego. Wśród nich znajdzie Pan i ortodoksów, i liberałów... Drogi Panie, teraz to ciężko się w tym wszystkim połapać, kto jak bardzo pobożny, kto dba o koszerne jedzenie, kto w jakim języku mówi. Co rodzina, to inne podejście. ",
+            first: {
+                content: "Proszę powiedzieć coś o tutejszej gminie żydowskiej.",
+                route: 52,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        52: {
+            message: "Szanowny Panie, mamy w Krakowie dwie gminy - kazimierską z siedzibą przy Skawińskiej 2 i podgórską. Rok temu odbyły się wybory i na czele naszej gminy stanął ponownie doktor Landau, prawnik. A także w końcu - po dwudziestu latach oczekiwania! - zdecydowano kto zostanie naczelnym rabbi Krakowa. Stanowisko powierzono rabbiemu Józefowi Kornitzerowi. ",
+            first: {
+                content: "Jakie instytucje żydowskie znajdują się w mieście?",
+                route: 53,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        53: {
+            message: "Dla sierot mamy zakład przy ulicy Dietlowskiej, kilka burs... Istnieje też wiele instytucji charytatywnych, które pomagają matkom, starcom, biednym w ich niedoli... Przy Skawińskiej mamy szpital żydowski. No i szkoły, w tym tę założoną przez panią Szenirer. Czy już o niej wspominałem?",
+            first: {
+                content: "Nie, proszę mówić.",
+                route: 54,
+            },
+            second: {
+                content: "Tak, ale chciałbym jeszcze usłyszeć coś o innych szkołach żydowskich.",
+                route: 56,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        54: {
+            message: "To wspaniała kobieta. Jeszcze kilka lat temu w zakładzie szewskim, tu obok, zaczęła szkolić dziewczęta z pobożnych rodzin. A jeszcze do niedawna edukacja w ogóle nie była dla nich dostępna. Pobożni Żydzi dbali tylko o edukację chłopców, co by mogli w przyszłości Torę i Talmud studiować. A jak nakazano wszystkim, bez wyjątku, dziewczynkom też, do szkoły iść to musiały być posyłane do szkół świeckich, gdzie oddalały się od naszej wiary...",
+            first: {
+                content: "W tym tkwił zatem problem?",
+                route: 54,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        55: {
+            message: "Jak najbardziej, szanowny Panie. Bo proszę sobie wyobrazić. Taka dziewczynka wraca do domu po 7 latach nauki w szkole, gdzie poznaje historię, geografię, języki, koleżanki... a nie wie nic o własnej religii! I taka dziewczynka potem ma wyjść za chłopca z żydowskiej rodziny, który nauki w chederze pobierał... Dlatego pani Szenirer postanowiła założyć szkołę dla dziewczynek, gdzie oprócz przedmiotów świeckich można też zgłębić historię Palestyny, Torę... W tym roku wiem, że przy Skałce założyła seminarium nauczycielskie. Bystra kobieta...",
+            first: {
+                content: "A czy są jeszcze jakieś inne szkoły?",
+                route: 56,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        56: {
+            message: "Najsłynniejsze jest Gimnazjum Hebrajskie przy ulicy Podbrzezie. Tam posyłają swoje dzieci głównie zwolennicy syjonizmu i zamożniejsze rodziny. Natomiast dla dzieci z bardziej pobożnych rodzin powstało Gimnazjum Tachkemoni na Miodowej.",
+            third: {
+                content: "Dziękuję, chciałbym zapytać o coś jeszcze...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        60: {
+            message: "Przede wszystkim pan Ozjasz Thon, poseł wybrany do sejmu polskiego. Wielki patriota, zarówno polski jak i żydowski. To on był jednym z organizatorów pierwszego Światowego Kongresu Syjonistycznego w Bazylei... Nie pojechał tam zresztą, bo przejmował wtedy obowiązki rabina przy synagodze Tempel. Był też w Wersalu na czele delegacji żydowskiej jak podpisywano słynne traktaty. Publikuje też w Nowym Dzienniku, jedynej żydowskiej gazety codziennej w języku polskim. Ze społeczników wymieniłbym jeszcze Różę Rockową zajmującą się sierotami na Dietlowskiej. I oczywiście Sarę Szenirer... Czy już Panu o niej mówiłem?",
+            first: {
+                content: "Nie.",
+                route: 61,
+            },
+            second: {
+                content: "Tak.",
+                route: 63,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        61: {
+            message: "Wspaniała kobieta. Jeszcze kilka lat temu w zakładzie szewskim, tu obok, zaczęła szkolić dziewczęta z pobożnych rodzin. A jeszcze do niedawna edukacja w ogóle nie była dla nich dostępna. Pobożni Żydzi dbali tylko o edukację chłopców, co by mogli w przyszłości Torę i Talmud studiować. A jak nakazano wszystkim, bez wyjątku, dziewczynkom też, do szkoły iść to musiały być posyłane do szkół świeckich, gdzie oddalały się od naszej wiary...",
+            first: {
+                content: "W tym tkwił zatem problem?",
+                route: 62,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        62: {
+            message: "Jak najbardziej, szanowny Panie. Bo proszę sobie wyobrazić. Taka dziewczynka wraca do domu po 7 latach nauki w szkole, gdzie poznaje historię, geografię, języki, koleżanki... a nie wie nic o własnej religii! I taka dziewczynka potem ma wyjść za chłopca z żydowskiej rodziny, który nauki w chederze pobierał... Dlatego pani Szenirer postanowiła założyć szkołę dla dziewczynek, gdzie oprócz przedmiotów świeckich można też zgłębić historię Palestyny, Torę... W tym roku wiem, że przy Skałce założyła seminarium nauczycielskie. Bystra kobieta...",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 63,
+            },
+            third: {
+                content: "Jednak chciałbym zapytać o coś innego...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        63: {
+            message: "Ważną postacią dla Krakowa jest Józef Sare, wiceprezydent miasta i architekt. Studiował we Wiedniu i to on projektował na przykład jeden z budynków Wydziału Lekarskiego Uniwesytetu Jagiellońskiego. To ten przy Grzegórzeckiej. I pomyśleć, że to jeden z tych wydziałów, który chce wprowadzić ograniczenia dla studentów żydowskich! Ponadto spod jego pióra wyszedł projekt dla Gimnazjum św. Anny, Gimnazjum króla Sobieskiego, Urzędu Wojewódzkiego... O, a tutaj, na Krakowskiej, pod 'dziewiątką', mieszka też Poldek Infeld. Chwalił się, że jak studiował w Berlinie to samego Einsteina poznał. Ja to myślę, że będzie z niego wielki naukowiec, może kiedyś z tym Einsteinem książkę napisze...",
+            third: {
+                content: "Dziękuję za informacje. Pozwoli Pan, że zapytam o coś jeszcze...",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+        },
+
+    },
     "straznik": {
         1: {
             message: "Hola, hola! To zamknięta impreza!",
@@ -2514,8 +2903,159 @@ const options = {
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
         },
+        30: {
+            message: "Słucham zatem.",
+            first: {
+                content: "Jak wygląda stan educkacji na poziomie podstawowym?",
+                route: 40,
+            },
+            second: {
+                content: "Co może Pan powiedzieć na temat edukacji w szkole średniej?",
+                route: 50,
+            },
+            third: {
+                content: "Jak Pan ocenia uczelnie wyższe w Krakowie?",
+                route: 60,
+            },
+            fifth: {
+                content: "Czy może Pan powiedzieć coś o sobie?",
+                route: 70,
+            },
+            fourth: {
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                route: 2,
+            },
+        },
+        40: {
+            message: "Po wojnie w całym kraju wprowadzono obowiązek szkolny. Wcześniej nie obejmował on dzieci z dawnej Kongresówki. U nas, w Małopolsce, mamy dwa rodzaje szkół powszechych - 6-letnie wiejskie oraz 7-letnie miejskie. To akurat system odziedziczony jeszcze z czasów austriackich. Obecnie w Krakowie mamy niemalże 70 szkół kształcących na poziomie elementarnym, z czego większość jest publiczna, a co za tym idzie - bezpłatna. Na szczęście większość ma do dyspozycji własne budynki, choć część szkół musi wynajmować sale lekcyjne, a przy Dietlowskiej czy Miodowej dzieci uczą się w prowizorycznych szkołach barakowych...",
+            first: {
+                content: "A jak wygląda nauka?",
+                route: 41,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        41: {
+            message: "Program obejmuje naukę religii, języka ojczystego, rachunków z geometrii, przyrody, geografii, historii, rysunków, robót, śpiewu i gimnastyki, z tym, że większość zajęć pojawia się doopiero w trzeciej klasie. Wcześniej dzieci muszą nauczyć się czytać i pisać. W miastach szkoły wprowadzają obowiązek noszenia mundurków, lecz na wsiach najczęściej nie da się tego zrealizować... Rodziców często nie stać nawet na buty, a co dopiero na wyrafinowany mundurek... Na wsiach dzieci uczy także najczęściej jeden nauczyciel, a w Krakowie średnio na szkołę przypada ich ponad siedmiu.",
+            first: {
+                content: "Czy są jeszcze jakieś problemy?",
+                route: 42,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        42: {
+            message: "Głównie na wsich. Tam często rodzice jedynie z obowiązku zapisują swoje dzieci do szkół, a potem, jak potrzeba rąk do pracy w polu, to już się więcej nie posyłają ich na lekcje. W wielu miejscach problemem jest też odległość, którą dzieci muszą pokonać, aby dotrzeć do szkoły. Czasami może to być kilka kilometów. Natomiast nauczyciele pracujący na wsiach często nie mają odpowiedniego przygotowania do zawodu. ",
+            second: {
+                content: "Dziękuję. Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        50: {
+            message: "Obecnie nauka w gimnazjum trwa 8 lat. Nie jest jednak bezpłatna i dlatego dostępna jest jedynie dla dzieci z bogatszych rodzin. Może Pan się dziwić, dlaczego nauka w szkole powszechnej trwa 7, a w gimnazjum aż 8 lat. Tak naprawdę to już po ukończeniu 4 klasy szkoły powszechnej rodzice mogą posłać swoje dzieci do płatnego gimnazjum, decyzja należy do nich. Mają do wyboru placówki skupiające się bardziej na przedmiotach humanistycznych lub matematyczno-przyrodniczych.",
+            first: {
+                content: "Jakie gimnazja funkcjonują w Krakowie?",
+                route: 51,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        51: {
+            message: "Najstarszym jest Gimnazjum św. Anny, do którego sam uczęszczałem. Ponadto mamy Gimnazjum św. Jacka przy Siennej, kolejna placówka mieści się przy Sobieskiego... W Krakowie mamy również szkoły realne kładące nacisk na umiejętności praktyczne, seminaria nauczycielskie i gimnazja prywatne. Nie można również zapominać o prestiżowym Gimnazjum Hebrajskim przy Brzozowej!",
+            second: {
+                content: "Dziękuję za odpowiedź. Jeśli Pan pozwoli to zapytam o coś jeszcze.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        60: {
+            message: "Tuż po wojnie sytuacja nie wyglądała dobrze... Uniwersytet Jagielloński nie miał pieniędzy na opłacanie czynszu za wynajmowane lokale. Obserwatorium astrnomiczne stało bez elektryczności, klinika otolaryngologiczna groziła zawaleniem. Stropy podparto tam prowizorycznymi belkami, proszę sobie wyobrazić! Słyszałem, że na wykłady do sali chemii lekarskiej przychodzi ponad setka osób. A miejsca jest zaledwie dla czterdziestki. Natomiast w Collegium Maius, tam dziś mieści się biblioteka UJ, przecieka dach...",
+            first: {
+                content: "Ale chyba pojawiają się jakieś pozytywy?",
+                route: 61,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        61: {
+            message: "Oczywiście. Niedawno utworzono Wydział Rolniczy,, Studium Pedagogiczne... W tym roku zostanie otwarta Szkoła Pielęgniarek i Higienistek. Słyszałem również o planach założenia Studium Wychowania Fizycznego",
+            first: {
+                content: "Słyszałem, że Uniwersytet chce wprowadzić ograniczenia dla studentów pochodzenia żydowskiego?",
+                route: 41,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        62: {
+            message: "Owszem, dwa lata temu prowadzono na ten temat dość gwałtowne rozmowy... Z przykrością muszę stwierdzić, że władze Wydziału Prawa, na którym sam zresztą studiowałem, poparły ten pomysł opowiadając się za ograniczeniami. Kto wie, być może gdyby nie presja ze strony społeczności międzynarodowej to tak dyskryminujące prawo weszłoby w życie.",
+            first: {
+                content: "Co może Pan powiedzieć o innych uczelniach wyższych w mieście?",
+                route: 41,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        63: {
+            message: "Tuż po wojnie założono w Krakowie Akademię Górniczą, którą niedawno przemianowano na Akademię Górniczo-Hutniczą. Co przykre, ta uczelnia akurat nie zgadza się na przyjmowanie Żydów do swojej społeczności akademickiej. Obecnie trwa budowa gmachu głównego, bo do tej pory zajęcia odbywają się w budynkach Uniwersytetu Jagiellońskiego i innych wynajmowanych pomieszczeniach.",
+            first: {
+                content: "Wciąż nie powiedział Pan nic o Akademii Sztuk Pięknych...",
+                route: 41,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        64: {
+            message: "Nasza uczelnia - będąc najstarszą tego typu instytucją w Polsce - niedawno obchodziła 100-lecie swojego istnienia... Wyjątkowym zbiegiem okoliczności był to jednocześnie rok, w którym nasz kraj odzyskał niepodległość. Mieliśmy zatem co świętować! Akademia najwięcej zawdzięcza jednak świętej pamięci profesorowi Matejce, dzięki któremu powstał okazały gmach, tu, niedaleko, za Barbakanem. Jednak w porównaniu z innymi uczelniami nie szkolimy tysięcy, a jednie 100-200 wyjątkowo uzdolnionych artystów, a od niedawna również kobiety.",
+            second: {
+                content: "Dziękuję za odpowiedź. Miałbym do Pana jeszcze jedno pytanie...",
+                route: 2,
+            },
+            backMessage: "Dziękuję za informacje. Tymczasem muszę już iść, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        70: {
+            message: "Miło mi, że Pan pyta. Urodziłem się w Ropczycach, mam 57 lat. Moja rodzina ma korzenie austriackie, a moi rodzice przybyli do Krakowa niewiele po moim narodzeniu. Uczyłem się w tutejszym Gimnazjum św. Anny, potem rozpocząłem studia prawnicze na Uniwersytecie Jagiellońskim. Przyjęto mnie również na Akademię, wtedy jeszcze Szkołę Sztuk Pięknych. Później przeniosłem się do Paryża, gdzie mieszkałem z moim przyjacielem Stanisławem Wyspiańskim. Tam dzieliliśmy pracownię, tam też poznałem moją przyszłą żonę, Jadwigę.",
+            first: {
+                content: "Proszę mówić dalej.",
+                route: 71,
+            },
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
+        71: {
+            message: "Oprócz malarstwa, podobnie zresztą do Wyspiańskiego, zainteresowałem się witrażami. Wspólnie stworzyliśmy te, które można zobaczyć w krakowskim kościele mariackim. Tam też pod okiem naszego mistrza profesora Matejki pomagaliśmy przy malowaniu gwieździstej polichromii. W powszechnej opinii najważniejszym moim dziełem są jednak - wciąż nieukończone - witraże w kościele św. Mikołaja w szwajcarskim Fryburgu... Przez cztery lata piastowałem również urząd rektora Akademii Sztuk Pięknych, gdzie wykładam do dziś.",
+            second: {
+                content: "Jeśli Pan pozwoli to zapytam o coś innego.",
+                route: 2,
+            },
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+        },
 
-    }, ////
+    }, 
     "zelenski": {
         801: {
             message: "Dzień dobry, Tadeusz Boy-Żeleński. Jak dobrze słyszałem szuka Pan jakiegoś Bogdana Majchrzaka. Niestety nie znam takiego człowieka.",
@@ -2574,7 +3114,7 @@ const options = {
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
         30: {
-            message: "Ahhh, pamiętam doskonale pana Jana Michalika. Parę lat temu przeprowadził się do Poznania, gdzie założył wykwintny pensjonat... A pochodzi ze Lwowa, gdzie poznał bliżej zawód cukiernika. Ponoć ojciec posłał go na nauki jako karę za złe stopnie w szkole... Pewnie się zdziwił, że kara tak mocno wpłynęła na historię Krakowa, do którego Michalik przybył... Jak dobrze pamiętam w 1895 roku. Wynajął lokal przy Floriańskiej i tak zaczęła się historia tego miejsca... Początkowo Jama funkcjonowała jako Cukiernia Lwowska. A potem pojawiliśmy się my... ",
+            message: "Co prawda pan Michalik nie mieszka już w Krakowie, ale pamiętam go doskonale. Pochodzi ze Lwowa. Ponoć ojciec posłał go na nauki do jednej z tamtejszych cukierni jako karę za złe stopnie w szkole... Pewnie się zdziwił, kiedy okazało się, że pan Jan pokochał zawód cukiernika. Do Krakowa Michalik przybył w 1895 roku. Wynajął lokal przy Floriańskiej i tak zaczęła się historia tego miejsca... Początkowo Jama funkcjonowała jako Cukiernia Lwowska. A potem pojawiliśmy się my... ",
             first: {
                 content: "Co ma Pan na myśli?",
                 route: 31,
@@ -2598,7 +3138,19 @@ const options = {
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
         32: {
-            message: "Jest to bardzo zasadniczy człowiek, chyba ostatni, który chciałby mieć do czynienia z artystami! Poważny, spokojny, skromny, nie lubił hałasu, brzydził się pijaństwem. I dbał o swoje interesy, oj dbał! Pewnego razu powysyłał swoim stałym klientom, tym, którzy zostawili u niego majątek weswania płatnicze za nieuregulowane rachunki. Przez adwokata! Później zaczął zatrudniać kelnerów, którzy mieli dbać o to, aby klienci zawsze płacili na czas. Ale trzeba mu przyznać, że nikt wcześniej nie odważyłby się powierzyć organizacji wystroju swojej kawiarni własnym klientom. Prowadził 'Jamę' przez łącznie 20 lat... W końcu, podczas wojny postanowił sprzedać to miejsce i wyprowadził się do Poznania. To już nie to samo miejsce co kiedyś...",
+            message: "Jest to bardzo zasadniczy człowiek, chyba ostatni, który chciałby mieć do czynienia z artystami! Poważny, spokojny, skromny, nie lubił hałasu, brzydził się pijaństwem. I dbał o swoje interesy, oj dbał! Pewnego razu powysyłał swoim stałym klientom, tym, którzy zostawili u niego majątek weswania płatnicze za nieuregulowane rachunki. Przez adwokata!",
+            first: {
+                content: "Naprawdę?",
+                route: 35,
+            },
+            fourth: {
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                route: 4,
+            },
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+        },
+        35: {
+            message: "Nie inaczej! Później zaczął zatrudniać kelnerów, którzy mieli dbać o to, aby klienci zawsze płacili na czas. Ale to nie znaczy, że Michalik miał jakąś awersję do artystów! W takim wypadku nie odważyłby się powierzyć organizacji wystroju swojej kawiarni własnym klientom! Michalik prowadził ją przez łącznie 20 lat... W końcu, podczas wojny, postanowił sprzedać 'Jamę' i wyprowadził się do Poznania. To już nie to samo miejsce co kiedyś...",
             first: {
                 content: "Dlaczego Pan tak uważa?",
                 route: 33,
@@ -2609,8 +3161,9 @@ const options = {
             },
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
+        
         33: {
-            message: "Jednak klimat tego miejsca kojarzy się przede wszystkim z naszą młodością... 20 lat temu mój brat z przyjaciółmi założyli kabaret Zielony Balonik. Ja dołączyłem do niego rok później. Dbaliśmy, aby tylko osoby z zaproszeniem mogły zobaczyć owoce naszej pracy. Obśmiewaliśmy, komentowaliśmy, wystawialiśmy nawet własne szopki... Ale wszystko ma swój koniec, prawda? Ostatni raz wystąpiliśmy 10 lat temu.",
+            message: "Jednak klimat tego miejsca kojarzy się przede wszystkim z naszą młodością... 20 lat temu mój brat z przyjaciółmi założyli tu kabaret Zielony Balonik. Ja dołączyłem do niego rok później. Dbaliśmy, aby tylko osoby z zaproszeniem mogły zobaczyć owoce naszej pracy. Obśmiewaliśmy, komentowaliśmy, wystawialiśmy nawet własne szopki... Ale wszystko ma swój koniec, prawda? Ostatni raz wystąpiliśmy 10 lat temu.",
             first: {
                 content: "Kto był stałym gościem tego miejsca?",
                 route: 34,
@@ -2622,7 +3175,7 @@ const options = {
             backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
         },
         34: {
-            message: "Chyba każdy ze środowiska artystycznego Krakowa... Swego czasu własny stolik miał tutaj Wyspiański... Przychodził tutaj marszałek Piłsudski z małżonką... Zobaczymy, może w przyszłości 'Jama' powróci do swoich korzeni... Kto wie?",
+            message: "Chyba każdy ze środowiska artystycznego Krakowa... Swego czasu własny stolik miał tutaj Wyspiański... Jamę odwiedział też marszałek Piłsudski z małżonką... Zobaczymy, może w przyszłości 'Jama' powróci do swoich korzeni... Kto wie?",
             fourth: {
                 content: "Dziękuję za informacje, chciałbym jeszcze porozmawiać z panem Mehofferem.",
                 route: 4,
@@ -2689,7 +3242,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź]"
         },
         31: {
-            message: "Pan Antoni zmarł bezpotomnie w 1894 roku, a po nim miejsce to przejął jego zaufany pracownik, a mój stryj - Franciszek Macharski. To on tuż przed wojną przeniósł restaurację w obecne miejsce, do Pałacu Spiskiego. Nasz lokal często odwiedzają wybitni profesorowie, artyści, literaci, dziennikarze... Mam nadzieję, że uda się i mi kontynuować tę tradycję. Kto wie, może jeśli doczekam się syna to dam mu na imię Franciszek, po stryju... A kiedyś przejmie po mnie to miejsce?",
+            message: "Pan Antoni zmarł bezpotomnie w 1894 roku, a po nim miejsce to przejął jego zaufany pracownik, a mój stryj - Franciszek Macharski. To on tuż przed wojną przeniósł restaurację w obecne miejsce, do Pałacu Spiskiego. Nasz lokal często odwiedzają wybitni profesorowie, artyści, literaci, dziennikarze... Mam nadzieję, że i mi uda się kontynuować tę tradycję. Kto wie, może jeśli doczekam się syna to dam mu na imię Franciszek, po stryju... A kiedyś przejmie po mnie to miejsce?",
             backMessage: "Dziękuję, to wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź]"
         },
     }, 
@@ -2899,7 +3452,7 @@ const options = {
         5: {
             message: "Dość głośno się Panowie zachowywali...",
             first: {
-                content: "Przepraszam najmocniej. Zanim pójdę chciałbym jednak o coś zapytać o bieżące wydarzenia...",
+                content: "Przepraszam najmocniej. Zanim pójdę chciałbym jednak o coś zapytać o wydarzenia ostatnich lat...",
                 route: 30,
             },
             backMessage: "Przepraszam, ale muszę już iść. [Zakończ rozmowę i opuść budynek]"
@@ -2907,8 +3460,24 @@ const options = {
         6: {
             message: "Witam ponownie! W czym mogę pomóc",
             first: {
-                content: "Chciałbym porozmawiać z Panem o bieżących wydarzeniach...",
+                content: "Chciałbym porozmawiać z Panem o wydarzeniach z ostatnich lat...",
                 route: 30,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        30: {
+            message: "Co Pana interesuje?",
+            first: {
+                content: "Interesuje mnie zamach stanu z 1919 roku.",
+                route: 40,
+            },
+            second: {
+                content: "Chciałbym dowiedzieć się więcej o zamachu na prezydenta Narutowicza.",
+                route: 50,
+            },
+            third: {
+                content: "Chcę zapytać o konflikt polsko-litewski o Wilno.",
+                route: 60,
             },
             backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
@@ -3129,7 +3698,123 @@ const options = {
             },
             backMessage: "Nie, jednak nie mam. Przepraszam za zamieszanie. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },
-    } ////
+        30: {
+            message: "Proszę pytać, słucham.",
+            first: {
+                content: "Proszę powiedzieć kilka słów o krakowskim handlu.",
+                route: 40, 
+            },
+            second: {
+                content: "Czy może Pan przybliżyć sytuację bankowości w Krakowie?",
+                route: 50, 
+            },
+            third: {
+                content: "Jak Pan ocenia sytuację ekonomiczną?",
+                route: 60, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        40: {
+            message: "Obecną sytuację mogę chyba opisać jednym słowem. Tragiczna. Tuż po wojnie brakowało intergacji z innymi częściami Polski, codziennością były problemy aprowizacyjne... Sam Kraków też tracił na znaczeniu. Dziś kupcy muszą mierzyć się z konkurencją Śląska, zwłaszcza Katowic. A co gorsza nie mamy bezpośredniego połączenia kolejowego z Warszawą. Podróż do stolicy trwa 9 godzin... ",
+            first: {
+                content: "Rozumiem. A jeśli chodzi o sam Kraków... Gdybym chciał się wybrać na zakupy, to dokąd mam się udać?",
+                route: 41, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        41: {
+            message: "W Sukiennicach kupi Pan artykuły galanteryjne, zabawki, pamiątki... Przed Kościołem Mariackim handluje się kwiatami,  owocami... W okresie bożonarodzeniowym również ozdobami choinkowymi. A na wielkanoc cukrowymi barankami, czy koszyczkami na święconkę. Nieco dalej, przy wylocie ul. św. Jana kupi Pan wełniane skarpety, koronki, hafty... Ogólnie rzecz ujmując wyroby ludowe. A przy wieży ratuszowej handluje się drobiem. Zarówno żywym jak i bitym.",
+            first: {
+                content: "A poza Rynkiem?",
+                route: 42, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        42: {
+            message: "Po jarzyny proszę udać się na Mały Rynek, a kramy mięsne są przy Placu Słowiańskim. Na Starym Kleparzu można znaleźć wyroby koszykarskie, bednarskie... oraz zwierzęta. Koty, psy, króliki, gołębie... Natomiast po drugiej stronie ulicy Długiej, na Nowym Kleparzu może Pan kupić także artykuły rymarskie, liny, siano, słomę czy zboże.",
+            first: {
+                content: "Nie wspomniał Pan nic o Kazimierzu i Podgórzu.",
+                route: 43, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        43: {
+            message: "Po ryby proszę udać się przed Synagogę Izaaka. Jeśli chciałby Pan kupić drób i warzywa to może także iść na Plac Nowy lub na Wolnicę. Ponadto na Kazimierzu, na Placu Bawół, odbywa się handel starzyzną. A w Podgórzu, na Placu Zgody kupi Pan nabiał, jarzyny, wyroby gliniane... Przy placu Serkowskiego odbywa się handel sianem, słomą, zbożem. Natomiast Rynek Podgórski ciężko zdefiniować... Kupi Pan tam niemalże wszystko.",
+            second: {
+                content: "Dziękuję. Chciałbym jeszcze zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        50: {
+            message: "Obecne dwa banki państwowe realizują duże inwestycje w Krakowie. Tu, niedaleko Barbakanu powstaje gmach nowo powołanego Banku Polskiego. Natomiast przy ulicy Wielopole właśnie ukończono budynek Pocztowej Kasy Oszczędności i już rozpoczęto wznoszenie budynku mieszkalnego dla jej pracowników, który będzie mieścił się przy ulicy Zyblikiewicza. Ponadto na w Krakowie mieszczą się banki akcyjne i domy bankowe. Przed rokiem wzniesiono również budynek giełdy przy ul. Mikołajskiej",
+            first: {
+                content: "A gdzie właśnie się znajdujemy?",
+                route: 51, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        51: {
+            message: "Jesteśmy w budnynku Komunalnej Kasy Oszczędnościowej powiatu krakowskiego. Rozwijamy wśród ludności zmysł oszczędnościowy, ułatwiamy gromadzenie oszczędności, udostępniamy kredyty. Nasza placówka nie jest jednak jedyną komunalną kasą oszczędności w mieście. Druga znajduje się przy ul. Szpitalnej i zasłużyła się między innymi angażując się w wykupienie Wawelu z rąk austriackich. W końcu, być może Pan nie wie, ale do początku XX wieku stacjonowało tam wojsko zaborcy. Ponadto kasa przeznaczyła środki na remonty zamku, kaplicy Zygmuntowskiej, budowę łazni, akademików... Podgórze też ma swoją komunalną kasę oszczędności, mieście się przy Józefińskiej.",
+            first: {
+                content: "A gdzie właśnie się znajdujemy?",
+                route: 51, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        60: {
+            message: "Mam swoje obawy, choć obecna sytuacja jest dużo lepsza niż kilka lat temu. Po wojnie ogromnym problemem była kwestia integracji obszaru Polski. W końcu wcześniej nasz kraj był podzielony między trzech zaborców mających inne spojrzenia na politykę gospodarczą. Jednocześnie prowadzone były działania wojenne w celu ustalenia ostatecznych granic Rzeczpospolitej. Pochłaniało to olbrzymie kwoty, na początku 1920 roku stanowiło nawet 60% wydatków państwa. Powszechnymi zjawiskami był głód, choroby, drożyzna, reglamentacja towarów... W końcu, jak sytuacja się nieco ustabilizowała, można było racjonalniej podejść do zagadnień gospodarczych. Niestety nie wyszło to najlepiej...",
+            first: {
+                content: "Co ma Pan na myśli?",
+                route: 61, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        61: {
+            message: "Pokłosiem działań wojennych był stopniowo pogłębiany deficyt budżetowy. Kiepska sytuacja powojenna napędzała strajki organizowane w całej Polsce. Kłopoty próbowano łatać dodrukiem pieniądza, co napędzało inflację, która ostatecznie przerodziła się w hiperinflację. Kryzys gospodarczy przyniół tragiczne wydarzenia tutaj, w Krakowie. Dwa lata temu protestujący starli się z policją i wojskiem. Zginęło ponad 30 osób. Ostatecznie rząd poszedł po rozum do głowy i przeprowadził reformy. Powołano Bank Polski i jak Pan dobrze pamięta starą walutę, markę przemianowano na złotego. Ale myślę, że to nie koniec kłopotów...",
+            first: {
+                content: "Dlaczego?",
+                route: 62, 
+            },
+            second: {
+                content: "Jednak chciałbym zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+        62: {
+            message: "Obecnie połowa polskiego handlu związana jest bezpośrednio z Republiką Weimarską. Niemcy odbierają od 80% produkowanego przez nas węgla. Niestety w styczniu tego roku wygasła klauzula największego uprzywilejowania nałożona na Republikę Weimarską postanowieniami traktatu wersalskiego. Dawało to państwom Entanty, w tym Polsce, uprzywilejowaną pozycję na rynku niemieckim. Jednak ten okres to już przeszłość. Za miesiąc zakończy się również zwolnienie z cła węgla polskiego wwożonego do Niemiec. Obawiam się, że wojna celna stanie się faktem, a to poważnie odbije się na naszej gospodarce...",
+            second: {
+                content: "Mam te same obawy... Chciałbym jeszcze zapytać o coś innego.",
+                route: 30, 
+            },
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+        },
+    } 
 }
 
 export default options

@@ -58,11 +58,11 @@ const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
-const [neighborTwo, setNeighborTwo] = useState(true)
+const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(false)
+const [hospital, setHospital] = useState(true)
 
 
   return (

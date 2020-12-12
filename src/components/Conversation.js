@@ -73,6 +73,17 @@ function Home(props) {
                         }}>
                         {options[place][conversationNumber].third.content}
                     </div>}
+                    {options[place][conversationNumber].fifth && <div className="option width-max" onClick={()=>{
+                        setFadeOut(true)
+                        setTimeout(() => {
+                            setConversationNumber(options[place][conversationNumber].fifth.route)
+                        }, 1000)
+                        setTimeout(() => {
+                            setFadeOut(false)
+                        }, 2000)
+                        }}>
+                        {options[place][conversationNumber].fifth.content}
+                    </div>}
                     {options[place][conversationNumber].fourth && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
@@ -85,18 +96,7 @@ function Home(props) {
                         }}>
                         {options[place][conversationNumber].fourth.content}
                     </div>}
-                    {options[place][conversationNumber].fifth && <div className="option width-max" onClick={()=>{
-                        setFadeOut(true)
-                        setTimeout(() => {
-                            setConversationNumber(options[place][conversationNumber].fifth.route)
-                            stepBack()
-                        }, 1000)
-                        setTimeout(() => {
-                            setFadeOut(false)
-                        }, 2000)
-                        }}>
-                        {options[place][conversationNumber].fifth.content}
-                    </div>}
+                   
                     {options[place][conversationNumber].backMessage && <div className="option width-max"
                         onClick={()=>{
                             setTimeout(() => {
