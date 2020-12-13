@@ -3466,9 +3466,9 @@ const options = {
             backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
         30: {
-            message: "Co Pana interesuje?",
+            message: "Co Pana interesuje? Afera dojlidzka? Zamach na Narutowicza? A może ostatnie wydarzenia w Wilnie?",
             first: {
-                content: "Interesuje mnie zamach stanu z 1919 roku.",
+                content: "O co chodziło w aferze dojlidzkiej?",
                 route: 40,
             },
             second: {
@@ -3476,12 +3476,209 @@ const options = {
                 route: 50,
             },
             third: {
-                content: "Chcę zapytać o konflikt polsko-litewski o Wilno.",
+                content: "Chcę zapytać o wydarzenia w Wilnie.",
                 route: 60,
             },
             backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
-    }, ////
+        31: {
+            message: "Słucham Pana.",
+            first: {
+                content: "O co chodziło w aferze dojlidzkiej?",
+                route: 40,
+            },
+            second: {
+                content: "Chciałbym dowiedzieć się więcej o zamachu na prezydenta Narutowicza.",
+                route: 50,
+            },
+            third: {
+                content: "Chcę zapytać o wydarzenia w Wilnie.",
+                route: 60,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        40: {
+            message: "O pieniądze szanowny Panie, jak zawsze. Ponieważ właścicielka majątków pod Białymstokiem, hrabina Zofia Rydygier, nie chciała po wojnie przyjąć polskiego obywatelstwa to była zmuszona do zaakceptowania konsekwencji swojej decyzji. W świetle prawa musiała pozbyć się swojego majątku. Tak też zrobiła.",
+            first: {
+                content: "I to cała afera?",
+                route: 40,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        41: {
+            message: "Oj nieee, drogi Panie, to dopiero początek. Las sprzedała hrabina Naumowi Cukerowi w październiku 1920 roku. Natomiast reszty pozbyła się rok później na rzecz Polsko-Amerykańskiego Banku Ludowego, który to zaoferował hrabinie 75 milionów marek polskich. Akcjonariuszami banku byli tymczasem politycy PSL-u, którzy dokonali transakcji z pominięciem mnóstwa formalności...",
+            first: {
+                content: "Czy była to duża kwota?",
+                route: 42,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        42: {
+            message: "Powiedziałbym, że za tak olbrzymi majątek cena była bardzo korzystna. Ale to jeszcze nic. Chcąc obłowić się jeszcze bardziej politycy PSL-u - łąmiąc prawo - podzielili obszar na mniejsze parcele i zaczęli go sprzedawać chłopom. A myśli Pan, że ludowcy zaoferowali im jakąś korzystną cenę? A skądże! Tacy z nich ludowcy, że chcieli sprzedawać ziemię z 20-krotną przebitką!",
+            first: {
+                content: "I kto się zainteresował tą sprawą?",
+                route: 43,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        43: {
+            message: "Prasa, rzecz jasna. Aby pozbyć się problemu, po nagłośnieniu afery, łaskawcy obniżyli cenę do 800% wartości zakupu ziemi. A ponieważ to i tak było tanowczo za wiele jak na możliwości finansowe tamtejszych rolników to ostatecznie sprzedali dobra dojlidzkie księciu Jerzemu Rafałowi Lubomirskiemu. Za 160 milionów marek. I proszę sobie wyobrazić - pomimo wielokrotnego naruszania prawa w wyniku afery tylko jedna osoba została zdymisjonowana, a reszta pozostała bezkarna.",
+            second: {
+                content: "Chciałbym jednak pomówić jeszcze o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        50: {
+            message: "Strasznie przykra sprawa. W listopadzie 1922 roku odbyły się wygrane przez prawicę wybory, pamięta Pan... A już 9 grudnia parlament miał zdecydować, kto zostanie prezydentem naszego kraju. Wystawiono 5 kandydatów, zwycięzca musiał otrzymać ponad połowę głosów posłów i senatorów. Wydawało się, że wygra Zamoyski, kandydat prawicy... Już w pierwszej turze otrzymał ponad 40% głosów.",
+            first: {
+                content: "I co się potem stało?",
+                route: 51,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        51: {
+            message: "Od drugiej tury kandydat z najmniejszą liczbą głosów odpadał z rywalizacji. Najpierw odpadł Daszyński z Polskiej Partii Socjalistyczej, później kandydat wystawiony przez mniejszości narodowe - Jan Baudoin de Courtenay. W kolejnej zaś ludowiec, Stanisław Wojciechowski. I tak ostatecznie zostało tylko dwóch kandydatków - Zamoyski wystawiony przez prawicę, oraz Naturowicz z lewicującego skrzydła PSL-u. I ku zaskoczeniu wsyztskich wygrał Narutowicz zyskując w ostatniej turze 56% głosów...",
+            first: {
+                content: "Chyba nie było to rozstrzygnięcie, które zadowoliło wszystkich?",
+                route: 52,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        52: {
+            message: "Wręcz przeciwnie! Już tego samego dnia pod sejmem odbył się protest studentów. Potem protestujący poszli pod dom, gdzie mieści się redakcja Gazety Warszawskiej. Tam poseł endecki, Sadzewicz, zaczął wprowadzać w błąd obywateli twierdząc, że Narutowicz ledwo dwa dnie wcześniej otrzymał obywatelstwo polskie - mimo, że od dwóch lat był ministrem robót publicznych.",
+            first: {
+                content: "Co się działo dalej?",
+                route: 53,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        53: {
+            message: "Zaczęto na Narutowicza nagonkę twierdząc, że jego wybór na prezydenta to sprawka Żydów, Niemców i Ukraińców. A to dopiero początek... Mówiono, że Narutowicz nie jest Polakiem, że jest pachołkiem światowej finansjery, wrogiem polskości, masonem, niewierzącym emigrantem, złodziejem, żydowskim pachołkiem. Z dnia na dzień sytuacja stawała się bardziej napięta... Wysyłano pogróżki...",
+            first: {
+                content: "Proszę kontnuować.",
+                route: 54,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        54: {
+            message: "Tydzień po wyborze, dokładnie 16 grudnia prezydent Narutowicz miał wziąć udział w dorocznym otwarciu salonu sztuki w warszawskiej Zachęcie. Na uroczystość zaproszono również sympatyzującego z narodowcami artystę, Eligiusza Niewiadomskiego. Narutowicz dotarł do Zachęty chwilę po godzinie 12. Gdy będący w znakomitym nastroju prezydent podziwiał jeden z obrazów podszedł do niego ambasador angielski w Polsce. Wie Pan jak wyglądała ostatnia rozmowa Narutowicza?",
+            first: {
+                content: "Nie.",
+                route: 55,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        55: {
+            message: "Żona ambasadora powiedziała po francusku: 'Pozwoli mi Pan pogratulować, Panie prezydencie.'. Narutowicz odparł: 'Raczej złożyć kondolencje'... Niewiele później padły trzy strzały. Zabójcą okazał się Niewiadomski. Nie uciekał, nie bronił się. Później przyznał, że planował też zamach na marszałka Piłsudskiego...",
+            first: {
+                content: "Jakie były reakcje na zamach?",
+                route: 56,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        56: {
+            message: "Prawica uznała oczywiście Niewiadomskiego za niepoczytalnego szaleńca uznając tylko jego za winnego i odpowiedzialnego za zabójstwo. Ale gazety związane z endecją głosiły niemalże pochwałę tego czynu, proszę sobie wyobrazić! A winnym morderstwa obwiniono samego Narutowicza prezentując mordercę jako ofiarę! Tutaj, w Krakowie zdarzały się nawet msze za Niewiadomskiego. Tak, proszę Pana! Za Radziekowskiego, za zabójcę! Po jednym z takich nabożeństw, u franciszkanów, środowiska lewicowe zogranizowały wiec na Rynku krzycząc antykościelne hasła. Potem poszli pod Pałac Biskupi, gdzie powybijali okna. To samo zrobili zresztą pod endeckim Gońcem Krakowskim...",
+            first: {
+                content: "Czyli odpowiedzialnością za nagonkę na prezydenta obarczano również prasę?",
+                route: 56,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        57: {
+            message: "Ale nie Kuryera, drogi Panie! Kiedy wybrano świętej pamięci prezydenta u nas trwał strajk drukarzy, niczego nie mogliśmy publikować! Kończąc ten temat",
+            first: {
+                content: "No dobrze. Pozwoli Pan, że zapytam o coś jeszcze?",
+                route: 56,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        60: {
+            message: "Dwa tygodnie temu, 6 maja, podczas egzaminu maturalnego w wileńskim Gimnazjum imienia Lelewela jeden z uczniów, Stanisław Ławrynowicz, nie reagował na upomnienia komisji, która nakazywała mu zaprzestania rozmowy z kolegą obok. W końcu dyrektor Gimnazjum, Biegański, odebrał Ławrynowiczowi arkusz egzaminacyjny...",
+            first: {
+                content: "I co się działo dalej?",
+                route: 61,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        61: {
+            message: "Uczeń wyciągnął broń i oddał dwa strzały w kierunku dyrektora... Biegański nie został poważnie ranny, a inni uczniowie rzucili się, aby unieruchomić Ławrynowicza. A ten, wierzgając się, dał radę wyciągnąć granat z kieszeni, którego rzucił przed siebie. W wyniku wybuchu zginął napastnik oraz dwóch innych uczniów. Ale to nie wszystko...",
+            first: {
+                content: "Jak to?",
+                route: 62,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        62: {
+            message: "Po eksplozji z ławki wstał przyjaciel Ławrynowicza, Obrąpalski, wydobył broń i zaczął strzelać w kierunku komisji egzaminacyjnej. W brzuch trafił nauczyciela fizyki, który zginął potem w szpitalu. Obrąpalski próbował uciec. Wybiegł na korytarz, chciał rzucić za siebie kolejny granat, ale szczęściwie nie zadziałał zapalnik. Wtedy też podniósł broń i zabił się strzałem w głowę.",
+            first: {
+                content: "Co wykazało śledztwo?",
+                route: 63,
+            },
+            second: {
+                content: "Chciałbym jednak pomówić o czymś innym.",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        63: {
+            message: "Śledztwo prowadzi prokurator Hołownia. Przy zwłokach Ławrynowicza znaleziono jeszcze dwa granaty, ale to i tak nic w porównianiu z tym, co znajdowało się u niego w domu. Cała kolekcja. Zamach był zresztą zaplanowany, bo w jednym ze szkolnych pomieszczeń znaleziono kolejne granaty, spory ładunek wybuchowy i list pożegnalny jednego ze sprawców... Może dowiemy się jeszcze czegoś, gdy śledztwo dobiegnie końca.",
+            first: {
+                content: "Rozumiem, chciałbym jednak zapytać o coś jeszcze...",
+                route: 31,
+            },
+            backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
+        },
+        
+    }, 
     "majchrzak": {
         1: {
             message: "Słucham.",
