@@ -36,9 +36,10 @@ const [progress, setProgress] = useState({
   unemployedResponse: false,
   workerConversation: false,
   thorn: false,
-  visitBrewery: false,
+  visitBrewery: true,
   jamaPolite: false,
   jamaImpolite: false,
+  jamaNoEntry: false,
   zelenski: false,
   hawelka: false,
   visitIkc: false,
@@ -61,8 +62,8 @@ const [neighborOne, setNeighborOne] = useState(false)
 const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
-const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(true)
+const [twardowskiego, setTwardowskiego] = useState(true)
+const [hospital, setHospital] = useState(false)
 
 
   return (
@@ -80,7 +81,8 @@ const [hospital, setHospital] = useState(true)
           setKrowodrza={setKrowodrza}
           setThorn={setThorn}
           setTwardowskiego={setTwardowskiego}
-          setHospital={setHospital}/>}
+          setHospital={setHospital}
+          progress={progress}/>}
         {bank && <Bank                            //
           current={setBank}
           back={setMapScreen}

@@ -61,10 +61,10 @@ function JamaMichalika(props) {
     ...prev,
     jamaImpolite: true
   }))}
-  const actionThree = () => { // ZRÓB ŻEBY JAMA ZNIKAŁA!
+  const actionThree = () => { 
     props.setProgress(prev => ({
     ...prev,
-    visitBrewery: true
+    jamaNoEntry: true
   }))}
   const actionFour = () => {
     props.setProgress(prev => ({

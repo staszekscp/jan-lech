@@ -21,7 +21,7 @@ const [fadeOut, setFadeOut] = useState(false)
               ul. Twardowskiego
           </div>
         </div>
-        <div className="place-icon-hospital">
+        {props.progress.hospitalResponse && <div className="place-icon-hospital">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -33,8 +33,8 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Szpital w Kobierzynie
           </div>
-        </div>
-        <div className="place-icon-brewery">
+        </div>}
+        {props.progress.brewery && <div className="place-icon-brewery">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -46,7 +46,7 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Browar Lubicz
           </div>
-        </div>
+        </div>}
         <div className="place-icon-rogatka">
           <div className="overlay" 
               onClick={() => {
@@ -60,7 +60,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Rogatka na Krowodrzy
           </div>
         </div>
-        <div className="place-icon-hawelka">
+        {props.progress.visitBrewery && <div className="place-icon-hawelka">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -72,8 +72,8 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Restauracja Hawełka
           </div>
-        </div>
-        <div className="place-icon-jama">
+        </div>}
+        {(props.progress.visitBrewery && !props.progress.jamaNoEntry) && <div className="place-icon-jama">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -85,8 +85,8 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Jama Michalika
           </div>
-        </div>
-        <div className="place-icon-golebia">
+        </div>}
+        {props.progress.bank && <div className="place-icon-golebia">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -98,8 +98,8 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Konsulat Czechosłowacji
           </div>
-        </div>
-        <div className="place-icon-bank">
+        </div>}
+        {props.progress.bankInfo && <div className="place-icon-bank">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -111,8 +111,8 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Powiatowa Kasa Oszczędności
           </div>
-        </div>
-        <div className="place-icon-ikc">
+        </div>}
+        {props.progress.hawelka && <div className="place-icon-ikc">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -124,7 +124,7 @@ const [fadeOut, setFadeOut] = useState(false)
             }>
               Pałac Prasy
           </div>
-        </div>
+        </div>}
         <div className="place-icon-thorna">
           <div className="overlay" 
               onClick={() => {
