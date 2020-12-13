@@ -29,7 +29,7 @@ const options = {
         3: {
             message: "Panie, myśli Pan, że ja to mam czas, żeby się tak panoszyć po posterunkach? Chodzi o to, że wychodząc wziął z szafy rewolwer. Może komu stać się krzywda jak co po drodze popije.",
             first: {
-                content: "Zaraz, zaraz! Bez pozwolenia?",
+                content: "Zaraz, zaraz! Rewolwer? Bez pozwolenia?",
                 route: 5,
             },
             second: {
@@ -90,7 +90,7 @@ const options = {
             },
         },
         8: {
-            message: "Dobrze, dobrze. Róbta co chceta, byle tylko stary nie narobił rabanu.",
+            message: "Dobrze, dobrze. Róbta co chceta, byle tylko stary nie narobił rabanu jak wróci.",
             first: {
                 content: "Znakomicie. W takim razie proszę powiedzieć co się stało poprzedniej nocy, a my rozpoczniemy przeszukanie. [Każ rozpocząć przeszukanie]",
                 route: 9,

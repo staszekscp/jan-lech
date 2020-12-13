@@ -44,6 +44,130 @@
   z-index: 2;
 }
 
+.main-screen {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  z-index: 10;
+  background-image: url('./assets/bgmain.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explanation-container {
+  background-color: rgba(0,0,0,0.7);
+  padding: 40px;
+  width: 60vw;
+  max-height: 80vh;
+  overflow: scroll;
+  font-size: 16px;
+  text-align: justify;
+  border-radius: 20px;
+  cursor: default;
+  opacity: 0;
+  animation: fadein 2s forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explanation-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.explanation-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.title-container {
+  background-color: rgba(0,0,0,0.7);
+  padding: 40px;
+  width: 60%;
+  font-size: 72px;
+  border-radius: 20px;
+  cursor: default;
+  opacity: 0;
+  animation: start-animation 3s 1s forwards;
+}
+
+.lower-container {
+  background-color: rgba(0,0,0,0.7);
+  width: 25%;
+  margin: 50px;
+  padding: 20px;
+  font-size: 32px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadein 2s 3s forwards;
+}
+
+.button-upper {
+  background-color: rgba(255,255,255,0.1);
+  padding: 15px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 10px;
+  transition: all 700ms;
+  text-align: center;
+}
+
+.button-upper:hover {
+  background-color: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.button-lower {
+  background-color: rgba(255,255,255,0.1);
+  padding: 15px;
+  margin: 10px;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all 700ms;
+  text-align: center;
+}
+
+.button-lower:hover {
+  background-color: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+@keyframes start-animation {
+  0% { 
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 @keyframes fadein07 {
   from { opacity: 0; }
   to   { opacity: 0.7; }
@@ -123,6 +247,10 @@
 
 .fade {
   animation: fade-in-out 2s;
+}
+
+.fade-long {
+  animation: fade-in-out 4s;
 }
 
 @keyframes fade-in-out {
@@ -226,8 +354,6 @@
   justify-content: center;
   align-items: center;
 }
-
-
 
 .map-container {
   width: 100vw;

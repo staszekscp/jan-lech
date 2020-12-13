@@ -1,5 +1,7 @@
 import {useState} from 'react'
 
+import MainScreen from './MainScreen';
+
 import MapScreen from './components/mapScreen';
 import Bank from './components/Bank';
 import Brewery from './components/Brewery';
@@ -49,13 +51,16 @@ const [progress, setProgress] = useState({
   bombs: false,
 })
 
+const [mainScreen, setMainScreen] = useState(true)
+const [startGameScreen, setStartGameScreen] = useState(false)
+
 const [mapScreen, setMapScreen] = useState(false)
 const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
 const [home, setHome] = useState(false)
-const [ikc, setIkc] = useState(true)
+const [ikc, setIkc] = useState(false)
 const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
@@ -70,6 +75,10 @@ const [hospital, setHospital] = useState(false)
     <div className="backdrop">
       <div className="main">
         <div className="main-overlay"/>
+        {mainScreen && <MainScreen 
+          forward={setHome}
+          current={setMainScreen}
+        />}
         {mapScreen && <MapScreen 
           setMapScreen={setMapScreen}
           setBank={setBank}
