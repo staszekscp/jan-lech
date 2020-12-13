@@ -12,18 +12,27 @@ function Hospital(props) {
   const [conversationNurse, setConversationNurse] = useState(false)
   const [numberDoctor, setNumberDoctor] = useState(1)
   const [numberNurse, setNumberNurse] = useState(1)
+  const [styleDoctor, setStyleDoctor] = useState(1)
+  const [styleNurse, setStyleNurse] = useState(1)
+
+  let classDoctor = styleDoctor === 1 ? "doctor-start" : styleDoctor === 2 ? "doctor-conversation" : "doctor"
+  let classNurse = styleNurse === 1 ? "nurse-start" : styleNurse === 2 ? "nurse-conversation" : "nurse"
 
   const switchToNurse = () => {
+    setStyleDoctor(3)
     setConversationDoctor(false)
     if (props.progress.brewery) {
       setNumberNurse(15)
     }
     setTimeout(() => {
+      setStyleNurse(2)
       setConversationNurse(true)
-    }, 1)
+      setStyleDoctor(1)
+    }, 1000)
   }
 
   const switchToDoctor = () => {
+    setStyleNurse(3)
     setConversationNurse(false)
     if (props.progress.fatGuyInHospital && props.progress.brewery){
       setNumberDoctor(17)
@@ -31,12 +40,15 @@ function Hospital(props) {
       setNumberDoctor(10)
     }
     setTimeout(() => {
+      setStyleDoctor(2)
       setConversationDoctor(true)
-    }, 1)
+      setStyleNurse(1)
+    }, 1000)
   }
 
   useEffect(() => {
     setTimeout(() => {
+      setStyleDoctor(2)
       setConversationDoctor(true)
     }, 5000)
   }, [])
@@ -66,29 +78,29 @@ function Hospital(props) {
         <div className="hospital-background">
             {conversationDoctor && <div><Conversation actionOne={actionOne} turnOff={switchToNurse} number={numberDoctor} right={true} place="lekarz" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationDoctor(true)}}>
-                <img className="doctor-conversation" src={doctor} />
+                <img className={classDoctor} src={doctor} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationNurse(true)}}>
-                <img className="nurse" src={nurse} />
+                <img className={classNurse} src={nurse} />
               </div>
             </div>
             }
             {conversationNurse && <div><Conversation actionOne={actionOneN} turnOff={switchToDoctor} number={numberNurse} place="pielegniarka" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationNurse(true)}}>
-                <img className="nurse-conversation" src={nurse} />
+                <img className={classNurse} src={nurse} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationDoctor(true)}}>
-                <img className="doctor" src={doctor} />
+                <img className={classDoctor} src={doctor} />
               </div>
             </div>
             }
-            {(!conversationNurse && !conversationDoctor) && <div><div className="nurse" onClick={() => {setConversationNurse(true)}}>
-              <img className="nurse" src={nurse} />
+            {(!conversationNurse && !conversationDoctor) && <div><div onClick={() => {setConversationNurse(true)}}>
+              <img className={classNurse} src={nurse} />
             </div>
             <div onClick={() => {setConversationDoctor(true)}}>
-              <img className="doctor" src={doctor} />
+              <img className={classDoctor} src={doctor} />
             </div>
             </div>
             }

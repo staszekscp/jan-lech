@@ -7,11 +7,26 @@
     background-size: cover;
   }
 
+  .brewery-guard-start {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 1000px;
+  }
+  
+  .brewery-boss-start {
+    position: fixed;
+    top: 15%;
+    left: 140%;
+    height: 500px;
+  }
+
   .brewery-guard {
     position: fixed;
     top: 0%;
     left: 0%;
     height: 1000px;
+    animation: brewery-guard 1s reverse
   }
   
   .brewery-boss {
@@ -19,6 +34,7 @@
     top: 15%;
     left: 140%;
     height: 500px;
+    animation: brewery-boss 1s reverse
   }
 
   .brewery-guard-conversation {

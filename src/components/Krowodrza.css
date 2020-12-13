@@ -7,18 +7,34 @@
     background-size: cover;
   }
 
-  .krowodrza-coworker {
+  .krowodrza-coworker-start {
     position: fixed;
     top: 10%;
     left: 50%;
     height: 600px
   }
   
-  .krowodrza-boss {
+  .krowodrza-boss-start {
     position: fixed;
     top: 10%;
     left: 10%;
     height: 800px
+  }
+
+  .krowodrza-coworker {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    height: 600px;
+    animation: krowodrza-coworker 1s reverse
+  }
+  
+  .krowodrza-boss {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    height: 800px;
+    animation: krowodrza-boss 1s reverse
   }
 
   .krowodrza-coworker-conversation {

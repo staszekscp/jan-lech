@@ -12,9 +12,15 @@ function JamaMichalika(props) {
   const [conversationZelenski, setConversationZelenski] = useState(false)
   const [numberMehoffer, setNumberMehoffer] = useState(1)
   const [numberZelenski, setNumberZelenski] = useState(1)
+  const [styleMehoffer, setStyleMehoffer] = useState(1)
+  const [styleZelenski, setStyleZelenski] = useState(1)
+
+  let classMehoffer = styleMehoffer === 1 ? "mehoffer-start" : styleMehoffer === 2 ? "mehoffer-conversation" : "mehoffer"
+  let classZelenski = styleZelenski === 1 ? "zelenski-start" : styleZelenski === 2 ? "zelenski-conversation" : "zelenski"
 
   useEffect(() => {
     setTimeout(() => {
+      setStyleMehoffer(2)
       setConversationMehoffer(true)
     }, 5000)
   }, [])
@@ -28,6 +34,7 @@ function JamaMichalika(props) {
   }, [])
 
   const switchToZelenski = () => {
+    setStyleMehoffer(3)
     setConversationMehoffer(false)
     if (props.progress.zelenski) {
       setNumberZelenski(4)
@@ -39,16 +46,21 @@ function JamaMichalika(props) {
       setNumberZelenski(801)
     }
     setTimeout(() => {
+      setStyleZelenski(2)
       setConversationZelenski(true)
-    }, 1)
+      setStyleMehoffer(1)
+    }, 1000)
   }
 
   const switchToMehoffer = () => {
+    setStyleZelenski(3)
     setConversationZelenski(false)
     setNumberMehoffer(12)
     setTimeout(() => {
+      setStyleMehoffer(2)
       setConversationMehoffer(true)
-    }, 1)
+      setStyleZelenski(1)
+    }, 1000)
   }
 
   const actionOne = () => {
@@ -77,29 +89,29 @@ function JamaMichalika(props) {
         <div className="jama-background">
         {conversationMehoffer && <div><Conversation number={numberMehoffer} turnOff={switchToZelenski} actionOne={actionOne} actionTwo={actionTwo} actionThree={actionThree} right={true} place="mehoffer" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationMehoffer(true)}}>
-                <img className="mehoffer-conversation" src={mehoffer} />
+                <img className={classMehoffer} src={mehoffer} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationZelenski(true)}}>
-                <img className="zelenski" src={zelenski} />
+                <img className={classZelenski} src={zelenski} />
               </div>
             </div>
             }
             {conversationZelenski && <div><Conversation number={numberZelenski} turnOff={switchToMehoffer} actionThree={actionThree} actionFour={actionFour} place="zelenski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationZelenski(true)}}>
-                <img className="zelenski-conversation" src={zelenski} />
+                <img className={classZelenski} src={zelenski} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationMehoffer(true)}}>
-                <img className="mehoffer" src={mehoffer} />
+                <img className={classMehoffer} src={mehoffer} />
               </div>
             </div>
             }
             {(!conversationMehoffer && !conversationZelenski) && <div><div onClick={() => {setConversationZelenski(true)}}>
-                <img className="zelenski" src={zelenski} />
+                <img className={classZelenski} src={zelenski} />
               </div>
               <div onClick={() => {setConversationMehoffer(true)}}>
-                <img className="mehoffer" src={mehoffer} />
+                <img className={classMehoffer} src={mehoffer} />
               </div>
             </div>
             }

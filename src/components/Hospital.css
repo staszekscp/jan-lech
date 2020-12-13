@@ -8,17 +8,32 @@
     background-size: cover;
   }
   
-  .nurse {
+  .nurse-start {
     position: fixed;
     top: 15%;
     left: 60%;
     height: 500px
   }
   
-  .doctor {
+  .doctor-start {
     position: fixed;
     top: 10%;
     left: 35%
+  }
+
+  .nurse {
+    position: fixed;
+    top: 15%;
+    left: 60%;
+    height: 500px;
+    animation: nurse 1s reverse
+  }
+  
+  .doctor {
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    animation: doctor 1s reverse
   }
 
   .nurse-conversation {

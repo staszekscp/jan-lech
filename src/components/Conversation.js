@@ -9,9 +9,21 @@ function Home(props) {
     const [conversationNumber, setConversationNumber] = useState(props.number)
     const right = props.right
     const [fadeOut, setFadeOut] = useState(false)
+    const [goAway, setGoAway] = useState(false)
+
+    const backdropClass = goAway ? "backdrop-opacity-back" : "backdrop-opacity"
+
+    const classLeft = goAway ? "option-container-back" : "option-container"
+    const classRight = goAway ? "option-container-right-back" : "option-container-right"
+
+    const containerClass = right ? classRight : classLeft
 
     const stepBack = () => {
-        props.turnOff()
+        setGoAway(true)
+        setTimeout(() => {
+            setGoAway(false)
+            props.turnOff()
+        }, 1000)
     }
 
     useEffect(() => {
@@ -34,9 +46,9 @@ function Home(props) {
 
     return (
         <div >
-            <div className="backdrop-opacity">
+            <div className={backdropClass}>
                 <div className={fadeOut ? "fade" : null}>
-                <div className={right ? "option-container-right" : "option-container"}>
+                <div className={containerClass}>
                     <div className="message width-max">
                         {options[place][conversationNumber].message}
                     </div>

@@ -31,12 +31,12 @@ const [progress, setProgress] = useState({
   fatGuyResponse: false,
   krogul: false,
   fatGuyInHospital: false,
-  brewery: false,
+  brewery: true,
   unemployed: false,
   unemployedResponse: false,
   workerConversation: false,
   thorn: false,
-  visitBrewery: true,
+  visitBrewery: false,
   jamaPolite: false,
   jamaImpolite: false,
   jamaNoEntry: false,
@@ -55,14 +55,14 @@ const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
 const [home, setHome] = useState(false)
-const [ikc, setIkc] = useState(false)
+const [ikc, setIkc] = useState(true)
 const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
 const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
-const [twardowskiego, setTwardowskiego] = useState(true)
+const [twardowskiego, setTwardowskiego] = useState(false)
 const [hospital, setHospital] = useState(false)
 
 

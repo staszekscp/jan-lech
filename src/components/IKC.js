@@ -11,9 +11,16 @@ function IKC(props) {
   const [conversationDabrowski, setConversationDabrowski] = useState(false)
   const [conversationMajchrzak, setConversationMajchrzak] = useState(false)
   const [numberDabrowski, setNumberDabrowski] = useState(1)
+  const [styleDabrowski, setStyleDabrowski] = useState(1)
+  const [styleMajchrzak, setStyleMajchrzak] = useState(1)
+
+  let classDabrowski = styleDabrowski === 1 ? "dabrowski-start" : styleDabrowski === 2 ? "dabrowski-conversation" : "dabrowski"
+  let classMajchrzak = styleMajchrzak === 1 ? "journalist-start" : styleMajchrzak === 2 ? "journalist-conversation" : "journalist"
+
 
   useEffect(() => {
     setTimeout(() => {
+      setStyleDabrowski(2)
       setConversationDabrowski(true)
     }, 5000)
   }, [])
@@ -25,18 +32,24 @@ function IKC(props) {
   }, [])
 
   const switchToDabrowski = () => {
+    setStyleMajchrzak(3)
     setConversationMajchrzak(false)
     setNumberDabrowski(5)
     setTimeout(() => {
+      setStyleDabrowski(2)
       setConversationDabrowski(true)
-    }, 1)
+      setStyleMajchrzak(1)
+    }, 1000)
   }
 
   const switchToMajchrzak = () => {
+    setStyleDabrowski(3)
     setConversationDabrowski(false)
     setTimeout(() => {
+      setStyleMajchrzak(2)
       setConversationMajchrzak(true)
-    }, 1)
+      setStyleDabrowski(1)
+    }, 1000)
   }
 
   const actionOne = () => {
@@ -50,29 +63,29 @@ function IKC(props) {
         <div className="ikc-background">
             {conversationDabrowski && <div><Conversation number={numberDabrowski} turnOff={switchToMajchrzak} actionOne={actionOne} right={true} place="dabrowski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationDabrowski(true)}}>
-                <img className="dabrowski-conversation" src={dabrowski} />
+                <img className={classDabrowski} src={dabrowski} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationMajchrzak(true)}}>
-                <img className="journalist" src={majchrzak} />
+                <img className={classMajchrzak} src={majchrzak} />
               </div>
             </div>
             }
             {conversationMajchrzak && <div><Conversation number={1} turnOff={switchToDabrowski} place="majchrzak" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationMajchrzak(true)}}>
-                <img className="journalist-conversation" src={majchrzak} />
+                <img className={classMajchrzak} src={majchrzak} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationDabrowski(true)}}>
-                <img className="dabrowski" src={dabrowski} />
+                <img className={classDabrowski} src={dabrowski} />
               </div>
             </div>
             }
             {(!conversationDabrowski && !conversationMajchrzak) && <div><div onClick={() => {setConversationDabrowski(true)}}>
-                <img className="dabrowski" src={dabrowski} />
+                <img className={classDabrowski} src={dabrowski} />
               </div>
               <div onClick={() => {setConversationMajchrzak(true)}}>
-                <img className="journalist" src={majchrzak} />
+                <img className={classMajchrzak} src={majchrzak} />
               </div>
             </div>
             }

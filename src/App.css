@@ -20,6 +20,16 @@
   z-index: 2;
 }
 
+.backdrop-opacity-back {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  animation: fadeoutcolor 1s forwards;
+  z-index: 2;
+}
+
 .backdrop-opacity-twardowskiego {
   background-color: rgba(0,0,0,0.7);
   height: 100%;
@@ -61,7 +71,7 @@
 }
 
 .option-container-back {
-  animation: getin 2s reverse
+  opacity: 0
 }
 
 .option-container-right {
@@ -74,8 +84,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  animation: getin 2s;
+  animation: getinright 2s;
   z-index: 50
+}
+
+.option-container-right-back {
+  opacity: 0
 }
 
 .option {
@@ -141,9 +155,25 @@
   }
 }
 
+@keyframes getinright {
+  from { 
+    transform: translateX(200%);
+    z-index: 100
+  }
+  to   {
+    transform: translateX(0);
+    z-index: 100
+  }
+}
+
 @keyframes fadeincolor {
   from { background-color: rgba(0,0,0,0.0); }
   to   { background-color: rgba(0,0,0,0.7); }
+}
+
+@keyframes fadeoutcolor {
+  from { background-color: rgba(0,0,0,0.7); }
+  to   { background-color: rgba(0,0,0,0.1); }
 }
 
 

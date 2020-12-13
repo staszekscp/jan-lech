@@ -12,27 +12,40 @@ function Krowodrza(props) {
   const [conversationCoworker, setConversationCoworker] = useState(false)
   const [numberBoss, setNumberBoss] = useState(1)
   const [numberWorker, setNumberWorker] = useState(1)
+  const [styleWorker, setStyleWorker] = useState(1)
+  const [styleBoss, setStyleBoss] = useState(1)
+
+  let classWorker = styleWorker === 1 ? "krowodrza-coworker-start" : styleWorker === 2 ? "krowodrza-coworker-conversation" : "krowodrza-coworker"
+  let classBoss = styleBoss === 1 ? "krowodrza-boss-start" : styleBoss === 2 ? "krowodrza-boss-conversation" : "krowodrza-boss"
+
 
   const switchToWorker = () => {
+    setStyleBoss(3)
     setConversationBoss(false)
     if (props.progress.workerConversation) {
       setNumberWorker(4)
     }
     setTimeout(() => {
+      setStyleWorker(2)
       setConversationCoworker(true)
-    }, 1)
+      setStyleBoss(1)
+    }, 1000)
   }
 
   const switchToBoss = () => {
+    setStyleWorker(3)
     setConversationCoworker(false)
     setNumberBoss(8)
     setTimeout(() => {
+      setStyleBoss(2)
       setConversationBoss(true)
-    }, 1)
+      setStyleWorker(1)
+    }, 1000)
   }
 
   useEffect(() => {
     setTimeout(() => {
+      setStyleBoss(2)
       setConversationBoss(true)
     }, 5000)
   }, [])
@@ -60,29 +73,29 @@ function Krowodrza(props) {
         <div className="krowodrza-background">
             {conversationBoss && <div><Conversation turnOff={switchToWorker} actionOne={actionOne} number={numberBoss} right={true} place="szef-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationBoss(true)}}>
-                <img className="krowodrza-boss-conversation" src={boss} />
+                <img className={classBoss} src={boss} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationCoworker(true)}}>
-                <img className="krowodrza-coworker" src={coworker} />
+                <img className={classWorker} src={coworker} />
               </div>
             </div>
             }
             {conversationCoworker && <div><Conversation turnOff={switchToBoss} actionOne={actionOneW} number={numberWorker} place="pracownik-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationCoworker(true)}}>
-                <img className="krowodrza-coworker-conversation" src={coworker} />
+                <img className={classWorker} src={coworker} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationBoss(true)}}>
-                <img className="krowodrza-boss" src={boss} />
+                <img className={classBoss} src={boss} />
               </div>
             </div>
             }
             {(!conversationCoworker && !conversationBoss) && <div><div onClick={() => {setConversationBoss(true)}}>
-                <img className="krowodrza-boss" src={boss} />
+                <img className={classBoss} src={boss} />
               </div>
               <div onClick={() => {setConversationCoworker(true)}}>
-                <img className="krowodrza-coworker" src={coworker} />
+                <img className={classWorker} src={coworker} />
               </div>
             </div>
             }

@@ -7,20 +7,35 @@
     background-size: cover;
   }
   
-  .dabrowski {
+  .dabrowski-start {
     position: fixed;
     top: 45%;
     left: 40%;
     height: 300px
   }
 
-  .journalist {
+  .journalist-start {
     position: fixed;
     top: 40%;
     left: 60%;
     height: 500px
   }
 
+  .dabrowski {
+    position: fixed;
+    top: 45%;
+    left: 40%;
+    height: 300px;
+    animation: dabrowski 1s reverse
+  }
+
+  .journalist {
+    position: fixed;
+    top: 40%;
+    left: 60%;
+    height: 500px;
+    animation: journalist 1s reverse
+  }
 
   .dabrowski-conversation {
     position: fixed;

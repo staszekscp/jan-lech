@@ -10,11 +10,17 @@ function Brewery(props) {
   const [fadeOut, setFadeOut] = useState(false)
   const [conversationBoss, setConversationBoss] = useState(false)
   const [conversationGuard, setConversationGuard] = useState(false)
-  const [numberBoss, setNumberBoss] = useState(1)
   const [numberGuard, setNumberGuard] = useState(1)
+  const [styleGuard, setStyleGuard] = useState(1)
+  const [styleBoss, setStyleBoss] = useState(1)
+
+  let classGuard = styleGuard === 1 ? "brewery-guard-start" : styleGuard === 2 ? "brewery-guard-conversation" : "brewery-guard"
+  let classBoss = styleBoss === 1 ? "brewery-boss-start" : styleBoss === 2 ? "brewery-boss-conversation" : "brewery-boss"
+
 
   useEffect(() => {
     setTimeout(() => {
+      setStyleGuard(2)
       setConversationGuard(true)
     }, 5000)
   }, [])
@@ -26,20 +32,26 @@ function Brewery(props) {
   }, [])
 
   const switchToGuard = () => {
+    setStyleBoss(3)
     setConversationBoss(false)
     if (props.progress.visitBrewery) {
       setNumberGuard(5)
     }
     setTimeout(() => {
+      setStyleGuard(2)
       setConversationGuard(true)
-    }, 1)
+      setStyleBoss(1)
+    }, 1000)
   }
 
   const switchToBoss = () => {
+    setStyleGuard(3)
     setConversationGuard(false)
     setTimeout(() => {
+      setStyleBoss(2)
       setConversationBoss(true)
-    }, 1)
+      setStyleGuard(1)
+    }, 1000)
   }
 
   const actionOne = () => {
@@ -52,31 +64,31 @@ function Brewery(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="brewery-background">
-          {conversationBoss && <div><Conversation turnOff={switchToGuard} number={numberBoss} place="szef-browar" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          {conversationBoss && <div><Conversation turnOff={switchToGuard} number={1} place="szef-browar" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationBoss(true)}}>
-                <img className="brewery-boss-conversation" src={boss} />
+                <img className={classBoss} src={boss} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationGuard(true)}}>
-                <img className="brewery-guard" src={guard} />
+                <img className={classGuard} src={guard} />
               </div>
             </div>
             }
             {conversationGuard && <div><Conversation turnOff={switchToBoss} number={numberGuard} actionOne={actionOne} right={true} place="straznik" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {setConversationGuard(true)}}>
-                <img className="brewery-guard-conversation" src={guard} />
+                <img className={classGuard} src={guard} />
               </div>
             </Conversation>
               <div onClick={() => {setConversationBoss(true)}}>
-                <img className="brewery-boss" src={boss} />
+                <img className={classBoss} src={boss} />
               </div>
             </div>
             }
             {(!conversationGuard && !conversationBoss) && <div><div onClick={() => {setConversationBoss(true)}}>
-                <img className="brewery-boss" src={boss} />
+                <img className={classBoss} src={boss} />
               </div>
               <div onClick={() => {setConversationGuard(true)}}>
-                <img className="brewery-guard" src={guard} />
+                <img className={classGuard} src={guard} />
               </div>
             </div>
             }

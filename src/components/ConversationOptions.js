@@ -1301,7 +1301,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         50: {
-            message: "Proszę Pana, to nie dlatego, że jakoś bardzo ciągnęło mnie do nauki... Pochodzę z biednej, robotniczej rodziny. Moja ciocia pracowała jako pomoc domowa u jednej z bogatych rodzin w Krakowie. Czasami zabierała mnie ze sobą. Tamtejsza Pani była piękną kobietą, pochodziła z dobrego domu... I była właśnie nauczycielką. To właśnie było zajęcie dla kobiet z wyższych sfer... Pani ta sama nie mogła mieć dzieci, więc jak do nich przychodziłam to traktowała mnie jak swoją... Ona nauczyła mnie wszystkiego, co do tej pory umiem.",
+            message: "Proszę Pana, to nie dlatego, że jakoś bardzo ciągnęło mnie do nauki... Pochodzę z biednej, robotniczej rodziny. Moja ciocia pracowała jako pomoc domowa u jednej z bogatych rodzin w Krakowie. Czasami zabierała mnie ze sobą. Tamtejsza Pani była piękną kobietą, pochodziła z dobrego domu... I była właśnie nauczycielką. Było to uważane za zajęcie dla kobiet z wyższych sfer... Pani ta nie mogła mieć dzieci, więc jak do nich przychodziłam to traktowała mnie jak swoją... Ona nauczyła mnie wszystkiego, co do tej pory umiem.",
             first: { 
                 content: "A jak wygląda życie kobiet pochodzących z biedniejzych rodzin?",
                 route: 51,
@@ -1313,7 +1313,7 @@ const options = {
             backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         51: {
-            message: "Drogi Panie... W najgorszej sytuacji są chłopki... Całe życie zajmują się gospodarstwem, a grosza dzięki temu nie zarobią. A jak chłopa zabraknie... Sama teraz muszę za męża pracować, bo już sił mu brakuje... Wiele biednych kobiet zatrudnia się jako służba domowa, ale najczęściej po tym jak wyjdą za mąż to muszą rzucić tę pracę i zająć się własnym domem. No i są jeszcze robotnice. Fabrykanci chętnie je zatrudniają, bo kobietom płacą dwa razy mniej niż mężczyznom. Najczęściej pracują w zakładach włókienniczych, ale to też się zmienia...",
+            message: "Drogi Panie... W najgorszej sytuacji są chłopki... Całe życie zajmują się gospodarstwem, a grosza dzięki temu nie zarobią. A jak chłopa zabraknie... Sama teraz muszę za męża pracować, bo już sił mu brakuje... Wiele biednych kobiet zatrudnia się jako służba domowa, ale najczęściej jak za mąż wyjdą to muszą rzucić pracę i zająć się własnym domem. No i są jeszcze robotnice. Fabrykanci chętnie je zatrudniają, bo kobietom płacą dwa razy mniej niż mężczyznom. Najczęściej pracują w zakładach włókienniczych, ale to też się zmienia...",
             second: {
                 content: "Dziękuję za odpowiedź... chciałbym jeszcze zapytać o coś innego.",
                 route: 10, 
@@ -2141,7 +2141,7 @@ const options = {
             backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         51: {
-            message: "No też właśnie. Do tej pory wybory odbyły się dwukrownie - w 1919 i 1922 roku. W obu wypadkach frekwencja wyniosła 67% i wyniki były bardzo podobne. Ogólnie rzecz umując wśród polskich katolików głosy rozkładały się pomiędzy socjalistami, a narodowcami i konserwatystami. W obu wypadkach wygrywała prawica zdobywając koło 40% głosów. Za nimi plasowali się socjaliści z 30-procentowym poparciem. A do tego dołączali żydowscy syjoniści z 20% głosów. ",
+            message: "No też właśnie. Do tej pory wybory odbyły się dwukrownie - w 1919 i 1922 roku. W obu wypadkach frekwencja wyniosła 67% i wyniki były bardzo podobne. Ogólnie rzecz umując wśród chrześcijan głosy rozkładały się pomiędzy socjalistami, a narodowcami i konserwatystami. I w 1919 i 1922 roku wygrywała prawica zdobywając koło 40% głosów. Za nimi plasowali się socjaliści z 30-procentowym poparciem. A do tego dołączali żydowscy syjoniści z 20% głosów. ",
             first: {
                 content: "A kto głosował na kogo?",
                 route: 52,
@@ -2153,7 +2153,7 @@ const options = {
             backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         52: {
-            message: "Socjaliści mogli liczyć na poparcie rodzin robotniczych, których tu nie brakuje. Konserwatyści zyskiwali natomiast głosy rodzin mieszkających od dekad w Krakowie. Można powiedzieć, że nowe dzielnice miasta są lewicujące, a dawne, historyczne głosują na prawicę. Natomiast jeśli chodzi o Żydów to głosują głównie syjoniści - marzący jednocześnie o utworzeniu państwa w Palestynie. Ortodoksyjni wyznawcy judaizmu raczej nie interesują się polityką krajową, a skupiają się na własnych sprawach...",
+            message: "Socjaliści mogli liczyć na poparcie rodzin robotniczych zamieszkujących głównie nowe dzielnice miasta. Konserwatyści zyskiwali natomiast głosy rodzin, które zamieszkują historyczne centrum Krakowa. Jeśli chodzi o Żydów to głosują głównie syjoniści - marzący jednocześnie o utworzeniu własnego państwa w Palestynie. Ortodoksyjni wyznawcy judaizmu raczej nie interesują się polityką krajową, a skupiają się na własnych sprawach...",
             first: {
                 content: "Jakie żydowskie partie polityczne działają w mieście?",
                 route: 53,
@@ -2165,7 +2165,7 @@ const options = {
             backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         53: {
-            message: "Mamy wspomnianych syjonistów skupionych wokół Ozjasza Thona... Dalej partię Mizrachi, która łączy syjonistów z kręgu Żydów ortodoksyjnych. To by była prawica. Nastomiast jeśli chodzi o lewicę to prym wiedzie Bund, czyli Żydowska Partia Socjaldemokratyczna. A między nimi lawiruje jeszcze Hitachdut, czyli uważaj Pan teraz: Syjonistyczna Partia Pracy. Czyli coś, jak połączenie narodowców żydowskich z socjalistami. Nie mam pojęcia jak oni się tam ze sobą dogadują...",
+            message: "Mamy wspomnianych syjonistów skupionych wokół Ozjasza Thona... Dalej partię Mizrachi, która łączy syjonistów z kręgu Żydów ortodoksyjnych. To by była prawica. Nastomiast jeśli chodzi o lewicę to prym wiedzie Bund, czyli Żydowska Partia Socjaldemokratyczna. A między nimi lawiruje jeszcze Hitachdut, czyli uważaj Pan teraz: Syjonistyczna Partia Pracy. Czyli coś, jak połączenie narodowców żydowskich z socjalistami. Nie mam pojęcia jak oni się tam między sobą dogadują...",
             first: {
                 content: "A co z komunistami?",
                 route: 54,
@@ -2277,7 +2277,7 @@ const options = {
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         41: {
-            message: "Aleje zainspirowane zostały wiedeńskimi Ringami i będzie to reprezentacyjna część miasta. Właśnie budowany jest olbrzymi gmach Akademii Górniczo-Hutniczej. Wykupiono też parcelę na Muzeum Narodowe. W nadchodzących latach to pewnie tam powstaną najnowocześniejsze gmachy użyteczności publicznej Krakowa... Zresztą, zobaczymy jak będzie. ",
+            message: "Aleje zainspirowane zostały wiedeńskimi Ringami i będzie to reprezentacyjna część miasta. Właśnie tam budowany jest na przykład olbrzymi gmach Akademii Górniczo-Hutniczej. Wykupiono też parcelę pod Muzeum Narodowe. W nadchodzących latach to pewnie tam powstaną najnowocześniejsze gmachy użyteczności publicznej Krakowa... Zresztą, zobaczymy jak będzie. ",
             first: {
                 content: "A co się dzieje w innych częściach miasta?",
                 route: 42,
@@ -2297,7 +2297,7 @@ const options = {
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         50: {
-            message: "Tuż po wojnie trzymano się jeszcze historyzmu, ale ta epoka odchodzi już do lamusa. Historyzm już się krakowianom przejadł, secesja również... Można zauważyć uspokojenie form architektonicznych. Proszę porównać Teatr Słowackiego z nowo wybudowanym Teatrem Bagatela. Ogromna różnica. A oba budynki dzieli zaledwie 35 lat... W ogóle Bagatelę założył Marian Dąbrowski, redaktor naczelny Ilustrowanego Kuryera Codziennego, może będzie miał Pan okazję go spotkać...",
+            message: "Tuż po wojnie trzymano się jeszcze historyzmu, ale ta epoka odchodzi do lamusa. Historyzm już się krakowianom przejadł, secesja również... Można zauważyć uspokojenie form architektonicznych. Proszę porównać Teatr Słowackiego z nowo wybudowanym Teatrem Bagatela. Ogromna różnica. A oba budynki dzieli zaledwie 35 lat... W ogóle Bagatelę założył Marian Dąbrowski, redaktor naczelny Ilustrowanego Kuryera Codziennego, może będzie miał Pan okazję go spotkać...",
             first: {
                 content: "Proszę kontynuować.",
                 route: 51,
