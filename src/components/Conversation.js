@@ -56,6 +56,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].first.route)
+                            window.scrollTo(0,0)
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -67,6 +68,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].second.route)
+                            window.scrollTo(0,0)
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -78,6 +80,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].third.route)
+                            window.scrollTo(0,0)
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -89,6 +92,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].fifth.route)
+                            window.scrollTo(0,0)
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -100,6 +104,7 @@ function Home(props) {
                         setFadeOut(true)
                         setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].fourth.route)
+                            window.scrollTo(0,0)
                             stepBack()
                         }, 1000)
                         setTimeout(() => {
@@ -109,7 +114,7 @@ function Home(props) {
                         {options[place][conversationNumber].fourth.content}
                     </div>}
                    
-                    {options[place][conversationNumber].backMessage && <div className="option width-max"
+                    {options[place][conversationNumber].backMessage && <div className="option width-max back-message"
                         onClick={()=>{
                             setTimeout(() => {
                                 props.current(false)

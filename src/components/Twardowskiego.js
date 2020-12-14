@@ -56,7 +56,7 @@ function Twardowskiego(props) {
             }>
                 {options[place][conversationNumber].fourth.content}
             </div>}
-            <div className="option width-limit" 
+            <div className="option width-limit back-message" 
                 onClick={()=>{
                     setTimeout(() => {
                       props.current(false)

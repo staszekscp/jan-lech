@@ -33,7 +33,7 @@ const [progress, setProgress] = useState({
   fatGuyResponse: false,
   krogul: false,
   fatGuyInHospital: false,
-  brewery: true,
+  brewery: false,
   unemployed: false,
   unemployedResponse: false,
   workerConversation: false,
@@ -51,8 +51,7 @@ const [progress, setProgress] = useState({
   bombs: false,
 })
 
-const [mainScreen, setMainScreen] = useState(true)
-const [startGameScreen, setStartGameScreen] = useState(false)
+const [mainScreen, setMainScreen] = useState(false)
 
 const [mapScreen, setMapScreen] = useState(false)
 const [bank, setBank] = useState(false)
@@ -61,7 +60,7 @@ const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
 const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
-const [jama, setJama] = useState(false)
+const [jama, setJama] = useState(true)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
 const [neighborTwo, setNeighborTwo] = useState(false)

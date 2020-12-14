@@ -2,16 +2,16 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/hawelka-in.jpg');
+    background-image: url('../assets/hawelka-in.jpg');
     background-position: bottom;
     background-size: cover;
   }
   
   .boss-hawelka-start {
     position: fixed;
-    top: 0%;
+    top: 10%;
     left: -12%;
-    height: 2000px;
+    height: 1000px;
   }
 
   .waiter-start {
@@ -23,9 +23,9 @@
 
   .boss-hawelka {
     position: fixed;
-    top: 0%;
+    top: 10%;
     left: -12%;
-    height: 2000px;
+    height: 1000px;
     animation: boss-hawelka 1s reverse
   }
 
@@ -41,7 +41,7 @@
     position: fixed;
     top: 35%;
     left: 0%;
-    height: 2000px;
+    height: 1000px;
     z-index: 3;
     transform: scale(1.3);
     animation: boss-hawelka 2s
@@ -49,17 +49,82 @@
 
   .waiter-conversation {
     position: fixed;
-    top: 60%;
-    left: 50%;
+    top: 50%;
+    left: 60%;
     height: 700px;
     z-index: 3;
-    transform: scale(2);
+    transform: scale(1.8);
     animation: waiter 2s
+  }
+
+  @media (max-width: 900px) {
+    .boss-hawelka-conversation {
+      top: 35%;
+      left: -5%;
+      animation: boss-hawelka900 2s
+    }
+
+    .boss-hawelka {
+      animation: boss-hawelka900 1s reverse
+    }
+  }
+
+  @media (max-width: 750px) {
+    .boss-hawelka-conversation {
+      top: 35%;
+      left: -15%;
+      animation: boss-hawelka750 2s
+    }
+
+    .boss-hawelka {
+      animation: boss-hawelka750 1s reverse
+    }
+  }
+
+  @media (max-height: 420px) {
+    .waiter-conversation {
+      top: 70%;
+      animation: waiter420 2s
+    }
+
+    .waiter {
+      animation: waiter420 1s reverse
+    }
+  }
+
+  @keyframes boss-hawelka900 {
+    from { 
+      top: 10%;
+      left: -12%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 35%;
+      left: -5%;
+      z-index: 3;
+      transform: scale(1.3);
+    }
+  }
+
+  @keyframes boss-hawelka750 {
+    from { 
+      top: 10%;
+      left: -12%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 35%;
+      left: -15%;
+      z-index: 3;
+      transform: scale(1.3);
+    }
   }
 
   @keyframes boss-hawelka {
     from { 
-      top: 0%;
+      top: 10%;
       left: -12%;
       z-index: 2;
       transform: scale(1);
@@ -80,10 +145,25 @@
       transform: scale(1);
     }
     to { 
-      top: 60%;
-      left: 50%;
+      top: 50%;
+      left: 60%;
       z-index: 3;
-      transform: scale(2) 
+      transform: scale(1.8) 
+    }
+  }
+
+  @keyframes waiter420 {
+    from { 
+      top: 25%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 70%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(1.8) 
     }
   }
 

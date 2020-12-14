@@ -40,6 +40,27 @@
     transform: scale(2.1);
     animation: krogul 2s
   }
+
+  @media (max-height: 500px) {
+    .krogul-conversation {
+      top: 65%;
+      animation: krogul500 2s
+    }
+  }
+
+  @media (max-height: 450px) {
+    .krogul-conversation {
+      top: 72%;
+      animation: krogul450 2s
+    }
+  }
+
+  @media (max-height: 350px) {
+    .krogul-conversation {
+      top: 80%;
+      animation: krogul400 2s
+    }
+  }
   
   @keyframes krogul {
     from { 
@@ -57,6 +78,58 @@
       transform: scale(2.1) 
     }
   }
+
+  @keyframes krogul500 {
+    from { 
+      top: 25%;
+      left: 40%;
+      z-index: 2;
+      height: 800px;
+      transform: scale(1)
+    }
+    to { 
+      top: 65%;
+      left: 50%;
+      z-index: 3;
+      height: 800px;
+      transform: scale(2.1) 
+    }
+  }
+
+  @keyframes krogul450 {
+    from { 
+      top: 25%;
+      left: 40%;
+      z-index: 2;
+      height: 800px;
+      transform: scale(1)
+    }
+    to { 
+      top: 72%;
+      left: 50%;
+      z-index: 3;
+      height: 800px;
+      transform: scale(2.1) 
+    }
+  }
+
+  @keyframes krogul400 {
+    from { 
+      top: 25%;
+      left: 40%;
+      z-index: 2;
+      height: 800px;
+      transform: scale(1)
+    }
+    to { 
+      top: 80%;
+      left: 50%;
+      z-index: 3;
+      height: 800px;
+      transform: scale(2.1) 
+    }
+  }
+
 
 
 

@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/jama-in.jpg');
+    background-image: url('../assets/jama-in.jpg');
     background-position: bottom;
     background-size: cover;
   }
@@ -46,11 +46,11 @@
 
   .mehoffer-conversation {
     position: fixed;
-    top: 20%;
-    left: 15%;
+    top: 30%;
+    left: 5%;
     height: 700px;
     z-index: 3;
-    transform: scale(1.3);
+    transform: scale(1.5);
     animation: mehoffer 2s
   }
 
@@ -63,6 +63,28 @@
     animation: zelenski 2s
   }
 
+  @media (max-height: 450px) {
+    .zelenski-conversation {
+      top: 55%;
+      animation: zelenski450 2s
+    }
+
+    .zelenski {
+      animation: zelenski450 1s reverse
+    }
+  }
+
+  @media (max-width: 850px) {
+    .mehoffer-conversation {
+      left: -5%;
+      animation: mehoffer750 2s
+    }
+
+    .mehoffer {
+      animation: mehoffer750 1s reverse
+    }
+  }
+
   @keyframes mehoffer {
     from { 
       top: 15%;
@@ -71,10 +93,25 @@
       transform: scale(1);
     }
     to { 
-      top: 20%;
-      left: 15%;
+      top: 30%;
+      left: 5%;
       z-index: 3;
-      transform: scale(1.3);
+      transform: scale(1.5);
+    }
+  }
+
+  @keyframes mehoffer750 {
+    from { 
+      top: 15%;
+      left: 0%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 30%;
+      left: -5%;
+      z-index: 3;
+      transform: scale(1.5);
     }
   }
   
@@ -87,6 +124,21 @@
     }
     to { 
       top: 40%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes zelenski450 {
+    from { 
+      top: 0%;
+      left: 60%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 55%;
       left: 60%;
       z-index: 3;
       transform: scale(2) 

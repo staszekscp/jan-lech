@@ -9,7 +9,7 @@
 
   .krowodrza-coworker-start {
     position: fixed;
-    top: 10%;
+    top: 20%;
     left: 50%;
     height: 600px
   }
@@ -23,7 +23,7 @@
 
   .krowodrza-coworker {
     position: fixed;
-    top: 10%;
+    top: 20%;
     left: 50%;
     height: 600px;
     animation: krowodrza-coworker 1s reverse
@@ -49,23 +49,101 @@
 
   .krowodrza-boss-conversation {
     position: fixed;
-    top: 50%;
+    top: 75%;
     left: 20%;
     height: 800px;
     z-index: 3;
-    transform: scale(1.8);
+    transform: scale(2);
     animation: krowodrza-boss 2s
+  }
+
+  @media (max-width: 1000px){
+    .krowodrza-boss-conversation {
+      left: 10%;
+      animation: krowodrza-boss1000 2s
+    }
+
+    .krowodrza-boss {
+      animation: krowodrza-boss1000 1s reverse
+    }
+  }
+
+  @media (max-height: 500px){
+    .krowodrza-boss-conversation {
+      top:90%;
+      left: 10%;
+      animation: krowodrza-boss500 2s
+    }
+    .krowodrza-coworker-conversation {
+      top: 75%;
+      animation: krowodrza-coworker500 2s
+    }
+    .krowodrza-boss {
+      animation: krowodrza-boss500 1s reverse
+    }
+    .krowodrza-coworker {
+      animation: krowodrza-coworker500 1s reverse
+    }
+  }
+
+  @media (max-width: 800px) and (max-height: 420px) {
+    .krowodrza-boss-conversation {
+      top: 55%;
+      left: 0%;
+      transform: scale(1.5);
+      animation: krowodrza-boss420 2s
+    }
+    .krowodrza-coworker-conversation {
+      top: 85%;
+      animation: krowodrza-coworker420 2s
+    }
+    .krowodrza-boss {
+      animation: krowodrza-boss420 1s reverse
+    }
+    .krowodrza-coworker {
+      animation: krowodrza-coworker420 1s reverse
+    }
   }
 
   @keyframes krowodrza-coworker {
     from { 
-      top: 10%;
+      top: 20%;
       left: 50%;
       z-index: 2;
       transform: scale(1);
     }
     to { 
       top: 55%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2.5);
+    }
+  }
+
+  @keyframes krowodrza-coworker500 {
+    from { 
+      top: 20%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 75%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2.5);
+    }
+  }
+
+  @keyframes krowodrza-coworker420 {
+    from { 
+      top: 20%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 85%;
       left: 60%;
       z-index: 3;
       transform: scale(2.5);
@@ -80,10 +158,55 @@
       transform: scale(1);
     }
     to { 
-      top: 50%;
+      top: 75%;
       left: 20%;
       z-index: 3;
-      transform: scale(1.8) 
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes krowodrza-boss1000 {
+    from { 
+      top: 10%;
+      left: 10%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 75%;
+      left: 10%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes krowodrza-boss500 {
+    from { 
+      top: 10%;
+      left: 10%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 90%;
+      left: 10%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes krowodrza-boss420 {
+    from { 
+      top: 10%;
+      left: 10%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 55%;
+      left: 0%;
+      z-index: 3;
+      transform: scale(1.5) 
     }
   }
 

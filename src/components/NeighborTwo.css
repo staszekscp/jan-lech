@@ -57,7 +57,7 @@
   .neighbor1-conversation {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 60%;
     z-index: 2;
     height: 300px;
     transform: scale(3);
@@ -67,11 +67,100 @@
   .neighbor2-conversation {
     position: fixed;
     top: 50%;
-    left: 20%;
+    left: 15%;
     z-index: 2;
     height: 400px;
     transform: scale(3);
     animation: neighbor2 2s
+  }
+
+  @media (max-height: 550px) {
+    .neighbor2-conversation {
+      top: 60%;
+      left: 10%;
+      animation: neighbor2-550 2s
+    }
+
+    .neighbor1-conversation {
+      top: 55%;
+      left: 60%;
+      animation: neighbor1-550 2s
+    }
+
+    .neighbor1 {
+      position: fixed;
+      top: 45%;
+      left: 50%;
+      height: 300px;
+      animation: neighbor1-550 1s reverse
+    }
+    
+    .neighbor2 {
+      position: fixed;
+      top: 35%;
+      left: 20%;
+      height: 400px;
+      animation: neighbor2-550 1s reverse
+    }
+  }
+
+  @media (max-height: 450px) {
+    .neighbor2-conversation {
+      top: 70%;
+      left: 10%;
+      animation: neighbor2-450 2s
+    }
+
+    .neighbor1-conversation {
+      top: 65%;
+      left: 60%;
+      animation: neighbor1-450 2s
+    }
+
+    .neighbor1 {
+      position: fixed;
+      top: 45%;
+      left: 50%;
+      height: 300px;
+      animation: neighbor1-450 1s reverse
+    }
+    
+    .neighbor2 {
+      position: fixed;
+      top: 35%;
+      left: 20%;
+      height: 400px;
+      animation: neighbor2-450 1s reverse
+    }
+  }
+
+  @media (max-height: 400px) {
+    .neighbor2-conversation {
+      top: 80%;
+      left: 10%;
+      animation: neighbor2-400 2s
+    }
+    .neighbor1-conversation {
+      top: 70%;
+      left: 60%;
+      animation: neighbor1-400 2s
+    }
+
+    .neighbor1 {
+      position: fixed;
+      top: 45%;
+      left: 50%;
+      height: 300px;
+      animation: neighbor1-400 1s reverse
+    }
+    
+    .neighbor2 {
+      position: fixed;
+      top: 35%;
+      left: 20%;
+      height: 400px;
+      animation: neighbor2-400 1s reverse
+    }
   }
   
   @keyframes neighbor1 {
@@ -83,7 +172,49 @@
     }
     to { 
       top: 50%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(3);
+    }
+  }
+  @keyframes neighbor1-550 {
+    from { 
+      top: 55%;
+      left: 60%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(3);
+    }
+  }
+  @keyframes neighbor1-450 {
+    from { 
+      top: 45%;
       left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 65%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(3);
+    }
+  }
+  @keyframes neighbor1-400 {
+    from { 
+      top: 45%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 70%;
+      left: 60%;
       z-index: 3;
       transform: scale(3);
     }
@@ -98,7 +229,52 @@
     }
     to { 
       top: 50%;
+      left: 15%;
+      z-index: 3;
+      transform: scale(3) 
+    }
+  }
+
+  @keyframes neighbor2-550 {
+    from { 
+      top: 35%;
       left: 20%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 60%;
+      left: 10%;
+      z-index: 3;
+      transform: scale(3) 
+    }
+  }
+
+  @keyframes neighbor2-450 {
+    from { 
+      top: 35%;
+      left: 20%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 70%;
+      left: 10%;
+      z-index: 3;
+      transform: scale(3) 
+    }
+  }
+
+  @keyframes neighbor2-400 {
+    from { 
+      top: 35%;
+      left: 20%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 80%;
+      left: 10%;
       z-index: 3;
       transform: scale(3) 
     }

@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 
 import waiter from '../assets/hawelka-kelner.png';
-import boss from '../assets/hawelka-wlasciciel.png';
+import boss from '../assets/klient-hawelka.png';
 
 import Conversation from './Conversation'
 import './Hawelka.css';

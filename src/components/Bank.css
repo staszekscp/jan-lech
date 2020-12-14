@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/bank-in.jpg');
+    background-image: url('../assets/bank-in.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +25,20 @@
     transform: scale(2.5);
     animation: bank-boss 2s
   }
+
+  @media (max-height: 500px) {
+    .bank-boss-conversation {
+      top: 80%;
+      animation: bank-boss500 2s
+    }
+  }
+
+  @media (max-height: 400px) {
+    .bank-boss-conversation {
+      top: 90%;
+      animation: bank-boss400 2s
+    }
+  }
   
   @keyframes bank-boss {
     from { 
@@ -35,6 +49,36 @@
     }
     to { 
       top: 55%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2.5) 
+    }
+  }
+
+  @keyframes bank-boss500 {
+    from { 
+      top: 15%;
+      left: 40%;
+      z-index: 2;
+      transform: scale(1)
+    }
+    to { 
+      top: 80%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2.5) 
+    }
+  }
+
+  @keyframes bank-boss400 {
+    from { 
+      top: 15%;
+      left: 40%;
+      z-index: 2;
+      transform: scale(1)
+    }
+    to { 
+      top: 90%;
       left: 60%;
       z-index: 3;
       transform: scale(2.5) 

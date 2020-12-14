@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/ikc-in.jpg');
+    background-image: url('../assets/ikc-in.jpg');
     background-position: center;
     background-size: cover;
   }
@@ -40,7 +40,7 @@
   .dabrowski-conversation {
     position: fixed;
     top: 60%;
-    left: 20%;
+    left: 15%;
     height: 300px;
     z-index: 3;
     transform: scale(3.5);
@@ -57,6 +57,48 @@
     animation: journalist 2s
   }
 
+  @media (max-height: 500px) {
+    .dabrowski-conversation {
+      top: 80%;
+      animation: dabrowski500 2s
+    }
+
+    .dabrowski {
+      animation: dabrowski500 1s reverse
+    }
+
+    .journalist-conversation {
+      position: fixed;
+      top: 60%;
+      animation: journalist500 2s
+    }
+
+    .journalist {
+      animation: journalist500 1s reverse
+    }
+  }
+
+  @media (max-height: 400px) {
+    .dabrowski-conversation {
+      top: 90%;
+      animation: dabrowski400 2s
+    }
+
+    .dabrowski {
+      animation: dabrowski400 1s reverse
+    }
+
+    .journalist-conversation {
+      position: fixed;
+      top: 70%;
+      animation: journalist400 2s
+    }
+
+    .journalist {
+      animation: journalist400 1s reverse
+    }
+  }
+
   @keyframes dabrowski {
     from { 
       top: 45%;
@@ -66,7 +108,37 @@
     }
     to { 
       top: 60%;
-      left: 20%;
+      left: 15%;
+      z-index: 3;
+      transform: scale(3.5);
+    }
+  }
+
+  @keyframes dabrowski500 {
+    from { 
+      top: 45%;
+      left: 40%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 80%;
+      left: 15%;
+      z-index: 3;
+      transform: scale(3.5);
+    }
+  }
+
+  @keyframes dabrowski400 {
+    from { 
+      top: 45%;
+      left: 40%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 90%;
+      left: 15%;
       z-index: 3;
       transform: scale(3.5);
     }
@@ -81,6 +153,36 @@
     }
     to { 
       top: 50%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes journalist500 {
+    from { 
+      top: 40%;
+      left: 60%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 60%;
+      left: 60%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes journalist400 {
+    from { 
+      top: 40%;
+      left: 60%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 70%;
       left: 60%;
       z-index: 3;
       transform: scale(2) 

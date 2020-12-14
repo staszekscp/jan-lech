@@ -19,9 +19,13 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/home-in.jpg');
+    background-image: url('../assets/home-in.jpg');
     background-position: center;
     background-size: cover;
+  }
+
+  .base {
+    overflow: scroll;
   }
   
   .wife {
@@ -39,6 +43,20 @@
     transform: scale(2);
     animation: wife 2s
   }
+
+  @media (max-height: 500px) {
+    .wife-conversation {
+      top: 60%;
+      animation: wife500 2s
+    }
+  }
+
+  @media (max-height: 400px) {
+    .wife-conversation {
+      top: 70%;
+      animation: wife400 2s
+    }
+  }
   
   @keyframes wife {
     from { 
@@ -49,6 +67,36 @@
     }
     to { 
       top: 50%;
+      left: 50%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes wife500 {
+    from { 
+      top: 10%;
+      left: 20%;
+      z-index: 2;
+      transform: scale(1)
+    }
+    to { 
+      top: 60%;
+      left: 50%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes wife400 {
+    from { 
+      top: 10%;
+      left: 20%;
+      z-index: 2;
+      transform: scale(1)
+    }
+    to { 
+      top: 70%;
       left: 50%;
       z-index: 3;
       transform: scale(2) 

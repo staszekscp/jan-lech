@@ -498,11 +498,11 @@ const options = {
         },
     },
     "twardowskiego": {
-        backMessage: "Wróć do mapy Krakowa.",
+        backMessage: "Przejdź do mapy Krakowa.",
         1: {
             message: "Znajdujesz się na ul. Twardowskiego. Dokąd chcesz się udać?",
             first: {
-                content: "Mieszkanie Najchela",
+                content: "Mieszkanie Najchelów",
                 route: 11
             },
             second: {
@@ -510,7 +510,7 @@ const options = {
                 route: 12
             },
             third: {
-                content: "Gospodarstwo Maciejowskiego",
+                content: "Gospodarstwo Maciejowskich",
                 route: 13
             },
             fourth: {
