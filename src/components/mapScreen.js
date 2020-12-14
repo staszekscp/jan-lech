@@ -1,14 +1,26 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import '../App.css';
 
 function MapScreen(props) {
 
 const [fadeOut, setFadeOut] = useState(false)
 
+let message = "Progres"
+
+useEffect(() => {
+  if (props.progress.bank) {
+    message = "Muszę iść do Konsulatu Czechosłowacji na Gołębiej, aby dowiedzieć się, czemu zaprzestano wysyłania renty Najchelowi"
+  }
+})
+
+
   return (
     <div className={fadeOut?"out":"main"}>
       <div className="map-container">
-        <div className="place-icon">
+        <div className="info-container">
+          Dokąd chcesz się udać?
+        </div>
+        <div className="place-icon icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -21,7 +33,7 @@ const [fadeOut, setFadeOut] = useState(false)
               ul. Twardowskiego
           </div>
         </div>
-        {props.progress.hospitalResponse && <div className="place-icon-hospital">
+        {props.progress.hospitalResponse && <div className="place-icon-hospital icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -34,7 +46,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Szpital w Kobierzynie
           </div>
         </div>}
-        {props.progress.brewery && <div className="place-icon-brewery">
+        {props.progress.brewery && <div className="place-icon-brewery icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -47,7 +59,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Browar Lubicz
           </div>
         </div>}
-        <div className="place-icon-rogatka">
+        <div className="place-icon-rogatka icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -60,7 +72,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Rogatka na Krowodrzy
           </div>
         </div>
-        {props.progress.visitBrewery && <div className="place-icon-hawelka">
+        {props.progress.visitBrewery && <div className="place-icon-hawelka icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -73,7 +85,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Restauracja Hawełka
           </div>
         </div>}
-        {(props.progress.visitBrewery && !props.progress.jamaNoEntry) && <div className="place-icon-jama">
+        {(props.progress.visitBrewery && !props.progress.jamaNoEntry) && <div className="place-icon-jama icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -86,7 +98,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Jama Michalika
           </div>
         </div>}
-        {props.progress.bank && <div className="place-icon-golebia">
+        {props.progress.bank && <div className="place-icon-golebia icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -99,7 +111,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Konsulat Czechosłowacji
           </div>
         </div>}
-        {props.progress.bankInfo && <div className="place-icon-bank">
+        {props.progress.bankInfo && <div className="place-icon-bank icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -112,7 +124,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Powiatowa Kasa Oszczędności
           </div>
         </div>}
-        {props.progress.hawelka && <div className="place-icon-ikc">
+        {props.progress.hawelka && <div className="place-icon-ikc icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
@@ -125,7 +137,7 @@ const [fadeOut, setFadeOut] = useState(false)
               Pałac Prasy
           </div>
         </div>}
-        <div className="place-icon-thorna">
+        <div className="place-icon-thorna icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)

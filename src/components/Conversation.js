@@ -18,6 +18,8 @@ function Home(props) {
 
     const containerClass = right ? classRight : classLeft
 
+    const element = document.getElementById("ele")
+
     const stepBack = () => {
         setGoAway(true)
         setTimeout(() => {
@@ -49,15 +51,19 @@ function Home(props) {
             <div className={backdropClass}>
                 <div className={fadeOut ? "fade" : null}>
                     <div className="fadenull">
-                <div className={containerClass}>
+                <div id="ele" className={containerClass}>
                     <div className="message width-max">
                         {options[place][conversationNumber].message}
                     </div>
                     {options[place][conversationNumber].first && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
+                            if (element) {
+                                element.scrollTo(0,0)
+                            }
+                        }, 800)
+                        setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].first.route)
-                            window.scrollTo(0,0)
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -68,8 +74,13 @@ function Home(props) {
                     {options[place][conversationNumber].second && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
+                            if (element) {
+                                element.scrollTo(0,0)
+                            }
+                        }, 800)
+                        setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].second.route)
-                            window.scrollTo(0,0)
+                            
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -80,8 +91,13 @@ function Home(props) {
                     {options[place][conversationNumber].third && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
+                            if (element) {
+                                element.scrollTo(0,0)
+                            }
+                        }, 800)
+                        setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].third.route)
-                            window.scrollTo(0,0)
+                            
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -92,8 +108,13 @@ function Home(props) {
                     {options[place][conversationNumber].fifth && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
+                            if (element) {
+                                element.scrollTo(0,0)
+                            }
+                        }, 800)
+                        setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].fifth.route)
-                            window.scrollTo(0,0)
+                            
                         }, 1000)
                         setTimeout(() => {
                             setFadeOut(false)
@@ -104,8 +125,12 @@ function Home(props) {
                     {options[place][conversationNumber].fourth && <div className="option width-max" onClick={()=>{
                         setFadeOut(true)
                         setTimeout(() => {
+                            if (element) {
+                                element.scrollTo(0,0)
+                            }
+                        }, 800)
+                        setTimeout(() => {
                             setConversationNumber(options[place][conversationNumber].fourth.route)
-                            window.scrollTo(0,0)
                             stepBack()
                         }, 1000)
                         setTimeout(() => {

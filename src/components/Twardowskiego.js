@@ -13,10 +13,10 @@ function Twardowskiego(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="twardowskiego-background">
           <div className="backdrop-opacity-twardowskiego">
-            <div className="message width-limit">
+            <div className="message-twardowskiego mg">
                 {options[place][conversationNumber].message}
             </div>
-            <div className="option width-limit" onClick={()=>{
+            <div className="option-twardowskiego" onClick={()=>{
               setTimeout(() => {
                 props.current(false)
                 props.setHome(true)
@@ -26,7 +26,7 @@ function Twardowskiego(props) {
             }>
                 {options[place][conversationNumber].first.content}
             </div>
-            <div className="option width-limit" onClick={()=>{
+            <div className="option-twardowskiego" onClick={()=>{
               setTimeout(() => {
                 props.current(false)
                 props.setNeighborOne(true)
@@ -36,7 +36,7 @@ function Twardowskiego(props) {
             }>
                 {options[place][conversationNumber].second.content}
             </div>
-            {options[place][conversationNumber].third && <div className="option width-limit" onClick={()=>{
+            {options[place][conversationNumber].third && <div className="option-twardowskiego" onClick={()=>{
               setTimeout(() => {
                 props.current(false)
                 props.setNeighborTwo(true)
@@ -46,7 +46,7 @@ function Twardowskiego(props) {
             }>
                 {options[place][conversationNumber].third.content}
             </div>}
-            {options[place][conversationNumber].fourth && <div className="option width-limit" onClick={()=>{
+            {options[place][conversationNumber].fourth && <div className="option-twardowskiego" onClick={()=>{
               setTimeout(() => {
                 props.current(false)
                 props.setNeighborThree(true)
@@ -56,7 +56,7 @@ function Twardowskiego(props) {
             }>
                 {options[place][conversationNumber].fourth.content}
             </div>}
-            <div className="option width-limit back-message" 
+            <div className="option-twardowskiego back-message" 
                 onClick={()=>{
                     setTimeout(() => {
                       props.current(false)

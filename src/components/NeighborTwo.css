@@ -84,6 +84,10 @@
     .neighbor1 {
       animation: neighbor1-mobile 1s reverse
     }
+
+    .location-overlay {
+      font-size: 32px
+    }
   }
 
   @media (max-height: 550px) {

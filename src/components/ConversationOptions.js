@@ -4004,7 +4004,7 @@ const options = {
             backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },
         62: {
-            message: "Obecnie połowa polskiego handlu związana jest bezpośrednio z Republiką Weimarską. Niemcy odbierają od 80% produkowanego przez nas węgla. Niestety w styczniu tego roku wygasła klauzula największego uprzywilejowania nałożona na Republikę Weimarską postanowieniami traktatu wersalskiego. Dawało to państwom Entanty, w tym Polsce, uprzywilejowaną pozycję na rynku niemieckim. Jednak ten okres to już przeszłość. Za miesiąc zakończy się również zwolnienie z cła węgla polskiego wwożonego do Niemiec. Obawiam się, że wojna celna stanie się faktem, a to poważnie odbije się na naszej gospodarce...",
+            message: "Obecnie połowa polskiego handlu związana jest bezpośrednio z Republiką Weimarską. Niemcy odbierają około 80% produkowanego przez nas węgla. Niestety w styczniu tego roku wygasła klauzula największego uprzywilejowania nałożona na Republikę Weimarską postanowieniami traktatu wersalskiego. Dawało to państwom Entanty, w tym Polsce, uprzywilejowaną pozycję na rynku niemieckim. Jednak ten okres to już przeszłość. Za miesiąc zakończy się również zwolnienie z cła węgla polskiego wwożonego do Niemiec. Obawiam się, że wojna celna stanie się faktem, a to poważnie odbije się na naszej gospodarce...",
             second: {
                 content: "Mam te same obawy... Chciałbym jeszcze zapytać o coś innego.",
                 route: 30, 

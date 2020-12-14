@@ -39,6 +39,13 @@
     animation: stelmach 2s
   }
 
+  @media (max-width: 600px) {
+    .location-overlay {
+      font-size: 32px
+    }
+  }
+
+
   @media (max-width: 900px) {
     .stelmach-conversation {
       top: 40%;

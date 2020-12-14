@@ -47,6 +47,9 @@
       left: 10%;
       animation: krogul-mobile 2s
     }
+    .location-overlay {
+      font-size: 32px
+    }
   }
 
   @media (max-height: 500px) {
