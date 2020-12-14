@@ -48,6 +48,7 @@ function Home(props) {
         <div >
             <div className={backdropClass}>
                 <div className={fadeOut ? "fade" : null}>
+                    <div className="fadenull">
                 <div className={containerClass}>
                     <div className="message width-max">
                         {options[place][conversationNumber].message}
@@ -125,6 +126,7 @@ function Home(props) {
                         }>
                         {options[place][conversationNumber].backMessage}
                     </div>}
+                </div>
                 </div>
             </div>
             {props.children}

@@ -60,14 +60,14 @@ const [consulate, setConsulate] = useState(false)
 const [hawelka, setHawelka] = useState(false)
 const [home, setHome] = useState(false)
 const [ikc, setIkc] = useState(false)
-const [jama, setJama] = useState(true)
+const [jama, setJama] = useState(false)
 const [krowodrza, setKrowodrza] = useState(false)
 const [neighborOne, setNeighborOne] = useState(false)
 const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(false)
+const [hospital, setHospital] = useState(true)
 
 
   return (

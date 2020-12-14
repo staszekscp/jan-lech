@@ -42,7 +42,7 @@
     top: 55%;
     left: 60%;
     height: 600px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(2.5);
     animation: krowodrza-coworker 2s
   }
@@ -52,7 +52,7 @@
     top: 75%;
     left: 20%;
     height: 800px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(2);
     animation: krowodrza-boss 2s
   }

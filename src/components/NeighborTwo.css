@@ -58,7 +58,7 @@
     position: fixed;
     top: 50%;
     left: 60%;
-    z-index: 2;
+    z-index: -1;
     height: 300px;
     transform: scale(3);
     animation: neighbor1 2s
@@ -68,10 +68,22 @@
     position: fixed;
     top: 50%;
     left: 15%;
-    z-index: 2;
+    z-index: -1;
     height: 400px;
     transform: scale(3);
     animation: neighbor2 2s
+  }
+
+  @media (max-width: 600px) {
+    .neighbor1-conversation {
+      top: 55%;
+      left: 20%;
+      animation: neighbor1-mobile 2s
+    }
+
+    .neighbor1 {
+      animation: neighbor1-mobile 1s reverse
+    }
   }
 
   @media (max-height: 550px) {
@@ -187,6 +199,20 @@
     to { 
       top: 50%;
       left: 60%;
+      z-index: 3;
+      transform: scale(3);
+    }
+  }
+  @keyframes neighbor1-mobile {
+    from { 
+      top: 45%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 55%;
+      left: 20%;
       z-index: 3;
       transform: scale(3);
     }

@@ -39,9 +39,27 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 3;
+    z-index: -1;
     transform: scale(2);
     animation: wife 2s
+  }
+
+  @media (max-width: 600px) { 
+    .wife {
+      position: fixed;
+      top: 30%;
+      left: 20%;
+      z-index: 2;
+    }
+    
+    .wife-conversation {
+      position: fixed;
+      top: 50%;
+      left: 20%;
+      z-index: -1;
+      transform: scale(2);
+      animation: wife-mobile 2s
+    }
   }
 
   @media (max-height: 500px) {
@@ -68,6 +86,21 @@
     to { 
       top: 50%;
       left: 50%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes wife-mobile {
+    from { 
+      top: 30%;
+      left: 20%;
+      z-index: 2;
+      transform: scale(1)
+    }
+    to { 
+      top: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(2) 
     }

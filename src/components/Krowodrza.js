@@ -72,29 +72,29 @@ function Krowodrza(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="krowodrza-background">
             {conversationBoss && <div><Conversation turnOff={switchToWorker} actionOne={actionOne} number={numberBoss} right={true} place="szef-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationBoss(true)}}>
+              <div >
                 <img className={classBoss} src={boss} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationCoworker(true)}}>
+              <div >
                 <img className={classWorker} src={coworker} />
               </div>
             </div>
             }
             {conversationCoworker && <div><Conversation turnOff={switchToBoss} actionOne={actionOneW} number={numberWorker} place="pracownik-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationCoworker(true)}}>
+              <div >
                 <img className={classWorker} src={coworker} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationBoss(true)}}>
+              <div >
                 <img className={classBoss} src={boss} />
               </div>
             </div>
             }
-            {(!conversationCoworker && !conversationBoss) && <div><div onClick={() => {setConversationBoss(true)}}>
+            {(!conversationCoworker && !conversationBoss) && <div><div >
                 <img className={classBoss} src={boss} />
               </div>
-              <div onClick={() => {setConversationCoworker(true)}}>
+              <div >
                 <img className={classWorker} src={coworker} />
               </div>
             </div>

@@ -12,6 +12,7 @@
     top: 0%;
     left: 0%;
     height: 1000px;
+    transform: scale(1);
   }
   
   .brewery-boss-start {
@@ -26,6 +27,7 @@
     top: 0%;
     left: 0%;
     height: 1000px;
+    transform: scale(1);
     animation: brewery-guard 1s reverse
   }
   
@@ -42,7 +44,7 @@
     top: 25%;
     left: 5%;
     height: 1000px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(1.3);
     animation: brewery-guard 2s
   }
@@ -52,9 +54,21 @@
     top: 50%;
     left: 60%;
     height: 500px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(2);
     animation: brewery-boss 2s
+  }
+
+  @media (max-width: 600px) {
+    .brewery-boss-conversation {
+      top: 50%;
+      left: 20%;
+      animation: brewery-boss-mobile 2s
+    }
+
+    .brewery-boss {
+      animation: brewery-boss-mobile 1s reverse
+    }
   }
 
   @media (max-width: 750px) {
@@ -98,6 +112,7 @@
       transform: scale(1.3);
     }
   }
+  
 
   @keyframes brewery-guard750 {
     from { 
@@ -124,6 +139,21 @@
     to { 
       top: 50%;
       left: 60%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes brewery-boss-mobile {
+    from { 
+      top: 15%;
+      left: 140%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(2) 
     }

@@ -35,10 +35,18 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 3;
+    z-index: -1;
     height: 800px;
     transform: scale(2.1);
     animation: krogul 2s
+  }
+
+  @media (max-width: 600px) {
+    .krogul-conversation {
+      top: 50%;
+      left: 10%;
+      animation: krogul-mobile 2s
+    }
   }
 
   @media (max-height: 500px) {
@@ -73,6 +81,23 @@
     to { 
       top: 50%;
       left: 50%;
+      z-index: 3;
+      height: 800px;
+      transform: scale(2.1) 
+    }
+  }
+
+  @keyframes krogul-mobile {
+    from { 
+      top: 25%;
+      left: 40%;
+      z-index: 2;
+      height: 800px;
+      transform: scale(1)
+    }
+    to { 
+      top: 50%;
+      left: 10%;
       z-index: 3;
       height: 800px;
       transform: scale(2.1) 

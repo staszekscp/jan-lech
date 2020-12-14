@@ -49,7 +49,7 @@
     top: 30%;
     left: 5%;
     height: 700px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(1.5);
     animation: mehoffer 2s
   }
@@ -58,9 +58,24 @@
     position: fixed;
     top: 40%;
     left: 60%;
-    z-index: 3;
+    z-index: -1;
     transform: scale(2);
     animation: zelenski 2s
+  }
+
+  @media (max-width: 850px) {
+    .mehoffer-conversation {
+      left: -5%;
+      animation: mehoffer750 2s
+    }
+
+    .mehoffer {
+      animation: mehoffer750 1s reverse
+    }
+  }
+
+  @media (max-width: 600px) {
+
   }
 
   @media (max-height: 450px) {
@@ -74,16 +89,7 @@
     }
   }
 
-  @media (max-width: 850px) {
-    .mehoffer-conversation {
-      left: -5%;
-      animation: mehoffer750 2s
-    }
-
-    .mehoffer {
-      animation: mehoffer750 1s reverse
-    }
-  }
+  
 
   @keyframes mehoffer {
     from { 

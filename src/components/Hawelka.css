@@ -42,7 +42,7 @@
     top: 35%;
     left: 0%;
     height: 1000px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(1.3);
     animation: boss-hawelka 2s
   }
@@ -52,7 +52,7 @@
     top: 50%;
     left: 60%;
     height: 700px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(1.8);
     animation: waiter 2s
   }
@@ -78,6 +78,18 @@
 
     .boss-hawelka {
       animation: boss-hawelka750 1s reverse
+    }
+  }
+
+  @media (max-width: 600px) {
+    .waiter-conversation {
+      top: 50%;
+      left: 20%;
+      animation: waiter-mobile 2s
+    }
+
+    .waiter {
+      animation: waiter-mobile 1s reverse
     }
   }
 
@@ -147,6 +159,21 @@
     to { 
       top: 50%;
       left: 60%;
+      z-index: 3;
+      transform: scale(1.8) 
+    }
+  }
+
+  @keyframes waiter-mobile {
+    from { 
+      top: 25%;
+      left: 50%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(1.8) 
     }

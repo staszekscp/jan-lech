@@ -18,7 +18,7 @@
     position: fixed;
     top: 30%;
     left: 10%;
-    z-index: 3;
+    z-index: -1;
     transform: scale(1.7);
     animation: thorn 2s
   }
@@ -27,11 +27,8 @@
 
   @media (max-width: 900px) {
     .thorn-conversation {
-      position: fixed;
       top: 30%;
       left: 0%;
-      z-index: 3;
-      transform: scale(1.7);
       animation: thorn900 2s
     }
   }

@@ -42,7 +42,7 @@
     top: 60%;
     left: 15%;
     height: 300px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(3.5);
     animation: dabrowski 2s
   }
@@ -52,10 +52,34 @@
     top: 50%;
     left: 60%;
     height: 500px;
-    z-index: 3;
+    z-index: -1;
     transform: scale(2);
     animation: journalist 2s
   }
+
+  @media (max-width: 600px) {
+    .dabrowski-conversation {
+      top: 60%;
+      left: 30%;
+      animation: dabrowski-mobile 2s
+    }
+
+    .dabrowski {
+      animation: dabrowski-mobile 1s reverse
+    }
+
+    .journalist-conversation {
+      position: fixed;
+      top: 50%;
+      left: 20%;
+      animation: journalist-mobile 2s
+    }
+
+    .journalist {
+      animation: journalist-mobile 1s reverse
+    }
+  }
+  
 
   @media (max-height: 500px) {
     .dabrowski-conversation {
@@ -114,6 +138,21 @@
     }
   }
 
+  @keyframes dabrowski-mobile {
+    from { 
+      top: 45%;
+      left: 40%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 60%;
+      left: 30%;
+      z-index: 3;
+      transform: scale(3.5);
+    }
+  }
+
   @keyframes dabrowski500 {
     from { 
       top: 45%;
@@ -154,6 +193,21 @@
     to { 
       top: 50%;
       left: 60%;
+      z-index: 3;
+      transform: scale(2) 
+    }
+  }
+
+  @keyframes journalist-mobile {
+    from { 
+      top: 40%;
+      left: 60%;
+      z-index: 2;
+      transform: scale(1);
+    }
+    to { 
+      top: 50%;
+      left: 20%;
       z-index: 3;
       transform: scale(2) 
     }
