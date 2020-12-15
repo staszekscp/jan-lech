@@ -8,11 +8,7 @@ function Twardowskiego(props) {
   const conversationNumber = 1
   const [fadeOut, setFadeOut] = useState(false)
   const place="twardowskiego"
-
-  const n1 = props.progress.hospital ? "Mieszkanie Stelmacha" : "Mieszkanie sąsiada zza ściany"
-  const n2 = props.progress.maciejowscy ? "Gospodarstwo Maciejowskich" : "Pobliskie gospodarstwo"
-  const n3 = props.progress.krogul ? "Posesja Krogula" : "Dom obok"
-
+  
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="twardowskiego-background">
