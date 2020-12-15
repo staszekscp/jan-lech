@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/thorna-in.jpg');
+    background-image: url('../assets/thorna-in.jpg');
     background-position: bottom;
     background-size: cover;
   }

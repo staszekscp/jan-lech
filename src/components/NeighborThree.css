@@ -19,7 +19,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/neighbor-three.jpg');
+    background-image: url('../assets/neighbor-three.jpg');
     background-position: bottom;
     background-size: cover;
   }
