@@ -1,9 +1,7 @@
-* {
-  font-family: 'Special Elite', cursive;
-}
 
 body {
   height: 100%;
+  font-family: 'Stint Ultra Condensed', cursive;
 }
 
 .App {
@@ -17,7 +15,7 @@ body {
 .info {
   color: white;
   padding: 8px;
-  font-size: 16px;
+  font-size: 20px;
 
 }
 
@@ -25,13 +23,14 @@ body {
   background-color: rgba(0,0,0,0.7);
   color: white;
   padding: 8px;
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .backdrop-opacity {
+  font-family: 'Stint Ultra Condensed', cursive;
   height: 100%;
   width: 100%;
   top: 0;
@@ -44,6 +43,7 @@ body {
 }
 
 .backdrop-opacity-back {
+  font-family: 'Stint Ultra Condensed', cursive;
   height: 100%;
   width: 100%;
   top: 0;
@@ -73,6 +73,7 @@ body {
 }
 
 .main-screen {
+  font-family: 'Special Elite', cursive;
   height: 100vh;
   width: 100vw;
   color: white;
@@ -91,6 +92,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Special Elite', cursive;
 }
 
 .explanation-container {
@@ -101,7 +103,8 @@ body {
   width: 60vw;
   max-height: 90vh;
   overflow: scroll;
-  font-size: 1rem;
+  font-family: 'Stint Ultra Condensed', cursive;
+  font-size: 24px;
   text-align: justify;
   border-radius: 20px;
   cursor: default;
@@ -263,16 +266,18 @@ body {
   padding: 10px;
   border-radius: 10px;
   z-index: 50;
-  font-size: 16px;
+  font-size: 22px;
   border: 2px black solid;
   transition: all 1s;
+  opacity: 0.8
 }
 
 .option:hover {
   background-color:#fff;
   transform: scale(1.1);
   z-index: 100;
-  cursor: pointer
+  cursor: pointer;
+  opacity: 1
 }
 
 .option-twardowskiego {
@@ -284,7 +289,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   z-index: 50;
-  font-size: 16px;
+  font-size: 24px;
   border: 2px black solid;
   transition: all 1s;
 }
@@ -298,7 +303,7 @@ body {
 
 .message {
   background-color:#fff;
-  width: 90%;
+  width: 85%;
   margin: 10px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -306,7 +311,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   z-index: 2;
-  font-size: 20px;
+  font-size: 28px;
   border: 2px black solid;
 }
 
@@ -320,7 +325,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   z-index: 2;
-  font-size: 20px;
+  font-size: 28px;
   border: 2px black solid;
 }
 
@@ -334,11 +339,11 @@ body {
 
 @media (max-height: 500px) {
   .option {
-    font-size: 14px
+    font-size: 20px
   }
 
   .message {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
@@ -573,7 +578,7 @@ body {
   width: 100%;
   opacity: 0;
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -581,7 +586,7 @@ body {
 }
 
 .overlay:hover {
-  opacity: 0.6;
+  opacity: 0.7;
   cursor: pointer
 }
 
@@ -596,8 +601,6 @@ body {
   width: 80px;
   border-radius: 45px;
   border: 2px black solid;
-  z-index: 1;
-  transition: transform 1s;
   overflow: hidden;
 }
 
@@ -605,6 +608,8 @@ body {
   background-image: url('./assets/Twardowskiego.jpg');
   top: 80%;
   left: 30%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon:hover {
@@ -615,6 +620,8 @@ body {
   background-image: url('./assets/Szpital.jpg');
   top: 85%;
   left: 20%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-hospital:hover {
@@ -626,6 +633,8 @@ body {
   background-image: url('./assets/lubicz-out.jpg');
   top: 20%;
   left: 60%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-brewery:hover {
@@ -637,6 +646,8 @@ body {
   background-image: url('./assets/rogatka.jpg');
   top: 10%;
   left: 20%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-rogatka:hover {
@@ -648,6 +659,8 @@ body {
   background-image: url('./assets/hawelka-out.jpg');
   top: 25%;
   left: 42%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-hawelka:hover {
@@ -659,6 +672,8 @@ body {
   background-image: url('./assets/jama.jpg');
   top: 20%;
   left: 50%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-jama:hover {
@@ -670,6 +685,8 @@ body {
   background-image: url('./assets/golebia.jpg');
   top: 43%;
   left: 43%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-golebia:hover {
@@ -681,6 +698,8 @@ body {
   background-image: url('./assets/bank.jpg');
   top: 10%;
   left: 45%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-bank:hover {
@@ -692,6 +711,8 @@ body {
   background-image: url('./assets/ikc.jpg');
   top: 40%;
   left: 52%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-ikc:hover {
@@ -703,6 +724,8 @@ body {
   background-image: url('./assets/thorna.jpg');
   bottom: 5%;
   left: 50%;
+  z-index: 1;
+  transition: transform 1s;
 }
 
 .place-icon-thorna:hover {
@@ -712,11 +735,11 @@ body {
 
 @media (max-width: 700px) {
   .option {
-    font-size: 14px
+    font-size: 20px
   }
 
   .message {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
@@ -739,7 +762,7 @@ body {
   }
 
   .explanation-container {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 
@@ -750,8 +773,8 @@ body {
   }
 
   .overlay {
-    opacity: 0.6;
-    font-size: 8px;
+    opacity: 0.7;
+    font-size: 12px;
   }
 
   .place-icon {

@@ -1,7 +1,7 @@
 const options = {
     "home": {
         1: {
-            message: "Szczęść Boże, Pan to z policji?",
+            message: "Niech będzie pochwalony, Pan to z policji?",
             first: {
                 content: "Dzień dobry. Tak, przodownik Kołodziejczyk, miło mi. Jestem tu w sprawie zaginięcia Pani męża.",
                 route: 2,
@@ -4011,7 +4011,54 @@ const options = {
             },
             backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
         },
-    } 
+    },
+    "konsulat": {
+        1: {
+            message: "Witamy w konsulacie Republiki Czechosłowackiej. W czym mogę pomóc?",
+            first: {
+                content: "Dzień dobry. Kołodziejczyk, policja. Szukam człowieka o nazwisku Najchel.",
+                route: 501,
+            },
+            second: {
+                content: "Dobry, dobry, ja z policji. Szukam niejakiego Najchela.",
+                route: 501,
+            },
+        },
+        501: {
+            message: "Dobrze Pan trafił. Był tu przed chwilą.",
+            first: {
+                content: "Nareszcie, myślałem, że nigdy go nie znajdę! Dokąd polazł?",
+                route: 3,
+            },
+            second: {
+                content: "W którą stronę poszedł?",
+                route: 3,
+            },
+            third: {
+                content: "Co on tu robił?",
+                route: 2,
+            },
+        },
+        2: {
+            message: "Jak zwykle, awanturował się. Nie jest to pierwszy raz, kiedy tu przychodzi. Żąda zasiłku za wypadek w Witkowicach. Rozumiem, że Witkowice znajdują się obecnie na terytorium Czechosłowacji, ale z jakiej racji to rząd naszego kraju ma wypłacać zasiłek, skoro do zdarzenia doszło w 1900 roku, kiedy to wy, Polacy, jak i my, Czesi, byliśmy pod panowaniem austro-węgierskim? Odesłaliśmy go zatem do konsulatu Republiki Austriackiej. Okazało się, że to stamtąd przyszedł, również odmówiono mu pomocy. Zwymyślał nas od najgorszych i wyszedł.",
+            first: {
+                content: "W którą stronę poszedł?",
+                route: 3,
+            },
+
+        },
+        3: {
+            message: "W kierunku Jagiellońskiej, jeśli się nie mylę... Ale najwyraźniej nie będzie musiał Pan się fatygować. Chyba wraca, żeby znowu na nas nakrzyczeć...",
+            first: {
+                content: "Słucham?",
+                route: 4,
+            },
+        },
+        4: {
+            message: "Właśnie wchodzi, proszę pocz... UWAGA, ON MA BROŃ!",
+            backMessage: "Co...?"
+        },
+    }
 }
 
 export default options

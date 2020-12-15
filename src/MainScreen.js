@@ -1,7 +1,5 @@
 import {useEffect, useState} from 'react'
 
-import bank from './assets/bank-in.jpg'
-import song from './assets/HonkyTonkin.mp3'
 import './App.css';
 
 function MainScreen(props) {

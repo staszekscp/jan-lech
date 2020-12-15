@@ -1,6 +1,7 @@
 import {useState} from 'react'
 
 import MainScreen from './MainScreen';
+import EndGameScreen from './EndGameScreen';
 
 import MapScreen from './components/mapScreen';
 import Bank from './components/Bank';
@@ -49,6 +50,7 @@ const [progress, setProgress] = useState({
   bankInfo: true,
   bank: true,
   bombs: false,
+  end: false
 })
 
 const [mainScreen, setMainScreen] = useState(false)
@@ -69,6 +71,8 @@ const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
 const [hospital, setHospital] = useState(false)
 
+const [endGameScreen, setEndGameScreen] = useState(false)
+
 
   return (
     <div className="backdrop">
@@ -77,6 +81,10 @@ const [hospital, setHospital] = useState(false)
         {mainScreen && <MainScreen 
           forward={setHome}
           current={setMainScreen}
+        />}
+        {endGameScreen && <EndGameScreen 
+          current={setEndGameScreen}
+          back={setMapScreen}
         />}
         {mapScreen && <MapScreen 
           setMapScreen={setMapScreen}
@@ -106,9 +114,11 @@ const [hospital, setHospital] = useState(false)
           back={setMapScreen}
           progress={progress}
           setProgress={setProgress}/>}
-        {consulate && <Consulate //wozny i konsulka - nic specjalnego, konczy sie gra
+        {consulate && <Consulate                   //
           current={setConsulate}
-          back={setMapScreen}/>}
+          back={setEndGameScreen}
+          progress={progress}
+          setProgress={setProgress}/>}
         {home && <Home                              //
           current={setHome}
           back={setTwardowskiego}

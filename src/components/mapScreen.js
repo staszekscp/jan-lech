@@ -5,20 +5,11 @@ function MapScreen(props) {
 
 const [fadeOut, setFadeOut] = useState(false)
 
-let message = "Progres"
-
-useEffect(() => {
-  if (props.progress.bank) {
-    message = "Muszę iść do Konsulatu Czechosłowacji na Gołębiej, aby dowiedzieć się, czemu zaprzestano wysyłania renty Najchelowi"
-  }
-})
-
-
   return (
     <div className={fadeOut?"out":"main"}>
       <div className="map-container">
         <div className="info-container">
-          Dokąd chcesz się udać?
+          Dokąd teraz?
         </div>
         <div className="place-icon icon">
           <div className="overlay" 
@@ -98,7 +89,7 @@ useEffect(() => {
               Jama Michalika
           </div>
         </div>}
-        {props.progress.bank && <div className="place-icon-golebia icon">
+        {(props.progress.bank && !props.progress.end) && <div className="place-icon-golebia icon">
           <div className="overlay" 
               onClick={() => {
                 setFadeOut(true)
