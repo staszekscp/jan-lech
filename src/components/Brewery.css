@@ -59,6 +59,8 @@
     animation: brewery-boss 2s
   }
 
+
+
   @media (max-width: 600px) {
     .brewery-boss-conversation {
       top: 50%;
@@ -93,6 +95,44 @@
 
     .brewery-boss {
       animation: brewery-boss450 1s reverse
+    }
+  }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .brewery-boss {
+      top: 50%;
+      left: 60%;
+      transform: scale(2.5);
+      animation: none
+    }
+
+    .brewery-boss-start {
+      top: 50%;
+      left: 60%;
+      transform: scale(2.5);
+      
+    }
+
+    .brewery-boss-conversation {
+      transform: scale(2.5);
+      animation: none
+    }
+
+    .brewery-guard {
+      top: 25%;
+      left: 5%;
+      transform: scale(1.3);
+      animation: none
+    }
+
+    .brewery-guard-start {
+      top: 25%;
+      left: 5%;
+      transform: scale(1.3);
+    }
+
+    .brewery-guard-conversation {
+      animation: none
     }
   }
 

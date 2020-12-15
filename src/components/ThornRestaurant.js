@@ -17,7 +17,9 @@ function ThornRestaurant(props) {
   }, [])
 
   useEffect(() => {
-    if (props.progress.thorn) {
+    if (props.progress.end && !props.progress.thorn) {
+      setNumber(9)
+    } else if (props.progress.thorn) {
       setNumber(8)
     } 
   }, [])

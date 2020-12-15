@@ -72,6 +72,21 @@
       animation: krogul400 2s
     }
   }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .krogul {
+      top: 50%;
+      left: 60%;
+      transform: scale(2);
+    }
+
+    .krogul-conversation {
+      top: 50%;
+      left: 60%;
+      transform: scale(2);
+      animation: none
+    }
+  }
   
   @keyframes krogul {
     from { 

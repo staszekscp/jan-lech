@@ -72,6 +72,21 @@
       animation: stelmach900500 2s
     }
   }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .stelmach {
+      top: 50%;
+      left: 0%;
+      transform: scale(1.8);
+    }
+
+    .stelmach-conversation {
+      top: 50%;
+      left: 0%;
+      transform: scale(1.8);
+      animation: none
+    }
+  }
   
   @keyframes stelmach {
     from { 

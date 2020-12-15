@@ -35,7 +35,9 @@ function NeighborOne(props) {
   }))}
 
   useEffect(() => {
-    if (props.progress.football) {
+    if (props.progress.end) {
+      setNumber(23)
+    } else if (props.progress.football) {
       setNumber(21)
     } else if (props.progress.stelmach) {
       setNumber(20)

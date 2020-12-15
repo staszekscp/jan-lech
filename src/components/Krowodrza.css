@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('C:\Users\Mariusz\Desktop\jan-lech\mystery-game\src/assets/rogatka.jpg');
+    background-image: url('../assets/rogatka.jpg');
     background-position: bottom;
     background-size: cover;
   }
@@ -102,6 +102,51 @@
     }
     .krowodrza-coworker {
       animation: krowodrza-coworker420 1s reverse
+    }
+  }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .krowodrza-boss {
+      top: 60%;
+      left: 15%;
+      transform: scale(2);
+      animation: none
+    }
+
+    .krowodrza-boss-start {
+      top: 60%;
+      left: 15%;
+      transform: scale(2);
+      animation: none
+      
+    }
+
+    .krowodrza-boss-conversation {
+      top: 60%;
+      left: 15%;
+      transform: scale(2);
+      animation: none
+    }
+
+    .krowodrza-coworker {
+      top: 65%;
+      left: 60%;
+      transform: scale(3);
+      animation: none
+    }
+
+    .krowodrza-coworker-start {
+      top: 65%;
+      left: 60%;
+      transform: scale(3);
+      animation: none
+    }
+
+    .krowodrza-coworker-conversation {
+      top: 65%;
+      left: 60%;
+      transform: scale(3);
+      animation: none
     }
   }
 

@@ -62,29 +62,29 @@ function IKC(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="ikc-background">
             {conversationDabrowski && <div><Conversation number={numberDabrowski} turnOff={switchToMajchrzak} actionOne={actionOne} right={true} place="dabrowski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationDabrowski(true)}}>
+              <div >
                 <img className={classDabrowski} src={dabrowski} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationMajchrzak(true)}}>
+              <div >
                 <img className={classMajchrzak} src={majchrzak} />
               </div>
             </div>
             }
             {conversationMajchrzak && <div><Conversation number={1} turnOff={switchToDabrowski} place="majchrzak" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationMajchrzak(true)}}>
+              <div >
                 <img className={classMajchrzak} src={majchrzak} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationDabrowski(true)}}>
+              <div >
                 <img className={classDabrowski} src={dabrowski} />
               </div>
             </div>
             }
-            {(!conversationDabrowski && !conversationMajchrzak) && <div><div onClick={() => {setConversationDabrowski(true)}}>
+            {(!conversationDabrowski && !conversationMajchrzak) && <div><div >
                 <img className={classDabrowski} src={dabrowski} />
               </div>
-              <div onClick={() => {setConversationMajchrzak(true)}}>
+              <div >
                 <img className={classMajchrzak} src={majchrzak} />
               </div>
             </div>

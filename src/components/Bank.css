@@ -26,6 +26,8 @@
     animation: bank-boss 2s
   }
 
+  
+
   @media (max-height: 500px) {
     .bank-boss-conversation {
       top: 80%;
@@ -39,6 +41,20 @@
       animation: bank-boss400 2s
     }
   }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .bank-boss {
+      top: 55%;
+      left: 50%;
+      transform: scale(2.2);
+    }
+
+    .bank-boss-conversation {
+      animation: none
+    }
+  }
+
+
   
   @keyframes bank-boss {
     from { 

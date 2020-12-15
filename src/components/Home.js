@@ -26,7 +26,9 @@ function Home(props) {
   const unemployedTalk = (props.progress.unemployed && !props.progress.unemployedResponse)
   
   useEffect(() => {
-    if (props.progress.moneyProblems) {
+    if (props.progress.end) {
+      setNumber(200)
+    } else if (props.progress.moneyProblems) {
       setNumber(100)
     } else if (hospitalTalk && fatGuyTalk && unemployedTalk) {
       setNumber(33)
@@ -94,12 +96,12 @@ function Home(props) {
               current={props.current} 
               back={props.back} 
               setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversation(true)}}>
-                  {!props.progress.moneyProblems ? <img className="wife-conversation" src={wife} /> : <img className="wife-conversation" src={policjantka} />}
+              <div >
+                  {props.progress.end? null : !props.progress.moneyProblems ? <img className="wife-conversation" src={wife} /> : <img className="wife-conversation" src={policjantka} />}
               </div>
             </Conversation> :
-              <div onClick={() => {setConversation(true)}}>
-                {!props.progress.moneyProblems ? <img className="wife" src={wife}/> : <img className="wife" src={policjantka}/>}
+              <div >
+                {props.progress.end? null : !props.progress.moneyProblems ? <img className="wife" src={wife}/> : <img className="wife" src={policjantka}/>}
               </div>}
             <div className="location-overlay">
               Wkraczasz do mieszkania Najchelów

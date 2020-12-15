@@ -28,7 +28,9 @@ function NeighborThree(props) {
   }))}
 
   useEffect(() => {
-    if (props.progress.moneyProblems) {
+    if (props.progress.end) {
+      setNumber(200)
+    } else if (props.progress.moneyProblems) {
       setNumber(11)
     } else if (props.progress.visitIkc && props.progress.krogul) {
       setNumber(7)
@@ -44,11 +46,11 @@ function NeighborThree(props) {
         <div className="neighbor-three-background" >
           {conversation ? <Conversation actionOne={actionOne} actionTwo={actionTwo} number={number} place="krogul" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
           <div onClick={() => {setConversation(true)}}>
-            <img className="krogul-conversation" src={neighbor} />
+            {!props.progress.end && <img className="krogul-conversation" src={neighbor} />}
           </div>
           </Conversation> :
           <div onClick={() => {setConversation(true)}}>
-            <img className="krogul" src={neighbor} />
+            {!props.progress.end && <img className="krogul" src={neighbor} />}
           </div>}
           
           <div className="location-overlay">

@@ -178,6 +178,51 @@
       animation: neighbor2-400 1s reverse
     }
   }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .neighbor2 {
+      top: 50%;
+      left: 15%;
+      transform: scale(3);
+      animation: none
+    }
+
+    .neighbor2-start {
+      top: 50%;
+      left: 15%;
+      transform: scale(3);
+      animation: none
+      
+    }
+
+    .neighbor2-conversation {
+      top: 50%;
+      left: 15%;
+      transform: scale(3);
+      animation: none
+    }
+
+    .neighbor1 {
+      top: 60%;
+      left: 60%;
+      transform: scale(4);
+      animation: none
+    }
+
+    .neighbor1-start {
+      top: 60%;
+      left: 60%;
+      transform: scale(4);
+      animation: none
+    }
+
+    .neighbor1-conversation {
+      top: 60%;
+      left: 60%;
+      transform: scale(4);
+      animation: none
+    }
+  }
   
   @keyframes neighbor1 {
     from { 

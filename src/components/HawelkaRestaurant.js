@@ -68,26 +68,26 @@ function HawelkaRestaurant(props) {
                 <img className={classBoss} src={boss} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationWaiter(true)}}>
+              <div >
                 <img className={classWaiter} src={waiter} />
               </div>
             </div>
             }
             {conversationWaiter && <div><Conversation number={1} turnOff={switchBoss} place="kelner" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationWaiter(true)}}>
+              <div >
                 <img className={classWaiter} src={waiter} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationBoss(true)}}>
+              <div >
                 <img className={classBoss} src={boss} />
               </div>
             </div>
             }
             {(!conversationBoss && !conversationWaiter) && <div>
-              <div onClick={() => {setConversationWaiter(true)}}>
+              <div >
                 <img className={classWaiter} src={waiter} />
               </div>
-              <div onClick={() => {setConversationBoss(true)}}>
+              <div >
                 <img className={classBoss} src={boss} />
               </div>
             </div>

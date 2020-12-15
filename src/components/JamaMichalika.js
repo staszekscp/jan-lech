@@ -88,29 +88,29 @@ function JamaMichalika(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="jama-background">
         {conversationMehoffer && <div><Conversation number={numberMehoffer} turnOff={switchToZelenski} actionOne={actionOne} actionTwo={actionTwo} actionThree={actionThree} right={true} place="mehoffer" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationMehoffer(true)}}>
+              <div >
                 <img className={classMehoffer} src={mehoffer} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationZelenski(true)}}>
+              <div >
                 <img className={classZelenski} src={zelenski} />
               </div>
             </div>
             }
             {conversationZelenski && <div><Conversation number={numberZelenski} turnOff={switchToMehoffer} actionThree={actionThree} actionFour={actionFour} place="zelenski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationZelenski(true)}}>
+              <div >
                 <img className={classZelenski} src={zelenski} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationMehoffer(true)}}>
+              <div >
                 <img className={classMehoffer} src={mehoffer} />
               </div>
             </div>
             }
-            {(!conversationMehoffer && !conversationZelenski) && <div><div onClick={() => {setConversationZelenski(true)}}>
+            {(!conversationMehoffer && !conversationZelenski) && <div><div >
                 <img className={classZelenski} src={zelenski} />
               </div>
-              <div onClick={() => {setConversationMehoffer(true)}}>
+              <div >
                 <img className={classMehoffer} src={mehoffer} />
               </div>
             </div>

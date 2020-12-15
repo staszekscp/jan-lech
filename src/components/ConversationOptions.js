@@ -145,11 +145,11 @@ const options = {
         },
         14: {
             message: "A bo ja wiem, gdzie on łazi. Myśli Pan, że co, że mi się spowiada? Jedyne co wiem, to że czasem na Kazimierz chodzi do tego Żyda, Thorna, do restauracji. A poza tym? Nie wiem, nawet do kościoła nie chodzi. A spróbuj Panie mu to wypomnieć! O Jezu! Wtedy dopiero awanturę robi!",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź. z budynku]"
         },
         15: {
             message: "Oo Panie, na Krowodrzy, tam taka rogatka jest, podobna co tu niedaleko u nas, na Twardowskiego. Józek tam robi jako dozorca.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź. z budynku]"
         },
         16: {
             message: "Oo Panie, na Krowodrzy, tam taka rogatka jest, podobna co tu niedaleko u nas, na Twardowskiego. Józek tam robi jako dozorca.",
@@ -178,11 +178,11 @@ const options = {
         },
         19: {
             message: "A bo ja wiem, gdzie on łazi. Myśli Pan, że co, że mi się spowiada? Jedyne co wiem, to że czasem na Kazimierz chodzi do tego Żyda, Thorna, do restauracji. A poza tym? Nie wiem, nawet do kościoła nie chodzi. A spróbuj Panie mu to wypomnieć! O Jezu! Wtedy dopiero awanturę robi!",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź. z budynku]"
         },
         20: {
             message: "Jak zwykle, wzioł swoją zieloną marynarkę, taaaką, zwykłą.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź. z budynku]"
         },
         21: {
             message: "A bo ja wiem, gdzie on łazi. Myśli Pan, że co, że mi się spowiada? Jedyne co wiem, to że czasem na Kazimierz chodzi do tego Żyda, Thorna, do restauracji. A poza tym? Nie wiem, nawet do kościoła nie chodzi. A spróbuj Panie mu to wypomnieć! O Jezu! Wtedy dopiero awanturę robi!",
@@ -211,15 +211,15 @@ const options = {
         },
         24: {
             message: "Oo Panie, na Krowodrzy, tam taka rogatka jest, podobna co tu niedaleko u nas, na Twardowskiego. Józek tam robi jako dozorca.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź. z budynku]"
         },
         25: {
             message: "Jak zwykle, wzioł swoją zieloną marynarkę, taaaką, zwykłą.",
-            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję, to wszystko na teraz. W razie jakichś informacji lub pytań skontaktuję się z Panią. Do widzenia. [Zakończ rozmowę i wyjdź. z budynku]"
         },
         26: {
             message: "I co, ma Pan jakieś informacje?",
-            backMessage: "Nic konkretnego. Wrócimy jak się czegoś dowiemy. [Zakończ rozmowę i wyjdź z budynku]",
+            backMessage: "Nic konkretnego. Wrócimy jak się czegoś dowiemy. [Zakończ rozmowę i wyjdź. z budynku]",
             
         },
         27: {
@@ -353,7 +353,7 @@ const options = {
         },
         601: {
             message: "Dobrze, już dobrze... Co się tak unosi? No był Józek w Kobierzynie, ja go stamtond zabrała, nie bedą mi mojego Józka do prondu podłonczać! A nie mówiłam głośno, bo co by ludzie godoli, że Józek to wariat. Po co mi to, Paaanie, dej Pan spokój...",
-            backMessage: "Sprawdzę to. Wrócę do Pani jak będę miał jeszcze jakieś pytania. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "Sprawdzę to. Wrócę do Pani jak będę miał jeszcze jakieś pytania. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         602: {
             message: "Dobrze, już dobrze... Co się tak unosi? No był Józek w Kobierzynie, ja go stamtond zabrała, nie bedą mi mojego Józka do prondu podłonczać! A nie mówiłam głośno, bo co by ludzie godoli, że Józek to wariat. Po co mi to, Paaanie, dej Pan spokój...",
@@ -382,7 +382,7 @@ const options = {
         },
         701: { 
             message: "Aaa to prawda, krenci sie tu taki jedyn. Nie wiem co to za człowiek. Ale co mnie to, Paanie. Do nas nigdy nie wchodził.",
-            backMessage: "W porządku, załóżmy, że Pani wierzę. W razie pytań jeszcze się odezwę. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "W porządku, załóżmy, że Pani wierzę. W razie pytań jeszcze się odezwę. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         702: { 
             message: "Aaa to prawda, krenci sie tu taki jedyn. Nie wiem co to za człowiek. Ale co mnie to, Paanie. Do nas nigdy nie wchodził.",
@@ -411,7 +411,7 @@ const options = {
         },
         801: { 
             message: "No co za dziod! A codziennie wyłaził z domu i mówił, że do roboty idzie! Pewnie chlał pod jakimś sklepem! Ale go przez łeb zdzielę jak wróci!",
-            backMessage: "Proszę się tak nie denerwować. Jedynie przekazuję informacje. Jeśli coś się pojawi, wrócę do Pani. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "Proszę się tak nie denerwować. Jedynie przekazuję informacje. Jeśli coś się pojawi, wrócę do Pani. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         802: {
             message: "No co za dziod! A codziennie wyłaził z domu i mówił, że do roboty idzie! Pewnie chlał pod jakimś sklepem! Ale go przez łeb zdzielę jak wróci!",
@@ -496,6 +496,10 @@ const options = {
             message: "Szefie, nic tu po Panu! Niech Pan nie traci czasu, Najchel może być wszędzie!",
             backMessage: "Jasne, już idę! [Wyjdź z budynku]"
         },
+        200: {
+            message: "*cisza*",
+            backMessage: "[Wyjdź z budynku]"
+        },
     },
     "twardowskiego": {
         backMessage: "Przejdź do mapy Krakowa.",
@@ -532,7 +536,7 @@ const options = {
             },
         },
         601: {
-            message: "Andrzej Stelmach, miło mi Panie władzo. Słucham, co chciałby Pan wiedzieć?",
+            message: "Michał Stelmach, miło mi Panie władzo. Słucham, co chciałby Pan wiedzieć?",
             first: {
                 content: "Co Pan wie o Najchelach?",
                 route: 3,
@@ -595,7 +599,7 @@ const options = {
                 content: "No dobrze. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, //
             },
-            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         8: {
             message: "Zaginął? No proszę... Ale nie, nie mam pojęcia, dokąd mógł pójść.",
@@ -610,7 +614,7 @@ const options = {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, 
             },
-            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         10: {
             message: "Trochę. Jakieś krzyki. Trwało to może z 10 minut, a potem ucichło. Ale nie powiem co dokładnie mówili.",
@@ -679,7 +683,7 @@ const options = {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, 
             },
-            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         16: {
             message: "Proszę Pana, ja tylko przekazuję co ludzie mówią. Osobiście dziwię się, że go nie zostawili w tym psychiatryku, bo jeszcze komuś może zrobić krzywdę. Nie było go z miesiąc, a odkąd parę tygodni temu wrócił do domu jest jeszcze gorzej.",
@@ -687,7 +691,7 @@ const options = {
                 content: "Dziękuję. A zmieniając temat... Śledzi Pan rozgrywki piłkarskie?",
                 route: 701, 
             },
-            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Dziękuję, bardzo Pan mi pomógł. W razie pytań jeszcze się odezwę. Do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         20: {
             message: "Witam ponownie, Panie przodowniku. Ma Pan do mnie jeszcze jakieś pytania?",
@@ -695,7 +699,7 @@ const options = {
                 content: "W sumie to tak. Śledzi Pan może rozgrywki piłkarskie?",
                 route: 701, 
             },
-            backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         701: {
             message: "Proszę Pana! Największy fan!",
@@ -703,7 +707,7 @@ const options = {
                 content: "Świetnie! W takim razie miałbym kilka pytań...",
                 route: 22, 
             },
-            backMessage: "Dobrze wiedzieć. Jak znajdę chwilę to porozmawiamy, ale muszę już iść. Do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Dobrze wiedzieć. Jak znajdę chwilę to porozmawiamy, ale muszę już iść. Do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
 
         },
         21: {
@@ -712,7 +716,7 @@ const options = {
                 content: "Chciałbym jeszcze raz pogadać o piłce.",
                 route: 22, 
             },
-            backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         22: {
             message: "Jasne, proszę pytać!",
@@ -728,7 +732,15 @@ const options = {
                 content: "Jakie kluby macie w Krakowie?",
                 route: 50, 
             },
-            backMessage: "W sumie, zmieniłem zdanie. Jeszcze się odezwę, ale tymczasem, do widzenia. [Zakończ rozmowę i wyjdź z mieszkania.]"
+            backMessage: "W sumie, zmieniłem zdanie. Jeszcze się odezwę, ale tymczasem, do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
+        },
+        23: {
+            message: "Witam Pana ponownie! Ale się narobiło z tymi Najchelami... Ma Pan do mnie jakieś pytania?",
+            first: {
+                content: "Chciałbym jeszcze raz pogadać o piłce.",
+                route: 22, 
+            },
+            backMessage: "Nie, ale jeśli coś się pojawi to się odezwę. Tymczasem do widzenia. [Zakończ rozmowę i wyjdź. z mieszkania.]"
         },
         30: {
             message: "Jasne! Pewnie Pan pamięta, mieliśmy w 1920 roku grać na Igrzyskach. No ale jak podczas wojny z bolszewikami można było w ogóle o sporcie myśleć? To dlatego dopiero rok później zagraliśmy pierwszy mecz, z Węgrami...",
@@ -740,7 +752,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         31: {
             message: "Graliśmy w Budapeszcie i przegraliśmy 0:1. Choć w sumie... Mogło być lepiej. Bo widzi Pan, tuż po stracie bramki Wacek Kuchar mógł strzelić dla nas gola... Miał przed sobą pustą bramkę, ale ponieważ chwilę wcześniej przypadkiem trącił bramkarza, to zostawił piłkę i postanowił pomóc mu wstać. I bardzo dobrze! Honorowo się zachował, przecież o to w sporcie chodzi!",
@@ -752,7 +764,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         32: {
             message: "Potem jeszcze raz zagraliśmy z Węgrami, tym razem u nas, na stadionie Cracovii, w maju 1922... I znowu przegraliśmy. 0:3. No ale w końcu przyszła pora na zwycięstwo! Wygraliśmy w Sztokholmie ze Szwedami 2:1. W ogóle to pierwszego gola strzelił Józek Klotz, stąd, z Krakowa. Zizi na niego mówią. Zna go Pan?",
@@ -764,7 +776,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         33: {
             message: "Chłopak pochodzi z żydowskiej rodziny, ojciec jest szewcem. W ogóle bystry z niego gagatek, studiował nawet medycynę, ale przerwał naukę, bo w 1918 roku zgłosił się na ochotnika do Wojska Polskiego. Nawet z bolszewikami się bił. A potem wrócił do Krakowa i teraz gra w tutejszej Jutrzence...",
@@ -776,7 +788,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         34: {
             message: "Potem już szło różnie. Łącznie do Igrzysk w '24 przegraliśmy 3 mecze, wygraliśmy 2. Jeszcze 3 remisy doszły. Ale Igrzyska w Paryżu to był niestety blamaż... Nasz związek nawet postanowił zmienić terminarz Mistrzowstw Polski, aby tylko można było się do nich w spokoju przygotować, żeby wstydu nie było! A my odpadliśmy już po pierwszym meczu... 0:5. Znowu przeciwko Węgrom... No nic, może uda się na następnych Igrzyskach w Amsterdamie...",
@@ -784,7 +796,7 @@ const options = {
                 content: "Pozwoli Pan, że zapytam o coś innego?",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         40: { 
             message: "Ehhh, szkoda mówić, takie zamieszanie narobili w tym związku. W ogóle to Polski Związek Piłki Nożnej powstał w 1919 roku i wymyślił sobie jak będą wyglądać te ich 'Mistrzostwa Polski'. Miało być 5 okręgów złożonych z kilku lokalnych zespołów, w których każdy miał grać z każdym po 2 razy. A potem zwycięzcy okręgów mieli się spotkać na turnieju finałowym. No ale wiadomo, z powodu bolszewików cały plan upadł, a turniej finałowy odwołano. Tylko w naszym, krakowskim okręgu udało się zorganizować wszystkie zaplanowane spotkania, a najlepsza okazała się Cracovia...",
@@ -796,7 +808,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         41: { 
             message: "Kolejną edycję, w 1921 roku już, na szczęście, udało się rozegrać. Zasady były te same jak w poprzednim roku. W naszym okręgu Cracovia zdmuchnęła wszystkich, proszę Paaana... Nie mieli sobie równych! Wszystkie mecze wygrali! A na turnieju finałowym to samo! No dobra, z 8 meczy zdarzył im się jeden remis, z Wartą Poznań, ale resztę wygrali. Najwięcej goli tam nastrzelał Józek Kałuża, aż 9! W ogóle nie wiem czy Pan słyszał... Józek rok później miał kłopoty ze zdrowiem, z pieniędzmi... Nawet miał Wisłę zacząć trenować i kończyć karierę jako piłkarz... Na szczęście udało mu się wrócić do gry!",
@@ -808,7 +820,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         42: { 
             message: "W 1922 roku u nas znowu najlepsza okazała się Cracovia, ale w turnieju finałowym już nie poszło im tak dobrze... Zajęli trzecie miejsce, a mistrzem został Pogoń Lwów. Ale w '23 po raz pierwszy Cracovia nie uzyskała awansu do turnieju finałowego, bo to Wisła okazała się lepsza! Nie powiem, byłem zaskoczony! Ale pięknie grali, zasłużyli. Na turnieju głównym szło im nawet nieźle, dostali się nawet do finału! No ale przegrali tam z Pogonią Lwów, która obroniła tytuł.",
@@ -820,7 +832,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         43: { 
             message: "Aaa, proszę Pana, proszę mnie nie denerwować! No PZPN poprzenosił wszystkie mecze w '24 roku, bo uznali, że kadra narodowa ma się do Igrzysk przygotować. Tyle z tego było, że przegraliśmy w pierwszym meczu z Węgrami 0:5 i odpadliśmy z turnieju. A krajowe rozgrywki zaczęły się dopiero jesienią. U nas znowu wygrała Wisła. Teraz trwa turniej finałowy, coś czuję, że może im dobrze pójść... Zwaszcza, że Heniek Reyman jest w niezłej formie...",
@@ -828,7 +840,7 @@ const options = {
                 content: "Dziękuję za odpowiedź. Zapytam o coś jeszcze...",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         50: { 
             message: "No przede wszystkim Wisła z Cracovią. Oba mają już... jak dobrze liczę 19 lat... Założono je w 1906 roku. Cracovia zdobyła już tytuł mistrza Polski, ale coś czuję, że Wiśle też się to w końcu uda...",
@@ -840,7 +852,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         51: { 
             message: "Ależ oczywiście! Liczą się także dwa kluby żydowskie - Jutrzenka i Makkabi. Jutrzenka powstała w 1910 roku i ma swój stadion przy Błoniach. Tam wcześniej, jeszcze za Austriaków, był tor do wyścigów konnych... Swoją drogą to w Jutrzence gra Józek Klotz, ten co strzelił pierwszego gola dla Polaków w historii...",
@@ -852,7 +864,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         52: { 
             message: "Makkabi powstało w 1909 roku... Mają stadion między ulicą Dietlowską i Koletek. W ogóle to ostatnio na spotkania Cracovii z Wisłą zaczęto mówić 'święta wojna'... Ja do tej pory nie mogę się przyzwyczaić, bo od zawsze tak nazywano mecze Jutrzenki z Makkabi... Bo wie Pan, Jutrzenka związana jest z Bundem, czyli żydowskimi socjalistami, a Makkabi, jako klub syjonistyczny, stoi po drugiej stronie sceny politycznej... Oj nie lubią się, nie lubią...",
@@ -864,7 +876,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         53: { 
             message: "Jakoś rok temu zawodnik Cracovii, Ludwik Gintel, przed meczem z Wisłą powiedział do kolegów w szatni: 'No to chodźmy panowie na tę świętą wojnę'. I tak się przyjęło. To w ogóle dość zabawne, bo Gintel wcześniej grał w Jutrzence, więc stamtąd znał to określenie.",
@@ -876,7 +888,7 @@ const options = {
                 content: "Proszę wybaczyć, jednak zapytam o coś innego.",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         54: { 
             message: "Hoho! I to jeszcze ile! Z tym, że większość powstała po wojnie... Z przedwojennych mamy Juvenię na Błoniach, Podgórze... i jeszcze TS Krowodrzę-Modrzejówkę. A potem to tego się namnożyło, proszę Pana! Lauda... znaczy dzisiaj już Garbarnia... Wawel, Dąbski, Korona, Nadwiślan, Prądniczanka, Prokocim, Zwierzyniecki... A i tak nie wiem, czy wymieniłem wszystkie... Choć sam wiele o tych klubach to nie wiem...",
@@ -884,7 +896,7 @@ const options = {
                 content: "Dziękuję za informacje, chciałbym zapytać o coś jeszcze...",
                 route: 22, 
             },
-            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź z mieszkania]"
+            backMessage: "To wszystko, dziękuję. Do widzenia Panu. [Zakończ rozmowę i wyjdź. z mieszkania]"
         },
         
     },
@@ -939,7 +951,7 @@ const options = {
         5: {
             message: "Tuż po tym co nas Matka Boska od bolszewików wybawiła to pamięta Pan, nie było co do gara włożyć, od tej Hiszpanki całej ludzie umirali. Sam brata straciłem. A jak kiedyś żona od piekarza wracała to ten Najchel się na nią zaczaił tu, o, za drzewem i rzucił z pięściami. Ale Panie, jak chce Pan wiedzieć więcej o tych Najchelach to żonę pytać. Mnie tam nie obchodzi co oni robią.",
             fourth: {
-                content: "W takim razie jeśli Pan pozwoli porozmawiam z Pana żoną.",
+                content: "W takim razie jeśli Pan pozwoli porozmawiam z Pana żoną. [Podejdź do Maciejowskiej]",
                 route: 3,
             },
         },
@@ -971,7 +983,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Jeśli Pan pozwoli to porozmawiam z Pana żoną.",
+                content: "Jeśli Pan pozwoli to porozmawiam z Pana żoną. [Podejdź do Maciejowskiej]",
                 route: 3,
             },
             backMessage: "Przepraszam za kłopot. Muszę iść. Do widzenia. [Zakończ rozmowę i odejdź.]"
@@ -983,10 +995,41 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Przepraszam za zamieszanie. Muszę jeszcze raz zamienić słówko z Pana żoną.",
+                content: "Przepraszam za zamieszanie. Muszę jeszcze raz zamienić słówko z Pana żoną. [Podejdź do Maciejowskiej]",
                 route: 3,
             },
             backMessage: "Chciałem się tylko pożegnać. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        11: {
+            message: "Witam, witam. Co Pana tu ponownie sprowadza? Bo widzę, że Najchele, żeśta już połapali!",
+            first: {
+                content: "Chciałbym porozmawiać o tym, jak wyglądał Kraków po Wielkiej Wojnie.",
+                route: 30,
+            },
+            fourth: {
+                content: "Jeśli Pan pozwoli to porozmawiam z Pana żoną. [Podejdź do Maciejowskiej]",
+                route: 3,
+            },
+            backMessage: "Przepraszam za kłopot. Muszę iść. Do widzenia. [Zakończ rozmowę i odejdź.]"
+        },
+        12: {
+            message: "Panie, kim Pan jest?",
+            first: {
+                content: "Kołodziejczyk, policja. Kręciłem się tu w sprawie Najchelów.",
+                route: 502,
+            },
+        },
+        502: {
+            message: "Dobrze, żeście ich połapali Panie. Słucham, o co chodzi? A może chce pan z żoną pomówić. Tylko nie wspominaj Pan o przemyśle, bo się złościć będzie. Nauczycielką być chcioła, a w Cygarfabryce robiła. A co ja Panu bede mówił...",
+            first: {
+                content: "Chciałbym porozmawiać o tym, jak wyglądał Kraków po Wielkiej Wojnie.",
+                route: 30,
+            },
+            fourth: {
+                content: "Chciałbym zamienić słówko z Pana żoną? [Podejdź do Maciejowskiej]",
+                route: 3,
+            },
+            backMessage: "A jednak, nic, przepraszam. Do widzenia. [Zakończ rozmowę i odejdź.]"
         },
         30: { 
             message: "Słucham, co chce Pan wiedzieć?",
@@ -1003,7 +1046,7 @@ const options = {
                 route: 60,
             },
             fourth: {
-                content: "Przepraszam, jednak jeśli Pan pozwoli to porozmawiam z Pana żoną.",
+                content: "Przepraszam, jednak jeśli Pan pozwoli to porozmawiam z Pana żoną. [Podejdź do Maciejowskiej]",
                 route: 3,
             },
             
@@ -1208,7 +1251,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Dziękuję za informacje. Pozwoli Pani, że zanim pójdę porozmawiam jeszcze z Pani mężem?",
+                content: "Dziękuję za informacje. Pozwoli Pani, że zanim pójdę porozmawiam jeszcze z Pani mężem? [Podejdź do Maciejowskiego]",
                 route: 10, 
             },
             backMessage: "Dziękuję za informacje. Jeśli będę miał jakieś pytania zwrócę się do Państwa. [Zakończ rozmowę i odejdź]"
@@ -1220,7 +1263,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "W sumie, to jeszcze porozmawiałbym z Pani mężem, przepraszam za kłopot.",
+                content: "W sumie, to jeszcze porozmawiałbym z Pani mężem, przepraszam za kłopot. [Podejdź do Maciejowskiego]",
                 route: 10, 
             },
             backMessage: "W sumie to zapytam kiedy indziej. Dziękuję za informacje i do widzenia. [Zakończ rozmowę i odejdź]"
@@ -1232,7 +1275,19 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Przepraszam, jednak chcę porozmawiać z Pani mężem.",
+                content: "Przepraszam, jednak chcę porozmawiać z Pani mężem. [Podejdź do Maciejowskiego]",
+                route: 10, 
+            },
+            backMessage: "W sumie to zapytam kiedy indziej. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        502: {
+            message: "O, to Pan. Widziałam, jak pan tędy przechodził wcześniej. Słucham, mogę jakoś pomóc?",
+            first: { 
+                content: "Wspomniała Pani o pracy w fabryce. Chciałbym dowiedzieć się nieco więcej...",
+                route: 30,
+            },
+            fourth: {
+                content: "Przepraszam, jednak chcę porozmawiać z Pani mężem. [Podejdź do Maciejowskiego]",
                 route: 10, 
             },
             backMessage: "W sumie to zapytam kiedy indziej. Do widzenia. [Zakończ rozmowę i odejdź]"
@@ -1252,7 +1307,7 @@ const options = {
                 route: 60, 
             },
             fourth: {
-                content: "Przepraszam, jednak chcę porozmawiać z Pani mężem.",
+                content: "Przepraszam, jednak chcę porozmawiać z Pani mężem. [Podejdź do Maciejowskiego]",
                 route: 10, 
             },
         },
@@ -1450,7 +1505,11 @@ const options = {
         11: {
             message: "Nie mam już nic do dodania. Proszę sobie iść. [Odchodzi]",
             backMessage: "Chwileczkę...!"
-        }
+        },
+        200: {
+            message: "*cisza*",
+            backMessage: "[Odejdź]"
+        },
 
     },
     "lekarz": {
@@ -1516,7 +1575,7 @@ const options = {
                 content: "Brawo. No to niech Pan wie, że Najchel teraz biega po mieście z rewolwerem za pazuchą. A my nie wiemy gdzie go szukać.",
                 route: 5, 
             },
-            second: {
+            third: {
                 content: "No to się świetnie zaopiekowała jak zeszłej nocy po awanturze wybiegł z rewolwerem w dłoni, krzycząc że kogoś zabije.",
                 route: 5, 
             },
@@ -1557,21 +1616,21 @@ const options = {
         7: {
             message: "Prawdę mówiąc, do wszystkiego. Miewał halucynacje. Często rozmawiał z urojonym przyjacielem, którego przedstawiał jako 'człowieka o koźlich rogach'. Ten 'przyjaciel' często namawiał go do dziwnych rzeczy. Najchel mówił, że pewnego razu kazał mu zaatakować sąsiadkę. Ale proszę porozmawiać z siostrą Zuzanną. To ona bezpośrednio opiekowała się Najchelem.",
             fourth: {
-                content: "W porządku, dziękuję za pomoc.",
+                content: "W porządku, dziękuję za pomoc. [Podejdź do siostry Zuzanny.]",
                 route: 6,
             },
         },
         8: {
             message: "Szczerze, nie wiem. Najchel miał urojonego przyjaciela, którego przedstawiał jako 'człowieka o koźlich rogach'. Ten 'przyjaciel' często namawiał go do dziwnych rzeczy. Najchel mówił, że pewnego razu kazał mu zaatakować sąsiadkę. Ale proszę porozmawiać z siostrą Zuzanną. To ona bezpośrednio opiekowała się Najchelem i będzie wiedzieć więcej ode mnie.",
             fourth: {
-                content: "W porządku, dziękuję za pomoc.",
+                content: "W porządku, dziękuję za pomoc. [Podejdź do siostry Zuzanny.]",
                 route: 6,
             },
         },
         9: {
             message: "Prawdę mówiąc, nie wyglądało to dobrze. Miewał halucynacje. Często rozmawiał z urojonym przyjacielem, którego przedstawiał jako 'człowieka o koźlich rogach'. Ten 'przyjaciel' często namawiał go do dziwnych rzeczy. Najchel mówił, że pewnego razu kazał mu zaatakować sąsiadkę. Ale proszę porozmawiać z siostrą Zuzanną. To ona bezpośrednio opiekowała się Najchelem.",
             fourth: {
-                content: "W porządku, dziękuję za pomoc.",
+                content: "W porządku, dziękuję za pomoc. [Podejdź do siostry Zuzanny.]",
                 route: 6,
             },
         },
@@ -1629,7 +1688,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Dziękuję. Jednak zanim pójdę to chciałbym zamienić słówko z siostrą Zuzanną... Mam kilka pytań dotyczących Kościoła...",
+                content: "Dziękuję. Jednak zanim pójdę to chciałbym zamienić słówko z siostrą Zuzanną... Mam kilka pytań dotyczących Kościoła... [Podejdź do siostry Zuzanny.]",
                 route: 16,
             },
             backMessage: "No dobrze. Dziękuję za informacje. [Zakończ rozmowię i opuść szpital]"
@@ -1648,7 +1707,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Chciałbym porozmawiać z siostrą Zuzanną",
+                content: "Chciałbym porozmawiać z siostrą Zuzanną. [Podejdź do siostry Zuzanny.]",
                 route: 16,
             },
             backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
@@ -1660,7 +1719,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Chciałbym porozmawiać z siostrą Zuzanną",
+                content: "Chciałbym porozmawiać z siostrą Zuzanną. [Podejdź do siostry Zuzanny.]",
                 route: 16,
             },
             backMessage: "Nie. Przepraszam za kłopot, do widzenia. [Zakończ rozmowię i opuść szpital]"
@@ -1680,7 +1739,7 @@ const options = {
                 route: 60,
             },
             fourth: {
-                content: "Jednak chciałbym porozmawiać z siostrą Zuzanną...",
+                content: "Jednak chciałbym porozmawiać z siostrą Zuzanną... [Podejdź do siostry Zuzanny.]",
                 route: 16,
             },
         },
@@ -1825,7 +1884,7 @@ const options = {
         9: {
             message: "Niestety, nie. Ale widziałam, że potem poszedł do gabinetu doktora Peltzera. Może Pan jego spytać, czy czegoś nie wie.",
             fourth: {
-                content: "Tak też zrobię. Dziękuję.",
+                content: "Tak też zrobię. Dziękuję. [Podejdź do doktora Peltzera.]",
                 route: 10, 
             },
         },
@@ -1839,7 +1898,7 @@ const options = {
         11: {
             message: "Tak, to był taki gruby, wysoki mężczyzna. Elegancki. Doktor Peltzer może wiedzieć coś więcej na jego temat, bo widziałam jak rozmawiali. Proszę się do niego odezwać.",
             fourth: {
-                content: "Tak też zrobię. Dziękuję.",
+                content: "Tak też zrobię. Dziękuję. [Podejdź do doktora Peltzera.]",
                 route: 11, 
             },
         },
@@ -1850,7 +1909,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Peltzerem.",
+                content: "Przepraszam. Chciałbym jednak porozmawiać z doktorem Peltzerem. [Podejdź do doktora Peltzera.]",
                 route: 11, 
             },
             backMessage: "Nie, tak naprawdę to już wychodzę. Do widzenia. [Zakończ rozmowię i opuść szpital.]"
@@ -2031,14 +2090,14 @@ const options = {
         4: {
             message: "Tamtego dnia po raz ostatni. Ale wiem, że jego następca miał wątpliwą przyjemność z nim porozmawiać. Tam stoi. Może powiedzieć nieco więcej.",
             fourth: {
-                content: "Dziękuję. Zapytam.",
+                content: "Dziękuję. Zapytam. [Podejdź do pracownika.]",
                 route: 4,
             },
         },
         5: {
             message: "*ironicznie* Pewnie, często zachodzimy na pogaduchy do Thorna, by przy okazji zjeść jakiś czulent... Co Pan, na głowę upadł? Jak mnie ktoś od bolszewików wyzywa to nie chcę tego człowieka na oczy widzieć. Ale wiem, że jego następca z nim rozmawiał. Proszę z nim zamienić słówko, może się Pan czegoś dowie.",
             fourth: {
-                content: "Dziękuję. Zapytam.",
+                content: "Dziękuję. Zapytam. [Podejdź do pracownika.]",
                 route: 4,
             },
         },
@@ -2071,7 +2130,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Jednak jeszcze raz chciałbym pomówić z Pana podwładnym.",
+                content: "Jednak jeszcze raz chciałbym pomówić z Pana podwładnym. [Podejdź do pracownika.]",
                 route: 5,
             },
             backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
@@ -2083,7 +2142,19 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Chciałbym pomówić z Pana podwładnym.",
+                content: "Chciałbym pomówić z Pana podwładnym. [Podejdź do pracownika.]",
+                route: 5,
+            },
+            backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
+        },
+        502: {
+            message: "Dzień dobry, w czym mogę pomóc? A może chce Pan porozmawiać z tym niedoszłym architektem, panem marudą, co tam stoi?",
+            first: {
+                content: "Chciałbym porozmawiać z Panem o społeczeństwie Krakowa.",
+                route: 30,
+            },
+            fourth: {
+                content: "Chciałbym pomówić z Pana podwładnym. [Podejdź do pracownika.]",
                 route: 5,
             },
             backMessage: "Nie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
@@ -2103,7 +2174,7 @@ const options = {
                 route: 60,
             },
             fourth: {
-                content: "Chciałbym pomówić z Pana podwładnym.",
+                content: "Chciałbym pomówić z Pana podwładnym. [Podejdź do pracownika.]",
                 route: 5,
             },
             backMessage: "To już wszytko, co chciałem wiedzieć. Do widzenia. [Zakończ rozmowę i odejdź]"
@@ -2214,7 +2285,7 @@ const options = {
             },
         },
         501: {
-            message: "A co Panu naopowiadał? Pewnie, że ten cały Najchel go bolszewikiem nazwał i nie mógł ujmy na honorze znieść, szefunio wielki.",
+            message: "Najchel? Ten ochlejmorda, któremu ten skąpiec płacił więcej niż mi?",
             first: {
                 content: "Widzę, że nie pała Pan miłością do swojego szefa...",
                 route: 3,
@@ -2225,25 +2296,25 @@ const options = {
             },
         },
         3: {
-            message: "Przepraszam... Po prostu nie mogę pogodzić się z tym, że wylądowałem tym miejscu... Zdawałem na architekturę i co? Skończyłem jako jakiś dozorca w rogatce na końcu świata... No dobrze, ale pytał Pan o Najchela. No był tutaj, ale dosłownie przez chwilę, i to parę tygodni temu... Nawet nie zdążyłem się mu dobrze przyjrzeć. Chciał się widzieć z szefem, tyle. Więcej go nie widziałem.",
+            message: "Przepraszam... Po prostu nie mogę pogodzić się z tym, że wylądowałem tym miejscu... Zdawałem na architekturę i co? Skończyłem jako jakiś dozorca w rogatce na zadupiu... No dobrze, ale pytał Pan o Najchela. No był tutaj, ale dosłownie przez chwilę, i to parę tygodni temu... Nawet nie zdążyłem się mu dobrze przyjrzeć. Chciał się widzieć z szefem, ale akurat go nie było, więc sobie poszedł, tyle. Więcej Najchela nie widziałem.",
             first: {
                 content: "Dziękuję za informacje. Chciałbym jednak zamienić w takim razie z Panem słówko o architekturze...",
                 route: 30,
             },
             fourth: {
-                content: "No dobrze. Dziękuję za odpowiedź. Porozmawiam jeszcze z Pana przełożonym.",
+                content: "No dobrze. Dziękuję za odpowiedź. Porozmawiam jeszcze z Pana przełożonym. [Podejdź do szefa.]",
                 route: 4,
             },
             backMessage: "Dziękuję, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
         },
         4: {
-            message: "Tak?",
+            message: "O co chodzi?",
             first: {
                 content: "Chciałbym zamienić z Panem słówko o architekturze...",
                 route: 30,
             },
             fourth: {
-                content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym.",
+                content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym. [Podejdź do szefa.]",
                 route: 3,
             },
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
@@ -2259,7 +2330,7 @@ const options = {
                 route: 50,
             },
             fourth: {
-                content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym.",
+                content: "Przepraszam za zamieszanie. Porozmawiam jeszcze z Pana przełożonym. [Podejdź do szefa.]",
                 route: 3,
             },
             backMessage: "W sumie, to by było na tyle. Do widzenia. [Zakończ rozmowę i odejdź]"
@@ -2387,7 +2458,7 @@ const options = {
                 content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
                 route: 30,
             },
-            backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         6: {
             message: "Niestety, po raz ostatni kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabat, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chcie zapłacić to musi wrócić kiedy indziej. W szabat nie mogę tykać pieniędzy.",
@@ -2402,7 +2473,7 @@ const options = {
                 content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
                 route: 30,
             },
-            backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         8: {
             message: "Witam Pana ponownie! Jak mogę pomóc?",
@@ -2410,10 +2481,25 @@ const options = {
                 content: "Chciałbym porozmawiać z Panem o życiu żydowskim w Krakowie.",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
+        },
+        9: {
+            message: "Szolem alejchem! Dzień dobry! Hirsz Thorn, właściciel. Niestety jeszcze wcześnie rano, otwieramy później. Zapraszam po 10!",
+            first: {
+                content: "Co to za miejsce? Nigdy tu nie byłem.",
+                route: 502,
+            }
+        },
+        502: {
+            message: "Ooo, Pan chyba nie z Krakowa. To moja restauracja. Założyłem ją w 5659 roku. Znaczy przepraszam, dla Was, chrześcijan, to będzie w... 1899 roku, wybaczy Pan. W każdym razie podajemy najlepsze dania żydowskie - czulent, faszerowane szczupaki, gęsie szyjki... Ale strudla też Pan dostanie! ",
+            first: {
+                content: "A czy w takim wypadku mógłbym porozmawiać z Panem o życiu Żydów w Krakowie?",
+                route: 30,
+            },
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         30: {
-            message: "Witam Pana ponownie! Jak mogę pomóc?",
+            message: "Słucham Pana!",
             first: {
                 content: "Jak się kształtują stosunki między Żydami a chrześcijanami?",
                 route: 40,
@@ -2426,7 +2512,7 @@ const options = {
                 content: "Jakie są najważniejsze potacie ze środowiska krakowskich Żydów?",
                 route: 60,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         40: {
             message: "Różnie bywa, drogi Panie. Mi żaden szajgec nigdy krwi nie napsuł. Do mnie do restauracji często przychodzą chrześcijanie, a jak nie mogę przyjąć od nich zapłaty z powodu szabasu to zawsze wracają, aby uregulować rachunek. Zawsze! Ale to nie znaczy, że wszystko jest git. ",
@@ -2438,7 +2524,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         41: {
             message: "Drogi Panie, jeszcze przed wojną nasłuchałem się okropności. Szanowny Panie, ja to się już nawet śmiałem, że ja to nie lubię gazet żydowskich czytać, bo tam to tylko o tym, że tu pogrom na Żydach, tam pobili Żyda, tam zaś szykanowali... A w innych to czytam, że Żydzi nad światem panują, że same z nas bogacze są! Drogi Panie, od razu człowiek lepiej się czuje jak się dowiaduje, że światem rządzi!",
@@ -2450,7 +2536,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         42: {
             message: "Niech no się Pan rozejrzy. Tu, w Kroke, znaczy w Krakowie, co czwarty to Żyd. A żyjemy głównie na Kazimierzu, gdzie straszna bieda panuje. Straszna. Ja mam tyle szczęścia, że jeszcze do czegoś dojść się udało. Ale inni? Nawet w raportach lekarze mówią, że w dzielnicy żydowskiej, w sztetlu naszym, bieda w oczy kłuje. Mówią ludzie, że światem rządzimy. A dla pobożnego Żyda najważniejsze to Torę studiować. Ostatnio też zaczęto nas wyzywać, że za bolszewikami jesteśmy. A przecież niejeden Żyd za Polin, za Polskę walczył! I życie stracił!",
@@ -2462,7 +2548,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         43: {
             message: "Szanowny Panie, ja w życiu mnóstwo porządnych Polaków spotkałem. Znam też mnóstwo Żydów co za pełnoprawnych Polaków się uważa. Ale pewne grupy, zwłaszcza endeckie, podburzyć jest łatwo... Na przykład ostatnio, jakoś dwa lata temu była dyskusja, czy Żydzi powinni mieć taki sam dostęp na uniwersytety co chrześcijanie. Jak rektor Uniwersyettu Jagiellońskiego, Natanson - Żyd swoją drogą - się temu sprzeciwił to mu bombę pod dom podłożyli, słyszał Pan? A potem tu, na Krakowskiej, tyle że pod numerem 23, w hotelu Kellera, kolejny wybuch! Nie wie Pan jak strasznie się wtedy wszyscy baliśmy, że i na nas trafi. W końcu trzecia, i póki co ostatnia, wybuchła na Orzeszkowej, pod redakcją żydowskiej gazety, Nowego Dziennika... Od tego czasu jest raczej spokój...",
@@ -2470,7 +2556,7 @@ const options = {
                 content: "Pozwoli Pan, że zapytam o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         50: {
             message: "Szanowny Panie, długo by opowiadać! Czasem myślę, że Kazimierz to jak inny kraj jest. Teraz z Panem po polsku mówię, a wystarczy, że przejdę się na drugą stronę ulicy i tylko jidysz usłyszeć mogę. Niektórzy nawet polskiego dobrze nie znają, bo całe życie tylko z innymi Żydami się trzymali. Ale czemu się dziwić? W domu jidysz, w sklepie jidysz, w chederze jidysz... Jak ktoś jest pobożny i chce zgodnie z Torą żyć, to nawet nie musi poza Kazimierz głowy wychylać. Ale tutaj mowa jest tylko o mitnagedim, chasidim... ortodoksyjnych Żydach można powiedzieć. To ci co pejsy noszą, brody, chałaty. Ale Kroke jest też domem dla żydowskich liberałów, którym powoli bliżej do Polaków, niż do Żydów.",
@@ -2482,7 +2568,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         51: {
             message: "Po żydowsku już nie mówią, nawet szynkę zdarza im się zjeść... Nie wszyscy, oczywiście, ale jednak... No i w to wszystko jeszcze wplątali się syjoniści, którym marzy się utworzenie państwa żydowskiego. Wśród nich znajdzie Pan i ortodoksów, i liberałów... Drogi Panie, teraz to ciężko się w tym wszystkim połapać, kto jak bardzo pobożny, kto dba o koszerne jedzenie, kto w jakim języku mówi. Co rodzina, to inne podejście. ",
@@ -2494,7 +2580,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         52: {
             message: "Szanowny Panie, mamy w Krakowie dwie gminy - kazimierską z siedzibą przy Skawińskiej 2 i podgórską. Rok temu odbyły się wybory i na czele naszej gminy stanął ponownie doktor Landau, prawnik. A także w końcu - po dwudziestu latach oczekiwania! - zdecydowano kto zostanie naczelnym rabbi Krakowa. Stanowisko powierzono rabbiemu Józefowi Kornitzerowi. ",
@@ -2506,7 +2592,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         53: {
             message: "Dla sierot mamy zakład przy ulicy Dietlowskiej, kilka burs... Istnieje też wiele instytucji charytatywnych, które pomagają matkom, starcom, biednym w ich niedoli... Przy Skawińskiej mamy szpital żydowski. No i szkoły, w tym tę założoną przez panią Szenirer. Czy już o niej wspominałem?",
@@ -2522,7 +2608,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         54: {
             message: "To wspaniała kobieta. Jeszcze kilka lat temu w zakładzie szewskim, tu obok, zaczęła szkolić dziewczęta z pobożnych rodzin. A jeszcze do niedawna edukacja w ogóle nie była dla nich dostępna. Pobożni Żydzi dbali tylko o edukację chłopców, co by mogli w przyszłości Torę i Talmud studiować. A jak nakazano wszystkim, bez wyjątku, dziewczynkom też, do szkoły iść to musiały być posyłane do szkół świeckich, gdzie oddalały się od naszej wiary...",
@@ -2534,7 +2620,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         55: {
             message: "Jak najbardziej, szanowny Panie. Bo proszę sobie wyobrazić. Taka dziewczynka wraca do domu po 7 latach nauki w szkole, gdzie poznaje historię, geografię, języki, koleżanki... a nie wie nic o własnej religii! I taka dziewczynka potem ma wyjść za chłopca z żydowskiej rodziny, który nauki w chederze pobierał... Dlatego pani Szenirer postanowiła założyć szkołę dla dziewczynek, gdzie oprócz przedmiotów świeckich można też zgłębić historię Palestyny, Torę... W tym roku wiem, że przy Skałce założyła seminarium nauczycielskie. Bystra kobieta...",
@@ -2546,7 +2632,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         56: {
             message: "Najsłynniejsze jest Gimnazjum Hebrajskie przy ulicy Podbrzezie. Tam posyłają swoje dzieci głównie zwolennicy syjonizmu i zamożniejsze rodziny. Natomiast dla dzieci z bardziej pobożnych rodzin powstało Gimnazjum Tachkemoni na Miodowej.",
@@ -2554,7 +2640,7 @@ const options = {
                 content: "Dziękuję, chciałbym zapytać o coś jeszcze...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         60: {
             message: "Przede wszystkim pan Ozjasz Thon, poseł wybrany do sejmu polskiego. Wielki patriota, zarówno polski jak i żydowski. To on był jednym z organizatorów pierwszego Światowego Kongresu Syjonistycznego w Bazylei... Nie pojechał tam zresztą, bo przejmował wtedy obowiązki rabina przy synagodze Tempel. Był też w Wersalu na czele delegacji żydowskiej jak podpisywano słynne traktaty. Publikuje też w Nowym Dzienniku, jedynej żydowskiej gazety codziennej w języku polskim. Ze społeczników wymieniłbym jeszcze Różę Rockową zajmującą się sierotami na Dietlowskiej. I oczywiście Sarę Szenirer... Czy już Panu o niej mówiłem?",
@@ -2570,7 +2656,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         61: {
             message: "Wspaniała kobieta. Jeszcze kilka lat temu w zakładzie szewskim, tu obok, zaczęła szkolić dziewczęta z pobożnych rodzin. A jeszcze do niedawna edukacja w ogóle nie była dla nich dostępna. Pobożni Żydzi dbali tylko o edukację chłopców, co by mogli w przyszłości Torę i Talmud studiować. A jak nakazano wszystkim, bez wyjątku, dziewczynkom też, do szkoły iść to musiały być posyłane do szkół świeckich, gdzie oddalały się od naszej wiary...",
@@ -2582,7 +2668,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         62: {
             message: "Jak najbardziej, szanowny Panie. Bo proszę sobie wyobrazić. Taka dziewczynka wraca do domu po 7 latach nauki w szkole, gdzie poznaje historię, geografię, języki, koleżanki... a nie wie nic o własnej religii! I taka dziewczynka potem ma wyjść za chłopca z żydowskiej rodziny, który nauki w chederze pobierał... Dlatego pani Szenirer postanowiła założyć szkołę dla dziewczynek, gdzie oprócz przedmiotów świeckich można też zgłębić historię Palestyny, Torę... W tym roku wiem, że przy Skałce założyła seminarium nauczycielskie. Bystra kobieta...",
@@ -2594,7 +2680,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
         63: {
             message: "Ważną postacią dla Krakowa jest Józef Sare, wiceprezydent miasta i architekt. Studiował we Wiedniu i to on projektował na przykład jeden z budynków Wydziału Lekarskiego Uniwesytetu Jagiellońskiego. To ten przy Grzegórzeckiej. I pomyśleć, że to jeden z tych wydziałów, który chce wprowadzić ograniczenia dla studentów żydowskich! Ponadto spod jego pióra wyszedł projekt dla Gimnazjum św. Anny, Gimnazjum króla Sobieskiego, Urzędu Wojewódzkiego... O, a tutaj, na Krakowskiej, pod 'dziewiątką', mieszka też Poldek Infeld. Chwalił się, że jak studiował w Berlinie to samego Einsteina poznał. Ja to myślę, że będzie z niego wielki naukowiec, może kiedyś z tym Einsteinem książkę napisze...",
@@ -2602,7 +2688,7 @@ const options = {
                 content: "Dziękuję za informacje. Pozwoli Pan, że zapytam o coś jeszcze...",
                 route: 30,
             },
-            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Przepraszam najmocniej, ale muszę już iść. Do wiedzenia. [Zakończ rozmowę i wyjdź.]"
         },
 
     },
@@ -2647,14 +2733,14 @@ const options = {
         3: {
             message: "Proszę Pana, tak to wygląda połowa naszych klientów. Jak Pan chce, to może Pan porozmawiać z kierownikiem, on zna stałych bywalców. To ten, w okularach, może będzie w stanie bardziej pomóc.",
             fourth: {
-                content: "Dziękuję. Tak też zrobię.",
+                content: "Dziękuję. Tak też zrobię. [Podejdź do kierownika.]",
                 route: 2,
             },
         },
         4: {
             message: "Proszę sobie nie kpić! Ja tylo wykonuję swoją pracę! A co do tego człowieka to właśnie opisał Pan połowę naszych klientów. Jak Pan chce może porozmawiać z kierownikiem, on zna stałych bywalców. To ten, w okularach, może będzie w stanie bardziej pomóc.",
             fourth: {
-                content: "Dziękuję. Tak też zrobię.",
+                content: "Dziękuję. Tak też zrobię. [Podejdź do kierownika.]",
                 route: 2,
             },
         },
@@ -2668,7 +2754,7 @@ const options = {
                 content: "Właściwie to chciałem jeszcze porozmawiać z Panem... Co to za miejsce?",
                 route: 30,
             },
-            backMessage: "Tak, wiem dokąd mam iść, w razie pytań wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
+            backMessage: "Tak, wiem dokąd mam iść, w razie pytań wrócę. Do widzenia. [Zakończ rozmowę i wyjdź..]"
         },
         6: {
             message: "Coś czuję, że jest Pan spoza Krakowa, skoro Pan tego nie wie... Chodzi oczywiście o restaurację Antoniego Hawełki na Rynku i Jamę Michalika na Floriańskiej.",
@@ -2676,7 +2762,7 @@ const options = {
                 content: "Dziękuję. Jeszcze zanim pójdę pozwoli Pan, że zapytam: Co to jest za miejsce?",
                 route: 30,
             },
-            backMessage: "Dziękuję, to by było na tyle, w razie pytań jeszcze wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
+            backMessage: "Dziękuję, to by było na tyle, w razie pytań jeszcze wrócę. Do widzenia. [Zakończ rozmowę i wyjdź..]"
         },
         7: {
             message: "Dzień dobry, Pan znowu do kierownika? Niestety, nie jest w stanie rozmawiać, zupełnie pijany...",
@@ -2684,7 +2770,7 @@ const options = {
                 content: "Właściwie to chciałem porozmawiać z Panem... Co to za miejsce?",
                 route: 30,
             },
-            backMessage: "Rozumiem. W takim razie do widzenia. [Zakończ rozmowę i wyjdź.]"
+            backMessage: "Rozumiem. W takim razie do widzenia. [Zakończ rozmowę i wyjdź..]"
         },
         30: {
             message: "Restauracja najlepszego browaru w Krakowie! Piwo zaczęto tu warzyć już hoho! W 1840 roku! Browar założył szwajcarski piwowar, Rudolf Jenny. Już za czasów austriackich produkowano tu najlepsze piwo w całej Galicji. Swoją drogą jak cesarz, Franciszek Józef, odwiedzał Kraków to był pod wrażeniem tego, jak ustrojono nasz browar. Ponoć zapalono nawet ognie bengalskie! To dopiero musiało być widowisko!",
@@ -2692,11 +2778,11 @@ const options = {
                 content: "Proszę mówić dalej.",
                 route: 31,
             },
-            backMessage: "Dziękuję za informacje. Muszę już iść do widzenia. [Zakończ rozmowę i wyjdź.]"
+            backMessage: "Dziękuję za informacje. Muszę już iść do widzenia. [Zakończ rozmowę i wyjdź..]"
         },
         31: {
             message: "Pod koniec XIX wieku dla oświetlenia budynku browarnego, warzelni, administracji i naszego placu uruchomiono elektrownię, jedną z pierwszych w Krakowie. Ostatecznie kompleks kupił pan Jan Götz, to ten sam, co założył słynny browar w Okocimiu. I tak pozostało do dziś...",
-            backMessage: "Dziękuję za informacje! Niestety muszę już iść, do widzenia. [Zakończ rozmowę i wyjdź.]"
+            backMessage: "Dziękuję za informacje! Niestety muszę już iść, do widzenia. [Zakończ rozmowę i wyjdź..]"
         },
     }, 
     "szef-browar": {
@@ -2814,7 +2900,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Dziękuję za informację, tak też zrobię.",
+                content: "Dziękuję za informację, tak też zrobię. [Podejdź do Boya-Żeleńskiego.]",
                 route: 3,
             },
         },
@@ -2825,7 +2911,7 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Tak też zrobię.",
+                content: "Tak też zrobię. [Podejdź do Boya-Żeleńskiego.]",
                 route: 2,
             },
         },
@@ -2847,10 +2933,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                content: "Czy tam stoi pan Boy-Żeleński? Jeśli Pan pozwoli to zamienię z nim słówko. [Podejdź do Boya-Żeleńskiego.]",
                 route: 2,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         602: {
             message: "To nie jest jakaś tam 'jama'! To tutaj spotykali i spotykają się najwięksi artyści Krakowa! Jak Pan śmie!",
@@ -2874,10 +2960,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem. [Podejdź do Boya-Żeleńskiego.]",
                 route: 2,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         12: {
             message: "Tak?",
@@ -2886,10 +2972,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Jeśli Pan pozwoli to jednak wrócę do pana Tadeusza.",
+                content: "Jeśli Pan pozwoli to jednak wrócę do pana Tadeusza. [Podejdź do Boya-Żeleńskiego.]",
                 route: 2,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         13: {
             message: "Witam ponownie. Ma Pan do mnie jeszcze jakieś pytania?",
@@ -2898,10 +2984,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem. [Podejdź do Boya-Żeleńskiego.]",
                 route: 2,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         30: {
             message: "Słucham zatem.",
@@ -2922,7 +3008,7 @@ const options = {
                 route: 70,
             },
             fourth: {
-                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem.",
+                content: "Jeśli Pan pozwoli to porozmawiam z panem Tadeuszem. [Podejdź do Boya-Żeleńskiego.]",
                 route: 2,
             },
         },
@@ -2936,7 +3022,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         41: {
             message: "Program obejmuje naukę religii, języka ojczystego, rachunków z geometrii, przyrody, geografii, historii, rysunków, robót, śpiewu i gimnastyki, z tym, że większość zajęć pojawia się doopiero w trzeciej klasie. Wcześniej dzieci muszą nauczyć się czytać i pisać. W miastach szkoły wprowadzają obowiązek noszenia mundurków, lecz na wsiach najczęściej nie da się tego zrealizować... Rodziców często nie stać nawet na buty, a co dopiero na wyrafinowany mundurek... Na wsiach dzieci uczy także najczęściej jeden nauczyciel, a w Krakowie średnio na szkołę przypada ich ponad siedmiu.",
@@ -2948,7 +3034,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         42: {
             message: "Głównie na wsich. Tam często rodzice jedynie z obowiązku zapisują swoje dzieci do szkół, a potem, jak potrzeba rąk do pracy w polu, to już się więcej nie posyłają ich na lekcje. W wielu miejscach problemem jest też odległość, którą dzieci muszą pokonać, aby dotrzeć do szkoły. Czasami może to być kilka kilometów. Natomiast nauczyciele pracujący na wsiach często nie mają odpowiedniego przygotowania do zawodu. ",
@@ -2956,7 +3042,7 @@ const options = {
                 content: "Dziękuję. Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         50: {
             message: "Obecnie nauka w gimnazjum trwa 8 lat. Nie jest jednak bezpłatna i dlatego dostępna jest jedynie dla dzieci z bogatszych rodzin. Może Pan się dziwić, dlaczego nauka w szkole powszechnej trwa 7, a w gimnazjum aż 8 lat. Tak naprawdę to już po ukończeniu 4 klasy szkoły powszechnej rodzice mogą posłać swoje dzieci do płatnego gimnazjum, decyzja należy do nich. Mają do wyboru placówki skupiające się bardziej na przedmiotach humanistycznych lub matematyczno-przyrodniczych.",
@@ -2968,7 +3054,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         51: {
             message: "Najstarszym jest Gimnazjum św. Anny, do którego sam uczęszczałem. Ponadto mamy Gimnazjum św. Jacka przy Siennej, kolejna placówka mieści się przy Sobieskiego... W Krakowie mamy również szkoły realne kładące nacisk na umiejętności praktyczne, seminaria nauczycielskie i gimnazja prywatne. Nie można również zapominać o prestiżowym Gimnazjum Hebrajskim przy Brzozowej!",
@@ -2976,7 +3062,7 @@ const options = {
                 content: "Dziękuję za odpowiedź. Jeśli Pan pozwoli to zapytam o coś jeszcze.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         60: {
             message: "Tuż po wojnie sytuacja nie wyglądała dobrze... Uniwersytet Jagielloński nie miał pieniędzy na opłacanie czynszu za wynajmowane lokale. Obserwatorium astrnomiczne stało bez elektryczności, klinika otolaryngologiczna groziła zawaleniem. Stropy podparto tam prowizorycznymi belkami, proszę sobie wyobrazić! Słyszałem, że na wykłady do sali chemii lekarskiej przychodzi ponad setka osób. A miejsca jest zaledwie dla czterdziestki. Natomiast w Collegium Maius, tam dziś mieści się biblioteka UJ, przecieka dach...",
@@ -2988,7 +3074,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         61: {
             message: "Oczywiście. Niedawno utworzono Wydział Rolniczy,, Studium Pedagogiczne... W tym roku zostanie otwarta Szkoła Pielęgniarek i Higienistek. Słyszałem również o planach założenia Studium Wychowania Fizycznego",
@@ -3000,7 +3086,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         62: {
             message: "Owszem, dwa lata temu prowadzono na ten temat dość gwałtowne rozmowy... Z przykrością muszę stwierdzić, że władze Wydziału Prawa, na którym sam zresztą studiowałem, poparły ten pomysł opowiadając się za ograniczeniami. Kto wie, być może gdyby nie presja ze strony społeczności międzynarodowej to tak dyskryminujące prawo weszłoby w życie.",
@@ -3012,7 +3098,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         63: {
             message: "Tuż po wojnie założono w Krakowie Akademię Górniczą, którą niedawno przemianowano na Akademię Górniczo-Hutniczą. Co przykre, ta uczelnia akurat nie zgadza się na przyjmowanie Żydów do swojej społeczności akademickiej. Obecnie trwa budowa gmachu głównego, bo do tej pory zajęcia odbywają się w budynkach Uniwersytetu Jagiellońskiego i innych wynajmowanych pomieszczeniach.",
@@ -3024,7 +3110,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         64: {
             message: "Nasza uczelnia - będąc najstarszą tego typu instytucją w Polsce - niedawno obchodziła 100-lecie swojego istnienia... Wyjątkowym zbiegiem okoliczności był to jednocześnie rok, w którym nasz kraj odzyskał niepodległość. Mieliśmy zatem co świętować! Akademia najwięcej zawdzięcza jednak świętej pamięci profesorowi Matejce, dzięki któremu powstał okazały gmach, tu, niedaleko, za Barbakanem. Jednak w porównaniu z innymi uczelniami nie szkolimy tysięcy, a jednie 100-200 wyjątkowo uzdolnionych artystów, a od niedawna również kobiety.",
@@ -3032,7 +3118,7 @@ const options = {
                 content: "Dziękuję za odpowiedź. Miałbym do Pana jeszcze jedno pytanie...",
                 route: 2,
             },
-            backMessage: "Dziękuję za informacje. Tymczasem muszę już iść, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Dziękuję za informacje. Tymczasem muszę już iść, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         70: {
             message: "Miło mi, że Pan pyta. Urodziłem się w Ropczycach, mam 57 lat. Moja rodzina ma korzenie austriackie, a moi rodzice przybyli do Krakowa niewiele po moim narodzeniu. Uczyłem się w tutejszym Gimnazjum św. Anny, potem rozpocząłem studia prawnicze na Uniwersytecie Jagiellońskim. Przyjęto mnie również na Akademię, wtedy jeszcze Szkołę Sztuk Pięknych. Później przeniosłem się do Paryża, gdzie mieszkałem z moim przyjacielem Stanisławem Wyspiańskim. Tam dzieliliśmy pracownię, tam też poznałem moją przyszłą żonę, Jadwigę.",
@@ -3044,7 +3130,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
         71: {
             message: "Oprócz malarstwa, podobnie zresztą do Wyspiańskiego, zainteresowałem się witrażami. Wspólnie stworzyliśmy te, które można zobaczyć w krakowskim kościele mariackim. Tam też pod okiem naszego mistrza profesora Matejki pomagaliśmy przy malowaniu gwieździstej polichromii. W powszechnej opinii najważniejszym moim dziełem są jednak - wciąż nieukończone - witraże w kościele św. Mikołaja w szwajcarskim Fryburgu... Przez cztery lata piastowałem również urząd rektora Akademii Sztuk Pięknych, gdzie wykładam do dziś.",
@@ -3052,7 +3138,7 @@ const options = {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
                 route: 2,
             },
-            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź]"
+            backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
 
     }, 
@@ -3064,10 +3150,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Szkoda. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem.",
+                content: "Szkoda. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         802: {
             message: "Dzień dobry, Tadeusz Boy-Żeleński. Jak dobrze słyszałem szuka Pan jakiegoś Bogdana Majchrzaka. Niestety nie znam takiego człowieka. I niestety słyszałem jak się Pan odnosił do profesora Mehoffera. Trochę ogłady!",
@@ -3080,10 +3166,10 @@ const options = {
                 route: 701,
             },
             fourth: {
-                content: "Proszę wybaczyć. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem.",
+                content: "Proszę wybaczyć. W takim razie pozwoli Pan, że porozmawiam jeszcze z panem Mehofferem. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Rozumiem, szkoda. W każdym razie dziękuję i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         701: {
             message: "Proszę natychmiast wyjść. Nie mam zamiaru rozmawiać z kimś takim, jak Pan. Nie ma tu dla Pana miejsca.",
@@ -3096,10 +3182,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem.",
+                content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Po namyśle jednak nie mam. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Po namyśle jednak nie mam. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         4: {
             message: "O, to znowu Pan, miło mi. Słucham.",
@@ -3108,10 +3194,10 @@ const options = {
                 route: 30,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem.",
+                content: "Proszę wybaczyć, jednak porozmawiam jeszcze z panem Mehofferem. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         30: {
             message: "Co prawda pan Michalik nie mieszka już w Krakowie, ale pamiętam go doskonale. Pochodzi ze Lwowa. Ponoć ojciec posłał go na nauki do jednej z tamtejszych cukierni jako karę za złe stopnie w szkole... Pewnie się zdziwił, kiedy okazało się, że pan Jan pokochał zawód cukiernika. Do Krakowa Michalik przybył w 1895 roku. Wynajął lokal przy Floriańskiej i tak zaczęła się historia tego miejsca... Początkowo Jama funkcjonowała jako Cukiernia Lwowska. A potem pojawiliśmy się my... ",
@@ -3120,10 +3206,10 @@ const options = {
                 route: 31,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         31: {
             message: "Wcześniej artyści spotykali się u Turlińskiego, na Szpitalnej. Ale po upadku tamtego miejsca studenci Akademii Sztuk Pięknych musieli znaleźć sobie nowe miejsce spotkań... I tak trafili do Michalika. To zabawne, że Michalik zakładając to miejsce liczył, że to jego wyroby przyciągną do niego klientów. Silił się na różne sztuczki, reklamy... Ale krakowianie nie tolerują reklam, drażnią ich. Z czasem Jama Michalika przestawała być cukiernią, a stawała się kawiarnią, w której przesiadywali ludzie sztuki. Nie powiem, chyba Michalik nie był z tego powodu zachwycony!",
@@ -3132,10 +3218,10 @@ const options = {
                 route: 32,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         32: {
             message: "Jest to bardzo zasadniczy człowiek, chyba ostatni, który chciałby mieć do czynienia z artystami! Poważny, spokojny, skromny, nie lubił hałasu, brzydził się pijaństwem. I dbał o swoje interesy, oj dbał! Pewnego razu powysyłał swoim stałym klientom, tym, którzy zostawili u niego majątek weswania płatnicze za nieuregulowane rachunki. Przez adwokata!",
@@ -3144,10 +3230,10 @@ const options = {
                 route: 35,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         35: {
             message: "Nie inaczej! Później zaczął zatrudniać kelnerów, którzy mieli dbać o to, aby klienci zawsze płacili na czas. Ale to nie znaczy, że Michalik miał jakąś awersję do artystów! W takim wypadku nie odważyłby się powierzyć organizacji wystroju swojej kawiarni własnym klientom! Michalik prowadził ją przez łącznie 20 lat... W końcu, podczas wojny, postanowił sprzedać 'Jamę' i wyprowadził się do Poznania. To już nie to samo miejsce co kiedyś...",
@@ -3156,10 +3242,10 @@ const options = {
                 route: 33,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         
         33: {
@@ -3169,18 +3255,18 @@ const options = {
                 route: 34,
             },
             fourth: {
-                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera.",
+                content: "Proszę wybaczyć, jednak wrócę do pana Mehoffera. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Jednak muszę już iść. Przepraszam za kłopot i do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         34: {
             message: "Chyba każdy ze środowiska artystycznego Krakowa... Swego czasu własny stolik miał tutaj Wyspiański... Jamę odwiedział też marszałek Piłsudski z małżonką... Zobaczymy, może w przyszłości 'Jama' powróci do swoich korzeni... Kto wie?",
             fourth: {
-                content: "Dziękuję za informacje, chciałbym jeszcze porozmawiać z panem Mehofferem.",
+                content: "Dziękuję za informacje, chciałbym jeszcze porozmawiać z panem Mehofferem. [Podejdź do Mehoffera.]",
                 route: 4,
             },
-            backMessage: "Muszę już iść. Dziękuję za informacje i do widzenia. [Zakończ rozmowę i wyjdź]"
+            backMessage: "Muszę już iść. Dziękuję za informacje i do widzenia. [Zakończ rozmowę i wyjdź.]"
         }
     }, 
     "macharski": {
@@ -3200,9 +3286,9 @@ const options = {
             },
         },
         501: {
-            message: "Hmmm... Coś mi mówi to nazwisko... Ale może niech Pan lepiej zapyta Wadowskiego, to jeden z naszych kelnerów. On ma lepszą pamięć do twarzy.",
+            message: "Hmmm... Coś mi mówi to nazwisko... Ale może niech Pan lepiej zapyta Wielickiego, to jeden z naszych kelnerów. On ma lepszą pamięć do twarzy.",
             fourth: {
-                content: "Świetnie, w takim razie już się do niego zwracam.",
+                content: "Świetnie, w takim razie już się do niego zwracam. [Podejdź do kelnera.]",
                 route: 1,
             },
         },
@@ -3223,7 +3309,7 @@ const options = {
                 content: "Tak, wiem już wszystko. Ale przed wyjściem chciałbym Pana zapytać co to za miejsce?",
                 route: 30,
             },
-            backMessage: "Tak, dlatego muszę już iść! Do widzenia! [Zakończ rozmowę i wyjdź]"
+            backMessage: "Tak, dlatego muszę już iść! Do widzenia! [Zakończ rozmowę i wyjdź.]"
         },
         4: {
             message: "Witam ponownie! Ma Pan jakieś pytania?",
@@ -3231,7 +3317,7 @@ const options = {
                 content: "Tak. Chciałbym Pana zapytać co to za miejsce?",
                 route: 30,
             },
-            backMessage: "Nie, jednak to by było na tyle. Przepraszam za kłopot. Do widzenia! [Zakończ rozmowę i wyjdź]"
+            backMessage: "Nie, jednak to by było na tyle. Przepraszam za kłopot. Do widzenia! [Zakończ rozmowę i wyjdź.]"
         },
         30: {
             message: "Historia tego miejsca zaczęła się niemalże 50 lat temu... W 1876 roku Antoni Hawełka postanowił założyć sklep z artykułami kolonialnymi w jednej z kamienic rynkowych. Po pięciu latach przeniósł się do kamiennicy 'Pod Krzysztofory' otwierając jednocześnie restaurację. Stała się ona znana przede wszystkim jako bar śniadaniowy, w którym serwowano słynne piętrowe kanapki, którymi zachwycał się sam Sienkiewicz...",
@@ -3239,11 +3325,11 @@ const options = {
                 content: "Proszę mówić dalej.",
                 route: 31,
             },
-            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź]"
+            backMessage: "To wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź.]"
         },
         31: {
             message: "Pan Antoni zmarł bezpotomnie w 1894 roku, a po nim miejsce to przejął jego zaufany pracownik, a mój stryj - Franciszek Macharski. To on tuż przed wojną przeniósł restaurację w obecne miejsce, do Pałacu Spiskiego. Nasz lokal często odwiedzają wybitni profesorowie, artyści, literaci, dziennikarze... Mam nadzieję, że i mi uda się kontynuować tę tradycję. Kto wie, może jeśli doczekam się syna to dam mu na imię Franciszek, po stryju... A kiedyś przejmie po mnie to miejsce?",
-            backMessage: "Dziękuję, to wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź]"
+            backMessage: "Dziękuję, to wszystko, co chciałem wiedzieć. Do widzenia! [Zakończ rozmowę i wyjdź.]"
         },
     }, 
     "kelner": {
@@ -3445,7 +3531,7 @@ const options = {
         501: {
             message: "Ahh, co ten Bogdan nabroił? Mam nadzieję, że nic poważnego... W każdym razie tam jest, widzę, że dopiero co przyszedł, jeszcze w płaszczu stoi.",
             fourth: {
-                content: "Dziękuję za informacje. A teraz jeśli Pan pozwoli, porozmawiam z panem Majchrzakiem.",
+                content: "Dziękuję za informacje. A teraz jeśli Pan pozwoli, porozmawiam z panem Majchrzakiem. [Podejdź do Majchrzaka.]",
                 route: 4,
             },
         },
@@ -3877,7 +3963,7 @@ const options = {
                 content: "Dziękuję. Jeszcze jedna sprawa... Ma Pan chwilę, aby porozmawiać o sytuacji ekonomicznej?",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         5: {
             message: "Niestety, nic szczególnego. Na Pana miejscu pytałbym o te nieścisłości u źródła. Konsulat, który wysyłał pieniądze znajduje się przy Gołębiej.",
@@ -3885,7 +3971,7 @@ const options = {
                 content: "Dziękuję. Jeszcze jedna sprawa... Ma Pan chwilę, aby porozmawiać o sytuacji ekonomicznej?",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         6: {
             message: "Witam ponownie! Ma Pan jeszcze jakieś pytania?",
@@ -3893,7 +3979,7 @@ const options = {
                 content: "Owszem. Chciałbym z Panem pomówić o sytuacji ekonomicznej...",
                 route: 30, 
             },
-            backMessage: "Nie, jednak nie mam. Przepraszam za zamieszanie. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Nie, jednak nie mam. Przepraszam za zamieszanie. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         30: {
             message: "Proszę pytać, słucham.",
@@ -3909,7 +3995,7 @@ const options = {
                 content: "Jak Pan ocenia sytuację ekonomiczną?",
                 route: 60, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         40: {
             message: "Obecną sytuację mogę chyba opisać jednym słowem. Tragiczna. Tuż po wojnie brakowało intergacji z innymi częściami Polski, codziennością były problemy aprowizacyjne... Sam Kraków też tracił na znaczeniu. Dziś kupcy muszą mierzyć się z konkurencją Śląska, zwłaszcza Katowic. A co gorsza nie mamy bezpośredniego połączenia kolejowego z Warszawą. Podróż do stolicy trwa 9 godzin... ",
@@ -3921,7 +4007,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         41: {
             message: "W Sukiennicach kupi Pan artykuły galanteryjne, zabawki, pamiątki... Przed Kościołem Mariackim handluje się kwiatami,  owocami... W okresie bożonarodzeniowym również ozdobami choinkowymi. A na wielkanoc cukrowymi barankami, czy koszyczkami na święconkę. Nieco dalej, przy wylocie ul. św. Jana kupi Pan wełniane skarpety, koronki, hafty... Ogólnie rzecz ujmując wyroby ludowe. A przy wieży ratuszowej handluje się drobiem. Zarówno żywym jak i bitym.",
@@ -3933,7 +4019,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         42: {
             message: "Po jarzyny proszę udać się na Mały Rynek, a kramy mięsne są przy Placu Słowiańskim. Na Starym Kleparzu można znaleźć wyroby koszykarskie, bednarskie... oraz zwierzęta. Koty, psy, króliki, gołębie... Natomiast po drugiej stronie ulicy Długiej, na Nowym Kleparzu może Pan kupić także artykuły rymarskie, liny, siano, słomę czy zboże.",
@@ -3945,7 +4031,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         43: {
             message: "Po ryby proszę udać się przed Synagogę Izaaka. Jeśli chciałby Pan kupić drób i warzywa to może także iść na Plac Nowy lub na Wolnicę. Ponadto na Kazimierzu, na Placu Bawół, odbywa się handel starzyzną. A w Podgórzu, na Placu Zgody kupi Pan nabiał, jarzyny, wyroby gliniane... Przy placu Serkowskiego odbywa się handel sianem, słomą, zbożem. Natomiast Rynek Podgórski ciężko zdefiniować... Kupi Pan tam niemalże wszystko.",
@@ -3953,7 +4039,7 @@ const options = {
                 content: "Dziękuję. Chciałbym jeszcze zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         50: {
             message: "Obecne dwa banki państwowe realizują duże inwestycje w Krakowie. Tu, niedaleko Barbakanu powstaje gmach nowo powołanego Banku Polskiego. Natomiast przy ulicy Wielopole właśnie ukończono budynek Pocztowej Kasy Oszczędności i już rozpoczęto wznoszenie budynku mieszkalnego dla jej pracowników, który będzie mieścił się przy ulicy Zyblikiewicza. Ponadto na w Krakowie mieszczą się banki akcyjne i domy bankowe. Przed rokiem wzniesiono również budynek giełdy przy ul. Mikołajskiej",
@@ -3965,7 +4051,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         51: {
             message: "Jesteśmy w budnynku Komunalnej Kasy Oszczędnościowej powiatu krakowskiego. Rozwijamy wśród ludności zmysł oszczędnościowy, ułatwiamy gromadzenie oszczędności, udostępniamy kredyty. Nasza placówka nie jest jednak jedyną komunalną kasą oszczędności w mieście. Druga znajduje się przy ul. Szpitalnej i zasłużyła się między innymi angażując się w wykupienie Wawelu z rąk austriackich. W końcu, być może Pan nie wie, ale do początku XX wieku stacjonowało tam wojsko zaborcy. Ponadto kasa przeznaczyła środki na remonty zamku, kaplicy Zygmuntowskiej, budowę łazni, akademików... Podgórze też ma swoją komunalną kasę oszczędności, mieście się przy Józefińskiej.",
@@ -3977,7 +4063,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         60: {
             message: "Mam swoje obawy, choć obecna sytuacja jest dużo lepsza niż kilka lat temu. Po wojnie ogromnym problemem była kwestia integracji obszaru Polski. W końcu wcześniej nasz kraj był podzielony między trzech zaborców mających inne spojrzenia na politykę gospodarczą. Jednocześnie prowadzone były działania wojenne w celu ustalenia ostatecznych granic Rzeczpospolitej. Pochłaniało to olbrzymie kwoty, na początku 1920 roku stanowiło nawet 60% wydatków państwa. Powszechnymi zjawiskami był głód, choroby, drożyzna, reglamentacja towarów... W końcu, jak sytuacja się nieco ustabilizowała, można było racjonalniej podejść do zagadnień gospodarczych. Niestety nie wyszło to najlepiej...",
@@ -3989,7 +4075,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         61: {
             message: "Pokłosiem działań wojennych był stopniowo pogłębiany deficyt budżetowy. Kiepska sytuacja powojenna napędzała strajki organizowane w całej Polsce. Kłopoty próbowano łatać dodrukiem pieniądza, co napędzało inflację, która ostatecznie przerodziła się w hiperinflację. Kryzys gospodarczy przyniół tragiczne wydarzenia tutaj, w Krakowie. Dwa lata temu protestujący starli się z policją i wojskiem. Zginęło ponad 30 osób. Ostatecznie rząd poszedł po rozum do głowy i przeprowadził reformy. Powołano Bank Polski i jak Pan dobrze pamięta starą walutę, markę przemianowano na złotego. Ale myślę, że to nie koniec kłopotów...",
@@ -4001,7 +4087,7 @@ const options = {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
         62: {
             message: "Obecnie połowa polskiego handlu związana jest bezpośrednio z Republiką Weimarską. Niemcy odbierają około 80% produkowanego przez nas węgla. Niestety w styczniu tego roku wygasła klauzula największego uprzywilejowania nałożona na Republikę Weimarską postanowieniami traktatu wersalskiego. Dawało to państwom Entanty, w tym Polsce, uprzywilejowaną pozycję na rynku niemieckim. Jednak ten okres to już przeszłość. Za miesiąc zakończy się również zwolnienie z cła węgla polskiego wwożonego do Niemiec. Obawiam się, że wojna celna stanie się faktem, a to poważnie odbije się na naszej gospodarce...",
@@ -4009,7 +4095,7 @@ const options = {
                 content: "Mam te same obawy... Chciałbym jeszcze zapytać o coś innego.",
                 route: 30, 
             },
-            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź z budynku]"
+            backMessage: "Dziękuję za pomoc. Wrócę w razie jakichkolwiek pytań. Do widzenia [Zakończ rozmowę i wyjdź. z budynku]"
         },
     },
     "konsulat": {

@@ -25,8 +25,8 @@ function Game() {
 
 const [progress, setProgress] = useState({
   basic: false,
-  hospital: true,
-  hospitalResponse: true,
+  hospital: false,
+  hospitalResponse: false,
   stelmach: false,
   football: false,
   maciejowscy: false,
@@ -34,28 +34,28 @@ const [progress, setProgress] = useState({
   fatGuyResponse: false,
   krogul: false,
   fatGuyInHospital: false,
-  brewery: true,
+  brewery: false,
   unemployed: false,
   unemployedResponse: false,
   workerConversation: false,
   thorn: false,
-  visitBrewery: true,
+  visitBrewery: false,
   jamaPolite: false,
   jamaImpolite: false,
   jamaNoEntry: false,
   zelenski: false,
-  hawelka: true,
+  hawelka: false,
   visitIkc: false,
   moneyProblems: false,
-  bankInfo: true,
-  bank: true,
+  bankInfo: false,
+  bank: false,
   bombs: false,
   end: false
 })
 
 const [mainScreen, setMainScreen] = useState(false)
 
-const [mapScreen, setMapScreen] = useState(true)
+const [mapScreen, setMapScreen] = useState(false)
 const [bank, setBank] = useState(false)
 const [brewery, setBrewery] = useState(false)
 const [consulate, setConsulate] = useState(false)
@@ -69,7 +69,7 @@ const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(false)
+const [hospital, setHospital] = useState(true)
 
 const [endGameScreen, setEndGameScreen] = useState(false)
 

@@ -41,6 +41,21 @@
     }
   }
 
+  @media (min-height: 760px) and (min-width: 760px){
+    .thorn {
+      top: 30%;
+      left: 0%;
+      transform: scale(1.6);
+    }
+
+    .thorn-conversation {
+      top: 30%;
+      left: 0%;
+      transform: scale(1.6);
+      animation: none
+    }
+  }
+
   @keyframes thorn {
     from { 
       top: 10%;

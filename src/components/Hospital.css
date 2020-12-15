@@ -55,6 +55,8 @@
     animation: doctor 2s
   }
 
+  
+
   @media (max-width: 600px) {
     .nurse-conversation {
       top: 55%;
@@ -166,6 +168,44 @@
 
     .doctor {
       animation: doctor400 1s reverse
+    }
+  }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .doctor {
+      top: 50%;
+      left: 10%;
+      transform: scale(2);
+      animation: none
+    }
+
+    .doctor-start {
+      top: 50%;
+      left: 10%;
+      transform: scale(2);
+      
+    }
+
+    .doctor-conversation {
+      transform: scale(2);
+      animation: none
+    }
+
+    .nurse {
+      top: 55%;
+      left: 60%;
+      transform: scale(2.5);
+      animation: none
+    }
+
+    .nurse-start {
+      top: 55%;
+      left: 60%;
+      transform: scale(2.5);
+    }
+
+    .nurse-conversation {
+      animation: none
     }
   }
 

@@ -65,29 +65,29 @@ function Brewery(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="brewery-background">
           {conversationBoss && <div><Conversation turnOff={switchToGuard} number={1} place="szef-browar" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationBoss(true)}}>
+              <div >
                 <img className={classBoss} src={boss} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationGuard(true)}}>
+              <div >
                 <img className={classGuard} src={guard} />
               </div>
             </div>
             }
             {conversationGuard && <div><Conversation turnOff={switchToBoss} number={numberGuard} actionOne={actionOne} right={true} place="straznik" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationGuard(true)}}>
+              <div >
                 <img className={classGuard} src={guard} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationBoss(true)}}>
+              <div >
                 <img className={classBoss} src={boss} />
               </div>
             </div>
             }
-            {(!conversationGuard && !conversationBoss) && <div><div onClick={() => {setConversationBoss(true)}}>
+            {(!conversationGuard && !conversationBoss) && <div><div >
                 <img className={classBoss} src={boss} />
               </div>
-              <div onClick={() => {setConversationGuard(true)}}>
+              <div >
                 <img className={classGuard} src={guard} />
               </div>
             </div>

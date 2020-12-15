@@ -57,6 +57,8 @@
     animation: journalist 2s
   }
 
+  
+
   @media (max-width: 600px) {
     .dabrowski-conversation {
       top: 60%;
@@ -120,6 +122,45 @@
 
     .journalist {
       animation: journalist400 1s reverse
+    }
+  }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .dabrowski {
+      top: 60%;
+      left: 15%;
+      transform: scale(4.5);
+      animation: none
+    }
+
+    .dabrowski-start {
+      top: 60%;
+      left: 15%;
+      transform: scale(4.5);
+      
+    }
+
+    .dabrowski-conversation {
+      transform: scale(4.5);
+      animation: none
+    }
+
+    .journalist {
+      top: 50%;
+      left: 60%;
+      transform: scale(2.5);
+      animation: none
+    }
+
+    .journalist-start {
+      top: 50%;
+      left: 60%;
+      transform: scale(2.5);
+    }
+
+    .journalist-conversation {
+      transform: scale(2.5);
+      animation: none
     }
   }
 

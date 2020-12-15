@@ -22,7 +22,7 @@ function Krowodrza(props) {
   const switchToWorker = () => {
     setStyleBoss(3)
     setConversationBoss(false)
-    if (props.progress.workerConversation) {
+    if (props.progress.workerConversation || props.progress.end) {
       setNumberWorker(4)
     }
     setTimeout(() => {
@@ -51,7 +51,10 @@ function Krowodrza(props) {
   }, [])
 
   useEffect(() => {
-    if (props.progress.workerConversation){
+    if (props.progress.end && !props.progress.unemployed) {
+      setNumberBoss(502)
+    }
+    if (props.progress.unemployed){
       setNumberBoss(9)
     }
   }, [])

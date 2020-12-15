@@ -77,29 +77,29 @@ function Hospital(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="hospital-background">
             {conversationDoctor && <div><Conversation actionOne={actionOne} turnOff={switchToNurse} number={numberDoctor} right={true} place="lekarz" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationDoctor(true)}}>
+              <div >
                 <img className={classDoctor} src={doctor} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationNurse(true)}}>
+              <div >
                 <img className={classNurse} src={nurse} />
               </div>
             </div>
             }
             {conversationNurse && <div><Conversation actionOne={actionOneN} turnOff={switchToDoctor} number={numberNurse} place="pielegniarka" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
-              <div onClick={() => {setConversationNurse(true)}}>
+              <div >
                 <img className={classNurse} src={nurse} />
               </div>
             </Conversation>
-              <div onClick={() => {setConversationDoctor(true)}}>
+              <div >
                 <img className={classDoctor} src={doctor} />
               </div>
             </div>
             }
-            {(!conversationNurse && !conversationDoctor) && <div><div onClick={() => {setConversationNurse(true)}}>
+            {(!conversationNurse && !conversationDoctor) && <div><div >
               <img className={classNurse} src={nurse} />
             </div>
-            <div onClick={() => {setConversationDoctor(true)}}>
+            <div >
               <img className={classDoctor} src={doctor} />
             </div>
             </div>

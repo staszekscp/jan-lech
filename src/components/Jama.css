@@ -63,6 +63,8 @@
     animation: zelenski 2s
   }
 
+  
+
   @media (max-width: 850px) {
     .mehoffer-conversation {
       left: -5%;
@@ -74,9 +76,6 @@
     }
   }
 
-  @media (max-width: 600px) {
-
-  }
 
   @media (max-height: 450px) {
     .zelenski-conversation {
@@ -86,6 +85,49 @@
 
     .zelenski {
       animation: zelenski450 1s reverse
+    }
+  }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .mehoffer {
+      top: 55%;
+      left: 15%;
+      transform: scale(2);
+      animation: none
+    }
+
+    .mehoffer-start {
+      top: 55%;
+      left: 15%;
+      transform: scale(2);
+      animation: none
+      
+    }
+
+    .mehoffer-conversation {
+      top: 55%;
+      left: 15%;
+      transform: scale(2);
+      animation: none
+    }
+
+    .zelenski {
+      top: 40%;
+      left: 60%;
+      transform: scale(2.5);
+      animation: none
+    }
+
+    .zelenski-start {
+      top: 40%;
+      left: 60%;
+      transform: scale(2.5);
+      animation: none
+    }
+
+    .zelenski-conversation {
+      transform: scale(2.5);
+      animation: none
     }
   }
 

@@ -2,6 +2,7 @@
 body {
   height: 100%;
   font-family: 'Stint Ultra Condensed', cursive;
+  cursor: default
 }
 
 .App {
@@ -24,9 +25,17 @@ body {
   color: white;
   padding: 8px;
   font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+}
+
+.info-container2 {
+  font-family: 'Stint Ultra Condensed', cursive;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  bottom: 0vh;
+  width: 100%;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
 }
 
 .backdrop-opacity {
@@ -70,6 +79,10 @@ body {
 
 .backdrop-opacity-twardowskiego::-webkit-scrollbar {
   display: none;
+}
+
+h1 {
+  font-family: 'Special Elite', cursive;
 }
 
 .main-screen {

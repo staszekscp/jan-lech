@@ -61,6 +61,10 @@ function MainScreen(props) {
                             }
                         }>Wróć</div>
             </div></div>}
+            
+        </div>
+        <div className="info-container2">
+          Mariusz Stanisz | 2020
         </div>
       </div>
     </div>

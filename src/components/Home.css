@@ -44,6 +44,8 @@
     animation: wife 2s
   }
 
+ 
+
   @media (max-width: 600px) { 
     .wife {
       position: fixed;
@@ -66,6 +68,7 @@
     }
   }
 
+
   @media (max-height: 500px) {
     .wife-conversation {
       top: 60%;
@@ -77,6 +80,18 @@
     .wife-conversation {
       top: 70%;
       animation: wife400 2s
+    }
+  }
+
+  @media (min-height: 760px) and (min-width: 760px){
+    .wife {
+      top: 50%;
+      left: 50%;
+      transform: scale(2);
+    }
+
+    .wife-conversation {
+      animation: none
     }
   }
   

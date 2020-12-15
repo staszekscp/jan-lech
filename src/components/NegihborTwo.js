@@ -31,6 +31,8 @@ function NeighborTwo(props) {
     setConversation2(false)
     if (props.progress.fatGuy) {
       setNumberMaciejowska(11)
+    } else if (props.progress.end) {
+      setNumberMaciejowska(502)
     }
     setTimeout(() => {
       setStyleMaciejowska(2)
@@ -51,7 +53,11 @@ function NeighborTwo(props) {
   }
 
   useEffect(() => {
-    if (props.progress.maciejowscy) {
+    if (props.progress.end && !props.progress.maciejowscy) {
+      setNumberMaciejowski(12)
+    } else if (props.progress.end) {
+      setNumberMaciejowski(11)
+    } else if (props.progress.maciejowscy) {
       setNumberMaciejowski(9)
     }
   })
