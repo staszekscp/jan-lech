@@ -71,7 +71,7 @@ function Hospital(props) {
     } else if (props.progress.krogul) {
       setNumberDoctor(2)
     }
-  })
+  }, [])
 
     return (
       <div className={fadeOut?"out":"main"}>

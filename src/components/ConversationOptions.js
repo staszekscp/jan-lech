@@ -99,7 +99,7 @@ const options = {
         9: {
             message: "Wczoraj coś koło 22 stary zaczoł się wydzierać, bo mu wódka na łeb już weszła. Ja już spała, zaczoł mie szorpać, a jak nie chciałam wyjść do kuchni mu żorcia zrobić to wściek sie i wzioł rewolwer i wyszed na pole. I tyle żem go widziała. Normalnie po takich awanturach to wracał po godzinie. Ale tera? ",
             first: {
-                content: "Jasne. Jeśli Pani pozwoli będę miał kilka pytań.",
+                content: "No dobrze, rozumiem. Jeśli Pani pozwoli będę miał kilka dodatkowych pytań.",
                 route: 501,
             },
         },
@@ -1339,7 +1339,7 @@ const options = {
             message: "Na Borku Fałęckim w Fabryce Solvaya robią sodę, to bodajże jedyna tego typu fabryka w Polsce. Nawet mają specjalną kolejkę co tu do nas, na Zakrzówek do kamieniołomu podjeżdża. Ponadto Górecki na Zabłociu robi jakieś okucia, meble, siatki... Ale znany jest z tego, że Krzyż w Zakopanem postawił na Giewoncie. Ten cały Górecki ma willę przy Romanowicza, mieszka tuż przy swoim zakładzie. Nie zanudzam?",
             first: { 
                 content: "Nie, nie, proszę mówić dalej!",
-                route: 42,
+                route: 43,
             },
             second: {
                 content: "Nie, nie... ale jednak chcę zapytać o coś innego.",
@@ -2430,14 +2430,14 @@ const options = {
                 route: 501,
             },
             second: {
-                content: "Dziękuję, ale wolę schabowego. W każdym razie przyszedłem w sprawie pewnego klienta.",
+                content: "Dziękuję, ale wolę schabowego. W każdym razie, przyszedłem w sprawie pewnego klienta.",
                 route: 501,
             },
         },
         3: {
             message: "Kojarzę... A co się stało?",
             first: {
-                content: "Pan Najchel zaginął, staram się go odnaleźć. Wie Pan może gdzie może teraz przebywać?",
+                content: "Pan Najchel zaginął, staram się go odnaleźć. Wie Pan gdzie może teraz przebywać?",
                 route: 4,
             },
             second: {
@@ -2453,15 +2453,15 @@ const options = {
             },
         },
         5: {
-            message: "Dawno, kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabat, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chcie zapłacić to musi wrócić kiedy indziej. W szabat nie mogę tykać pieniędzy. Niestety więcej Panu nie potrafię powiedzieć.",
+            message: "Dawno, kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabas, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chce zapłacić to musi wrócić kiedy indziej. W szabas nie mogę tykać pieniędzy. Niestety więcej Panu nie potrafię powiedzieć.",
             first: {
-                content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
+                content: "Dziękuję. Ale zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
                 route: 30,
             },
             backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
         },
         6: {
-            message: "Niestety, po raz ostatni kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabat, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chcie zapłacić to musi wrócić kiedy indziej. W szabat nie mogę tykać pieniędzy.",
+            message: "Niestety, po raz ostatni kilka miesięcy temu. Pan Józef przychodził zazwyczaj w szabas, zresztą jak większość gojów. Moja restauracja jest otwarta, ale jak ktoś chce zapłacić to musi wrócić kiedy indziej. W szabas nie mogę tykać pieniędzy.",
             first: {
                 content: "A może wie Pan gdzie może teraz przebywać?",
                 route: 7,
@@ -2470,7 +2470,7 @@ const options = {
         7: {
             message: "Niestety. Nie miałem z nim bliższego kontaktu. Zresztą, moi synowie, którzy zazwyczaj obsługują gości też nie mieli okazji go poznać. Zawsze przychodził samemu na czulent. Niestety nie potrafię Panu więcej powiedzieć.",
             first: {
-                content: "Dziękuję. A zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
+                content: "Dziękuję. Ale zanim pójdę powie mi Pan coś więcej o życiu żydowskim w Krakowie?",
                 route: 30,
             },
             backMessage: "W takim razie dziękuję. Jeśli pojawią się jakieś pytania to wrócę. Do widzenia. [Zakończ rozmowę i wyjdź.]"
@@ -2614,7 +2614,7 @@ const options = {
             message: "To wspaniała kobieta. Jeszcze kilka lat temu w zakładzie szewskim, tu obok, zaczęła szkolić dziewczęta z pobożnych rodzin. A jeszcze do niedawna edukacja w ogóle nie była dla nich dostępna. Pobożni Żydzi dbali tylko o edukację chłopców, co by mogli w przyszłości Torę i Talmud studiować. A jak nakazano wszystkim, bez wyjątku, dziewczynkom też, do szkoły iść to musiały być posyłane do szkół świeckich, gdzie oddalały się od naszej wiary...",
             first: {
                 content: "W tym tkwił zatem problem?",
-                route: 54,
+                route: 55,
             },
             third: {
                 content: "Jednak chciałbym zapytać o coś innego...",
@@ -3020,7 +3020,7 @@ const options = {
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3032,7 +3032,7 @@ const options = {
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3040,7 +3040,7 @@ const options = {
             message: "Głównie na wsich. Tam często rodzice jedynie z obowiązku zapisują swoje dzieci do szkół, a potem, jak potrzeba rąk do pracy w polu, to już się więcej nie posyłają ich na lekcje. W wielu miejscach problemem jest też odległość, którą dzieci muszą pokonać, aby dotrzeć do szkoły. Czasami może to być kilka kilometów. Natomiast nauczyciele pracujący na wsiach często nie mają odpowiedniego przygotowania do zawodu. ",
             second: {
                 content: "Dziękuję. Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3052,7 +3052,7 @@ const options = {
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3060,7 +3060,7 @@ const options = {
             message: "Najstarszym jest Gimnazjum św. Anny, do którego sam uczęszczałem. Ponadto mamy Gimnazjum św. Jacka przy Siennej, kolejna placówka mieści się przy Sobieskiego... W Krakowie mamy również szkoły realne kładące nacisk na umiejętności praktyczne, seminaria nauczycielskie i gimnazja prywatne. Nie można również zapominać o prestiżowym Gimnazjum Hebrajskim przy Brzozowej!",
             second: {
                 content: "Dziękuję za odpowiedź. Jeśli Pan pozwoli to zapytam o coś jeszcze.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3072,7 +3072,7 @@ const options = {
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3080,11 +3080,11 @@ const options = {
             message: "Oczywiście. Niedawno utworzono Wydział Rolniczy,, Studium Pedagogiczne... W tym roku zostanie otwarta Szkoła Pielęgniarek i Higienistek. Słyszałem również o planach założenia Studium Wychowania Fizycznego",
             first: {
                 content: "Słyszałem, że Uniwersytet chce wprowadzić ograniczenia dla studentów pochodzenia żydowskiego?",
-                route: 41,
+                route: 62,
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3092,11 +3092,11 @@ const options = {
             message: "Owszem, dwa lata temu prowadzono na ten temat dość gwałtowne rozmowy... Z przykrością muszę stwierdzić, że władze Wydziału Prawa, na którym sam zresztą studiowałem, poparły ten pomysł opowiadając się za ograniczeniami. Kto wie, być może gdyby nie presja ze strony społeczności międzynarodowej to tak dyskryminujące prawo weszłoby w życie.",
             first: {
                 content: "Co może Pan powiedzieć o innych uczelniach wyższych w mieście?",
-                route: 41,
+                route: 63,
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3104,11 +3104,11 @@ const options = {
             message: "Tuż po wojnie założono w Krakowie Akademię Górniczą, którą niedawno przemianowano na Akademię Górniczo-Hutniczą. Co przykre, ta uczelnia akurat nie zgadza się na przyjmowanie Żydów do swojej społeczności akademickiej. Obecnie trwa budowa gmachu głównego, bo do tej pory zajęcia odbywają się w budynkach Uniwersytetu Jagiellońskiego i innych wynajmowanych pomieszczeniach.",
             first: {
                 content: "Wciąż nie powiedział Pan nic o Akademii Sztuk Pięknych...",
-                route: 41,
+                route: 64,
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3116,7 +3116,7 @@ const options = {
             message: "Nasza uczelnia - będąc najstarszą tego typu instytucją w Polsce - niedawno obchodziła 100-lecie swojego istnienia... Wyjątkowym zbiegiem okoliczności był to jednocześnie rok, w którym nasz kraj odzyskał niepodległość. Mieliśmy zatem co świętować! Akademia najwięcej zawdzięcza jednak świętej pamięci profesorowi Matejce, dzięki któremu powstał okazały gmach, tu, niedaleko, za Barbakanem. Jednak w porównaniu z innymi uczelniami nie szkolimy tysięcy, a jednie 100-200 wyjątkowo uzdolnionych artystów, a od niedawna również kobiety.",
             second: {
                 content: "Dziękuję za odpowiedź. Miałbym do Pana jeszcze jedno pytanie...",
-                route: 2,
+                route: 30,
             },
             backMessage: "Dziękuję za informacje. Tymczasem muszę już iść, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3128,7 +3128,7 @@ const options = {
             },
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3136,7 +3136,7 @@ const options = {
             message: "Oprócz malarstwa, podobnie zresztą do Wyspiańskiego, zainteresowałem się witrażami. Wspólnie stworzyliśmy te, które można zobaczyć w krakowskim kościele mariackim. Tam też pod okiem naszego mistrza profesora Matejki pomagaliśmy przy malowaniu gwieździstej polichromii. W powszechnej opinii najważniejszym moim dziełem są jednak - wciąż nieukończone - witraże w kościele św. Mikołaja w szwajcarskim Fryburgu... Przez cztery lata piastowałem również urząd rektora Akademii Sztuk Pięknych, gdzie wykładam do dziś.",
             second: {
                 content: "Jeśli Pan pozwoli to zapytam o coś innego.",
-                route: 2,
+                route: 30,
             },
             backMessage: "Niestety muszę już iść. Dziękuję za pomoc, do widzenia [Zakończ rozmowę i wyjdź.]"
         },
@@ -3587,7 +3587,7 @@ const options = {
             message: "O pieniądze szanowny Panie, jak zawsze. Ponieważ właścicielka majątków pod Białymstokiem, hrabina Zofia Rydygier, nie chciała po wojnie przyjąć polskiego obywatelstwa to była zmuszona do zaakceptowania konsekwencji swojej decyzji. W świetle prawa musiała pozbyć się swojego majątku. Tak też zrobiła.",
             first: {
                 content: "I to cała afera?",
-                route: 40,
+                route: 41,
             },
             second: {
                 content: "Chciałbym jednak pomówić o czymś innym.",
@@ -3703,7 +3703,7 @@ const options = {
             message: "Prawica uznała oczywiście Niewiadomskiego za niepoczytalnego szaleńca uznając tylko jego za winnego i odpowiedzialnego za zabójstwo. Ale gazety związane z endecją głosiły niemalże pochwałę tego czynu, proszę sobie wyobrazić! A winnym morderstwa obwiniono samego Narutowicza prezentując mordercę jako ofiarę! Tutaj, w Krakowie zdarzały się nawet msze za Niewiadomskiego. Tak, proszę Pana! Za Radziekowskiego, za zabójcę! Po jednym z takich nabożeństw, u franciszkanów, środowiska lewicowe zogranizowały wiec na Rynku krzycząc antykościelne hasła. Potem poszli pod Pałac Biskupi, gdzie powybijali okna. To samo zrobili zresztą pod endeckim Gońcem Krakowskim...",
             first: {
                 content: "Czyli odpowiedzialnością za nagonkę na prezydenta obarczano również prasę?",
-                route: 56,
+                route: 57,
             },
             second: {
                 content: "Chciałbym jednak pomówić o czymś innym.",
@@ -3715,7 +3715,7 @@ const options = {
             message: "Ale nie Kuryera, drogi Panie! Kiedy wybrano świętej pamięci prezydenta u nas trwał strajk drukarzy, niczego nie mogliśmy publikować! Kończąc ten temat",
             first: {
                 content: "No dobrze. Pozwoli Pan, że zapytam o coś jeszcze?",
-                route: 56,
+                route: 31,
             },
             backMessage: "Przepraszam, jednak muszę już iść. [Zakończ rozmowę i opuść budynek]"
         },
@@ -4055,10 +4055,6 @@ const options = {
         },
         51: {
             message: "Jesteśmy w budnynku Komunalnej Kasy Oszczędnościowej powiatu krakowskiego. Rozwijamy wśród ludności zmysł oszczędnościowy, ułatwiamy gromadzenie oszczędności, udostępniamy kredyty. Nasza placówka nie jest jednak jedyną komunalną kasą oszczędności w mieście. Druga znajduje się przy ul. Szpitalnej i zasłużyła się między innymi angażując się w wykupienie Wawelu z rąk austriackich. W końcu, być może Pan nie wie, ale do początku XX wieku stacjonowało tam wojsko zaborcy. Ponadto kasa przeznaczyła środki na remonty zamku, kaplicy Zygmuntowskiej, budowę łazni, akademików... Podgórze też ma swoją komunalną kasę oszczędności, mieście się przy Józefińskiej.",
-            first: {
-                content: "A gdzie właśnie się znajdujemy?",
-                route: 51, 
-            },
             second: {
                 content: "Jednak chciałbym zapytać o coś innego.",
                 route: 30, 
