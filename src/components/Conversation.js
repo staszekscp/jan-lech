@@ -19,6 +19,7 @@ function Home(props) {
     const containerClass = right ? classRight : classLeft
 
     const element = document.getElementById("ele")
+    const prg = props.progress
 
     const stepBack = () => {
         setGoAway(true)
@@ -147,6 +148,7 @@ function Home(props) {
                                 props.back(true)
                             }, 2000)
                             props.setFadeOut(true)
+                            localStorage.setItem('progress', JSON.stringify(prg))
                             }
                         }>
                         {options[place][conversationNumber].backMessage}

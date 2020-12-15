@@ -460,7 +460,7 @@ const options = {
             message: "Nam też ciężko w to uwierzyć. Wygląda na to, że robił je sam. Zdecydowaliśmy się aresztować Najchelową, nie wiadomo jaki jest jej związek, a jest mało wiarygodną osobą...",
             first: {
                 content: "Cholera... A znaleźliście coś jeszcze?",
-                route: 103,
+                route: 901,
             },
             second: {
                 content: "Mogę z nią porozmawiać? To pilne.",

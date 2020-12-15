@@ -64,7 +64,7 @@ function Brewery(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="brewery-background">
-          {conversationBoss && <div><Conversation turnOff={switchToGuard} number={1} place="szef-browar" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          {conversationBoss && <div><Conversation progress={props.progress} turnOff={switchToGuard} number={1} place="szef-browar" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classBoss} src={boss} />
               </div>
@@ -74,7 +74,7 @@ function Brewery(props) {
               </div>
             </div>
             }
-            {conversationGuard && <div><Conversation turnOff={switchToBoss} number={numberGuard} actionOne={actionOne} right={true} place="straznik" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationGuard && <div><Conversation progress={props.progress} turnOff={switchToBoss} number={numberGuard} actionOne={actionOne} right={true} place="straznik" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classGuard} src={guard} />
               </div>

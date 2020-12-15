@@ -61,7 +61,7 @@ function HawelkaRestaurant(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="hawelka-background">
-          {conversationBoss && <div><Conversation actionOne={actionOne} number={numberBoss} turnOff={switchWaiter} right={true} place="macharski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          {conversationBoss && <div><Conversation progress={props.progress} actionOne={actionOne} number={numberBoss} turnOff={switchWaiter} right={true} place="macharski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div onClick={() => {
                   setConversationBoss(true)
                 }}>
@@ -73,7 +73,7 @@ function HawelkaRestaurant(props) {
               </div>
             </div>
             }
-            {conversationWaiter && <div><Conversation number={1} turnOff={switchBoss} place="kelner" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationWaiter && <div><Conversation progress={props.progress} number={1} turnOff={switchBoss} place="kelner" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classWaiter} src={waiter} />
               </div>

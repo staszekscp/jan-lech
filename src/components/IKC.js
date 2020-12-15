@@ -61,7 +61,7 @@ function IKC(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="ikc-background">
-            {conversationDabrowski && <div><Conversation number={numberDabrowski} turnOff={switchToMajchrzak} actionOne={actionOne} right={true} place="dabrowski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationDabrowski && <div><Conversation progress={props.progress} number={numberDabrowski} turnOff={switchToMajchrzak} actionOne={actionOne} right={true} place="dabrowski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classDabrowski} src={dabrowski} />
               </div>
@@ -71,7 +71,7 @@ function IKC(props) {
               </div>
             </div>
             }
-            {conversationMajchrzak && <div><Conversation number={1} turnOff={switchToDabrowski} place="majchrzak" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationMajchrzak && <div><Conversation progress={props.progress} number={1} turnOff={switchToDabrowski} place="majchrzak" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classMajchrzak} src={majchrzak} />
               </div>

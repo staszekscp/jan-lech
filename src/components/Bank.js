@@ -32,12 +32,12 @@ function Bank(props) {
   return (
     <div className={fadeOut?"out":"main"}>
       <div className="bank-background">
-        {conversation ? <Conversation actionOne={actionOne} number={number} place="bank" current={props.current} back={props.back} setFadeOut={setFadeOut}>
-          <div onClick={() => {setConversation(true)}}>
+        {conversation ? <Conversation progress={props.progress} actionOne={actionOne} number={number} place="bank" current={props.current} back={props.back} setFadeOut={setFadeOut}>
+          <div >
             <img className="bank-boss-conversation" src={director} />
           </div>
           </Conversation> :
-          <div onClick={() => {setConversation(true)}}>
+          <div >
             <img className="bank-boss" src={director} />
           </div>}
           <div className="location-overlay">

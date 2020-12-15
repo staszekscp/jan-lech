@@ -53,7 +53,7 @@ const [progress, setProgress] = useState({
   end: false
 })
 
-const [mainScreen, setMainScreen] = useState(false)
+const [mainScreen, setMainScreen] = useState(true)
 
 const [mapScreen, setMapScreen] = useState(false)
 const [bank, setBank] = useState(false)
@@ -69,7 +69,7 @@ const [neighborTwo, setNeighborTwo] = useState(false)
 const [neighborThree, setNeighborThree] = useState(false)
 const [thorn, setThorn] = useState(false)
 const [twardowskiego, setTwardowskiego] = useState(false)
-const [hospital, setHospital] = useState(true)
+const [hospital, setHospital] = useState(false)
 
 const [endGameScreen, setEndGameScreen] = useState(false)
 
@@ -81,6 +81,8 @@ const [endGameScreen, setEndGameScreen] = useState(false)
         {mainScreen && <MainScreen 
           forward={setHome}
           current={setMainScreen}
+          setProgress={setProgress}
+          continue={setMapScreen}
         />}
         {endGameScreen && <EndGameScreen 
           current={setEndGameScreen}
@@ -165,7 +167,8 @@ const [endGameScreen, setEndGameScreen] = useState(false)
           setNeighborTwo={setNeighborTwo}
           setNeighborThree={setNeighborThree}
           current={setTwardowskiego}
-          back={setMapScreen}/>}
+          back={setMapScreen}
+          progress={progress}/>}
         {hospital && <Hospital                       //
           current={setHospital}
           back={setMapScreen}

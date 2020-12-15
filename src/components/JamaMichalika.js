@@ -87,7 +87,7 @@ function JamaMichalika(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="jama-background">
-        {conversationMehoffer && <div><Conversation number={numberMehoffer} turnOff={switchToZelenski} actionOne={actionOne} actionTwo={actionTwo} actionThree={actionThree} right={true} place="mehoffer" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+        {conversationMehoffer && <div><Conversation progress={props.progress} number={numberMehoffer} turnOff={switchToZelenski} actionOne={actionOne} actionTwo={actionTwo} actionThree={actionThree} right={true} place="mehoffer" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classMehoffer} src={mehoffer} />
               </div>
@@ -97,7 +97,7 @@ function JamaMichalika(props) {
               </div>
             </div>
             }
-            {conversationZelenski && <div><Conversation number={numberZelenski} turnOff={switchToMehoffer} actionThree={actionThree} actionFour={actionFour} place="zelenski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationZelenski && <div><Conversation progress={props.progress} number={numberZelenski} turnOff={switchToMehoffer} actionThree={actionThree} actionFour={actionFour} place="zelenski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classZelenski} src={zelenski} />
               </div>

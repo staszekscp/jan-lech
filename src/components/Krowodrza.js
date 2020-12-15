@@ -74,7 +74,7 @@ function Krowodrza(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="krowodrza-background">
-            {conversationBoss && <div><Conversation turnOff={switchToWorker} actionOne={actionOne} number={numberBoss} right={true} place="szef-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationBoss && <div><Conversation progress={props.progress} turnOff={switchToWorker} actionOne={actionOne} number={numberBoss} right={true} place="szef-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classBoss} src={boss} />
               </div>
@@ -84,7 +84,7 @@ function Krowodrza(props) {
               </div>
             </div>
             }
-            {conversationCoworker && <div><Conversation turnOff={switchToBoss} actionOne={actionOneW} number={numberWorker} place="pracownik-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversationCoworker && <div><Conversation progress={props.progress} turnOff={switchToBoss} actionOne={actionOneW} number={numberWorker} place="pracownik-krowodrza" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classWorker} src={coworker} />
               </div>

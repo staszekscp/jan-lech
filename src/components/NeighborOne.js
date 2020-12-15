@@ -48,6 +48,7 @@ function NeighborOne(props) {
       <div className={fadeOut?"out":"main"}>
         <div className="neighbor-one-background" >
         {conversation ? <Conversation
+          progress={props.progress}
           actionOne={actionOne}
           actionTwo={actionTwo}
           actionThree={actionThree}

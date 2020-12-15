@@ -44,7 +44,7 @@ function NeighborThree(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="neighbor-three-background" >
-          {conversation ? <Conversation actionOne={actionOne} actionTwo={actionTwo} number={number} place="krogul" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+          {conversation ? <Conversation progress={props.progress} actionOne={actionOne} actionTwo={actionTwo} number={number} place="krogul" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
           <div onClick={() => {setConversation(true)}}>
             {!props.progress.end && <img className="krogul-conversation" src={neighbor} />}
           </div>

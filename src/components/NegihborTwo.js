@@ -79,7 +79,7 @@ function NeighborTwo(props) {
       <div>
         <div className={fadeOut?"out":"main"}>
           <div className="neighbor-two-background">
-            {conversation1 && <div><Conversation actionOne={actionOneF} number={numberMaciejowska} turnOff={switchToMaciejowski} place="maciejowska" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversation1 && <div><Conversation progress={props.progress} actionOne={actionOneF} number={numberMaciejowska} turnOff={switchToMaciejowski} place="maciejowska" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classMaciejowska} src={neighborF} />
               </div>
@@ -89,7 +89,7 @@ function NeighborTwo(props) {
               </div>
             </div>
             }
-            {conversation2 && <div><Conversation actionOne={actionOne} number={numberMaciejowski} turnOff={switchToMaciejowska} right={true} place="maciejowski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+            {conversation2 && <div><Conversation progress={props.progress} actionOne={actionOne} number={numberMaciejowski} turnOff={switchToMaciejowska} right={true} place="maciejowski" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div >
                 <img className={classMaciejowski} src={neighborM} />
               </div>

@@ -411,6 +411,7 @@ h1 {
 
   .option:hover {
     transform: scale(1);
+    opacity: 0.8;
   }
 
   .message {
@@ -841,3 +842,15 @@ h1 {
   }
 
 }
+
+@media (min-height: 760px) and (min-width: 760px){
+  .option:hover {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  .overlay {
+    opacity: 0.7;
+  }
+}
+

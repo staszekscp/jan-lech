@@ -33,7 +33,7 @@ function ThornRestaurant(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="thorn-background">
-            {conversation ? <Conversation actionOne={actionOne} number={number} right={true} place="thorn" current={props.current} back={props.back} setFadeOut={setFadeOut}>
+            {conversation ? <Conversation progress={props.progress} actionOne={actionOne} number={number} right={true} place="thorn" current={props.current} back={props.back} setFadeOut={setFadeOut}>
             <div onClick={() => {setConversation(true)}}>
               <img className="thorn-conversation" src={thorn} />
             </div>

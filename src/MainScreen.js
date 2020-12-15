@@ -9,6 +9,9 @@ function MainScreen(props) {
     const [startGame, setStartGame] = useState(false)
     const [info, setInfo] = useState(false)
 
+    const prg = JSON.parse(localStorage.getItem('progress'))
+    const message = prg ? "Zacznij od nowa" : "Zacznij"
+
   return (
     <div className="backdrop">
       <div className={fadeOut2?"out":"main"}>
@@ -18,13 +21,22 @@ function MainScreen(props) {
                 Kraków, 1925
             </div>
             <div className="lower-container">
+                {prg && <div className="button-upper" onClick={()=>{
+                            setTimeout(() => {
+                                props.current(false)
+                                props.continue(true)
+                            }, 2000)
+                            setFadeOut2(true)
+                            props.setProgress(prg)
+                            }
+                        }>Kontunuuj</div>}
                 <div className="button-upper" onClick={()=>{
                             setTimeout(() => {
                                 setStartGame(true)
                             }, 1000)
                             setFadeOut(true)
                             }
-                        }>Zacznij</div>
+                        }>{message}</div>
                 <div className="button-lower" onClick={()=>{
                             setTimeout(() => {
                                 setInfo(true)
@@ -35,8 +47,8 @@ function MainScreen(props) {
             </div></div>}
             {startGame && <div className="additional-container"><div className="explanation-container" >
                 <h1>Kraków, 1925</h1>
-                <p>Jest dokładnie 23 maja 1925 roku. Nazywsz się Feliks Kołodziejczyk, jesteś młodym policjantem w stopniu przodownika. O 6 rano przybywasz na komisariat, gdzie dowiadujesz się o zaginięciu starszego mężczyzny, Józefa Najchela, zamieszkałego przy ulicy Twardowskiego w Krakowie. Zostajesz niezwłocznie wysłany, aby porozmawiać z jego żoną. </p>
-                <p>Twoim zadaniem jest ustalić, gdzie może przebywać jej mąż.</p>
+                <p>Jest dokładnie 23 maja 1925 roku. Nazywsz się Feliks Kołodziejczyk, jesteś młodym policjantem w stopniu przodownika. O 6 rano przybywasz na komisariat, gdzie dowiadujesz się o zaginięciu starszego mężczyzny, Józefa Najchela, zamieszkałego przy ulicy Twardowskiego w Krakowie. Zostajesz niezwłocznie wysłany, aby porozmawiać z jego żoną. Po drodze zostajesz jeszcze poinformowany, że sąsiadami Najchelów są: Michał Stelmach, rodzina Maciejowskich oraz Zygmunt Krogul. Może oni coś wiedzą...?</p>
+                <p>Twoim zadaniem jest ustalić, gdzie może przebywać Józef Najchel.</p>
                 <p className="last-p">Oraz poznać nieco bliżej przedwojenny Kraków...</p>
                 <div className="button-upper" onClick={()=>{
                             setTimeout(() => {

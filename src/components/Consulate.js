@@ -24,7 +24,7 @@ function Consulate(props) {
     return (
       <div className={fadeOut?"out":"main"}>
         <div className="consulate-background">
-        {conversation ? <Conversation number={1} actionOne={actionOne} place="konsulat" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
+        {conversation ? <Conversation progress={props.progress} number={1} actionOne={actionOne} place="konsulat" current={props.current} back={props.back}  setFadeOut={setFadeOut}>
               <div>
                 <img className="worker-consulate-conversation" src={worker} />
               </div>
